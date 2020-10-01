@@ -154,8 +154,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         var res: CrosswordParams? = null
         val maxAttemptCount = 10
         var i = 0
+        val maxTime = 100
         while (res == null && i < maxAttemptCount) {
-            val maxTime = 100
             val stepAdding = 0.6 * maxTime * i
             res = CrosswordBuilderWrapper().getCrossword(
                 ArrayList(inp.keys),

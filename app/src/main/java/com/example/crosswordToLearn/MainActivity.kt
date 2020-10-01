@@ -23,14 +23,15 @@ class MainActivity : AppCompatActivity() {
     private var data = arrayListOf<ArrayList<LanguageItem>>()
     private var imageSize: Int = 0
 
-    class ImageData(var lastModificationDate: Long, var row: Int, var column: Int)
+    private class ImageData(var lastModificationDate: Long, var row: Int, var column: Int)
 
     private val imageDatas = hashMapOf<String, ImageData>()
     private var loadedName = ""
 
-    class TableAdapter(val dataset: MutableList<MutableList<LinearLayout>>) :
-        RecyclerView.Adapter<TableAdapter.TableHolder>() {
+    private class TableAdapter : RecyclerView.Adapter<TableAdapter.TableHolder>() {
         class TableHolder(val tableRow: TableRow) : RecyclerView.ViewHolder(tableRow)
+
+        val dataset: MutableList<MutableList<LinearLayout>> = mutableListOf()
 
         override fun onCreateViewHolder(
             parent: ViewGroup,
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         imageSize = computeImageSize()
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)
-            it.adapter = TableAdapter(mutableListOf())
+            it.adapter = TableAdapter()
         }
         addItemToRecyclerView(createGeneratingImage())
         addItems()
@@ -99,8 +100,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     //TODO show dialog above or below crossword image
-    //TODO add test for deletation
-    class DeleteCrossword(
+    //TODO add test for deletion
+    private class DeleteCrossword(
         private val context: MainActivity,
         private val name: String
     ) : DialogFragment() {
