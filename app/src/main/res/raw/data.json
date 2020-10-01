@@ -159,7 +159,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "lion",
         "topics": ["animals"]
@@ -169,7 +169,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "horse",
         "topics": ["animals"]
@@ -179,7 +179,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "pig",
         "topics": ["animals"]
@@ -189,7 +189,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "leopard",
         "topics": ["animals"]
@@ -199,7 +199,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "elk",
         "topics": ["animals"]
@@ -209,7 +209,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "wolf",
         "topics": ["animals"]
@@ -219,7 +219,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "wolverine",
         "topics": ["animals"]
@@ -229,7 +229,7 @@
         "topics": ["животные"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "hedgehog",
         "topics": ["animals"]
@@ -249,7 +249,7 @@
         "topics": ["овощи", "еда"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "pepper",
         "topics": ["vegetables", "food"]
@@ -259,7 +259,7 @@
         "topics": ["овощи", "еда"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "corn",
         "topics": ["vegetables", "food"]
@@ -269,7 +269,7 @@
         "topics": ["овощи", "еда"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "beans",
         "topics": ["vegetables", "food"]
