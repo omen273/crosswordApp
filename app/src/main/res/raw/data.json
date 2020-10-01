@@ -1,0 +1,1112 @@
+[
+    [
+    {"EN":{
+        "word": "ant",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "муравей",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bat",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "летучая мышь",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bear",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "медведь",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bee",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "пчела",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bird",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "птица",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "buffalo",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "бык",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cat",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "кот",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "chicken",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "курица",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "dog",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "собака",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "dolphin",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "дельфин",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "duck",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "утка",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "elephant",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "слон",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fish",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "рыба",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fox",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "лиса",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "frog",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "лягушка",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "goose",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "гусь",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "lion",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "лев",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "horse",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "лошадь",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "pig",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "свинья",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "leopard",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "леопард",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "elk",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "лось",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "wolf",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "волк",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "wolverine",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "россамаха",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "hedgehog",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "еж",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "beetroot",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "свекла",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "pepper",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "перец",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "corn",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "кукуруза",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "beans",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "бобы",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cabbage",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "капуста",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "carrot",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "морковь",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "onion",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "лук",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "garlic",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "чеснок",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "potato",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "картофель",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cucumber",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "огурец",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "lettuce",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "салат",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "pumpkin",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "тыква",
+        "topics": ["овощи", "еда"]
+        }}
+    ],  
+    [
+    {"EN":{
+        "word": "eggplant",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "баклажан",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "spinach",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "шпинат",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cauliflower",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "цветная капуста",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "tomato",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "помидор",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "turnip",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "репа",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "radish",
+        "topics": ["vegetables", "food"]
+        }},
+    {"RU": {
+        "word": "редька",
+        "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "apple",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "яблоко",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "apricot",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "абрикос",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "avocado",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "авокадо",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "banana",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "банан",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "blackberry",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "ежевика",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cantaloupe",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "дыня",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cherry",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "вишня",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fig",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "инжир",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "grapes",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "виноград",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "lemon",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "лимон",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "orange",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "апельсин",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "peach",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "персик",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "pineapple",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "ананас",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "plum",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "слива",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "strawberry",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "клубника",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "watermelon",
+        "topics": ["fruits", "food"]
+        }},
+    {"RU": {
+        "word": "арбуз",
+        "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "arena",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "арена",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "amateur",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "любитель",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "athlete",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "атлет",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "athletics",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "легкая атлетика",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "award",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "наградить",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "beat",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "выиграть",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "catch",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "поймать",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "champion",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "чемпион",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "coach",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "тренер",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "competition",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "соревнование",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "contest",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "соревнование",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "court",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "корт",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "course",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "площадка, например, для гольфа",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cup",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "кубок",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "defeat",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "победить",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "defend",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "защитить",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "draw",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "ничья",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "event",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "событие",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fan",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "болельщик",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "field",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "поле",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fitness",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "фитнес",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "goal",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "гол",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "gym",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "зал",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "judge",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "судья",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "league",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "лига",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "leisure",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "свободное время",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "manager",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "менеджер",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "medal",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "медаль",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "offside",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "офсайд",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "opponent",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "противник",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "pass",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "пас",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "penalty",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "пенальти",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "performance",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "выступление",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "player",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "игрок",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "practise",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "тренироваться",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "professional",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "профессионал",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "record",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "рекорд",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "referee",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "судья",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "score",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "счет",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "shoot",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "бросок",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "skill",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "навык",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "spectator",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "зритель",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "stadium",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "стадион",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "strategy",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "стратегия",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "tactics",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "тактика",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "talent",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "талант",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "teammate",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "сокомандник",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "tie",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "ничья",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "tournament",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "турнир",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "trainer",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "тренер",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "trophy",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "кубок",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "victory",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "победа",
+        "topics": ["спорт"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "whistle",
+        "topics": ["sports"]
+        }},
+    {"RU": {
+        "word": "свисток",
+        "topics": ["спорт"]
+        }}
+    ]
+]

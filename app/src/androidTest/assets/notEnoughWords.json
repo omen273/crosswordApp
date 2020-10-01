@@ -1,0 +1,132 @@
+[
+    [
+    {"EN":{
+        "word": "ant",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "муравей",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bat",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "летучая мышь",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bear",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "медведь",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bee",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "пчела",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bird",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "птица",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "buffalo",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "бык",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cat",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "кот",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "chicken",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "курица",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "dog",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "собака",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "dolphin",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "дельфин",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "duck",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "утка",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "elephant",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "слон",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fish",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "рыба",
+        "topics": ["животные"]
+        }}
+    ]
+]

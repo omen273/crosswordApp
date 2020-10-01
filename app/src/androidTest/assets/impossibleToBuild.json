@@ -1,0 +1,142 @@
+[
+    [
+    {"EN":{
+        "word": "my",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "мой",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "line",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "линия",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "row",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "колонка",
+        "topics": ["невозможно"]
+        }}
+    ],
+	    [
+    {"EN":{
+        "word": "column",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "столбец",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "people",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "люди",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "lime",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "лайм",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "yoga",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "йога",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "zoo",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "зоопарк",
+        "topics": ["невозможно"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "you",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "ты",
+        "topics": ["невозможно"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "he",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "он",
+        "topics": ["невозможно"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "or",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "или",
+        "topics": ["невозможно"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "and",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "и",
+        "topics": ["невозможно"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "ort",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "орт",
+        "topics": ["невозможно"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "leg",
+        "topics": ["impossible"]
+        }},
+    {"RU": {
+        "word": "нога",
+        "topics": ["невозможно"]
+        }}
+    ]
+]
