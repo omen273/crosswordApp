@@ -81,7 +81,7 @@ fun getLastCrossword(): Crossword {
         if (last.lastModified() < file.lastModified()) last = file
     }
     val crosswordName =
-        last?.name?.removeSuffix(MainActivity.IMAGE_FORMAT) + Game.DATA_SUFFIX
+        last?.name?.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX
 
     return getContext().openFileInput(crosswordName).use {
         buildCrossword { UClickJsonFormatter().read(this, it) }
@@ -100,7 +100,7 @@ fun getContext(): Context = InstrumentationRegistry.getInstrumentation().targetC
 
 fun getTestContext(): Context = InstrumentationRegistry.getInstrumentation().context
 
-fun readConfig(): Int = Game.readConfig(getContext().filesDir, getContext().resources)
+fun readConfig(): Int = GameActivity.readConfig(getContext().filesDir, getContext().resources)
 
 fun chooseGenerateCrossword() {
     onView(getItemFromCrosswordList(0, 0)).perform(ViewActions.click())
@@ -227,10 +227,10 @@ open class ChoseTopicsToastTest {
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
-    private lateinit var scenario: ActivityScenario<ChooseTopics>
+    private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
     fun choseTopicsImpl(fileName: String, message: String) {
-        Intent(ApplicationProvider.getApplicationContext(), ChooseTopics::class.java).apply {
+        Intent(ApplicationProvider.getApplicationContext(), ChooseTopicsActivity::class.java).apply {
             val data =
                 getTestContext().resources.assets.open(fileName)
                     .use { WordsReader().read(it) }

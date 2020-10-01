@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             this.layoutParams = layoutParams
         }.also { im ->
             im.setOnClickListener {
-                val generated = Intent(this, ChooseTopics::class.java)
+                val generated = Intent(this, ChooseTopicsActivity::class.java)
                 generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, data)
                 generated.putExtra(CROSSWORD_IMAGE_SIZE_VARIABLE, imageSize)
                 startActivityForResult(generated, ACTIVITY_CHOOSE)
@@ -116,8 +116,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun deleteCrosswordData(name: String) {
         pathToImage(name).delete()
-        File(filesDir, name + Game.DATA_SUFFIX).delete()
-        File(filesDir, name + Game.STATE_SUFFIX).delete()
+        File(filesDir, name + GameActivity.DATA_SUFFIX).delete()
+        File(filesDir, name + GameActivity.STATE_SUFFIX).delete()
     }
 
     private fun deleteCrossword(name: String) = DeleteCrossword(this, name).apply {
@@ -162,7 +162,7 @@ class MainActivity : AppCompatActivity() {
             linearLayout.addView(this)
         }
         imageView.setOnClickListener {
-            Intent(this@MainActivity, Game::class.java).apply {
+            Intent(this@MainActivity, GameActivity::class.java).apply {
                 putExtra(CROSSWORD_NAME_VARIABLE, textView.text)
                 putExtra(CROSSWORD_IS_GENERATED_VARIABLE, false)
                 putExtra(CROSSWORD_IMAGE_SIZE_VARIABLE, imageSize)

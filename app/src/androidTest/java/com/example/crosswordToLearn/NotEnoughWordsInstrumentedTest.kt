@@ -12,7 +12,7 @@ class NotEnoughWordsInstrumentedTest : ChoseTopicsToastTest() {
         choseTopicsImpl(
             "notEnoughWords.json", getContext().getString(
                 R.string.not_enough_words,
-                ChooseTopics.CROSSWORD_SIZE
+                ChooseTopicsActivity.CROSSWORD_SIZE
             )
         )
     }

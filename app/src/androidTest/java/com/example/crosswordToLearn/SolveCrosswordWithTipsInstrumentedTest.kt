@@ -65,18 +65,18 @@ class SolveCrosswordWithTipsInstrumentedTest {
                 }
             }
         }
-        menuClick(R.string.solve_word, id.menu_solve_word, Game.WORD_OPEN_PRICE)
+        menuClick(R.string.solve_word, id.menu_solve_word, GameActivity.WORD_OPEN_PRICE)
         val middle = vertical.size / 2
         val verticalBefore = vertical.subList(0, vertical.size / 2)
         for ((cell, word) in verticalBefore) testCell(word, cell.chars)
-        menuClick(R.string.solve_square, id.menu_solve_cell, Game.LETTER_OPEN_PRICE)
-        val stars = menuClick(R.string.solve_square, id.menu_solve_cell, Game.LETTER_OPEN_PRICE)
+        menuClick(R.string.solve_square, id.menu_solve_cell, GameActivity.LETTER_OPEN_PRICE)
+        val stars = menuClick(R.string.solve_square, id.menu_solve_cell, GameActivity.LETTER_OPEN_PRICE)
         val verticalAfter = vertical.subList(middle + 2, vertical.size)
         for ((cell, word) in verticalAfter) testCell(word, cell.chars)
         onView(withText(R.string.youve_solved_the_puzzle)).inRoot(isDialog())
             .check(matches(isDisplayed()))
         onView(withText(R.string.youve_solved_the_puzzle)).inRoot(isDialog())
         onView(withText(R.string.another_crossword)).inRoot(isDialog()).perform(click())
-        assertEquals(stars + Game.BONUS_ON_SOLVE, readConfig())
+        assertEquals(stars + GameActivity.BONUS_ON_SOLVE, readConfig())
     }
 }

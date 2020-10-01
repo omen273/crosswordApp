@@ -48,7 +48,7 @@ import kotlin.collections.ArrayList
 //TODO cursor to second and so on letter if first has been solved add tests
 //TODO fix cell solved after backspace, add tests
 //TODO test for cross letter input
-class Game : AppCompatActivity(), CrosswordView.OnLongPressListener,
+class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
 
     internal lateinit var crosswordView: CrosswordView
@@ -69,7 +69,7 @@ class Game : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (isGenerated) {
                 @Suppress("UNCHECKED_CAST")
                 val wordsMap =
-                    intent.getSerializableExtra(ChooseTopics.WORDS_VARIABLE)
+                    intent.getSerializableExtra(ChooseTopicsActivity.WORDS_VARIABLE)
                         as HashMap<String, String>
                 when (val crosswordParams = generateCrossword(wordsMap)) {
                     null -> {
@@ -159,7 +159,7 @@ class Game : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val stepAdding = 0.6 * maxTime * i
             res = CrosswordBuilderWrapper().getCrossword(
                 ArrayList(inp.keys),
-                ChooseTopics.CROSSWORD_SIZE, ChooseTopics.MAX_SIDE,
+                ChooseTopicsActivity.CROSSWORD_SIZE, ChooseTopicsActivity.MAX_SIDE,
                 maxTime + stepAdding.toInt()
             )
             ++i
@@ -288,7 +288,7 @@ class Game : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordChanged(view: CrosswordView) {}
 
-    class FinishGame(private val game: Game) : DialogFragment() {
+    class FinishGame(private val game: GameActivity) : DialogFragment() {
         override fun onCreateDialog(savedInstanceState: Bundle?): AlertDialog =
             activity?.let {
                 val builder = AlertDialog.Builder(it)

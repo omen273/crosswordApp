@@ -10,10 +10,10 @@
         android:theme="@style/AppTheme"
         android:extractNativeLibs="false">
         <activity
-            android:name=".Game"
+            android:name=".GameActivity"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".Sett" />
-        <activity android:name=".ChooseTopics" />
+        <activity android:name=".SettActivity" />
+        <activity android:name=".ChooseTopicsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

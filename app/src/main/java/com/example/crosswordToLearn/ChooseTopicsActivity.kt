@@ -9,7 +9,7 @@ import android.widget.CheckBox
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_choose_topics.*
 
-class ChooseTopics : AppCompatActivity() {
+class ChooseTopicsActivity : AppCompatActivity() {
     private val crosswordLanguage = "EN"
     private val clueLanguage = "RU"
     private val clueType = ClueType.WORD
@@ -24,7 +24,7 @@ class ChooseTopics : AppCompatActivity() {
                 val wordsInList = getChosenTopics()
                 topicList.removeAllViews()
                 for (topic in wordsInList.sorted()) {
-                    with(CheckBox(this@ChooseTopics)) {
+                    with(CheckBox(this@ChooseTopicsActivity)) {
                         text = topic
                         toggle()
                         topicList.addView(this)
@@ -32,7 +32,7 @@ class ChooseTopics : AppCompatActivity() {
                 }
                 for (topic in topicNames) {
                     if (!wordsInList.contains(topic) && topic.startsWith(p0.toString())) {
-                        with(CheckBox(this@ChooseTopics)) {
+                        with(CheckBox(this@ChooseTopicsActivity)) {
                             text = topic
                             topicList.addView(this)
                         }
@@ -45,7 +45,7 @@ class ChooseTopics : AppCompatActivity() {
         })
 
         ok_play.setOnClickListener {
-            with(Intent(this, Game::class.java))
+            with(Intent(this, GameActivity::class.java))
             {
                 val chosenTopics = getChosenTopics()
                 when {
@@ -69,7 +69,7 @@ class ChooseTopics : AppCompatActivity() {
                             }
                             else -> {
                                 Toast.makeText(
-                                    this@ChooseTopics, getString(
+                                    this@ChooseTopicsActivity, getString(
                                         R.string.not_enough_words,
                                         CROSSWORD_SIZE
                                     ),
@@ -80,7 +80,7 @@ class ChooseTopics : AppCompatActivity() {
                     }
                     else -> {
                         Toast.makeText(
-                            this@ChooseTopics, R.string.choose_at_least_one_topic,
+                            this@ChooseTopicsActivity, R.string.choose_at_least_one_topic,
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -99,7 +99,7 @@ class ChooseTopics : AppCompatActivity() {
                 }
                 MainActivity.ACTIVITY_GAME_FAIL -> {
                     Toast.makeText(
-                        this@ChooseTopics, R.string.choose_other_words, Toast.LENGTH_SHORT
+                        this@ChooseTopicsActivity, R.string.choose_other_words, Toast.LENGTH_SHORT
                     ).show()
                 }
                 MainActivity.ACTIVITY_GAME_REMOVE -> {
@@ -115,7 +115,7 @@ class ChooseTopics : AppCompatActivity() {
         if (topicList.childCount == 0) {
             //TODO checking of data changing
             for (topic in getTopics()) {
-                with(CheckBox(this@ChooseTopics)) {
+                with(CheckBox(this@ChooseTopicsActivity)) {
                     text = topic
                     topicList.addView(this)
                 }
