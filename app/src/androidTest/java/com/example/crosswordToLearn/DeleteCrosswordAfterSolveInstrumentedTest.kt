@@ -9,18 +9,18 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class DeleteCrosswordInstrumentedTest : SolveCrossword() {
+class DeleteCrosswordAfterSolveInstrumentedTest : SolveCrossword(){
 
     @Test
     fun solveCrossword() {
+        val crossword1 = generateCrossword()
         crossword = generateCrossword()
-        generateCrossword()
-        Espresso.onView(ViewMatchers.isRoot())
-            .perform(waitForView(ViewMatchers.withId(R.id.tableLayout)))
-        Espresso.onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.longClick())
-        Espresso.onView(ViewMatchers.withText(R.string.yes))
+        loadFirstCrossword()
+        solve()
+        Espresso.onView(ViewMatchers.withText(R.string.remove))
             .inRoot(RootMatchers.isDialog())
             .perform(ViewActions.click())
+        crossword = crossword1
         loadFirstCrossword()
         solve()
     }

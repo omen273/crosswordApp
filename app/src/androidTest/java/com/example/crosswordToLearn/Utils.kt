@@ -230,7 +230,10 @@ open class ChoseTopicsToastTest {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
     fun choseTopicsImpl(fileName: String, message: String) {
-        Intent(ApplicationProvider.getApplicationContext(), ChooseTopicsActivity::class.java).apply {
+        Intent(
+            ApplicationProvider.getApplicationContext(),
+            ChooseTopicsActivity::class.java
+        ).apply {
             val data =
                 getTestContext().resources.assets.open(fileName)
                     .use { WordsReader().read(it) }
