@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
 
     //TODO show dialog above or below crossword image
     //TODO add test for deletion
-    private class DeleteCrossword(
+    class DeleteCrossword(
         private val context: MainActivity,
         private val name: String
     ) : DialogFragment() {
