@@ -248,10 +248,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.menu_restart -> {
-                crosswordView.reset()
-                return true
-            }
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false &&
                     star_number.text.toString().toInt() >= LETTER_OPEN_PRICE

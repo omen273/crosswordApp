@@ -31,8 +31,4 @@
         android:id="@+id/menu_solve_word"
         android:title="@string/solve_word"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/menu_restart"
-        android:title="@string/restart"
-        app:showAsAction="never" />
 </menu>
