@@ -276,7 +276,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 return false
             }
         }
-
         return super.onOptionsItemSelected(item)
     }
 

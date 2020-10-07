@@ -243,9 +243,7 @@ open class ChoseTopicsToastTest {
         chooseFirstTopic()
         onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
         onView(withId(R.id.ok_play)).perform(ViewActions.click())
-        onView(
-            withText(message)
-        ).inRoot(ToastMatcher.isToast()).check(
+        ToastMatcher.onToast(message).check(
             ViewAssertions.matches(isDisplayed())
         )
     }

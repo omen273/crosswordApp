@@ -1108,5 +1108,635 @@
         "word": "свисток",
         "topics": ["спорт"]
         }}
+    ],
+    [
+    {"EN":{
+        "word": "acoustic",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "акустический",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "album",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "альбом",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "amplify",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "делать громче",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "artist",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "артист",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "beat",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "бит",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "catchy",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "запоминающийся",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "chord",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "аккорд",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "chorus",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "хор",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "drum",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "ударные",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "band",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "группа",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "collaborate",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "сотрудничать",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fan",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "поклонник",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "genre",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "жанр",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "lyrics",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "текст песни",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "mainstream",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "популярная музыка",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "melody",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "мелодия",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "producer",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "продюсер",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "recording",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "запись",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "rhyme",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "рифма",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "single",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "сингл",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cello",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "виолончель",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "guitar",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "гитара",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "violin",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "скрипка",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "piano",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "пианино",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "synthesizer",
+        "topics": ["music"]
+        }},
+    {"RU": {
+        "word": "синтезатор",
+        "topics": ["музыка"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "add",
+        "topics": ["cooking", "food"]
+        }},
+    {"RU": {
+        "word": "добавить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bake",
+        "topics": ["cooking", "food"]
+        }},
+    {"RU": {
+        "word": "испечь",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "bake",
+        "topics": ["cooking", "food"]
+        }},
+    {"RU": {
+        "word": "испечь",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "beat",
+        "topics": ["cooking", "food"]
+        }},
+    {"RU": {
+        "word": "взбить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "boil",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "отварить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "carve",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "нарезать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "chop",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "нарезать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cook",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "готовить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cookbook",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "книга рецептов",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "dice",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "нарезать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "dish",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "блюдо",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fry",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "жарить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "grate",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "натереть",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "grease",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "смазать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "grill",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "гриль",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "herb",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "приправа",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "ingredient",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "ингредиент",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "mash",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "пюре",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "melt",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "расплавить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "mix",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "смешать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "peel",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "кожура",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "pinch",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "щепотка",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "preheat",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "разогреть",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "prepare",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "приготовить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "recipe",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "рецепт",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "roast",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "жарить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "serve",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "подавать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "spice",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "пряность",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "sprinkle",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "посыпать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "steam",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "готовить на пару",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "stir",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "перемешать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "stir",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "размешать",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "tablespoon",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "столовая ложка",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "teaspoon",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "чайная ложка",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "whisk",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "взбить",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "fork",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "вилка",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "pan",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "кастрюля",
+        "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cooker",
+        "topics": ["cooking",  "food"]
+        }},
+    {"RU": {
+        "word": "плита",
+        "topics": ["приготовление еды", "еда"]
+        }}
     ]
 ]

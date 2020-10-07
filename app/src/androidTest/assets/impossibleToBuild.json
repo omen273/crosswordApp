@@ -29,7 +29,7 @@
         "topics": ["невозможно"]
         }}
     ],
-	    [
+        [
     {"EN":{
         "word": "column",
         "topics": ["impossible"]
@@ -89,7 +89,7 @@
         "topics": ["невозможно"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "he",
         "topics": ["impossible"]
@@ -99,7 +99,7 @@
         "topics": ["невозможно"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "or",
         "topics": ["impossible"]
@@ -109,7 +109,7 @@
         "topics": ["невозможно"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "and",
         "topics": ["impossible"]
@@ -119,7 +119,7 @@
         "topics": ["невозможно"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "ort",
         "topics": ["impossible"]
@@ -129,7 +129,7 @@
         "topics": ["невозможно"]
         }}
     ],
-	[
+    [
     {"EN":{
         "word": "leg",
         "topics": ["impossible"]
