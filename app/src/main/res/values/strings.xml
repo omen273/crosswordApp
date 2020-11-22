@@ -2,11 +2,6 @@
     <string name="hintTopics">choose topics</string>
     <string name="sizeName">size:</string>
     <string name="okButton">OK</string>
-    <string-array name="crossword_sizes">
-        <item>small</item>
-        <item>medium</item>
-        <item>big</item>
-    </string-array>
     <string name="solve_square">Solve square</string>
     <string name="solve_word">Solve word</string>
     <string name="across">%1$d. Across • %2$s</string>

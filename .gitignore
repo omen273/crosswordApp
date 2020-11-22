@@ -3,6 +3,7 @@
 /library/build
 /local.properties
 /.idea
+/app/src/androidTest/java/com/example/crosswordToLearn/.idea
 .DS_Store
 /build
 /captures

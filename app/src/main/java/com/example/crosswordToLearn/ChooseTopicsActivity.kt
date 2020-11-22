@@ -144,7 +144,8 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 wordItemTr.word.all { it.isLetter() } && wordItemTr.word.length <= MAX_SIDE &&
                 wordItemTr.word.length > 1
             ) {
-                words[wordItemTr.word] = clueItemTr.word
+                words[wordItemTr.word] = if(clueType == ClueType.WORD) clueItemTr.word
+                else clueItemTr.questions.random()
             }
         }
         return words
