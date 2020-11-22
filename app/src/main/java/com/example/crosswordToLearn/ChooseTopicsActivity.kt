@@ -18,7 +18,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_topics)
         val topicNames = getTopics()
-        topicNames.sort()
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 val wordsInList = getChosenTopics()
@@ -168,7 +167,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 topics.addAll(wordItemTr.topics)
             }
         }
-        return ArrayList(topics)
+        return ArrayList(topics).apply { sort() }
     }
 
     internal fun getChosenTopics(): HashSet<String> {

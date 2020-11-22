@@ -9,6 +9,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
+
+//This test generates a first crossword. It should be at first position for crosswords, according
+// to a game logic. After it, it saves solutions for it. Then it generates a second crossword.
+// It should be first instead the first one. The test deletes the second crossword. And solve
+// crossword at first position. In case of absence of deletion solution with a high probability
+// doesn't fit crossword.
 class DeleteCrosswordInstrumentedTest : SolveCrossword() {
 
     @Test

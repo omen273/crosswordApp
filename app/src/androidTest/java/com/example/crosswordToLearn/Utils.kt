@@ -184,10 +184,8 @@ fun testCell(word: Crossword.Word, ch: String) {
     )
 }
 
-class ToastMatcher(private val maxFailures: Int = DEFAULT_MAX_FAILURES) :
+class ToastMatcher :
     TypeSafeMatcher<Root>() {
-
-    private var failures = 0
 
     override fun describeTo(description: Description) {
         description.appendText("is toast")
@@ -203,20 +201,18 @@ class ToastMatcher(private val maxFailures: Int = DEFAULT_MAX_FAILURES) :
             val appToken = root.decorView.applicationWindowToken
             if (windowToken === appToken) return true
         }
-        return (++failures >= maxFailures)
+        return false
     }
 
     companion object {
-        private const val DEFAULT_MAX_FAILURES = 5
+        fun onToast(text: String): ViewInteraction =
+            onView(withText(text)).inRoot(isToast())!!
 
-        fun onToast(text: String, maxRetries: Int = DEFAULT_MAX_FAILURES): ViewInteraction =
-            onView(withText(text)).inRoot(isToast(maxRetries))!!
+        fun onToast(textId: Int): ViewInteraction =
+            onView(withText(textId)).inRoot(isToast())!!
 
-        fun onToast(textId: Int, maxRetries: Int = DEFAULT_MAX_FAILURES): ViewInteraction =
-            onView(withText(textId)).inRoot(isToast(maxRetries))!!
-
-        fun isToast(maxRetries: Int = DEFAULT_MAX_FAILURES): Matcher<Root> {
-            return ToastMatcher(maxRetries)
+        fun isToast(): Matcher<Root> {
+            return ToastMatcher()
         }
     }
 }
