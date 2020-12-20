@@ -4,8 +4,8 @@
     <string name="okButton">OK</string>
     <string name="solve_square">Solve square</string>
     <string name="solve_word">Solve word</string>
-    <string name="across">%1$d. Across • %2$s</string>
-    <string name="down">%1$d. Down • %2$s</string>
+    <string name="across">%1$d. %2$s</string>
+    <string name="down">%1$d. %2$s</string>
     <string name="youve_solved_the_puzzle">You\'ve solved the puzzle!</string>
     <string name="reset">RESET</string>
     <string name="another_crossword">ANOTHER CROSSWORD</string>
