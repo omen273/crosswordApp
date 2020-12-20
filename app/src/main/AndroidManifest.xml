@@ -10,10 +10,14 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".GameActivity"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".SettActivity" />
-        <activity android:name=".ChooseTopicsActivity" />
-        <activity android:name=".MainActivity">
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SettActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseTopicsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
