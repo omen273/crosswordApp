@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        api-level: !ruby/range 16..30
+        api-level: [16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
         target: [default, google_apis]
     steps:
       - name: checkout
