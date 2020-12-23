@@ -77,11 +77,8 @@ fun getLastCrossword(): Crossword {
         MainActivity.IMAGE_DIRECTORY
     )
     var last: File? = imagesPath.listFiles()?.iterator()?.next()
-    if (imagesPath.listFiles() != null)
-    {
-        for (file in imagesPath.listFiles()) if (last != null) {
-            if (last.lastModified() < file.lastModified()) last = file
-        }
+    for (file in imagesPath.listFiles()) if (last != null) {
+        if (last.lastModified() < file.lastModified()) last = file
     }
     val crosswordName =
         last?.name?.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX
