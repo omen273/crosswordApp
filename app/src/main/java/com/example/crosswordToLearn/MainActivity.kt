@@ -127,6 +127,7 @@ class MainActivity : AppCompatActivity() {
 
     internal fun deleteCrosswordImpl(name: String) {
         val item = imageDatas[name]
+        
         if (item != null) {
             leftShift(item.row, item.column)
             val adapter = tableLayout.adapter as TableAdapter
