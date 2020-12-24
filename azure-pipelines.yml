@@ -23,3 +23,10 @@ steps:
       $ANDROID_HOME/platform-tools/adb devices
       
       echo "Emulator started"
+    displayName: 'Run Android Emulator'
+
+  - bash: |
+      ./gradlew connectedDebugAndroidTest --stacktrace
+      ./gradlew --stop
+    displayName: 'Run Instrumented Tests'
+    continueOnError: true
