@@ -112,7 +112,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         if (topicList.childCount == 0) {
-            //TODO checking of data changing
             for (topic in getTopics()) {
                 with(CheckBox(this@ChooseTopicsActivity)) {
                     text = topic

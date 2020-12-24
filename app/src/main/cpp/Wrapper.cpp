@@ -2,8 +2,6 @@
 #include <vector>
 
 #include "CrosswordBuilder.h"
-//TODO think about exceptions
-
 
 extern "C"
 JNIEXPORT jobject JNICALL

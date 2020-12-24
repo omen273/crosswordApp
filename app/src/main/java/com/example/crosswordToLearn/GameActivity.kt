@@ -44,10 +44,6 @@ import java.nio.charset.Charset
 import java.util.*
 import kotlin.collections.ArrayList
 
-//TODO check saving in case of emergency switch off
-//TODO cursor to second and so on letter if first has been solved add tests
-//TODO fix cell solved after backspace, add tests
-//TODO test for cross letter input
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
 

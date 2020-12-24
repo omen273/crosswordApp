@@ -99,8 +99,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    //TODO show dialog above or below crossword image
-    //TODO add test for deletion
     class DeleteCrossword(
         private val context: MainActivity,
         private val name: String
