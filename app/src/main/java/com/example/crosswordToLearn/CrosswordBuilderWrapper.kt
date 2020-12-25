@@ -1,6 +1,11 @@
 package com.example.crosswordToLearn
 
-class WordParams(var x: Int, var y: Int, var word: String, var isHorizontal: Boolean)
+class WordParams{
+    var x: Int = 0
+    var y: Int = 0
+    var word: String = ""
+    var isHorizontal: Boolean = false
+}
 
 class CrosswordParams {
     var width: Int = 0
