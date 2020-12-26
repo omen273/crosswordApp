@@ -6,77 +6,87 @@
 variables:
   DEVICE_VIDEO_DIR: /mnt/sdcard/DCIM
 
+parameters:
+  - name: AndroidAPIs
+    type: object
+    default:
+      - 19
+      - 21
+
 trigger:
 - master
 
 pool:
   vmImage: 'macos-latest'
-   
-steps:
-  - bash: |
-      echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-29;google_apis;x86'
-      echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-29;google_apis;x86' --force
 
-      $ANDROID_HOME/emulator/emulator -list-avds
+jobs:
+  - ${{ each value in parameters.AndroidAPIs }}:
+      - job:
+        steps:
+        - bash: |
+            echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-$(value);google_apis;x86'
+            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-29;google_apis;x86' --force
 
-      echo "Starting emulator"
-      nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
-      $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
+            $ANDROID_HOME/emulator/emulator -list-avds
 
-      $ANDROID_HOME/platform-tools/adb devices
+            echo "Starting emulator"
+            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+            $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
 
-      $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
-      $ANDROID_HOME/platform-tools/adb shell settings put global transition_animation_scale 0 &
-      $ANDROID_HOME/platform-tools/adb shell settings put global animator_duration_scale 0 &
+            $ANDROID_HOME/platform-tools/adb devices
 
-      echo "Emulator started"
-    displayName: 'Run Android Emulator'
+            $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
+            $ANDROID_HOME/platform-tools/adb shell settings put global transition_animation_scale 0 &
+            $ANDROID_HOME/platform-tools/adb shell settings put global animator_duration_scale 0 &
 
-  - bash: |
-      $ANDROID_HOME/platform-tools/adb shell """
-      mount -o rw,remount rootfs /;
-      chmod 0777 /mnt/sdcard;
-      exit
-      """
-      sleep 10
-      $ANDROID_HOME/platform-tools/adb logcat -c
-      $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device.log &
-      echo $! > logcat.pid
-      echo "Logcat Started with Process ID: $(cat logcat.pid)"
-      $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
-      $ANDROID_HOME/platform-tools/adb shell '''
-        for i in $(seq 1 1 20)
-        do
-          screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
-        done
-      ''' > $(Build.ArtifactStagingDirectory)/video.log &
-      echo $! > video.pid
-      echo "Video Recorder Started with Process ID: $(cat video.pid)"
-    displayName: 'Start Video Record and Logcat'
+            echo "Emulator started"
+          displayName: 'Run Android Emulator'
 
-  - bash: |
-      ./gradlew connectedDebugAndroidTest --info
-      if [ $? -ne 0 ]; then
-          exit 1
-      fi
-      ./gradlew --stop
-    displayName: 'Run Instrumented Tests'
+        - bash: |
+            $ANDROID_HOME/platform-tools/adb shell """
+            mount -o rw,remount rootfs /;
+            chmod 0777 /mnt/sdcard;
+            exit
+            """
+            sleep 10
+            $ANDROID_HOME/platform-tools/adb logcat -c
+            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device.log &
+            echo $! > logcat.pid
+            echo "Logcat Started with Process ID: $(cat logcat.pid)"
+            $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
+            $ANDROID_HOME/platform-tools/adb shell '''
+              for i in $(seq 1 1 20)
+              do
+                screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
+              done
+            ''' > $(Build.ArtifactStagingDirectory)/video.log &
+            echo $! > video.pid
+            echo "Video Recorder Started with Process ID: $(cat video.pid)"
+          displayName: 'Start Video Record and Logcat'
 
-  - bash: |
-      kill -9 $(cat video.pid) || true
-      sleep 5
-      $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory) || true
-      kill -9 $(cat logcat.pid) || true
-      adb kill-server
-      kill -9 $(cat emu.pid)
-    condition: or(succeeded(), failed())
-    displayName: 'Copy Videos and Clean Up'
-    
-  - task: PublishBuildArtifacts@1
-    condition: or(succeeded(), failed())
-    displayName: 'Publish Tests Archive'
-    inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      artifactName: '$(Build.BuildId).TestsArchive'
-      publishLocation: 'Container'
+        - bash: |
+            ./gradlew connectedDebugAndroidTest --info
+            if [ $? -ne 0 ]; then
+                exit 1
+            fi
+            ./gradlew --stop
+          displayName: 'Run Instrumented Tests'
+
+        - bash: |
+            kill -9 $(cat video.pid) || true
+            sleep 5
+            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory) || true
+            kill -9 $(cat logcat.pid) || true
+            adb kill-server
+            kill -9 $(cat emu.pid)
+          condition: or(succeeded(), failed())
+          displayName: 'Copy Videos and Clean Up'
+
+        - task: PublishBuildArtifacts@1
+          condition: or(succeeded(), failed())
+          displayName: 'Publish Tests Archive'
+          inputs:
+            pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+            artifactName: '$(Build.BuildId).TestsArchive'
+            publishLocation: 'Container'
 
