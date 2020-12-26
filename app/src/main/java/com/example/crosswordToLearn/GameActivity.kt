@@ -24,6 +24,8 @@ import android.content.res.Resources
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.os.Environment
+import android.util.Log
+import android.util.TypedValue
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
@@ -121,6 +123,16 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             } else readCrossword()
 
         crosswordView.also { cv ->
+            val tv = TypedValue()
+            var actionBarHeight = 0
+            if (theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
+                actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
+            }
+            cv.toolbarHeight = actionBarHeight
+            //simplification, in reality it is needed to get height of hint view, but it is hard to
+            //do without drawing of it
+            cv.hintHeight = 50
+            cv.viewR = window.decorView.rootView
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
             if (!isGenerated) readState(fillName).also { st -> cv.restoreState(st) }
@@ -132,7 +144,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.markerDisplayMode = CrosswordView.MARKER_CUSTOM or CrosswordView.MARKER_SOLVED
             onSelectionChanged(cv, cv.selectedWord, cv.selectedCell)
         }
-
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog()
     }
 
