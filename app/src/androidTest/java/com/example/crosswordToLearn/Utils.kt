@@ -2,6 +2,7 @@ package com.example.crosswordToLearn
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
@@ -21,6 +22,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
+import org.akop.ararat.view.CrosswordView
 import org.hamcrest.*
 import org.junit.Rule
 import java.io.File
@@ -72,13 +74,16 @@ fun chooseFirstTopic() {
 }
 
 fun getLastCrossword(): Crossword {
+    Log.i("TEST", "getLastCrossword()")
     val imagesPath = File(
         getContext().getExternalFilesDir(null),
         MainActivity.IMAGE_DIRECTORY
     )
     var last: File? = imagesPath.listFiles()?.iterator()?.next()
-    for (file in imagesPath.listFiles()) if (last != null) {
-        if (last.lastModified() < file.lastModified()) last = file
+    if (imagesPath.exists()) {
+        for (file in imagesPath.listFiles()) {
+            if (last!!.lastModified()!! < file.lastModified()) last = file
+        }
     }
     val crosswordName =
         last?.name?.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX

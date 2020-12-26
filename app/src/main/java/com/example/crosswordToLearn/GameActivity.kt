@@ -24,6 +24,7 @@ import android.content.res.Resources
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.os.Environment
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
@@ -198,7 +199,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun saveScreenshot() {
+        Log.i("TEST", "saveScreenshot()")
         if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
+            Log.i("TEST", "Environment.MEDIA_MOUNTED")
             val path = File(getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
