@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -114,9 +115,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun deleteCrosswordData(name: String) {
-        pathToImage(name).delete()
-        File(filesDir, name + GameActivity.DATA_SUFFIX).delete()
-        File(filesDir, name + GameActivity.STATE_SUFFIX).delete()
+        val pathToImage = pathToImage(name)
+        if(!pathToImage.exists()) {
+            Log.e("ERROR", "The path to the image doesn't " +
+                    "exist: ${pathToImage.absolutePath}")
+            return
+        }
+        pathToImage.delete()
+        val pathToCrosswordData = File(filesDir, name + GameActivity.DATA_SUFFIX)
+        if(!pathToCrosswordData.exists()) {
+            Log.e("ERROR", "The path to the crossword data doesn't " +
+                    "exist: ${pathToCrosswordData.absolutePath}")
+            return
+        }
+        pathToCrosswordData.delete()
+        val pathToCrosswordState = File(filesDir, name + GameActivity.STATE_SUFFIX)
+        if(!pathToCrosswordState.exists()) {
+            Log.e("ERROR", "The path to the crossword state doesn't " +
+                    "exist: ${pathToCrosswordData.absolutePath}")
+            return
+        }
+        pathToCrosswordState.delete()
     }
 
     private fun deleteCrossword(name: String) = DeleteCrossword(this, name).apply {
@@ -142,6 +161,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addItem(path: File) {
+        if(!path.exists()) {
+            Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
+            return
+        }
         val name = path.name.removeSuffix(IMAGE_FORMAT)
         val linearLayout = LinearLayout(this)
         linearLayout.orientation = LinearLayout.VERTICAL
@@ -185,6 +208,19 @@ class MainActivity : AppCompatActivity() {
         if (path.exists()) {
             for (file in path.listFiles()
                 ?.sortedWith(compareByDescending { it.lastModified() }) ?: return) {
+                val name = file.name.removeSuffix(IMAGE_FORMAT)
+                val pathToCrosswordData = File(filesDir, name + GameActivity.DATA_SUFFIX)
+                if(!pathToCrosswordData.exists()) {
+                    Log.e("ERROR", "The path to the crossword data doesn't " +
+                            "exist: ${pathToCrosswordData.absolutePath}")
+                    continue
+                }
+                val pathToCrosswordState = File(filesDir, name + GameActivity.STATE_SUFFIX)
+                if(!pathToCrosswordState.exists()) {
+                    Log.e("ERROR", "The path to the crossword state doesn't " +
+                            "exist: ${pathToCrosswordData.absolutePath}")
+                    continue
+                }
                 addItem(file)
             }
         }
@@ -198,6 +234,11 @@ class MainActivity : AppCompatActivity() {
                     val sharedPref =
                         getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
                     val name = sharedPref.getString(CROSSWORD_NAME_VARIABLE, "") ?: return
+                    val path = pathToImage(name)
+                    if(!path.exists()) {
+                        Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
+                        return
+                    }
                     addItem(pathToImage(name))
                     val adapter = tableLayout.adapter as TableAdapter
                     val tableRow = adapter.dataset[adapter.dataset.lastIndex]
@@ -212,8 +253,13 @@ class MainActivity : AppCompatActivity() {
                     val item = imageDatas[loadedName] ?: return
                     val adapter = tableLayout.adapter as TableAdapter
                     val linearLayout = adapter.dataset[item.row][item.column]
+                    val path = pathToImage(loadedName)
+                    if(!path.exists()) {
+                        Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
+                        return
+                    }
                     (linearLayout.getChildAt(0) as ImageView).setImageDrawable(
-                        Drawable.createFromPath(pathToImage(loadedName).absolutePath)
+                        Drawable.createFromPath(path.absolutePath)
                     )
                     rightShift(item.row, item.column, linearLayout)
                     shiftFocusToStart()
