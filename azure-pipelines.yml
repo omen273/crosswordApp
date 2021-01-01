@@ -32,6 +32,7 @@ jobs:
       - job:
         steps:
         - bash: |
+            set -x
             echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
             echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value }};google_apis;x86' --force
 
@@ -43,9 +44,9 @@ jobs:
 
             $ANDROID_HOME/platform-tools/adb devices
 
-            $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
-            $ANDROID_HOME/platform-tools/adb shell settings put global transition_animation_scale 0 &
-            $ANDROID_HOME/platform-tools/adb shell settings put global animator_duration_scale 0 &
+            #$ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
+            #$ANDROID_HOME/platform-tools/adb shell settings put global transition_animation_scale 0 &
+            #$ANDROID_HOME/platform-tools/adb shell settings put global animator_duration_scale 0 &
 
             echo "Emulator started"
           displayName: 'Run Android Emulator'
