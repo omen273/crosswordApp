@@ -32,8 +32,8 @@ jobs:
       - job:
         steps:
         - bash: |
-            echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-$(value);google_apis;x86'
-            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-29;google_apis;x86' --force
+            echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
+            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value }};google_apis;x86' --force
 
             $ANDROID_HOME/emulator/emulator -list-avds
 
