@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     private val crosswords = hashSetOf<String>()
@@ -171,7 +172,13 @@ class MainActivity : AppCompatActivity() {
         val imageView = ImageView(this).apply {
             scaleType = ImageView.ScaleType.FIT_XY
             adjustViewBounds = true
-            setImageDrawable(Drawable.createFromPath(path.absolutePath))
+            try {
+                setImageDrawable(Drawable.createFromPath(path.absolutePath))
+            }catch (e:Exception)
+            {
+                Log.e("ERROR", e.toString())
+                return
+            }
             val layoutParams = LinearLayout.LayoutParams(imageSize, imageSize)
             layoutParams.setMargins(MARGIN, 0, MARGIN, 0)
             this.layoutParams = layoutParams
@@ -258,9 +265,15 @@ class MainActivity : AppCompatActivity() {
                         Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
                         return
                     }
-                    (linearLayout.getChildAt(0) as ImageView).setImageDrawable(
-                        Drawable.createFromPath(path.absolutePath)
-                    )
+                    try {
+                        (linearLayout.getChildAt(0) as ImageView).setImageDrawable(
+                                Drawable.createFromPath(path.absolutePath)
+                        )
+                    }catch (e:Exception)
+                    {
+                        Log.e("ERROR", e.toString())
+                        return
+                    }
                     rightShift(item.row, item.column, linearLayout)
                     shiftFocusToStart()
                     adapter.notifyDataSetChanged()
@@ -289,7 +302,13 @@ class MainActivity : AppCompatActivity() {
         val linearLayout = dataset[i][j]
         val imageView = linearLayout.getChildAt(0) as ImageView
         val textView = linearLayout.getChildAt(1) as TextView
-        imageView.setImageDrawable(tempImage1.also { tempImage1 = imageView.drawable })
+        try {
+            imageView.setImageDrawable(tempImage1.also { tempImage1 = imageView.drawable })
+        }catch (e:Exception)
+        {
+            Log.e("ERROR", e.toString())
+            throw e
+        }
         textView.text = tempText1.also { tempText1 = textView.text }
         val name = textView.text.removePrefix(IMAGE_FORMAT).toString()
         val date = imageDatas[name]?.lastModificationDate
@@ -303,9 +322,14 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..row) {
             for (j in 0 until ITEMS_IN_ROW) {
                 if (i != 0 || j != 0) {
-                    val p = swapItems(i, j, tempImage, tempText)
-                    tempImage = p.first
-                    tempText = p.second
+                    try {
+                        val p = swapItems(i, j, tempImage, tempText)
+                        tempImage = p.first
+                        tempText = p.second
+                    }
+                    catch (e:Exception) {
+                        continue
+                    }
                 }
                 if (i == row && j == column) return
             }
