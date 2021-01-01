@@ -1363,11 +1363,10 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         val unscaledWidth = puzzleWidth * cellSize + 1 // +1px for stroke brush
         val fitWidthScaleFactor = contentRect.width() / unscaledWidth
         // Determine the smallest scale factor
-        minScaleFactor = if (contentRect.width() < heightWithoutKeyboard) {
-            fitWidthScaleFactor
-        } else {
-            heightWithoutKeyboard  / (puzzleHeight  * cellSize + 1) // +1px for stroke brush
-        }
+        minScaleFactor = minOf(
+            fitWidthScaleFactor,
+            heightWithoutKeyboard  / (puzzleHeight  * cellSize + 1) /*+1px for stroke brush*/)
+
 
         if (renderScale < .01) {
             renderScale = minScaleFactor
