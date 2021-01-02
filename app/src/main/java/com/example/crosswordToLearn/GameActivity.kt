@@ -129,9 +129,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
             }
             cv.toolbarHeight = actionBarHeight
-            //simplification, in reality it is needed to get height of hint view, but it is hard to
-            //do without drawing of it
-            cv.hintHeight = 50
+            cv.hintView = hint
             cv.viewR = window.decorView.rootView
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX

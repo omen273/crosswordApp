@@ -236,8 +236,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var onStateChangeListener: OnStateChangeListener? = null
     var onLongPressListener: OnLongPressListener? = null
     var inputValidator: InputValidator? = null
-    var toolbarHeight : Int = 0
-    var hintHeight: Int = 0
+    var toolbarHeight: Int = 0
+    lateinit var hintView: View
     lateinit var viewR: View
     var keyboardHeight = 0
 
@@ -345,7 +345,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                 val heightDiff = viewR.rootView.height - r.height()
                 val keyboardMinHeight = 300
                 if (heightDiff > keyboardMinHeight){
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintHeight
+                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
                     resetConstraintsAndRedraw(true)
                 }
             }
