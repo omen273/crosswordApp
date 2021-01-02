@@ -14,6 +14,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.RootMatchers
+import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.espresso.util.HumanReadables
 import androidx.test.espresso.util.TreeIterables
@@ -22,10 +23,11 @@ import androidx.test.platform.app.InstrumentationRegistry
 import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
-import org.akop.ararat.view.CrosswordView
 import org.hamcrest.*
 import org.junit.Rule
+import org.junit.Test
 import java.io.File
+import java.io.FileOutputStream
 import java.util.concurrent.Callable
 import java.util.concurrent.TimeoutException
 
@@ -45,6 +47,22 @@ fun nthChildOf(parentMatcher: Matcher<View?>, childPosition: Int): Matcher<View?
 
         override fun describeTo(description: Description?) {
             description?.appendText("with $childPosition child view of type parentMatcher")
+        }
+    }
+}
+
+fun hasNChildren(matcher: Matcher<View?>, childrenNumber: Int): Matcher<View?> {
+    return object : TypeSafeMatcher<View?>() {
+        override fun matchesSafely(view: View?): Boolean {
+            if (view !is ViewGroup) {
+                return false
+            }
+            return matcher.matches(view) &&
+                    view.childCount == childrenNumber
+        }
+
+        override fun describeTo(description: Description?) {
+            description?.appendText("The view doesn't have $childrenNumber children")
         }
     }
 }
@@ -278,5 +296,29 @@ open class SolveCrossword {
         onView(withText(R.string.youve_solved_the_puzzle))
             .inRoot(RootMatchers.isDialog())
             .check(ViewAssertions.matches(isDisplayed()))
+    }
+}
+
+abstract class BadCrosswordDataTest {
+
+    @get:Rule
+    var activityTestRule: ActivityScenarioRule<MainActivity> =
+            ActivityScenarioRule(MainActivity::class.java)
+
+    abstract fun spoil()
+    lateinit var crossword: Crossword
+
+    fun test() {
+        crossword = generateCrossword()
+        val start = System.currentTimeMillis()
+        waitForCondition("", { System.currentTimeMillis() - start > 300 })
+        spoil()
+        val start1 = System.currentTimeMillis()
+        waitForCondition("", { System.currentTimeMillis() - start1 > 300 })
+        onView(ViewMatchers.isRoot()).perform(waitForView(ViewMatchers.withId(R.id.tableLayout)))
+        onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
+        ToastMatcher.onToast(R.string.damaged_data).check(
+                ViewAssertions.matches(ViewMatchers.isDisplayed())
+        )
     }
 }

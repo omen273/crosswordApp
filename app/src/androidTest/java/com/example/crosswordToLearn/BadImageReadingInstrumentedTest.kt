@@ -1,43 +1,56 @@
 package com.example.crosswordToLearn
 
-import android.graphics.Bitmap
+import android.content.Intent
 import android.os.Environment
-import android.util.Log
-import androidx.test.ext.junit.rules.ActivityScenarioRule
-import org.junit.Rule
+import androidx.test.core.app.ActivityScenario
+import androidx.test.core.app.ApplicationProvider
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.assertion.ViewAssertions
+import androidx.test.espresso.matcher.ViewMatchers.withId
+import org.junit.Before
 import org.junit.Test
 import java.io.File
 import java.io.FileOutputStream
 
-class BadImageReadingInstrumentedTest : SolveCrossword() {
+class BadImageReadingInstrumentedTest {
 
-    @Test
-    fun test(){
+    @Before
+    fun addBadData() {
         if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             val name = "bad"
             val path = File(getContext().getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
-            File(path, "$name.${MainActivity.IMAGE_FORMAT}").apply {
+            File(path, "${name}${MainActivity.IMAGE_FORMAT}").apply {
+                FileOutputStream(this).use {
+                    getTestContext().resources.assets.open("impossibleToBuild.json")
+                }
+            }
+            File(getContext().filesDir, "$name${GameActivity.DATA_SUFFIX}").apply {
                 FileOutputStream(this).use {
                     getTestContext().resources.assets.open("tooLongWordsData.json")
                 }
             }
-            File(getContext().filesDir, "$name.${GameActivity.DATA_SUFFIX}").apply {
-                FileOutputStream(this).use {
-                    getTestContext().resources.assets.open("tooLongWordsData.json")
-                }
-            }
-            File(getContext().filesDir, "$name.${GameActivity.STATE_SUFFIX}").apply {
+            File(getContext().filesDir, "$name${GameActivity.STATE_SUFFIX}").apply {
                 FileOutputStream(this).use {
                     getTestContext().resources.assets.open("tooLongWordsData.json")
                 }
             }
         }
-        crossword = generateCrossword()
-        loadFirstCrossword()
-        solve()
-        crossword = generateCrossword()
-        loadFirstCrossword()
-        solve()
+    }
+
+    private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
+
+    @Test
+    fun test(){
+        Intent(
+                ApplicationProvider.getApplicationContext(),
+                MainActivity::class.java
+        ).also { scenario = ActivityScenario.launch(it) }
+        val start = System.currentTimeMillis()
+        waitForCondition("", { System.currentTimeMillis() - start > 300 })
+        val tableMatcher = withId(R.id.tableLayout)
+        onView(tableMatcher).check(ViewAssertions.matches(hasNChildren(tableMatcher, 1)))
+        val firstRowMatcher = nthChildOf(tableMatcher, 0)
+        onView(firstRowMatcher).check(ViewAssertions.matches(hasNChildren(firstRowMatcher, 1)))
     }
 }
