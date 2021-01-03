@@ -7,11 +7,14 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Before
 import org.junit.Test
+import org.junit.runner.RunWith
 import java.io.File
 import java.io.FileOutputStream
 
+@RunWith(AndroidJUnit4::class)
 class BadImageReadingInstrumentedTest {
 
     @Before

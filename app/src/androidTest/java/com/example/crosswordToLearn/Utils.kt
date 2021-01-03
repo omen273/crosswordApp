@@ -25,9 +25,7 @@ import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
 import org.hamcrest.*
 import org.junit.Rule
-import org.junit.Test
 import java.io.File
-import java.io.FileOutputStream
 import java.util.concurrent.Callable
 import java.util.concurrent.TimeoutException
 
@@ -315,10 +313,10 @@ abstract class BadCrosswordDataTest {
         spoil()
         val start1 = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start1 > 300 })
-        onView(ViewMatchers.isRoot()).perform(waitForView(ViewMatchers.withId(R.id.tableLayout)))
+        onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
         onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
         ToastMatcher.onToast(R.string.damaged_data).check(
-                ViewAssertions.matches(ViewMatchers.isDisplayed())
+                ViewAssertions.matches(isDisplayed())
         )
     }
 }
