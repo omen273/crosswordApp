@@ -236,8 +236,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var onStateChangeListener: OnStateChangeListener? = null
     var onLongPressListener: OnLongPressListener? = null
     var inputValidator: InputValidator? = null
-    var toolbarHeight : Int = 0
-    var hintHeight: Int = 0
+    var toolbarHeight: Int = 0
+    lateinit var hintView: View
     lateinit var viewR: View
     var keyboardHeight = 0
 
@@ -345,7 +345,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                 val heightDiff = viewR.rootView.height - r.height()
                 val keyboardMinHeight = 300
                 if (heightDiff > keyboardMinHeight){
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintHeight
+                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
                     resetConstraintsAndRedraw(true)
                 }
             }
@@ -1363,11 +1363,10 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         val unscaledWidth = puzzleWidth * cellSize + 1 // +1px for stroke brush
         val fitWidthScaleFactor = contentRect.width() / unscaledWidth
         // Determine the smallest scale factor
-        minScaleFactor = if (contentRect.width() < heightWithoutKeyboard) {
-            fitWidthScaleFactor
-        } else {
-            heightWithoutKeyboard  / (puzzleHeight  * cellSize + 1) // +1px for stroke brush
-        }
+        minScaleFactor = minOf(
+            fitWidthScaleFactor,
+            heightWithoutKeyboard  / (puzzleHeight  * cellSize + 1) /*+1px for stroke brush*/)
+
 
         if (renderScale < .01) {
             renderScale = minScaleFactor
