@@ -73,7 +73,7 @@ jobs:
           displayName: 'Start Video Record and Logcat'
 
         - bash: |
-            ./gradlew connectedDebugAndroidTest --info
+            ./gradlew connectedDebugAndroidTest -Porchestrator=true --info
             if [ $? -ne 0 ]; then
                 exit 1
             fi
