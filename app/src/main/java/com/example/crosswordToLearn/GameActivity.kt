@@ -136,9 +136,10 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val fillName = name + STATE_SUFFIX
             if (!isGenerated) try{readState(fillName).also { st -> cv.restoreState(st) }}
             catch (e:Exception) {
-                Log.e("ERROR", "Bad crossword state")
+                Log.e("ERROR", "The bad crossword state")
                 setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
-                finish()}
+                finish()
+            }
             cv.onLongPressListener = this
             cv.onStateChangeListener = this
             cv.onSelectionChangeListener = this
@@ -152,7 +153,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
         buildCrossword { try{UClickJsonFormatter().read(this, it)} catch (e:Exception) {
-            Log.e("ERROR", "Bad crossword data")
+            Log.e("ERROR", "The bad crossword data")
             setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
             finish()} }
     }

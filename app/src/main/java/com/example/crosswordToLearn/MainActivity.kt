@@ -211,7 +211,6 @@ class MainActivity : AppCompatActivity() {
             for (file in path.listFiles()
                 ?.sortedWith(compareByDescending { it.lastModified() }) ?: return) {
                     if(file.extension == IMAGE_FORMAT.removePrefix(".")) {
-                        Log.d("AI2", file.name)
                         val name = file.name.removeSuffix(IMAGE_FORMAT)
                         val pathToCrosswordData = File(filesDir, name + GameActivity.DATA_SUFFIX)
                         if (!pathToCrosswordData.exists()) {
@@ -265,15 +264,14 @@ class MainActivity : AppCompatActivity() {
                         Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
                         return
                     }
-                        (linearLayout.getChildAt(0) as ImageView).apply {setImageDrawable(
-                                Drawable.createFromPath(path.absolutePath)
-                        )
-                          if(drawable == null)  {
-                              Log.e("ERROR", "The bad image")
-                              Toast.makeText(this@MainActivity, R.string.damaged_data,
-                                      Toast.LENGTH_SHORT).show()
-                              return
-                          }
+                    (linearLayout.getChildAt(0) as ImageView).apply {
+                        setImageDrawable(Drawable.createFromPath(path.absolutePath))
+                        if(drawable == null)  {
+                            Log.e("ERROR", "The bad image")
+                            Toast.makeText(this@MainActivity, R.string.damaged_data,
+                              Toast.LENGTH_SHORT).show()
+                            return
+                        }
                     }
                     rightShift(item.row, item.column, linearLayout)
                     shiftFocusToStart()
@@ -323,14 +321,9 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..row) {
             for (j in 0 until ITEMS_IN_ROW) {
                 if (i != 0 || j != 0) {
-                    try {
-                        val p = swapItems(i, j, tempImage, tempText)
-                        tempImage = p.first
-                        tempText = p.second
-                    }
-                    catch (e:Exception) {
-                        continue
-                    }
+                    val p = swapItems(i, j, tempImage, tempText)
+                    tempImage = p.first
+                    tempText = p.second
                 }
                 if (i == row && j == column) return
             }
