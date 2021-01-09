@@ -105,6 +105,10 @@ class ChooseTopicsActivity : AppCompatActivity() {
                     setResult(MainActivity.ACTIVITY_GAME_REMOVE)
                     finish()
                 }
+                MainActivity.ACTIVITY_GAME_BAD_DATA -> {
+                    setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
+                    finish()
+                }
             }
         }
     }

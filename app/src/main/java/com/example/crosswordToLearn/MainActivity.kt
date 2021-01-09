@@ -4,12 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TableRow
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
@@ -17,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     private val crosswords = hashSetOf<String>()
@@ -114,9 +113,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun deleteCrosswordData(name: String) {
-        pathToImage(name).delete()
-        File(filesDir, name + GameActivity.DATA_SUFFIX).delete()
-        File(filesDir, name + GameActivity.STATE_SUFFIX).delete()
+        val pathToImage = pathToImage(name)
+        if(!pathToImage.exists()) {
+            Log.e("ERROR", "The path to the image doesn't " +
+                    "exist: ${pathToImage.absolutePath}")
+            return
+        }
+        pathToImage.delete()
+        val pathToCrosswordData = File(filesDir, name + GameActivity.DATA_SUFFIX)
+        if(!pathToCrosswordData.exists()) {
+            Log.e("ERROR", "The path to the crossword data doesn't " +
+                    "exist: ${pathToCrosswordData.absolutePath}")
+            return
+        }
+        pathToCrosswordData.delete()
+        val pathToCrosswordState = File(filesDir, name + GameActivity.STATE_SUFFIX)
+        if(!pathToCrosswordState.exists()) {
+            Log.e("ERROR", "The path to the crossword state doesn't " +
+                    "exist: ${pathToCrosswordData.absolutePath}")
+            return
+        }
+        pathToCrosswordState.delete()
     }
 
     private fun deleteCrossword(name: String) = DeleteCrossword(this, name).apply {
@@ -142,6 +159,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addItem(path: File) {
+        if(!path.exists()) {
+            Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
+            return
+        }
         val name = path.name.removeSuffix(IMAGE_FORMAT)
         val linearLayout = LinearLayout(this)
         linearLayout.orientation = LinearLayout.VERTICAL
@@ -149,6 +170,10 @@ class MainActivity : AppCompatActivity() {
             scaleType = ImageView.ScaleType.FIT_XY
             adjustViewBounds = true
             setImageDrawable(Drawable.createFromPath(path.absolutePath))
+            if(drawable == null) {
+                Log.e("ERROR", "The bad image")
+                return
+            }
             val layoutParams = LinearLayout.LayoutParams(imageSize, imageSize)
             layoutParams.setMargins(MARGIN, 0, MARGIN, 0)
             this.layoutParams = layoutParams
@@ -185,7 +210,22 @@ class MainActivity : AppCompatActivity() {
         if (path.exists()) {
             for (file in path.listFiles()
                 ?.sortedWith(compareByDescending { it.lastModified() }) ?: return) {
-                addItem(file)
+                    if(file.extension == IMAGE_FORMAT.removePrefix(".")) {
+                        val name = file.name.removeSuffix(IMAGE_FORMAT)
+                        val pathToCrosswordData = File(filesDir, name + GameActivity.DATA_SUFFIX)
+                        if (!pathToCrosswordData.exists()) {
+                            Log.e("ERROR", "The path to the crossword data doesn't " +
+                                    "exist: ${pathToCrosswordData.absolutePath}")
+                            continue
+                        }
+                        val pathToCrosswordState = File(filesDir, name + GameActivity.STATE_SUFFIX)
+                        if (!pathToCrosswordState.exists()) {
+                            Log.e("ERROR", "The path to the crossword state doesn't " +
+                                    "exist: ${pathToCrosswordData.absolutePath}")
+                            continue
+                        }
+                        addItem(file)
+                    }
             }
         }
     }
@@ -198,6 +238,11 @@ class MainActivity : AppCompatActivity() {
                     val sharedPref =
                         getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
                     val name = sharedPref.getString(CROSSWORD_NAME_VARIABLE, "") ?: return
+                    val path = pathToImage(name)
+                    if(!path.exists()) {
+                        Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
+                        return
+                    }
                     addItem(pathToImage(name))
                     val adapter = tableLayout.adapter as TableAdapter
                     val tableRow = adapter.dataset[adapter.dataset.lastIndex]
@@ -206,20 +251,35 @@ class MainActivity : AppCompatActivity() {
                     adapter.notifyDataSetChanged()
                 }
                 ACTIVITY_GAME_REMOVE -> deleteCrosswordImpl(loadedName)
+                ACTIVITY_GAME_BAD_DATA -> Toast.makeText(this@MainActivity, R.string.damaged_data,
+                        Toast.LENGTH_SHORT).show()
             }
             ACTIVITY_GAME -> when (resultCode) {
                 ACTIVITY_GAME_OK -> {
                     val item = imageDatas[loadedName] ?: return
                     val adapter = tableLayout.adapter as TableAdapter
                     val linearLayout = adapter.dataset[item.row][item.column]
-                    (linearLayout.getChildAt(0) as ImageView).setImageDrawable(
-                        Drawable.createFromPath(pathToImage(loadedName).absolutePath)
-                    )
+                    val path = pathToImage(loadedName)
+                    if(!path.exists()) {
+                        Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
+                        return
+                    }
+                    (linearLayout.getChildAt(0) as ImageView).apply {
+                        setImageDrawable(Drawable.createFromPath(path.absolutePath))
+                        if(drawable == null)  {
+                            Log.e("ERROR", "The bad image")
+                            Toast.makeText(this@MainActivity, R.string.damaged_data,
+                              Toast.LENGTH_SHORT).show()
+                            return
+                        }
+                    }
                     rightShift(item.row, item.column, linearLayout)
                     shiftFocusToStart()
                     adapter.notifyDataSetChanged()
                 }
                 ACTIVITY_GAME_REMOVE -> deleteCrosswordImpl(loadedName)
+                ACTIVITY_GAME_BAD_DATA -> Toast.makeText(this@MainActivity, R.string.damaged_data,
+                        Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -253,6 +313,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun rightShift(row: Int, column: Int, tempLayout: LinearLayout) {
         var tempImage = (tempLayout.getChildAt(0) as ImageView).drawable
+        if(tempImage == null){
+            Log.e("ERROR", "The bad image")
+            return
+        }
         var tempText = (tempLayout.getChildAt(1) as TextView).text
         for (i in 0..row) {
             for (j in 0 until ITEMS_IN_ROW) {
@@ -294,6 +358,7 @@ class MainActivity : AppCompatActivity() {
         const val ACTIVITY_GAME_OK: Int = 1
         const val ACTIVITY_GAME_FAIL: Int = 2
         const val ACTIVITY_GAME_REMOVE: Int = 3
+        const val ACTIVITY_GAME_BAD_DATA: Int = 4
         const val IMAGE_DIRECTORY: String = "drawable"
         const val CROSSWORD_NAME_VARIABLE: String = "name"
         const val CROSSWORD_IS_GENERATED_VARIABLE: String = "isGenerated"

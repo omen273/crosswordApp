@@ -41,6 +41,7 @@ import org.akop.ararat.core.buildWord
 import org.akop.ararat.io.UClickJsonFormatter
 import org.akop.ararat.view.CrosswordView
 import java.io.*
+import java.lang.Exception
 import java.lang.RuntimeException
 import java.nio.charset.Charset
 import java.util.*
@@ -133,7 +134,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.viewR = window.decorView.rootView
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
-            if (!isGenerated) readState(fillName).also { st -> cv.restoreState(st) }
+            if (!isGenerated) try{readState(fillName).also { st -> cv.restoreState(st) }}
+            catch (e:Exception) {
+                Log.e("ERROR", "The bad crossword state")
+                setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
+                finish()
+            }
             cv.onLongPressListener = this
             cv.onStateChangeListener = this
             cv.onSelectionChangeListener = this
@@ -146,7 +152,10 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
-        buildCrossword { UClickJsonFormatter().read(this, it) }
+        buildCrossword { try{UClickJsonFormatter().read(this, it)} catch (e:Exception) {
+            Log.e("ERROR", "The bad crossword data")
+            setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
+            finish()} }
     }
 
     private fun readState(fillName: String): CrosswordState = openFileInput(fillName).use {
