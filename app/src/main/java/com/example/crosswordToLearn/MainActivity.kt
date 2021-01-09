@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     private val crosswords = hashSetOf<String>()
