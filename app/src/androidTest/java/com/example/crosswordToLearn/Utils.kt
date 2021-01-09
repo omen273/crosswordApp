@@ -194,10 +194,7 @@ fun waitForView(
 }
 
 fun testCell(word: Crossword.Word, ch: String) {
-    val hint = getContext().getString(
-        if (word.direction == Crossword.Word.DIR_ACROSS) R.string.across
-        else R.string.down, word.number, word.hint
-    )
+    val hint = getContext().getString(R.string.tip, word.number, word.hint)
     onView(isRoot()).perform(waitForView(withText(hint)))
     onView(withId(R.id.hint)).check(ViewAssertions.matches(withText(hint)))
     onView(withId(R.id.crossword)).perform(
