@@ -328,8 +328,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onSelectionChanged(view: CrosswordView, word: Crossword.Word?, position: Int) {
         hint.text = when (word?.direction) {
-            Crossword.Word.DIR_ACROSS -> getString(R.string.across, word.number, word.hint)
-            Crossword.Word.DIR_DOWN -> getString(R.string.down, word.number, word.hint)
+            Crossword.Word.DIR_ACROSS -> getString(R.string.tip, word.number, word.hint)
+            Crossword.Word.DIR_DOWN -> getString(R.string.tip, word.number, word.hint)
             else -> ""
         }
     }

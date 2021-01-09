@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hintTopics">выбрать темы</string>
+    <string name="sizeName">размер</string>
+    <string name="okButton">ОК</string>
+    <string name="solve_square">решить клетку</string>
+    <string name="solve_word">решить слово</string>
+    <string name="reset">Сбросить</string>
+    <string name="another_crossword">Новый кроссворд</string>
+    <string name="remove">Удалить</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="youve_solved_the_puzzle">Вы решили кроссворд!</string>
+    <string name="delete_crossword_question">Вы хотите удалить %1$s?</string>
+    <string name="choose_at_least_one_topic">Пожалуйста, выберите хотя бы одну тему</string>
+    <string name="not_enough_words">Выбранные темы не содержат %1$d слов</string>
+    <string name="choose_other_words">Пожалуйста, выберите другие слова, я не могу построить кроссворд</string>
+    <string name="damaged_data">Данные кроссворда повреждены</string>
+    <string name="tip">%1$d. %2$s</string>
+</resources>
