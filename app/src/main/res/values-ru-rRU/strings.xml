@@ -11,7 +11,7 @@
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="youve_solved_the_puzzle">Вы решили кроссворд!</string>
-    <string name="choose_at_least_one_topic">Пожалуйста, выберете хотя бы одну тему</string>
+    <string name="choose_at_least_one_topic">Пожалуйста, выберите хотя бы одну тему</string>
     <string name="delete_crossword_question">Вы хотите удалить кроссворд?</string>
     <string name="not_enough_words">Выбранные темы не содержат %1$d слов</string>
     <string name="choose_other_words">Пожалуйста, выберите другие слова, я не могу построить кроссворд</string>
