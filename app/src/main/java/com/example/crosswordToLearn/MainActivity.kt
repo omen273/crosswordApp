@@ -311,6 +311,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rightShift(row: Int, column: Int, tempLayout: LinearLayout) {
+        Log.i("TEST", "rightShift()")
+        Log.i("TEST", tempLayout.toString())
+        Log.i("TEST", tempLayout.getChildAt(0).toString())
+        Thread.sleep(5_000)
         var tempImage = (tempLayout.getChildAt(0) as ImageView).drawable
         if(tempImage == null){
             Log.e("ERROR", "The bad image")
