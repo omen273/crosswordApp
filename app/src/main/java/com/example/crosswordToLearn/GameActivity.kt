@@ -20,14 +20,17 @@ package com.example.crosswordToLearn
 // SOFTWARE.
 
 import android.content.Context
+import android.content.pm.PackageManager
 import android.content.res.Resources
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.os.Environment
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.DialogFragment
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_game.*
@@ -202,6 +205,14 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun saveScreenshot() {
+        if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+            Log.i("TEST", "Permission is granted");
+        }
+        else
+        {
+            Log.i("TEST", "Permission is not granted");
+            ActivityCompat.requestPermissions(this, arrayOf("Manifest.permission.WRITE_EXTERNAL_STORAGE"), 1);
+        }
         if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             val path = File(getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
