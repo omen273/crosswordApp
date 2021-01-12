@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -255,6 +256,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rightShift(row: Int, column: Int, tempLayout: LinearLayout) {
+        Log.i("TEST", "rightShift()")
+        Log.i("TEST", tempLayout.toString())
+        Log.i("TEST", tempLayout.getChildAt(0).toString())
+        Thread.sleep(5_000)
         var tempImage = (tempLayout.getChildAt(0) as ImageView).drawable
         var tempText = (tempLayout.getChildAt(1) as TextView).text
         for (i in 0..row) {
