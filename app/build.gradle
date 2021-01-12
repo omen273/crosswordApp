@@ -58,3 +58,29 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestUtil 'androidx.test:orchestrator:1.3.0'
 }
+
+task grantPermissions(dependsOn: 'installDebug') {
+    doLast {
+        def adb = getAdbPath()
+        // We only set the permissions for the main application
+        def mainPackageName = android.defaultConfig.applicationId
+        def readPermission = "android.permission.READ_EXTERNAL_STORAGE"
+        def writePermission = "android.permission.WRITE_EXTERNAL_STORAGE"
+        exec { commandLine adb, 'shell', 'pm', 'grant', mainPackageName, readPermission }
+        exec { commandLine adb, 'shell', 'pm', 'grant', mainPackageName, writePermission }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name.startsWith('connectedDebugAndroidTest')) { // or connected{productFlavour}{buildType}AndroidTest
+        task.dependsOn grantPermissions
+    }
+}
+
+String getAdbPath() {
+    def adb = android.getAdbExecutable().toString()
+    if (adb.isEmpty()) {
+        throw new GradleException("Could not detect adb path")
+    }
+    return adb
+}

@@ -41,6 +41,12 @@ jobs:
             nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
+            $ANDROID_HOME/platform-tools/adb shell pm list permissions
+
+            $ANDROID_HOME/platform-tools/adb shell pm grant com.example.crosswordToLearn android.permission.WRITE_EXTERNAL_STORAGE
+
+            $ANDROID_HOME/platform-tools/adb shell pm list permissions
+
             $ANDROID_HOME/platform-tools/adb devices
 
             $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
@@ -51,12 +57,6 @@ jobs:
           displayName: 'Run Android Emulator'
 
         - bash: |
-            $ANDROID_HOME/platform-tools/adb shell """
-            mount -o rw,remount rootfs /;
-            chmod 0777 /mnt/sdcard;
-            exit
-            """
-            sleep 10
             $ANDROID_HOME/platform-tools/adb logcat -c
             $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device.log &
             echo $! > logcat.pid
