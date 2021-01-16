@@ -1232,11 +1232,11 @@
     [
     {"EN":{
         "word": "genre",
-        "topics": ["music"]
+        "topics": ["music", "movies"]
         }},
     {"RU": {
         "word": "жанр",
-        "topics": ["музыка"]
+        "topics": ["музыка", "кино"]
         }}
     ],
     [
@@ -1737,6 +1737,1366 @@
     {"RU": {
         "word": "плита",
         "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cast",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "в ролях",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "cinema",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "кинотеатр",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "comedy",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "комедия",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "director",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "режиссер",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "documentary",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "документальный фильм",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "drama",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "драма",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "entertainment",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "развлечения",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "film",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "фильм",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "horror",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "ужасы",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "plot",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "сценарий",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "scene",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "сцена",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "screen",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "экран",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "star",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "звезда",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "stunt",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "трюк",
+        "topics": ["кино"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "thriller",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "триллер",
+        "topics": ["кино"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "movie",
+        "topics": ["movies"]
+        }},
+    {"RU": {
+        "word": "фильм",
+        "topics": ["кино"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "january",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "январь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "february",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "февраль",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "march",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "март",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "april",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "апрель",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "may",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "май",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "june",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "июнь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "july",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "июль",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "august",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "август",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "september",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "сентябрь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "october",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "октябрь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "november",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "ноябрь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "december",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "декабрь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "monday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "понедельник",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "tuesday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "вторник",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "wednesday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "среда",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "thursday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "четверг",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "friday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "пятница",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "saturday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "суббота",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "sunday",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "воскресенье",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "morning",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "утро",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "evening",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "вечер",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "afternoon",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "после обеда",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "day",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "день",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "night",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "ночь",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "sunrise",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "рассвет",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "sunset",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "закат",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "second",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "секунда",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "minute",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "минута",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hour",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "час",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "week",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "неделя",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "month",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "месяц",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "year",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "год",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "decade",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "десять лет",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "century",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "столетие",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "millennium",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "тысячелетие",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "winter",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "зима",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "spring",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "весна",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "autumn",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "лето",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "summer",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "лето",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "autumn",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "осень",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "fall",
+        "topics": ["time"]
+        }},
+    {"RU": {
+        "word": "осень",
+        "topics": ["время"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "holiday",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "отпуск",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "accommodation",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "проживание",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "book",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "забронировать",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "airplane",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "самолет",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "train",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "поезд",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "bus",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "автобус",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ship",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "корабль",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "mountain",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "гора",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "sea",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "море",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ocean",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "океан",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hotel",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "отель",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "borders",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "границы",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "customs",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "таможня",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "station",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "станция",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "airport",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "аэрпорт",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "beach",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "пляж",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "museum",
+        "topics": ["travel"]
+        }},
+    {"RU": {
+        "word": "музей",
+        "topics": ["путешествия"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "sweater",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "свитер",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "jacket",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "куртка",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "coat",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "пальто",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "jeans",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "джинсы",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "socks",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "носки",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "shorts",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "шорты",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "vest",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "жилет",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "pajamas",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "пижама",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "shoes",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "ботинки",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "boots",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "ботинки",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "raincoat",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "дождевик",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "skirt",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "юбка",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "dress",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "платье",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "stockings",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "колготки",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "suit",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "костюм",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "shirt",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "рубашка",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "tie",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "галстук",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "cap",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "шапка",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "scarf",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "шарф",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "scarf",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "шарф",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "pants",
+        "topics": ["dress"]
+        }},
+    {"RU": {
+        "word": "штаны",
+        "topics": ["одежда"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "arm",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "рука",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "eye",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "глаз",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "eyebrow",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "бровь",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "belly",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "живот",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "leg",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "нога",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "thumb",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "большой палец",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "elbow",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "локоть",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "finger",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "палец",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "foot",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "нога",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ankle",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "лодыжка",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hair",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "волосы",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "neck",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "шея",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hand",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "рука",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "wrist",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "запястье",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hip",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "бедро",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "chin",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "подбородок",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "knee",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "колено",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "head",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "голова",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "lip",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "губа",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "mouth",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "рот",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "nouse",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "нос",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "thigh",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "бедро",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ear",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "ухо",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "back",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "спина",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "underarm",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "подмышка",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "shoulder",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "плечо",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "forehead",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "лоб",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "calf",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "икра",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "cheek",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "щека",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "tooth",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "зуб",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "toe",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "палец на ноге",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "tongue",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "язык",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "chest",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "грудь",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "lung",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "легкое",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "stomach",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "желудок",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "heart",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "сердце",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "liver",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "печень",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "brain",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "мозг",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "blood",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "кровь",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "throat",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "горло",
+        "topics": ["тело"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "kidney",
+        "topics": ["body"]
+        }},
+    {"RU": {
+        "word": "почка",
+        "topics": ["тело"]
         }}
     ]
 ]
