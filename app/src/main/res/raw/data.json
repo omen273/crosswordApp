@@ -3098,5 +3098,1005 @@
         "word": "почка",
         "topics": ["тело"]
         }}
+    ],       
+	[
+    {"EN":{
+        "word": "acid",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "кислота",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "altitude",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "высота",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "anticipate",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "предсказывать",
+        "topics": ["наука"]
+        }}
+    ],        
+	[
+    {"EN":{
+        "word": "conductivity",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "проводимость",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "consecutive",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "последовательный",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "contradict",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "противоречить",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "determine",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "определять",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "emit",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "излучать",
+        "topics": ["наука"]
+        }}
+    ],   
+	[
+    {"EN":{
+        "word": "friction",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "трение",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "herbivore",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "травоядное",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "mass",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "масса",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "residual",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "остаток",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "variable",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "переменная",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "velocity",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "скорость",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "wavelength",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "длина волны",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "protein",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "белок",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "humidity",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "влажность",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ion",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "ион",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "trial",
+        "topics": ["science"]
+        }},
+    {"RU": {
+        "word": "тестирование",
+        "topics": ["наука"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "one",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "один",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "first",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "первый",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "two",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "два",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "second",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "второй",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "three",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "три",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "third",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "третий",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "four",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "четыре",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "five",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "пять",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "six",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "шесть",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "seven",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "семь",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "eight",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "восемь",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "nine",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "девять",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ten",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "десять",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ten",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "десять",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "eleven",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "одиннадцать",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "twelve",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "двенадцать",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "thirteen",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "тринадцать",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "fifteen",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "пятнадцать",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "twenty",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "двадцать",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "thousand",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "тысяча",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hundred",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "сотня",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "million",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "миллион",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "zero",
+        "topics": ["numbers"]
+        }},
+    {"RU": {
+        "word": "ноль",
+        "topics": ["числа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "commuter",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "человек, ездящий на работу",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "employee",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "сотрудник",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "employer",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "работодатель",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "job",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "работа",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "occupation",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "род занятий",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "profession",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "профессия",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "worker",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "работник",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "application",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "заявка",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "trainee",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "стажер",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "trainee",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "стажер",
+        "topics": ["работа"]
+        }}
+    ],     
+	[
+    {"EN":{
+        "word": "interview",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "собеседование",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "vacancy",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "вакансия",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "flexitime",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "гибкий график",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "unemployment",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "безработица",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "wage",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "зарплата",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hire",
+        "topics": ["job"]
+        }},
+    {"RU": {
+        "word": "нанимать",
+        "topics": ["работа"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "attic",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "чердак",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "bathroom",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "ванная",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "bedroom",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "спальня",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "carpet",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "ковер",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "ceiling",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "потолок",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "cellar",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "подвал",
+        "topics": ["дом"]
+        }}
+    ],       
+	[
+    {"EN":{
+        "word": "door",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "дверь",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "dryer",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "сушилка",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "entrance",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "вход",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "floor",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "этаж",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "fan",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "вентилятор",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "garden",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "сад",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "hall",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "зал",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "kitchen",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "кухня",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "key",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "ключ",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "mailbox",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "почтовый ящик",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "mirror",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "зеркало",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "room",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "комната",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "toilet",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "туалет",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "washer",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "стиральная машина",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "window",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "окно",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "wall",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "стена",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "cupboard",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "шкаф",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "cupboard",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "шкаф",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "table",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "стол",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "chair",
+        "topics": ["home"]
+        }},
+    {"RU": {
+        "word": "стул",
+        "topics": ["дом"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "graduate",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "выпускник",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "curriculum",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "расписание",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "qualification",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "квалификация",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "coursework",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "курсовая работа",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "concentrate",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "концентрироваться",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "student",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "студент",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "teacher",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "учитель",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "exam",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "экзамен",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "lesson",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "урок",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "tutor",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "репетитор",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "learn",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "учиться",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "school",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "школа",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "dormitory",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "общежитие",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "university",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "университет",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "master",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "магистр",
+        "topics": ["образование"]
+        }}
+    ],    
+	[
+    {"EN":{
+        "word": "bachelor",
+        "topics": ["education"]
+        }},
+    {"RU": {
+        "word": "бакалавр",
+        "topics": ["образование"]
+        }}
     ]
 ]
