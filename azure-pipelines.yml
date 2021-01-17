@@ -25,6 +25,7 @@ pool:
 jobs:
   - ${{ each value in parameters.AndroidAPIs }}:
       - job:
+        displayName: API ${{ value }}
         steps:
         - bash: |
             echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
