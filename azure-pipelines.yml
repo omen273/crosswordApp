@@ -84,7 +84,6 @@ jobs:
             $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory) || true
             kill -9 $(cat logcat.pid) || true
             adb kill-server
-            kill -9 $(cat emu.pid)
           condition: or(succeeded(), failed())
           displayName: 'Copy Videos and Clean Up'
 
