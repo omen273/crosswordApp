@@ -3522,7 +3522,7 @@
 	[
     {"EN":{
         "word": "commuter",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "человек, ездящий на работу",
@@ -3532,7 +3532,7 @@
 	[
     {"EN":{
         "word": "employee",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "сотрудник",
@@ -3542,7 +3542,7 @@
 	[
     {"EN":{
         "word": "employer",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "работодатель",
@@ -3552,7 +3552,7 @@
 	[
     {"EN":{
         "word": "job",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "работа",
@@ -3562,7 +3562,7 @@
 	[
     {"EN":{
         "word": "occupation",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "род занятий",
@@ -3572,7 +3572,7 @@
 	[
     {"EN":{
         "word": "profession",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "профессия",
@@ -3582,7 +3582,7 @@
 	[
     {"EN":{
         "word": "worker",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "работник",
@@ -3592,7 +3592,7 @@
 	[
     {"EN":{
         "word": "application",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "заявка",
@@ -3602,7 +3602,7 @@
 	[
     {"EN":{
         "word": "trainee",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "стажер",
@@ -3612,7 +3612,7 @@
 	[
     {"EN":{
         "word": "trainee",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "стажер",
@@ -3622,7 +3622,7 @@
 	[
     {"EN":{
         "word": "interview",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "собеседование",
@@ -3632,7 +3632,7 @@
 	[
     {"EN":{
         "word": "vacancy",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "вакансия",
@@ -3642,7 +3642,7 @@
 	[
     {"EN":{
         "word": "flexitime",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "гибкий график",
@@ -3652,7 +3652,7 @@
 	[
     {"EN":{
         "word": "unemployment",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "безработица",
@@ -3662,7 +3662,7 @@
 	[
     {"EN":{
         "word": "wage",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "зарплата",
@@ -3672,7 +3672,7 @@
 	[
     {"EN":{
         "word": "hire",
-        "topics": ["job"]
+        "topics": ["work"]
         }},
     {"RU": {
         "word": "нанимать",
