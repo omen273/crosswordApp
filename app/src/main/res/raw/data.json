@@ -2268,17 +2268,7 @@
         "word": "весна",
         "topics": ["время"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "autumn",
-        "topics": ["time"]
-        }},
-    {"RU": {
-        "word": "лето",
-        "topics": ["время"]
-        }}
-    ],    
+    ],       
 	[
     {"EN":{
         "word": "summer",
@@ -2288,17 +2278,7 @@
         "word": "лето",
         "topics": ["время"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "autumn",
-        "topics": ["time"]
-        }},
-    {"RU": {
-        "word": "осень",
-        "topics": ["время"]
-        }}
-    ],    
+    ],      
 	[
     {"EN":{
         "word": "fall",
@@ -2311,7 +2291,7 @@
     ],    
 	[
     {"EN":{
-        "word": "holiday",
+        "word": "vacation",
         "topics": ["travel"]
         }},
     {"RU": {
@@ -2668,17 +2648,7 @@
         "word": "шарф",
         "topics": ["одежда и обувь"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "scarf",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "шарф",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
+    ],       
 	[
     {"EN":{
         "word": "pants",
@@ -3418,17 +3388,7 @@
         "word": "десять",
         "topics": ["числа"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "ten",
-        "topics": ["numbers"]
-        }},
-    {"RU": {
-        "word": "десять",
-        "topics": ["числа"]
-        }}
-    ],    
+    ],     
 	[
     {"EN":{
         "word": "eleven",
