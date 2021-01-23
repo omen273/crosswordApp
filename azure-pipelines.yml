@@ -72,9 +72,6 @@ jobs:
 
         - bash: |
             ./gradlew connectedDebugAndroidTest -Porchestrator=true --info
-            if [ $? -ne 0 ]; then
-                exit 1
-            fi
             ./gradlew --stop
           displayName: 'Run Instrumented Tests'
 
@@ -83,7 +80,8 @@ jobs:
           inputs:
             testResultsFiles: '**/outputs/androidTest-results/**/TEST*.xml'
             failTaskOnFailedTests: true
-            testRunTitle: 'Test results'
+            testRunTitle: 'API ${{ value }}'
+            publishRunAttachments: true
           condition: succeededOrFailed()
 
         - bash: |
