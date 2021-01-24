@@ -14,6 +14,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.RootMatchers
+import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.espresso.util.HumanReadables
 import androidx.test.espresso.util.TreeIterables
@@ -94,7 +95,6 @@ fun getLastCrossword(): Crossword {
         getContext().getExternalFilesDir(null),
         MainActivity.IMAGE_DIRECTORY
     )
-    waitForCondition("", {imagesPath.exists()})
     var last: File? = imagesPath.listFiles()?.iterator()?.next()
     if (imagesPath.exists()) {
         for (file in imagesPath.listFiles()) {

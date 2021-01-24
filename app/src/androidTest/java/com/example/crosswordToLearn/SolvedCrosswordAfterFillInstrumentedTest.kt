@@ -11,7 +11,7 @@ import org.junit.runner.RunWith
 class SolvedCrosswordAfterFillInstrumentedTest : SolveCrossword() {
 
     @Test
-    fun solveCrossword() {
+    fun solvedCrosswordAfterFillInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()
         val length = crossword.wordsDown.fold(0, { acc, word -> acc + word.cells.size }) +

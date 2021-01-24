@@ -39,7 +39,7 @@ class SolveCrosswordWithTipsInstrumentedTest {
     }
 
     @Test
-    fun solveCrossword() {
+    fun solveCrosswordWithTipsInstrumentedTest() {
         val crossword = generateCrossword()
         loadFirstCrossword()
         val visited =

@@ -24,7 +24,7 @@ class ChooseTopicsInstrumentedTest {
         ActivityScenarioRule(MainActivity::class.java)
 
     @Test
-    fun choseTopics() {
+    fun chooseTopicsInstrumentedTest() {
         chooseGenerateCrossword()
         onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
         onView(withId(R.id.ok_play)).perform(click())

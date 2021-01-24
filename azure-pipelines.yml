@@ -25,6 +25,7 @@ pool:
 jobs:
   - ${{ each value in parameters.AndroidAPIs }}:
       - job:
+        displayName: API ${{ value }}
         steps:
         - bash: |
             echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
@@ -71,19 +72,23 @@ jobs:
 
         - bash: |
             ./gradlew connectedDebugAndroidTest -Porchestrator=true --info
-            if [ $? -ne 0 ]; then
-                exit 1
-            fi
             ./gradlew --stop
           displayName: 'Run Instrumented Tests'
+
+        - task: PublishTestResults@2
+          displayName: 'Test Results'
+          inputs:
+            testResultsFiles: '**/outputs/androidTest-results/**/TEST*.xml'
+            failTaskOnFailedTests: true
+            testRunTitle: 'API ${{ value }}'
+          condition: succeededOrFailed()
 
         - bash: |
             kill -9 $(cat video.pid) || true
             sleep 5
-            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory) || true
+            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory)/API_${{ value }} || true
             kill -9 $(cat logcat.pid) || true
             adb kill-server
-            kill -9 $(cat emu.pid)
           condition: or(succeeded(), failed())
           displayName: 'Copy Videos and Clean Up'
 
@@ -91,7 +96,7 @@ jobs:
           condition: or(succeeded(), failed())
           displayName: 'Publish Tests Archive'
           inputs:
-            pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+            pathtoPublish: '$(Build.ArtifactStagingDirectory)/API_${{ value }}'
             artifactName: '$(Build.BuildId).TestsArchive'
             publishLocation: 'Container'
 
