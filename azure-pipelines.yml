@@ -56,7 +56,8 @@ jobs:
             """
             sleep 10
             $ANDROID_HOME/platform-tools/adb logcat -c
-            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device.log &
+            mkdir -p $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/API_${{ value }}
+            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/API_${{ value }}/device.log &
             echo $! > logcat.pid
             echo "Logcat Started with Process ID: $(cat logcat.pid)"
             $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
@@ -65,7 +66,7 @@ jobs:
               do
                 screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
               done
-            ''' > $(Build.ArtifactStagingDirectory)/video.log &
+            ''' > $(Build.ArtifactStagingDirectory)/API_${{ value }}/video.log &
             echo $! > video.pid
             echo "Video Recorder Started with Process ID: $(cat video.pid)"
           displayName: 'Start Video Record and Logcat'
@@ -96,7 +97,7 @@ jobs:
           condition: or(succeeded(), failed())
           displayName: 'Publish Tests Archive'
           inputs:
-            pathtoPublish: '$(Build.ArtifactStagingDirectory)/API_${{ value }}'
+            pathtoPublish: '$(Build.ArtifactStagingDirectory)'
             artifactName: '$(Build.BuildId).TestsArchive'
             publishLocation: 'Container'
 
