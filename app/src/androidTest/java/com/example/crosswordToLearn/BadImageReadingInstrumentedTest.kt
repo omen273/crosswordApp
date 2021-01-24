@@ -44,7 +44,7 @@ class BadImageReadingInstrumentedTest {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
     @Test
-    fun test(){
+    fun badImageReadingInstrumentedTest(){
         Intent(
                 ApplicationProvider.getApplicationContext(),
                 MainActivity::class.java

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 class ImpossibleToBuildInstrumentedTest : ChoseTopicsToastTest() {
 
     @Test
-    fun impossibleToBuild() {
+    fun impossibleToBuildInstrumentedTest() {
         choseTopicsImpl(
             "impossibleToBuild.json",
             getContext().getString(R.string.choose_other_words)

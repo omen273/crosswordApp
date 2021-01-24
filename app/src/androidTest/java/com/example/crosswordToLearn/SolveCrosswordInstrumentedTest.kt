@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 class SolveCrosswordInstrumentedTest : SolveCrossword() {
 
     @Test
-    fun solveCrossword() {
+    fun solveCrosswordInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()
         solve()

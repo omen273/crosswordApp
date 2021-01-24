@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 class NotEnoughWordsBecauseTooLongInstrumentedTest : ChoseTopicsToastTest() {
 
     @Test
-    fun choseTopics() {
+    fun notEnoughWordsBecauseTooLongInstrumentedTest() {
         choseTopicsImpl(
                 "tooLongWordsData.json", getContext().getString(
                 R.string.not_enough_words,
