@@ -25,6 +25,7 @@ pool:
 jobs:
   - ${{ each value in parameters.AndroidAPIs }}:
       - job:
+        timeoutInMinutes: 30
         displayName: API ${{ value }}
         steps:
         - bash: |
@@ -56,8 +57,7 @@ jobs:
             """
             sleep 10
             $ANDROID_HOME/platform-tools/adb logcat -c
-            mkdir -p $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/API_${{ value }}
-            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/API_${{ value }}/device.log &
+            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device-${{ value }}.log &
             echo $! > logcat.pid
             echo "Logcat Started with Process ID: $(cat logcat.pid)"
             $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
@@ -66,7 +66,7 @@ jobs:
               do
                 screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
               done
-            ''' > $(Build.ArtifactStagingDirectory)/API_${{ value }}/video.log &
+            ''' > $(Build.ArtifactStagingDirectory)/video-${{ value }}.log &
             echo $! > video.pid
             echo "Video Recorder Started with Process ID: $(cat video.pid)"
           displayName: 'Start Video Record and Logcat'
