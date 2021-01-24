@@ -18,7 +18,7 @@ import org.junit.runner.RunWith
 class DeleteCrosswordInstrumentedTest : SolveCrossword() {
 
     @Test
-    fun solveCrossword() {
+    fun deleteCrosswordInstrumentedTest() {
         crossword = generateCrossword()
         generateCrossword()
         Espresso.onView(ViewMatchers.isRoot())

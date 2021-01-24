@@ -22,7 +22,7 @@ class BadCrosswordStateInstrumentedTest : BadCrosswordDataTest() {
     }
 
     @Test
-    fun testData() {
+    fun badCrosswordStateInstrumentedTest() {
         test()
     }
 }

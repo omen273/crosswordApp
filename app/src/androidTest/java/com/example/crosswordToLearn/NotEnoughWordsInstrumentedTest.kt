@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 class NotEnoughWordsInstrumentedTest : ChoseTopicsToastTest() {
 
     @Test
-    fun choseTopics() {
+    fun notEnoughWordsInstrumentedTest() {
         choseTopicsImpl(
             "notEnoughWords.json", getContext().getString(
                 R.string.not_enough_words,

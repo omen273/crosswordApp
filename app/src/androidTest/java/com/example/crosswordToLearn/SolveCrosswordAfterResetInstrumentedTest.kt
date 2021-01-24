@@ -12,7 +12,7 @@ import org.junit.runner.RunWith
 class SolveCrosswordAfterResetInstrumentedTest : SolveCrossword() {
 
     @Test
-    fun solveCrossword() {
+    fun solveCrosswordAfterResetInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()
         solve()

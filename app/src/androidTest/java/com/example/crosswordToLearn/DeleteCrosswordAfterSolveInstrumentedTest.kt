@@ -12,7 +12,7 @@ import org.junit.runner.RunWith
 class DeleteCrosswordAfterSolveInstrumentedTest : SolveCrossword(){
 
     @Test
-    fun solveCrossword() {
+    fun deleteCrosswordAfterSolveInstrumentedTest() {
         val crossword1 = generateCrossword()
         crossword = generateCrossword()
         loadFirstCrossword()

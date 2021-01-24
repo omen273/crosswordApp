@@ -18,7 +18,7 @@ class BadCrosswordDataInstrumentedTest : BadCrosswordDataTest() {
     }
 
     @Test
-    fun testData() {
+    fun badCrosswordDataInstrumentedTest() {
         test()
     }
 }
