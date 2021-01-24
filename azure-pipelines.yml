@@ -86,7 +86,7 @@ jobs:
         - bash: |
             kill -9 $(cat video.pid) || true
             sleep 5
-            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory) || true
+            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory)/API_${{ value }} || true
             kill -9 $(cat logcat.pid) || true
             adb kill-server
           condition: or(succeeded(), failed())
@@ -96,7 +96,7 @@ jobs:
           condition: or(succeeded(), failed())
           displayName: 'Publish Tests Archive'
           inputs:
-            pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+            pathtoPublish: '$(Build.ArtifactStagingDirectory)/API_${{ value }}'
             artifactName: '$(Build.BuildId).TestsArchive'
             publishLocation: 'Container'
 
