@@ -79,6 +79,8 @@ fun generateCrossword(): Crossword {
     chooseFirstTopic()
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
+    val start = System.currentTimeMillis()
+    waitForCondition("", { System.currentTimeMillis() - start > 2500 })
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
     Espresso.pressBack()
     Espresso.pressBack()
