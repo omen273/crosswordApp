@@ -80,7 +80,7 @@ fun generateCrossword(): Crossword {
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     val start = System.currentTimeMillis()
-    waitForCondition("", { System.currentTimeMillis() - start > 2500 })
+    waitForCondition("", { System.currentTimeMillis() - start > 10000 })
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
     Espresso.pressBack()
     Espresso.pressBack()
@@ -93,16 +93,13 @@ fun chooseFirstTopic() {
 }
 
 fun getLastCrossword(): Crossword {
-    Log.i("TEST", "getLastCrossword()")
     val imagesPath = File(
         getContext().getExternalFilesDir(null),
         MainActivity.IMAGE_DIRECTORY
     )
     var last: File? = imagesPath.listFiles()?.iterator()?.next()
-    if (imagesPath.exists()) {
-        for (file in imagesPath.listFiles()) {
-            if (last!!.lastModified()!! < file.lastModified()) last = file
-        }
+    for (file in imagesPath.listFiles()) {
+        if (last!!.lastModified()!! < file.lastModified()) last = file
     }
     val crosswordName =
         last?.name?.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX
