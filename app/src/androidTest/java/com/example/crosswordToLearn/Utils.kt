@@ -80,12 +80,12 @@ fun generateCrossword(): Crossword {
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     val start = System.currentTimeMillis()
-    waitForCondition("", { System.currentTimeMillis() - start > 30000 })
+    waitForCondition("", { System.currentTimeMillis() - start > 10000 })
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
     Espresso.pressBack()
     Espresso.pressBack()
     val start1 = System.currentTimeMillis()
-    waitForCondition("", { System.currentTimeMillis() - start1 > 30000 })
+    waitForCondition("", { System.currentTimeMillis() - start1 > 10000 })
     return getLastCrossword()
 }
 
