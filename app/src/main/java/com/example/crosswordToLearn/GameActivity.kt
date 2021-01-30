@@ -217,7 +217,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     private fun saveScreenshot() {
         Log.i("TEST", "saveScreenshot()")
-        if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
+        //if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             Log.i("TEST", "Environment.MEDIA_MOUNTED")
             val path = File(getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
@@ -237,7 +237,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, ratio, it)
                 }
             }
-        }
+        //}
     }
 
     private fun writeConfig() = openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {

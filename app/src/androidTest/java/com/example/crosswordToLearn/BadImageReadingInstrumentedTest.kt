@@ -19,7 +19,7 @@ class BadImageReadingInstrumentedTest {
 
     @Before
     fun addBadData() {
-        if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
+        //if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             val name = "bad"
             val path = File(getContext().getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
@@ -38,7 +38,7 @@ class BadImageReadingInstrumentedTest {
                     getTestContext().resources.assets.open("tooLongWordsData.json")
                 }
             }
-        }
+        //}
     }
 
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
