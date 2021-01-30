@@ -13,6 +13,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.File
 import java.io.FileOutputStream
+import java.lang.RuntimeException
 
 @RunWith(AndroidJUnit4::class)
 class BadImageReadingInstrumentedTest {
@@ -38,6 +39,9 @@ class BadImageReadingInstrumentedTest {
                     getTestContext().resources.assets.open("tooLongWordsData.json")
                 }
             }
+        }
+        else{
+            throw RuntimeException("Media is not mounted")
         }
     }
 

@@ -236,6 +236,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 }
             }
         }
+        else{
+            throw RuntimeException("Media is not mounted")
+        }
     }
 
     private fun writeConfig() = openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {
