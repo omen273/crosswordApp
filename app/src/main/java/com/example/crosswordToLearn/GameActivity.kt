@@ -219,6 +219,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         Log.i("TEST", "saveScreenshot()")
         //if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             Log.i("TEST", "Environment.MEDIA_MOUNTED")
+            val test = getExternalFilesDirs(null)
+            for (file in test)
+            {
+                Log.i("TEST", file.toString())
+            }
             val path = File(getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
