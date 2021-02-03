@@ -237,7 +237,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             }
         }
         else{
-            throw RuntimeException("Media is not mounted")
+            throw Exception("Media is not mounted")
         }
     }
 
