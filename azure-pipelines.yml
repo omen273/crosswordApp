@@ -31,7 +31,7 @@ jobs:
             echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
             # -d 9 for Nexus 5X
             # to find out other devices run "avdmanager list device"
-            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value }};google_apis;x86' -d 9 --force
+            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value }};google_apis;x86' --force
 
             $ANDROID_HOME/emulator/emulator -list-avds
 
