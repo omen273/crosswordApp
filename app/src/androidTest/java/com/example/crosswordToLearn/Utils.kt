@@ -152,7 +152,7 @@ fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long
 }
 
 fun waitForView(
-    viewMatcher: Matcher<View>, timeout: Long = 10000,
+    viewMatcher: Matcher<View>, timeout: Long = 30000,
     waitForDisplayed: Boolean = true
 ): ViewAction {
     return object : ViewAction {
