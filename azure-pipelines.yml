@@ -40,6 +40,8 @@ jobs:
             # in the regex \1 means "hw.ramSize=", so we replace number that is placed after "hw.ramSize=" to 2048M.
             # More details https://stackoverflow.com/a/4609965/3914914
             sed -i 's/^\(hw.ramSize=\).*$/\12048M/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
+            # solution from https://stackoverflow.com/a/16402304 to fix error "System UI is not responding"
+            sed -i 's/^\(hw.mainKeys=\).*$/\1yes/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
             nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -gpu host -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel auto -gpu auto -qemu > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
