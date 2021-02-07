@@ -39,6 +39,9 @@ class BadImageReadingInstrumentedTest {
                 }
             }
         }
+        else{
+            throw Exception("Media is not mounted")
+        }
     }
 
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
