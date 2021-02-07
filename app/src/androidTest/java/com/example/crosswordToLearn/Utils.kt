@@ -2,7 +2,6 @@ package com.example.crosswordToLearn
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
@@ -14,7 +13,6 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.RootMatchers
-import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.espresso.util.HumanReadables
 import androidx.test.espresso.util.TreeIterables
@@ -79,6 +77,7 @@ fun generateCrossword(): Crossword {
     chooseFirstTopic()
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
+    onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
     Espresso.pressBack()
     Espresso.pressBack()
     return getLastCrossword()
@@ -90,20 +89,14 @@ fun chooseFirstTopic() {
 }
 
 fun getLastCrossword(): Crossword {
-    Log.i("TEST", "getLastCrossword()")
     val imagesPath = File(
         getContext().getExternalFilesDir(null),
         MainActivity.IMAGE_DIRECTORY
     )
-    var last: File? = imagesPath.listFiles()?.iterator()?.next()
-    if (imagesPath.exists()) {
-        for (file in imagesPath.listFiles()) {
-            if (last!!.lastModified()!! < file.lastModified()) last = file
-        }
-    }
+    val last: File = imagesPath.listFiles()?.maxByOrNull { it.lastModified() }
+            ?: throw RuntimeException("Screen shoot doesn't exist")
     val crosswordName =
-        last?.name?.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX
-
+        last.name.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX
     return getContext().openFileInput(crosswordName).use {
         buildCrossword { UClickJsonFormatter().read(this, it) }
     }

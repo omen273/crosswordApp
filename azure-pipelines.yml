@@ -14,7 +14,6 @@ parameters:
       - 27
       - 28
       - 29
-      - 30
 
 trigger:
 - master
