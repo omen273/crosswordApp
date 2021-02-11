@@ -19,7 +19,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'ubuntu-latest'
 
 jobs:
   - ${{ each value in parameters.AndroidAPIs }}:
