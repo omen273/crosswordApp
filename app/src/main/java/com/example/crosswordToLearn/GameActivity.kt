@@ -216,14 +216,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun saveScreenshot() {
-        Log.i("TEST", "saveScreenshot()")
-        //if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
-            Log.i("TEST", "Environment.MEDIA_MOUNTED: ${Environment.getExternalStorageState()}")
-            val test = getExternalFilesDirs(null)
-            for (file in test)
-            {
-                Log.i("TEST", file.toString())
-            }
+        if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             val path = File(getExternalFilesDir(null), MainActivity.IMAGE_DIRECTORY)
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
@@ -242,7 +235,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, ratio, it)
                 }
             }
-        //}
+        }
+        else{
+            Log.i("TEST", "Environment.MEDIA_MOUNTED: ${Environment.getExternalStorageState()}")
+            throw Exception("Media is not mounted")
+        }
     }
 
     private fun writeConfig() = openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {

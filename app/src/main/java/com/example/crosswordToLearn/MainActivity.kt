@@ -159,8 +159,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun addItem(path: File) {
         if(!path.exists()) {
-            Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
-            return
+            throw Exception("The path to the image doesn't exist: ${path.absolutePath}")
         }
         val name = path.name.removeSuffix(IMAGE_FORMAT)
         val linearLayout = LinearLayout(this)
@@ -170,8 +169,7 @@ class MainActivity : AppCompatActivity() {
             adjustViewBounds = true
             setImageDrawable(Drawable.createFromPath(path.absolutePath))
             if(drawable == null) {
-                Log.e("ERROR", "The bad image")
-                return
+                throw Exception("The bad image")
             }
             val layoutParams = LinearLayout.LayoutParams(imageSize, imageSize)
             layoutParams.setMargins(MARGIN, 0, MARGIN, 0)
@@ -223,7 +221,11 @@ class MainActivity : AppCompatActivity() {
                                     "exist: ${pathToCrosswordData.absolutePath}")
                             continue
                         }
-                        addItem(file)
+                        try {
+                            addItem(file)
+                        } catch (e:Exception){
+                            Log.e("ERROR", e.message.toString())
+                        }
                     }
             }
         }
@@ -242,7 +244,13 @@ class MainActivity : AppCompatActivity() {
                         Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
                         return
                     }
-                    addItem(pathToImage(name))
+                    try {
+                        addItem(pathToImage(name))
+                    }
+                    catch (e:Exception){
+                        Log.e("ERROR", e.message.toString())
+                        return
+                    }
                     val adapter = tableLayout.adapter as TableAdapter
                     val tableRow = adapter.dataset[adapter.dataset.lastIndex]
                     val linearLayout = tableRow[tableRow.lastIndex]
