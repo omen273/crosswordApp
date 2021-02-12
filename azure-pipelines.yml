@@ -39,11 +39,15 @@ jobs:
             # increase memory size to 2048M to avoid error "System UI is not responding"
             # in the regex \1 means "hw.ramSize=", so we replace number that is placed after "hw.ramSize=" to 2048M.
             # More details https://stackoverflow.com/a/4609965/3914914
-            sed -i 's/^\(hw.ramSize=\).*$/\12048M/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
+            sed -i 's/^\(hw.ramSize=\).*$/\12048/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
             # solution from https://stackoverflow.com/a/16402304 to fix error "System UI is not responding"
             sed -i 's/^\(hw.mainKeys=\).*$/\1yes/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
+            # solution from https://stackoverflow.com/questions/9322540/how-to-change-the-android-emulator-ram-size-from-the-command-line
+            sed -i 's/^\(vm.heapSize=\).*$/\1256/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
             nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -gpu swiftshader_indirect -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel auto -qemu > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
+
+            $ANDROID_HOME/platform-tools/adb shell dumpsys input
 
             $ANDROID_HOME/platform-tools/adb devices
 
@@ -55,12 +59,7 @@ jobs:
           displayName: 'Run Android Emulator'
 
         - bash: |
-            $ANDROID_HOME/platform-tools/adb shell """
-            mount -o rw,remount rootfs /;
-            chmod 0777 /mnt/sdcard;
-            exit
-            """
-            sleep 10
+            $ANDROID_HOME/platform-tools/adb uninstall com.example.crosswordToLearn
             $ANDROID_HOME/platform-tools/adb logcat -c
             $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device-${{ value }}.log &
             echo $! > logcat.pid
