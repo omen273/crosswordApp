@@ -41,6 +41,9 @@ jobs:
 
             $ANDROID_HOME/platform-tools/adb devices
 
+            sed -i 's/^\(hw.sdCard=\).*$/\1yes/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
+            cat ~/.android/avd/xamarin_android_emulator.avd/config.ini
+
             $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
             $ANDROID_HOME/platform-tools/adb shell settings put global transition_animation_scale 0 &
             $ANDROID_HOME/platform-tools/adb shell settings put global animator_duration_scale 0 &
