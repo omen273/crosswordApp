@@ -237,7 +237,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             }
         }
         else{
-            Log.i("TEST", "Environment.MEDIA_MOUNTED: ${Environment.getExternalStorageState()}")
             throw Exception("Media is not mounted")
         }
     }
