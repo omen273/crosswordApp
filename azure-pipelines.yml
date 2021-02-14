@@ -47,8 +47,6 @@ jobs:
             nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -gpu swiftshader_indirect -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel auto -qemu > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
-            $ANDROID_HOME/platform-tools/adb shell dumpsys input
-
             $ANDROID_HOME/platform-tools/adb devices
 
             $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
