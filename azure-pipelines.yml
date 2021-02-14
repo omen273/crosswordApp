@@ -31,6 +31,7 @@ jobs:
             echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
             # -d 9 for Nexus 5X
             # to find out other devices run "avdmanager list device"
+            # set sdcard standard size explicitely to avoid empty external storage on API 21-22
             echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value }};google_apis;x86' --sdcard 512M -d 9 --force
 
             $ANDROID_HOME/emulator/emulator -list-avds
@@ -40,9 +41,6 @@ jobs:
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
             $ANDROID_HOME/platform-tools/adb devices
-
-            sed -i 's/^\(hw.sdCard=\).*$/\1yes/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
-            cat ~/.android/avd/xamarin_android_emulator.avd/config.ini
 
             $ANDROID_HOME/platform-tools/adb shell settings put global window_animation_scale 0 &
             $ANDROID_HOME/platform-tools/adb shell settings put global transition_animation_scale 0 &
