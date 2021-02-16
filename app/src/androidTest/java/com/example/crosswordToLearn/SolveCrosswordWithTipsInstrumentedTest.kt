@@ -38,7 +38,7 @@ class SolveCrosswordWithTipsInstrumentedTest {
         pressBack()
         pressBack()
         loadFirstCrossword()
-        assertEquals(stars, readConfig())
+        waitForCondition("Stars number checking", {stars==readConfig()})
         return stars
     }
 
