@@ -23,6 +23,10 @@ class SolveCrosswordWithTipsInstrumentedTest {
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
+
     private fun menuClick(name: Int, id: Int, price: Int): Int {
         var stars = readConfig()
         openActionBarOverflowOrOptionsMenu(

@@ -23,6 +23,10 @@ class ChooseTopicsInstrumentedTest {
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
+
     @Test
     fun chooseTopicsInstrumentedTest() {
         chooseGenerateCrossword()
