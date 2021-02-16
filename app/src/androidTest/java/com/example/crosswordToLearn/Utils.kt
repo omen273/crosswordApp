@@ -2,6 +2,7 @@ package com.example.crosswordToLearn
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
@@ -23,6 +24,8 @@ import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
 import org.hamcrest.*
 import org.junit.Rule
+import org.junit.rules.TestRule
+import org.junit.runners.model.Statement
 import java.io.File
 import java.util.concurrent.Callable
 import java.util.concurrent.TimeoutException
@@ -228,11 +231,49 @@ class ToastMatcher :
     }
 }
 
+class RetryTestRule(val retryCount: Int = 3) : TestRule {
+
+    override fun apply(base: Statement?, description: org.junit.runner.Description?): Statement {
+        return statement(base, description)
+    }
+
+    private fun statement(base: Statement?, description: org.junit.runner.Description?): Statement {
+        return object : Statement() {
+            @Throws(Throwable::class)
+            override fun evaluate() {
+                var caughtThrowable: Throwable? = null
+
+                // implement retry logic here
+                for (i in 0 until retryCount) {
+                    try {
+                        base?.evaluate()
+                        return
+                    } catch (t: Throwable) {
+                        caughtThrowable = t
+                        if (description != null) {
+                            Log.e("ERROR", description.displayName + ": run " + (i + 1) + " failed")
+                        }
+                    }
+                }
+
+                if (description != null) {
+                    Log.e("ERROR", description.displayName + ": giving up after " + retryCount + " failures")
+                }
+                throw caughtThrowable!!
+            }
+        }
+    }
+}
+
 open class ChoseTopicsToastTest {
 
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
+
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
 
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
@@ -261,6 +302,10 @@ open class SolveCrossword {
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
+
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
 
     protected lateinit var crossword: Crossword
 
@@ -292,6 +337,10 @@ abstract class BadCrosswordDataTest {
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
             ActivityScenarioRule(MainActivity::class.java)
+
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
 
     abstract fun spoil()
     lateinit var crossword: Crossword

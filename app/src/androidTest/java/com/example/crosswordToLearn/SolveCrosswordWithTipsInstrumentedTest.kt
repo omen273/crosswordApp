@@ -23,6 +23,10 @@ class SolveCrosswordWithTipsInstrumentedTest {
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
+
     private fun menuClick(name: Int, id: Int, price: Int): Int {
         var stars = readConfig()
         openActionBarOverflowOrOptionsMenu(
@@ -34,7 +38,7 @@ class SolveCrosswordWithTipsInstrumentedTest {
         pressBack()
         pressBack()
         loadFirstCrossword()
-        assertEquals(stars, readConfig())
+        waitForCondition("Stars number checking", {stars==readConfig()})
         return stars
     }
 
