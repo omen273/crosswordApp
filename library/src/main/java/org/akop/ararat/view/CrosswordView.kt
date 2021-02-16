@@ -342,7 +342,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             viewR.viewTreeObserver.addOnGlobalLayoutListener {
                 val r = Rect()
                 viewR.getWindowVisibleDisplayFrame(r)
-                val heightDiff = viewR.rootView.height - r.height()
+                val heightDiff = viewR.rootView.height - toolbarHeight - r.height()
                 val keyboardMinHeight = 300
                 if (heightDiff > keyboardMinHeight){
                     heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
