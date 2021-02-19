@@ -45,7 +45,10 @@ jobs:
             sed -i 's/^\(hw.mainKeys=\).*$/\1yes/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
             # solution from https://stackoverflow.com/questions/9322540/how-to-change-the-android-emulator-ram-size-from-the-command-line
             sed -i 's/^\(vm.heapSize=\).*$/\1256/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
-            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -gpu swiftshader_indirect -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel auto -qemu > /dev/null 2>&1 &
+
+            $ANDROID_HOME/emulator/emulator -accel-check
+
+            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel on > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
             $ANDROID_HOME/platform-tools/adb devices
