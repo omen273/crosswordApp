@@ -21,7 +21,7 @@ pool:
 jobs:
   - ${{ each value in parameters.AndroidAPIs }}:
       - job:
-        timeoutInMinutes: 30
+        timeoutInMinutes: 40
         displayName: API ${{ value }}
         steps:
         - bash: |
