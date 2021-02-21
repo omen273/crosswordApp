@@ -1,6 +1,3 @@
-variables:
-  DEVICE_VIDEO_DIR: /mnt/sdcard/DCIM
-
 parameters:
   - name: AndroidAPIs
     type: object
@@ -67,11 +64,10 @@ jobs:
             $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device-${{ value }}.log &
             echo $! > logcat.pid
             echo "Logcat Started with Process ID: $(cat logcat.pid)"
-            $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
             $ANDROID_HOME/platform-tools/adb shell '''
               for i in $(seq 1 1 20)
               do
-                screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
+                screenrecord --bugreport --verbose --time-limit=180 $(Build.ArtifactStagingDirectory)/test"${i}".mp4
               done
             ''' > $(Build.ArtifactStagingDirectory)/video-${{ value }}.log &
             echo $! > video.pid
@@ -94,7 +90,7 @@ jobs:
         - bash: |
             kill -9 $(cat video.pid) || true
             sleep 5
-            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory)/API_${{ value }} || true
+            $ANDROID_HOME/platform-tools/adb pull $(Build.ArtifactStagingDirectory) $(Build.ArtifactStagingDirectory)/API_${{ value }} || true
             kill -9 $(cat logcat.pid) || true
             adb kill-server
           condition: or(succeeded(), failed())
