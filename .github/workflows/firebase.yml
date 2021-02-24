@@ -2,7 +2,7 @@ name: FireBase
 
 on:
   schedule:
-    # run every day at 01:00
+    # run every day at 01:00 UTC+0
     - cron:  '0 1 * * *'
 
 jobs:
