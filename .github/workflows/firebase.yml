@@ -7,7 +7,6 @@ on:
 
 jobs:
   assemble_ui_test_artifacts:
-    if: startsWith(github.head_ref, 'master') == true
     name: Build artifacts
     runs-on: ubuntu-latest
     steps:
