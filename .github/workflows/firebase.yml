@@ -1,9 +1,10 @@
 name: FireBase
 
 on:
+  workflow_dispatch:
   schedule:
-    # run every day at 01:00 UTC+0
-    - cron:  '0 1 * * *'
+    # run every day at 04:00 UTC+0
+    - cron:  '0 4 * * *'
 
 jobs:
   assemble_ui_test_artifacts:
@@ -61,4 +62,4 @@ jobs:
           gcloud firebase test android models list
           gcloud firebase test android run --type instrumentation --use-orchestrator \
           --app app-debug/app-debug.apk --test app-debug-androidTest/app-debug-androidTest.apk \
-          --device model=Pixel2,version=28,locale=en,orientation=portrait
+          --device model=blueline,version=28,locale=en,orientation=portrait
