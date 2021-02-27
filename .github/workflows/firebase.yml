@@ -1,6 +1,7 @@
 name: FireBase
 
 on:
+  # allow to run manually
   workflow_dispatch:
   schedule:
     # run every day at 04:00 UTC+0
@@ -58,6 +59,10 @@ jobs:
           project_id: ${{ secrets.PROJECT_ID }}
 
       - name: Run Instrumentation Tests in Firebase Test Lab
+        # first command print all available devices
+        # current device:
+        # | MODEL_ID |  MAKE  | MODEL_NAME |   FORM   |  RESOLUTION | OS_VERSION_IDS |
+        # | blueline | Google | Pixel 3    | PHYSICAL | 2160 x 1080 | 28             |
         run: |
           gcloud firebase test android models list
           gcloud firebase test android run --type instrumentation --use-orchestrator \
