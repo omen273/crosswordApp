@@ -48,7 +48,7 @@ jobs:
 
             $ANDROID_HOME/emulator/emulator -accel-check
 
-            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel on > /dev/null 2>&1 &
+            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -wipe-data -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel on > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
             $ANDROID_HOME/platform-tools/adb devices

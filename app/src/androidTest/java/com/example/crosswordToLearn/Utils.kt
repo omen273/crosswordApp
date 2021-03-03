@@ -128,7 +128,7 @@ fun loadFirstCrossword() {
     waitForCondition("", { isKeyboardShown() })
 }
 
-fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long = 10000) {
+fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long = 30000) {
     val end = System.currentTimeMillis() + timeout
 
     try {
