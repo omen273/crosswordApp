@@ -66,5 +66,6 @@ jobs:
         run: |
           gcloud firebase test android models list
           gcloud firebase test android run --type instrumentation --use-orchestrator \
+          --environment-variables clearPackageData=true \
           --app app-debug/app-debug.apk --test app-debug-androidTest/app-debug-androidTest.apk \
           --device model=blueline,version=28,locale=en,orientation=portrait --num-flaky-test-attempts 3
