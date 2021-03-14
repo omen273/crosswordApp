@@ -22,10 +22,10 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: app-release.apk
+          name: crosslingo-release.apk
           path: app/build/outputs/apk/release/app-release-unsigned.apk
       - name: Upload AAB Bundle
         uses: actions/upload-artifact@v2
         with:
-          name: app-release.aab
+          name: crosslingo-release.aab
           path: app/build/outputs/bundle/release/app-release.aab
