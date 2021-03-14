@@ -7,6 +7,7 @@ on:
 jobs:
   build_apk_aab:
     name: Build release artifacts
+    # ubuntu is faster and it's crucial for using in actions because we have a limited amount of time
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
