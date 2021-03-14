@@ -1,0 +1,32 @@
+name: Test_and_build_artifacts_on_release
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build_apk_aab:
+    name: Build release artifacts
+    # ubuntu is faster and it's crucial for using in actions because we have a limited amount of time
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Build release APK and AAB after test
+        run: |
+          ./gradlew test
+          ./gradlew assembleRelease
+          ./gradlew bundleRelease
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: crosslingo-release.apk
+          path: app/build/outputs/apk/release/app-release-unsigned.apk
+      - name: Upload AAB Bundle
+        uses: actions/upload-artifact@v2
+        with:
+          name: crosslingo-release.aab
+          path: app/build/outputs/bundle/release/app-release.aab
