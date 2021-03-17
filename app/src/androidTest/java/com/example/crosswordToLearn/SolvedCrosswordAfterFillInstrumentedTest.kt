@@ -10,7 +10,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class SolvedCrosswordAfterFillInstrumentedTest : SolveCrossword() {
 
-    @Test
+    @Test(timeout = 30000)
     fun solvedCrosswordAfterFillInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()

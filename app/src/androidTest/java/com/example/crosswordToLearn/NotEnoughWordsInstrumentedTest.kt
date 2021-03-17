@@ -7,7 +7,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class NotEnoughWordsInstrumentedTest : ChoseTopicsToastTest() {
 
-    @Test
+    @Test(timeout = 30000)
     fun notEnoughWordsInstrumentedTest() {
         choseTopicsImpl(
             "notEnoughWords.json", getContext().getString(

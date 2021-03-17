@@ -38,7 +38,7 @@ class SolveCrosswordWithTipsInstrumentedTest {
         return stars
     }
 
-    @Test
+    @Test(timeout = 30000)
     fun solveCrosswordWithTipsInstrumentedTest() {
         val crossword = generateCrossword()
         loadFirstCrossword()

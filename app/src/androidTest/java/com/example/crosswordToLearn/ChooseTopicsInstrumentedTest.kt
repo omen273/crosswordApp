@@ -23,7 +23,7 @@ class ChooseTopicsInstrumentedTest {
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
-    @Test
+    @Test(timeout = 30000)
     fun chooseTopicsInstrumentedTest() {
         chooseGenerateCrossword()
         onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))

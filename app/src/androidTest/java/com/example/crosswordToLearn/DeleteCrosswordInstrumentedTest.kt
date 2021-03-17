@@ -17,7 +17,7 @@ import org.junit.runner.RunWith
 // doesn't fit crossword.
 class DeleteCrosswordInstrumentedTest : SolveCrossword() {
 
-    @Test
+    @Test(timeout = 30000)
     fun deleteCrosswordInstrumentedTest() {
         crossword = generateCrossword()
         generateCrossword()

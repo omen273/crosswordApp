@@ -7,7 +7,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class ImpossibleToBuildInstrumentedTest : ChoseTopicsToastTest() {
 
-    @Test
+    @Test(timeout = 30000)
     fun impossibleToBuildInstrumentedTest() {
         choseTopicsImpl(
             "impossibleToBuild.json",

@@ -17,7 +17,7 @@ class BadCrosswordDataInstrumentedTest : BadCrosswordDataTest() {
         }
     }
 
-    @Test
+    @Test(timeout = 30000)
     fun badCrosswordDataInstrumentedTest() {
         test()
     }

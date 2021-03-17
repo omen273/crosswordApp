@@ -7,7 +7,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class NotEnoughWordsBecauseTooShortInstrumentedTests : ChoseTopicsToastTest() {
 
-    @Test
+    @Test(timeout = 30000)
     fun notEnoughWordsBecauseTooShortInstrumentedTests() {
         choseTopicsImpl(
                 "tooShortWordsData.json", getContext().getString(

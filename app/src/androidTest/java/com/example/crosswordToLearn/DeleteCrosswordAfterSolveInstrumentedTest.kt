@@ -11,7 +11,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class DeleteCrosswordAfterSolveInstrumentedTest : SolveCrossword(){
 
-    @Test
+    @Test(timeout = 30000)
     fun deleteCrosswordAfterSolveInstrumentedTest() {
         val crossword1 = generateCrossword()
         crossword = generateCrossword()
