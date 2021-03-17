@@ -24,16 +24,25 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("keystore/my_app_keystore")
-            storePassword System.getenv('KEYSTORE_PASSWORD')
-            keyAlias System.getenv('RELEASE_SIGN_KEY_ALIAS')
-            keyPassword System.getenv('RELEASE_SIGN_KEY_PASSWORD')
+            def keystorePropsFile = file("keystore/my_app_keystore")
+
+            if (keystorePropsFile.exists())
+            {
+                storeFile file("keystore/my_app_keystore")
+                storePassword System.getenv('KEYSTORE_PASSWORD')
+                keyAlias System.getenv('RELEASE_SIGN_KEY_ALIAS')
+                keyPassword System.getenv('RELEASE_SIGN_KEY_PASSWORD')
+            }
         }
     }
 
     buildTypes {
         release {
-            signingConfig signingConfigs.release
+            def keystorePropsFile = file("keystore/my_app_keystore")
+
+            if (keystorePropsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
