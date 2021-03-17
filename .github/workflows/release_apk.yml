@@ -4,6 +4,11 @@ on:
   push:
     branches: [ master ]
 
+env:
+  KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+  RELEASE_SIGN_KEY_ALIAS: ${{ secrets.RELEASE_SIGN_KEY_ALIAS }}
+  RELEASE_SIGN_KEY_PASSWORD: ${{ secrets.RELEASE_SIGN_KEY_PASSWORD }}
+
 jobs:
   build_apk_aab:
     name: Build release artifacts
@@ -15,6 +20,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
+      - name: Checkout keystore repo
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ secrets.KEYSTORE_GIT_REPOSITORY }}
+          token: ${{ secrets.KEYSTORE_ACCESS_TOKEN }}
+          path: app/keystore
       - name: Build release APK and AAB after test
         run: |
           ./gradlew test
@@ -24,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: crosslingo-release.apk
-          path: app/build/outputs/apk/release/app-release-unsigned.apk
+          path: app/build/outputs/apk/release/app-release.apk
       - name: Upload AAB Bundle
         uses: actions/upload-artifact@v2
         with:
