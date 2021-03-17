@@ -22,6 +22,10 @@ class ChooseTopicsInstrumentedTest {
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
+    
+    @Rule
+    @JvmField
+    val retryTestRule = RetryTestRule()
 
     @Test(timeout = 30000)
     fun chooseTopicsInstrumentedTest() {
