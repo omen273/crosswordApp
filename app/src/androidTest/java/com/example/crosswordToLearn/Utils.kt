@@ -25,6 +25,7 @@ import org.akop.ararat.io.UClickJsonFormatter
 import org.hamcrest.*
 import org.junit.Rule
 import org.junit.rules.TestRule
+import org.junit.rules.Timeout
 import org.junit.runners.model.Statement
 import java.io.File
 import java.util.concurrent.Callable
@@ -148,7 +149,7 @@ fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long
 }
 
 fun waitForView(
-    viewMatcher: Matcher<View>, timeout: Long = 10000,
+    viewMatcher: Matcher<View>, timeout: Long = 30000,
     waitForDisplayed: Boolean = true
 ): ViewAction {
     return object : ViewAction {
@@ -275,6 +276,10 @@ open class ChoseTopicsToastTest {
     @JvmField
     val retryTestRule = RetryTestRule()
 
+    @Rule
+    @JvmField
+    var timeout: Timeout = Timeout.millis(30000)
+
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
     fun choseTopicsImpl(fileName: String, message: String) {
@@ -306,6 +311,10 @@ open class SolveCrossword {
     @Rule
     @JvmField
     val retryTestRule = RetryTestRule()
+
+    @Rule
+    @JvmField
+    var timeout: Timeout = Timeout.millis(30000)
 
     protected lateinit var crossword: Crossword
 
@@ -341,6 +350,10 @@ abstract class BadCrosswordDataTest {
     @Rule
     @JvmField
     val retryTestRule = RetryTestRule()
+
+    @Rule
+    @JvmField
+    var timeout: Timeout = Timeout.millis(30000)
 
     abstract fun spoil()
     lateinit var crossword: Crossword

@@ -14,6 +14,7 @@ import org.akop.ararat.core.Crossword
 import org.hamcrest.core.AnyOf.anyOf
 import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.Timeout
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
@@ -26,6 +27,10 @@ class SolveCrosswordWithTipsInstrumentedTest {
     @Rule
     @JvmField
     val retryTestRule = RetryTestRule()
+
+    @Rule
+    @JvmField
+    var timeout: Timeout = Timeout.millis(30000)
 
     private fun menuClick(name: Int, id: Int, price: Int): Int {
         var stars = readConfig()
@@ -42,7 +47,7 @@ class SolveCrosswordWithTipsInstrumentedTest {
         return stars
     }
 
-    @Test(timeout = 30000)
+    @Test
     fun solveCrosswordWithTipsInstrumentedTest() {
         val crossword = generateCrossword()
         loadFirstCrossword()

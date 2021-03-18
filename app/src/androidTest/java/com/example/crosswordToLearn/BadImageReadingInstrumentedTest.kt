@@ -11,6 +11,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.Timeout
 import org.junit.runner.RunWith
 import java.io.File
 import java.io.FileOutputStream
@@ -21,6 +22,10 @@ class BadImageReadingInstrumentedTest {
     @Rule
     @JvmField
     val retryTestRule = RetryTestRule()
+
+    @Rule
+    @JvmField
+    var timeout: Timeout = Timeout.millis(30000)
 
     @Before
     fun addBadData() {
@@ -51,7 +56,7 @@ class BadImageReadingInstrumentedTest {
 
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
-    @Test(timeout = 30000)
+    @Test
     fun badImageReadingInstrumentedTest(){
         Intent(
                 ApplicationProvider.getApplicationContext(),
