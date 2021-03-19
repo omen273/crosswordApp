@@ -29,6 +29,7 @@ jobs:
         displayName: API ${{ value }}
         steps:
         - bash: |
+            ls /usr/local/opt/runner/settings/instancename
             echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86'
             # -d 17 for Pixel
             # to find out other devices run "avdmanager list device"
