@@ -30,7 +30,7 @@ class SolveCrosswordWithTipsInstrumentedTest {
 
     @Rule
     @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
+    var timeout: Timeout = Timeout.millis(TestConstants.TIMEOUT)
 
     private fun menuClick(name: Int, id: Int, price: Int): Int {
         var stars = readConfig()

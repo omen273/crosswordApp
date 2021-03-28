@@ -31,6 +31,13 @@ import java.io.File
 import java.util.concurrent.Callable
 import java.util.concurrent.TimeoutException
 
+class TestConstants
+{
+    companion object {
+        const val TIMEOUT: Long = 30000;
+    }
+}
+
 fun nthChildOf(parentMatcher: Matcher<View?>, childPosition: Int): Matcher<View?> {
     return object : TypeSafeMatcher<View?>() {
         override fun matchesSafely(view: View?): Boolean {
@@ -132,8 +139,8 @@ fun loadFirstCrossword() {
     waitForCondition("", { isKeyboardShown() })
 }
 
-fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long = 30000) {
-    val end = System.currentTimeMillis() + timeout
+fun waitForCondition(reason: String, condition: Callable<Boolean>) {
+    val end = System.currentTimeMillis() + TestConstants.TIMEOUT
 
     try {
         while (!condition.call()) {
@@ -149,7 +156,7 @@ fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long
 }
 
 fun waitForView(
-    viewMatcher: Matcher<View>, timeout: Long = 30000,
+    viewMatcher: Matcher<View>,
     waitForDisplayed: Boolean = true
 ): ViewAction {
     return object : ViewAction {
@@ -162,14 +169,14 @@ fun waitForView(
             viewMatcher.describeTo(matcherDescription)
             return "wait for a specific view <$matcherDescription> to be ${
                 if (waitForDisplayed)
-                    "displayed" else "not displayed during $timeout millis."
+                    "displayed" else "not displayed during ${TestConstants.TIMEOUT} millis."
             }"
         }
 
         override fun perform(uiController: UiController, view: View) {
             uiController.loopMainThreadUntilIdle()
             val startTime = System.currentTimeMillis()
-            val endTime = startTime + timeout
+            val endTime = startTime + TestConstants.TIMEOUT
             val visibleMatcher = isDisplayed()
 
             do {
@@ -278,7 +285,7 @@ open class ChoseTopicsToastTest {
 
     @Rule
     @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
+    var timeout: Timeout = Timeout.millis(TestConstants.TIMEOUT)
 
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
@@ -314,7 +321,7 @@ open class SolveCrossword {
 
     @Rule
     @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
+    var timeout: Timeout = Timeout.millis(TestConstants.TIMEOUT)
 
     protected lateinit var crossword: Crossword
 
@@ -353,7 +360,7 @@ abstract class BadCrosswordDataTest {
 
     @Rule
     @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
+    var timeout: Timeout = Timeout.millis(TestConstants.TIMEOUT)
 
     abstract fun spoil()
     lateinit var crossword: Crossword

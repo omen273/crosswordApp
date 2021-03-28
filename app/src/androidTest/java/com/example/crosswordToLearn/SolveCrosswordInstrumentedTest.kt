@@ -9,10 +9,6 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class SolveCrosswordInstrumentedTest : SolveCrossword() {
 
-    @Rule
-    @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
-
     @Test
     fun solveCrosswordInstrumentedTest() {
         crossword = generateCrossword()

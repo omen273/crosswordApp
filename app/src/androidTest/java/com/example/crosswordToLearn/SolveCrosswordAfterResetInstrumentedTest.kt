@@ -13,10 +13,6 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class SolveCrosswordAfterResetInstrumentedTest : SolveCrossword() {
 
-    @Rule
-    @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
-
     @Test
     fun solveCrosswordAfterResetInstrumentedTest() {
         crossword = generateCrossword()

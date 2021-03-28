@@ -15,10 +15,6 @@ import java.io.FileOutputStream
 @RunWith(AndroidJUnit4::class)
 class BadCrosswordStateInstrumentedTest : BadCrosswordDataTest() {
 
-    @Rule
-    @JvmField
-    var timeout: Timeout = Timeout.millis(30000)
-
     override fun spoil() {
         File(getContext().filesDir, "${crossword.title}${GameActivity.STATE_SUFFIX}").apply {
             FileOutputStream(this).use {
