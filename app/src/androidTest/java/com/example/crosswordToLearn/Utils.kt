@@ -34,7 +34,7 @@ import java.util.concurrent.TimeoutException
 class TestConstants
 {
     companion object {
-        const val TIMEOUT: Long = 30000;
+        const val TIMEOUT: Long = 60000;
     }
 }
 
