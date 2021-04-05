@@ -1,4 +1,4 @@
-package com.example.crosswordToLearn
+package com.omen273.crossLingo
 
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions
@@ -9,18 +9,18 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class DeleteCrosswordAfterSolveInstrumentedTest : SolveCrossword(){
+class SolveCrosswordAfterResetInstrumentedTest : SolveCrossword() {
 
     @Test
-    fun deleteCrosswordAfterSolveInstrumentedTest() {
-        val crossword1 = generateCrossword()
+    fun solveCrosswordAfterResetInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()
         solve()
-        Espresso.onView(ViewMatchers.withText(R.string.remove))
+        Espresso.onView(ViewMatchers.withText(R.string.reset))
             .inRoot(RootMatchers.isDialog())
             .perform(ViewActions.click())
-        crossword = crossword1
+        Espresso.pressBack()
+        Espresso.pressBack()
         loadFirstCrossword()
         solve()
     }

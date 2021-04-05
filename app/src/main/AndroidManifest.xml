@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.crosswordToLearn">
+    package="com.omen273.crossLingo">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +10,14 @@
         android:theme="@style/AppTheme"
         android:requestLegacyExternalStorage="true">
         <activity
-            android:name=".GameActivity"
+            android:name="com.omen273.crossLingo.GameActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"/>
-        <activity android:name=".SettActivity"
+        <activity android:name="com.omen273.crossLingo.SettActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ChooseTopicsActivity"
+        <activity android:name="com.omen273.crossLingo.ChooseTopicsActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity"
+        <activity android:name="com.omen273.crossLingo.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

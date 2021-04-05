@@ -1,4 +1,4 @@
-package com.example.crosswordToLearn
+package com.omen273.crossLingo
 
 import android.os.Parcelable
 import android.util.JsonReader

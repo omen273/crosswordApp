@@ -38,10 +38,10 @@ Java_com_example_crosswordToLearn_CrosswordBuilderWrapper_getCrossword(JNIEnv *e
                 std::chrono::milliseconds(maxTime));
         if(!res) return nullptr;
         auto cross = res->getCrossword();
-        auto wordParamsClass = env->FindClass("com/example/crosswordToLearn/WordParams");
+        auto wordParamsClass = env->FindClass("com/omen273/crossLingo/WordParams");
         auto constructorWordParams = env->GetMethodID(wordParamsClass, "<init>", "()V");
         auto crosswordParamsClass =
-                env->FindClass("com/example/crosswordToLearn/CrosswordParams");
+                env->FindClass("com/omen273/crossLingo/CrosswordParams");
         auto constructorCrosswordParams =
                 env->GetMethodID(crosswordParamsClass, "<init>", "()V");
         auto out = env->NewObject(crosswordParamsClass, constructorCrosswordParams);
@@ -52,7 +52,7 @@ Java_com_example_crosswordToLearn_CrosswordBuilderWrapper_getCrossword(JNIEnv *e
         auto crosswordParamsAddWord =
                 env->GetMethodID(crosswordParamsClass,
                         "addWord",
-                        "(Lcom/example/crosswordToLearn/WordParams;)Z");
+                        "(Lcom/omen273/crossLingo/WordParams;)Z");
         auto xField = env->GetFieldID(wordParamsClass, "x", "I");
         auto yField = env->GetFieldID(wordParamsClass, "y", "I");
         auto wordField = env->GetFieldID(wordParamsClass, "word", "Ljava/lang/String;");
