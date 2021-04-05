@@ -1,4 +1,4 @@
-package com.example.crosswordToLearn
+package com.omen273.crossLingo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

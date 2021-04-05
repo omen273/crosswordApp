@@ -1,4 +1,4 @@
-package com.example.crosswordToLearn
+package com.omen273.crossLingo
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions

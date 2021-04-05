@@ -1,4 +1,4 @@
-package com.example.crosswordToLearn
+package com.omen273.crossLingo
 // Copyright (c) Akop Karapetyan
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy

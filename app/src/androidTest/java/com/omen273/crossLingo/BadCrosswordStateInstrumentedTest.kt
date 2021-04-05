@@ -1,10 +1,6 @@
-package com.example.crosswordToLearn
+package com.omen273.crossLingo
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.crosswordToLearn.BadCrosswordDataTest
-import com.example.crosswordToLearn.GameActivity
-import com.example.crosswordToLearn.getContext
-import com.example.crosswordToLearn.getTestContext
 import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.File
