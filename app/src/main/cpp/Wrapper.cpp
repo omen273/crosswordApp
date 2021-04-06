@@ -5,7 +5,7 @@
 
 extern "C"
 JNIEXPORT jobject JNICALL
-Java_com_example_crosswordToLearn_CrosswordBuilderWrapper_getCrossword(JNIEnv *env, jobject,
+Java_com_omen273_crossLingo_CrosswordBuilderWrapper_getCrossword(JNIEnv *env, jobject,
         jobject words, jint wordCount, jint maxSideSize, jint maxTime){
     try
     {
