@@ -25,6 +25,10 @@ android {
     signingConfigs {
         release {
             def keystorePropsFile = file("keystore/my_app_keystore")
+            storeFile file('C:\\Code\\keystore\\my_app_keystore')
+            storePassword 'ojq799d'
+            keyPassword 'ojq799d'
+            keyAlias 'key0'
 
             if (keystorePropsFile.exists())
             {
@@ -43,11 +47,12 @@ android {
             if (keystorePropsFile.exists()) {
                 signingConfig signingConfigs.release
             }
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             ndk {
                 debugSymbolLevel 'SYMBOL_TABLE'
             }
+            signingConfig signingConfigs.release
         }
     }
 
