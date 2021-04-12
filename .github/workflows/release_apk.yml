@@ -1,6 +1,8 @@
 name: Test_and_build_artifacts_on_release
 
 on:
+  # allow to run manually
+  workflow_dispatch:
   push:
     branches: [ master ]
 
@@ -41,8 +43,3 @@ jobs:
         with:
           name: crosslingo-release.aab
           path: app/build/outputs/bundle/release/app-release.aab
-      - name: Upload mapping
-        uses: actions/upload-artifact@v2
-        with:
-          name: mapping.txt
-          path: app/build/outputs/mapping/release/mapping.txt
