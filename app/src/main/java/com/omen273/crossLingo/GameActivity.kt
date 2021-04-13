@@ -207,6 +207,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     @ExperimentalUnsignedTypes
     override fun onPause() {
         super.onPause()
+        writeConfig()
         if (!delete) {
             //check that a crossword has been drawn otherwise doesn't save it
             // not thrown an exception because it is a normal situation in case of
@@ -215,7 +216,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if(crosswordView.puzzleBitmap != null ) {
                 writeCrossword()
                 writeState()
-                writeConfig()
                 saveScreenshot()
             }
         } else {
@@ -250,6 +250,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun writeConfig() = openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {
+        Log.d("WC1", star_number.text.toString())
         ConfigWriter().write(it, star_number.text.toString().toInt())
     }
 
