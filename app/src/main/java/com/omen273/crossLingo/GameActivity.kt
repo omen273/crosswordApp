@@ -250,7 +250,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun writeConfig() = openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {
-        Log.d("WC1", star_number.text.toString())
         ConfigWriter().write(it, star_number.text.toString().toInt())
     }
 
