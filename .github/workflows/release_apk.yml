@@ -1,6 +1,8 @@
 name: Test_and_build_artifacts_on_release
 
 on:
+  # allow to run manually
+  workflow_dispatch:
   push:
     branches: [ master ]
 
