@@ -26,8 +26,10 @@ import android.os.Bundle
 import android.os.Environment
 import android.util.Log
 import android.util.TypedValue
+import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
@@ -41,11 +43,10 @@ import org.akop.ararat.core.buildWord
 import org.akop.ararat.io.UClickJsonFormatter
 import org.akop.ararat.view.CrosswordView
 import java.io.*
-import java.lang.Exception
-import java.lang.RuntimeException
 import java.nio.charset.Charset
 import java.util.*
 import kotlin.collections.ArrayList
+
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
@@ -95,8 +96,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                             comment = "comment"
                             if (crosswordParams.words.size < 2) {
                                 throw RuntimeException(
-                                    "The crossword should consist " +
-                                        "of more or equal to two words."
+                                        "The crossword should consist " +
+                                                "of more or equal to two words."
                                 )
                             }
                             var prev: WordParams = crosswordParams.words[0]
@@ -135,7 +136,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
             if (!isGenerated) try{readState(fillName).also { st -> cv.restoreState(st) }}
-            catch (e:Exception) {
+            catch (e: Exception) {
                 Log.e("ERROR", "The bad crossword state")
                 setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
                 finish()
@@ -152,7 +153,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
-        buildCrossword { try{UClickJsonFormatter().read(this, it)} catch (e:Exception) {
+        buildCrossword { try{UClickJsonFormatter().read(this, it)} catch (e: Exception) {
             Log.e("ERROR", "The bad crossword data")
             setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
             finish()} }
@@ -172,9 +173,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         while (res == null && i < maxAttemptCount) {
             val stepAdding = 0.6 * maxTime * i
             res = CrosswordBuilderWrapper().getCrossword(
-                ArrayList(inp.keys),
-                ChooseTopicsActivity.CROSSWORD_SIZE, ChooseTopicsActivity.MAX_SIDE,
-                maxTime + stepAdding.toInt()
+                    ArrayList(inp.keys),
+                    ChooseTopicsActivity.CROSSWORD_SIZE, ChooseTopicsActivity.MAX_SIDE,
+                    maxTime + stepAdding.toInt()
             )
             ++i
         }
@@ -197,8 +198,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         return if (last == null) title + "1"
         else {
             val number = last.subSequence(
-                title.length,
-                last.length - DATA_SUFFIX.length
+                    title.length,
+                    last.length - DATA_SUFFIX.length
             ).toString().toUInt() + 1u
             title + number.toString()
         }
@@ -231,14 +232,14 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 FileOutputStream(this).use {
                     val targetSize =
                         intent.getIntExtra(
-                            MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE,
-                            200
+                                MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE,
+                                200
                         )
                     val defaultQuality = 100
                     val ratio = if (crosswordView.puzzleBitmap != null)
                         targetSize * defaultQuality / maxOf(
-                            (crosswordView.puzzleBitmap ?: return@use).width,
-                            (crosswordView.puzzleBitmap ?: return@use).height
+                                (crosswordView.puzzleBitmap ?: return@use).width,
+                                (crosswordView.puzzleBitmap ?: return@use).height
                         ) else defaultQuality
                     crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, ratio, it)
                 }
@@ -275,27 +276,27 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         when (item.itemId) {
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false &&
-                    star_number.text.toString().toInt() >= LETTER_OPEN_PRICE
+                        star_number.text.toString().toInt() >= LETTER_OPEN_PRICE
                 ) {
                     crosswordView.selectedWord?.let {
                         crosswordView.solveChar(
-                            it,
-                            crosswordView.selectedCell
+                                it,
+                                crosswordView.selectedCell
                         )
                     }
                     star_number.text = (star_number.text.toString().toInt() -
-                        LETTER_OPEN_PRICE).toString()
+                            LETTER_OPEN_PRICE).toString()
                     return true
                 }
                 return false
             }
             R.id.menu_solve_word -> {
                 if (!crosswordView.isSelectedWordSolved() &&
-                    star_number.text.toString().toInt() >= WORD_OPEN_PRICE
+                        star_number.text.toString().toInt() >= WORD_OPEN_PRICE
                 ) {
                     crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                     star_number.text = (star_number.text.toString().toInt() -
-                        WORD_OPEN_PRICE).toString()
+                            WORD_OPEN_PRICE).toString()
                     return true
                 }
                 return false
@@ -308,24 +309,17 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordChanged(view: CrosswordView) {}
 
-    class FinishGame(private val game: GameActivity) : DialogFragment() {
-        override fun onCreateDialog(savedInstanceState: Bundle?): AlertDialog =
-            activity?.let {
-                val builder = AlertDialog.Builder(it)
-                builder.setMessage(R.string.youve_solved_the_puzzle)
-                    .setPositiveButton(R.string.reset) { _, _ -> game.crosswordView.reset() }
-                    .setNegativeButton(R.string.another_crossword) { _, _ -> game.onBackPressed() }
-                    .setNeutralButton(R.string.remove) { _, _ ->
-                        game.delete = true
-                        game.onBackPressed()
-                    }
-                    .create()
-            } ?: throw IllegalStateException("Activity cannot be null")
-    }
-
-    private fun showFinishGameDialog() = FinishGame(this).apply {
-        isCancelable = false
-        show(supportFragmentManager, "FinishGame")
+    private fun showFinishGameDialog() {
+        val builder = AlertDialog.Builder(this).setMessage(R.string.youve_solved_the_puzzle)
+                .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
+                .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
+                .setNeutralButton(R.string.remove) { _, _ ->
+                    delete = true
+                    onBackPressed()
+                }.create()
+        builder.setCancelable(false)
+        builder.show()
+        builder.window?.setGravity(Gravity.BOTTOM)
     }
 
     override fun onCrosswordSolved(view: CrosswordView) {
