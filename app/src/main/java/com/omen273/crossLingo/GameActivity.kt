@@ -61,6 +61,10 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         setContentView(R.layout.activity_game)
         crosswordView = findViewById(R.id.crossword)
         setSupportActionBar(game_toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        game_toolbar.setNavigationOnClickListener{
+            onBackPressed()
+        }
         star_number.text = readConfig(filesDir, resources).toString()
         name = intent.getStringExtra(MainActivity.CROSSWORD_NAME_VARIABLE).toString()
         val isGenerated =

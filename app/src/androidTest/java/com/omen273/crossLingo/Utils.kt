@@ -79,7 +79,7 @@ fun getItemFromCrosswordList(row: Int, column: Int, name:String? = null): Matche
     return nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 0)
 }
 
-fun generateCrossword(chooseTopics: List<Int> = listOf(0)): Crossword {
+fun generateCrossword(pressHome: Boolean = true, chooseTopics: List<Int> = listOf(0)): Crossword {
     chooseGenerateCrossword()
     onView(isRoot()).perform(waitForView(withId(R.id.topicList)))
     for(i in chooseTopics) {
@@ -88,8 +88,13 @@ fun generateCrossword(chooseTopics: List<Int> = listOf(0)): Crossword {
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
-    Espresso.pressBack()
-    Espresso.pressBack()
+    if(!pressHome) {
+        Espresso.pressBack()
+        Espresso.pressBack()
+    }
+    else {
+        onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(ViewActions.click())
+    }
     return getLastCrossword()
 }
 

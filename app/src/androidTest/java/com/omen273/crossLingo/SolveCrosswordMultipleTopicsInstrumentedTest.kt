@@ -6,7 +6,7 @@ class SolveCrosswordMultipleTopicsInstrumentedTest: SolveCrossword() {
 
     @Test
     fun solveCrosswordInstrumentedTest() {
-        crossword = generateCrossword(listOf(0,2,4))
+        crossword = generateCrossword(chooseTopics = listOf(0,2,4))
         loadFirstCrossword("multiple1")
         solve()
     }
