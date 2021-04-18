@@ -80,6 +80,8 @@ jobs:
           displayName: 'Start Video Record and Logcat'
 
         - bash: |
+            # try to close error messages in case they are appeared
+            $ANDROID_HOME/platform-tools/adb shell am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS
             ./gradlew connectedDebugAndroidTest -Porchestrator=true --info
             ./gradlew --stop
           displayName: 'Run Instrumented Tests'
