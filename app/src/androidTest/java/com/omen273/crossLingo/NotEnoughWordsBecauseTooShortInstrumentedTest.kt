@@ -7,7 +7,7 @@ import org.junit.rules.Timeout
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class NotEnoughWordsBecauseTooShortInstrumentedTests : ChoseTopicsToastTest() {
+class NotEnoughWordsBecauseTooShortInstrumentedTest : ChoseTopicsToastTest() {
 
     @Test
     fun notEnoughWordsBecauseTooShortInstrumentedTests() {

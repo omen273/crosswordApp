@@ -6,7 +6,7 @@ import androidx.test.espresso.matcher.RootMatchers
 import androidx.test.espresso.matcher.ViewMatchers
 import org.junit.Test
 
-class LoadSolvedCrosswordSeveralTimes: SolveCrossword() {
+class LoadSolvedCrosswordSeveralTimesInstrumentedTest: SolveCrossword() {
 
     @Test
     fun solveCrosswordInstrumentedTest() {

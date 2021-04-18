@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             scaleType = ImageView.ScaleType.FIT_CENTER
             adjustViewBounds = true
             val layoutParams = LinearLayout.LayoutParams(imageSize, imageSize)
-            layoutParams.setMargins(MARGIN, 0, MARGIN, 2 * MARGIN)
+            layoutParams.setMargins(MARGIN, 0, MARGIN, 0)
             this.layoutParams = layoutParams
         }.also { im ->
             im.setOnClickListener {
@@ -81,6 +81,12 @@ class MainActivity : AppCompatActivity() {
                 startActivityForResult(generated, ACTIVITY_CHOOSE)
             }
             item.addView(im)
+        }
+        TextView(this).apply {
+            text = getString(R.string.generate_crossword)
+            gravity = Gravity.CENTER
+            crosswords.add(text.toString())
+            item.addView(this)
         }
         return TableRow(this).apply { addView(item) }
     }

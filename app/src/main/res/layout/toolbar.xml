@@ -4,26 +4,27 @@
     android:layout_width = "match_parent"
     android:layout_height = "?actionBarSize"
     android:id = "@+id/game_toolbar"
-    android:background="?attr/colorPrimary">
-    <LinearLayout
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
         <ImageView
+            android:id="@+id/starImage"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:gravity = "start"
-            android:src = "@drawable/star"
-            android:contentDescription="TODO" />
+            android:layout_centerVertical="true"
+            android:src="@drawable/star"
+            android:contentDescription= "@string/number_of_stars" />
 
         <TextView
             android:id="@+id/star_number"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="100"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf ="@+id/starImage"
+            android:layout_margin="8dp"
             android:textSize="24sp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:gravity = "center"
             android:textColor="#ffffff"/>
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.appcompat.widget.Toolbar>

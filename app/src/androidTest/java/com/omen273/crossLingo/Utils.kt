@@ -74,23 +74,35 @@ fun hasNChildren(matcher: Matcher<View?>, childrenNumber: Int): Matcher<View?> {
     }
 }
 
-fun getItemFromCrosswordList(row: Int, column: Int): Matcher<View?> {
+fun getItemFromCrosswordList(row: Int, column: Int, name:String? = null): Matcher<View?> {
     onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
     //WORKAROUND: wait some time to load all items in the view
     //TODO wait for certain item loading
     val start = System.currentTimeMillis()
     waitForCondition("", { System.currentTimeMillis() - start > 300 })
+    if(name != null) {
+        onView(nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 1)).
+        perform(waitForView(withText(name)))
+    }
     return nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 0)
 }
 
-fun generateCrossword(): Crossword {
+fun generateCrossword(pressHome: Boolean = true, chooseTopics: List<Int> = listOf(0)): Crossword {
     chooseGenerateCrossword()
-    chooseFirstTopic()
+    onView(isRoot()).perform(waitForView(withId(R.id.topicList)))
+    for(i in chooseTopics) {
+        onView(nthChildOf(withId(R.id.topicList), i)).perform(ViewActions.click())
+    }
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
-    Espresso.pressBack()
-    Espresso.pressBack()
+    if(!pressHome) {
+        Espresso.pressBack()
+        Espresso.pressBack()
+    }
+    else {
+        onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(ViewActions.click())
+    }
     return getLastCrossword()
 }
 
@@ -132,9 +144,9 @@ fun chooseGenerateCrossword() {
 }
 
 
-fun loadFirstCrossword() {
+fun loadFirstCrossword(name: String? = null) {
     onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
-    onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
+    onView(getItemFromCrosswordList(0, 1, name)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
     waitForCondition("", { isKeyboardShown() })
 }
