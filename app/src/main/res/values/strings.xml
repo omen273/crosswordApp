@@ -16,4 +16,5 @@
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name ="damaged_data">The crossword data is damaged</string>
+    <string name ="number_of_stars">number of stars</string>
 </resources>
