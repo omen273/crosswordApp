@@ -349,7 +349,11 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                     resetConstraintsAndRedraw(true)
                 }
             }
-            showKeyboard()
+            if (_inputMode != INPUT_MODE_NONE) {
+                context.inputMethodManager?.let { imm ->
+                    if (!imm.isActive(this)) requestFocus()
+                }
+            }
         }
 
     init {
