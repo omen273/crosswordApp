@@ -360,11 +360,12 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             // probably the soft keyboard is less then 300 dpi and callback for it has not been
             // called
             Handler(Looper.getMainLooper()).postDelayed({
-               if(isCrosswordDrawn) {
+               if(!isCrosswordDrawn) {
                    isCrosswordDrawn = true
                    val r = Rect()
                    getWindowVisibleDisplayFrame(r)
                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
+                   Log.d("PD1", heightWithoutKeyboard.toString())
                    resetConstraintsAndRedraw(true)
                }
             }, 1000)
