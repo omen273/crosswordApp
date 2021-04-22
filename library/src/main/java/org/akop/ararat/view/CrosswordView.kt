@@ -23,10 +23,7 @@ package org.akop.ararat.view
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
-import android.os.AsyncTask
-import android.os.Parcel
-import android.os.Parcelable
-import android.os.SystemClock
+import android.os.*
 import android.text.InputType
 import android.util.AttributeSet
 import android.util.Log
@@ -339,21 +336,39 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             initializeCrossword()
             selectNextWord()
             renderScale = 0f
+            var isCrosswordDrawn = false
+
             viewR.viewTreeObserver.addOnGlobalLayoutListener {
-                val r = Rect()
-                viewR.getWindowVisibleDisplayFrame(r)
-                val heightDiff = viewR.rootView.height - toolbarHeight - r.height()
-                val keyboardMinHeight = 300
-                if (heightDiff > keyboardMinHeight){
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
-                    resetConstraintsAndRedraw(true)
-                }
+                    val r = Rect()
+                    viewR.getWindowVisibleDisplayFrame(r)
+                    val heightDiff = viewR.rootView.height - toolbarHeight - r.height()
+                    val keyboardMinHeight = 300
+                    if (heightDiff > keyboardMinHeight && !isCrosswordDrawn) {
+                        isCrosswordDrawn = true
+                        heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
+                        resetConstraintsAndRedraw(true)
+                    }
             }
+
             if (_inputMode != INPUT_MODE_NONE) {
                 context.inputMethodManager?.let { imm ->
                     if (!imm.isActive(this)) requestFocus()
                 }
             }
+
+            //force drawing after 1s if crossword drawing has been started it because in this case
+            // probably the soft keyboard is less then 300 dpi and callback for it has not been
+            // called
+            Handler(Looper.getMainLooper()).postDelayed({
+               if(isCrosswordDrawn) {
+                   isCrosswordDrawn = true
+                   val r = Rect()
+                   getWindowVisibleDisplayFrame(r)
+                   heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
+                   resetConstraintsAndRedraw(true)
+               }
+            }, 1000)
+
         }
 
     init {
