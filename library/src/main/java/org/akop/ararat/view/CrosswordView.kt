@@ -365,7 +365,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                    val r = Rect()
                    getWindowVisibleDisplayFrame(r)
                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
-                   Log.d("PD1", heightWithoutKeyboard.toString())
                    resetConstraintsAndRedraw(true)
                }
             }, 1000)
