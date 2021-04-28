@@ -143,7 +143,7 @@ fun loadFirstCrossword(name: String? = null) {
     waitForCondition("", { isKeyboardShown() })
 }
 
-fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long = 10000) {
+fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long = Constants.TIMEOUT) {
     val end = System.currentTimeMillis() + timeout
 
     try {
@@ -160,7 +160,7 @@ fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long
 }
 
 fun waitForView(
-    viewMatcher: Matcher<View>, timeout: Long = 10000,
+    viewMatcher: Matcher<View>, timeout: Long = Constants.TIMEOUT,
     waitForDisplayed: Boolean = true
 ): ViewAction {
     return object : ViewAction {
@@ -369,5 +369,11 @@ abstract class BadCrosswordDataTest {
         ToastMatcher.onToast(R.string.damaged_data).check(
                 ViewAssertions.matches(isDisplayed())
         )
+    }
+}
+
+class Constants {
+    companion object {
+        const val TIMEOUT = 30000L
     }
 }

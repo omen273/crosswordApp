@@ -8,7 +8,7 @@ import org.junit.Test
 
 class LoadSolvedCrosswordSeveralTimesInstrumentedTest: SolveCrossword() {
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun solveCrosswordInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()

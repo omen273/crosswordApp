@@ -51,7 +51,7 @@ class BadImageReadingInstrumentedTest {
 
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun badImageReadingInstrumentedTest(){
         Intent(
                 ApplicationProvider.getApplicationContext(),

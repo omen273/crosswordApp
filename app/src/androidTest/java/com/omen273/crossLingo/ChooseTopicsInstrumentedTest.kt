@@ -25,7 +25,7 @@ class ChooseTopicsInstrumentedTest {
     @JvmField
     val retryTestRule = RetryTestRule()
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun chooseTopicsInstrumentedTest() {
         chooseGenerateCrossword()
         onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))

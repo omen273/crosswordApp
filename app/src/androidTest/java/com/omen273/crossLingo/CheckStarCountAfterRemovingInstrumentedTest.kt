@@ -8,7 +8,7 @@ import org.junit.Test
 
 class CheckStarCountAfterRemovingInstrumentedTest: SolveCrossword() {
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun solveCrosswordInstrumentedTest() {
         val START_STAR_NAMBER = 10
         waitForCondition("Stars number checking", {START_STAR_NAMBER  == readConfig()})

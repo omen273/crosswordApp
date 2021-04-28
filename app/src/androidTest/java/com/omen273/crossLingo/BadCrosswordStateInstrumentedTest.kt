@@ -17,7 +17,7 @@ class BadCrosswordStateInstrumentedTest : BadCrosswordDataTest() {
         }
     }
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun badCrosswordStateInstrumentedTest() {
         test()
     }

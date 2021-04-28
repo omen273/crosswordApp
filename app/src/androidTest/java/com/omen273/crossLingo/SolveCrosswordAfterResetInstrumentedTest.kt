@@ -11,7 +11,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class SolveCrosswordAfterResetInstrumentedTest : SolveCrossword() {
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun solveCrosswordAfterResetInstrumentedTest() {
         crossword = generateCrossword()
         loadFirstCrossword()

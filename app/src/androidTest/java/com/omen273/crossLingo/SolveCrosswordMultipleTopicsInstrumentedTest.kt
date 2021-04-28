@@ -4,7 +4,7 @@ import org.junit.Test
 
 class SolveCrosswordMultipleTopicsInstrumentedTest: SolveCrossword() {
 
-    @Test
+    @Test(timeout = Constants.TIMEOUT)
     fun solveCrosswordInstrumentedTest() {
         crossword = generateCrossword(chooseTopics = listOf(0,2,4))
         loadFirstCrossword("multiple1")
