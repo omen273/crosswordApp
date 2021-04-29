@@ -2,7 +2,6 @@ package com.omen273.crossLingo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.toolbar_game.*
 import kotlinx.android.synthetic.main.toolbar_sett.*
 
 class SettActivity : AppCompatActivity() {
