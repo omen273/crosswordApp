@@ -29,13 +29,11 @@ import android.util.TypedValue
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.DialogFragment
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_game.*
-import kotlinx.android.synthetic.main.toolbar.*
+import kotlinx.android.synthetic.main.toolbar_game.*
 import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.CrosswordState
 import org.akop.ararat.core.buildCrossword
