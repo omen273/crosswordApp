@@ -14,7 +14,7 @@ data class LanguageItem(
 ) : Parcelable
 
 class WordsReader {
-    fun read(inputStream: InputStream): ArrayList<ArrayList<LanguageItem>> =
+    fun read(inputStream: InputStream, levelValidator : (level: String?) -> Unit): ArrayList<ArrayList<LanguageItem>> =
         with(
             JsonReader(
                 inputStream.bufferedReader
@@ -56,8 +56,9 @@ class WordsReader {
                                 endArray()
                             }
                             "level" -> {
-                                //TODO validation of level
-                                languageItem.level = nextString()
+                                val level = nextString()
+                                levelValidator(level)
+                                languageItem.level = level
                             }
                             else -> throw RuntimeException("The wrong json tag: $tag")
                         }

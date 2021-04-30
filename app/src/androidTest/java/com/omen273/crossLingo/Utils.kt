@@ -296,7 +296,8 @@ open class ChoseTopicsToastTest {
         ).apply {
             val data =
                 getTestContext().resources.assets.open(fileName)
-                    .use { WordsReader().read(it) }
+                    .use { WordsReader().read(it,
+                            fun(level: String?){Utils.validateLevel(getContext().resources, level)}) }
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }

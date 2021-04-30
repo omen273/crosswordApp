@@ -193,16 +193,9 @@ class ChooseTopicsActivity : AppCompatActivity() {
         private const val NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS = "multiple"
 
         fun readLevelFromConfig(path: File, resources: Resources): String? = with(File(path, LEVEL_NAME)) {
-            if (exists()) FileInputStream(this).use { ConfigReader().readLevel(it) }
-            else resources.openRawResource(R.raw.level).use {
-                val currentLevel = ConfigReader().readLevel(it)
-                if(currentLevel == null) null
-                else {
-                    val levels = resources.getStringArray(R.array.levels)
-                    val index = levels.indexOf(currentLevel)
-                    if(index == -1) throw RuntimeException("Unknown level")
-                    currentLevel
-                }
+            val validate = fun(level: String?){Utils.validateLevel(resources, level)}
+            if (exists()) FileInputStream(this).use { ConfigReader().readLevel(it, validate) }
+            else resources.openRawResource(R.raw.level).use { ConfigReader().readLevel(it, validate)
             }
         }
     }

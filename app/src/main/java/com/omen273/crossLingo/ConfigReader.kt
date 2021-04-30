@@ -4,10 +4,6 @@ import android.util.JsonReader
 import java.io.InputStream
 import java.nio.charset.Charset
 
-class ConfigData(
-        var starNumber:Int = 0,
-        var level:String? = null)
-
 class ConfigReader {
 
     fun readStarNumber(inputStream: InputStream): Int =
@@ -29,7 +25,7 @@ class ConfigReader {
             starNumber
         }
 
-    fun readLevel(inputStream: InputStream): String? =
+    fun readLevel(inputStream: InputStream, levelValidator : (level: String?) -> Unit): String? =
             with(
                     JsonReader(
                             inputStream.bufferedReader
@@ -40,7 +36,11 @@ class ConfigReader {
                 var level: String? = null
                 while(hasNext()) {
                     when (val tag = nextName()) {
-                        "level" -> level = nextString()
+                        "level" -> {
+                            val l = nextString()
+                            levelValidator(l)
+                            level = l
+                        }
                         else -> throw RuntimeException("The wrong json tag: $tag")
                     }
                 }
