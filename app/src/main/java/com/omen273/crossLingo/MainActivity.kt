@@ -14,6 +14,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.toolbar_main.*
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         data = resources.openRawResource(R.raw.data).use { WordsReader().read(it) }
         imageSize = computeImageSize()
         tableLayout.also {
@@ -58,6 +60,10 @@ class MainActivity : AppCompatActivity() {
         }
         addItemToRecyclerView(createGeneratingImage())
         addItems()
+
+        settingsImage.setOnClickListener {
+            val settings = Intent(this, SettActivity::class.java)
+            startActivity(settings) }
     }
 
     private fun computeImageSize(): Int =
