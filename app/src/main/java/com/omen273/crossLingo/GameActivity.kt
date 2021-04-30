@@ -355,8 +355,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         const val DATA_SUFFIX: String = ".json"
 
         fun readConfig(path: File, resources: Resources): Int = with(File(path, CONFIG_NAME)) {
-            if (exists()) FileInputStream(this).use { ConfigReader().read(it) }
-            else resources.openRawResource(R.raw.config).use { ConfigReader().read(it) }
+            if (exists()) FileInputStream(this).use { ConfigReader().read(it).starNumber }
+            else resources.openRawResource(R.raw.config).use { ConfigReader().read(it).starNumber }
         }
     }
 }
