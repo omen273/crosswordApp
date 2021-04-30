@@ -2,7 +2,8 @@
     [
     {"EN":{
         "word": "ant",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "муравей",
@@ -12,7 +13,8 @@
     [
     {"EN":{
         "word": "bat",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "летучая мышь",
@@ -22,7 +24,8 @@
     [
     {"EN":{
         "word": "bear",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "медведь",
@@ -32,7 +35,8 @@
     [
     {"EN":{
         "word": "bee",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "пчела",
@@ -42,7 +46,8 @@
     [
     {"EN":{
         "word": "bird",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "птица",
@@ -52,7 +57,8 @@
     [
     {"EN":{
         "word": "buffalo",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "бык",
@@ -62,7 +68,8 @@
     [
     {"EN":{
         "word": "cat",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "кот",
@@ -72,7 +79,8 @@
     [
     {"EN":{
         "word": "chicken",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "курица",
@@ -82,7 +90,8 @@
     [
     {"EN":{
         "word": "dog",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "собака",
@@ -92,7 +101,8 @@
     [
     {"EN":{
         "word": "dolphin",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "дельфин",
@@ -102,7 +112,8 @@
     [
     {"EN":{
         "word": "duck",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "утка",
@@ -112,7 +123,8 @@
     [
     {"EN":{
         "word": "elephant",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "слон",
@@ -122,7 +134,8 @@
     [
     {"EN":{
         "word": "fish",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "рыба",

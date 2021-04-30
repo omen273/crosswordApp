@@ -159,7 +159,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
     private fun findWordItem(item: ArrayList<*>) = item.find {
         val itemTr = it as LanguageItem
         itemTr.language == crosswordLanguage &&
-                itemTr.level == readConfig(filesDir, resources)
+                itemTr.level == readLevelFromConfig(filesDir, resources)
     } as LanguageItem?
 
     private fun getTopics(): ArrayList<String> {
@@ -189,11 +189,21 @@ class ChooseTopicsActivity : AppCompatActivity() {
         const val CROSSWORD_SIZE: Int = 14
         const val MAX_SIDE: Int = 15
         const val WORDS_VARIABLE: String = "words"
+        const val LEVEL_NAME: String = "level.json"
         private const val NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS = "multiple"
 
-        fun readConfig(path: File, resources: Resources): String? = with(File(path, GameActivity.CONFIG_NAME)) {
-            if (exists()) FileInputStream(this).use { ConfigReader().read(it).level }
-            else resources.openRawResource(R.raw.config).use { ConfigReader().read(it).level }
+        fun readLevelFromConfig(path: File, resources: Resources): String? = with(File(path, LEVEL_NAME)) {
+            if (exists()) FileInputStream(this).use { ConfigReader().readLevel(it) }
+            else resources.openRawResource(R.raw.level).use {
+                val currentLevel = ConfigReader().readLevel(it)
+                if(currentLevel == null) null
+                else {
+                    val levels = resources.getStringArray(R.array.levels)
+                    val index = levels.indexOf(currentLevel)
+                    if(index == -1) throw RuntimeException("Unknown level")
+                    currentLevel
+                }
+            }
         }
     }
 }

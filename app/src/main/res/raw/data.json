@@ -11,8 +11,20 @@
     ],
     [
     {"EN":{
+        "word": "antelope",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "антилопа",
+        "topics": ["животные"]
+        }}
+    ],	
+    [
+    {"EN":{
         "word": "bat",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "летучая мышь",
@@ -71,6 +83,28 @@
     ],
     [
     {"EN":{
+        "word": "chimpanzee",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "шимпанзе",
+        "topics": ["животные"]
+        }}
+    ],	
+    [
+    {"EN":{
+        "word": "cub",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "детеныш",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
         "word": "chicken",
         "topics": ["animals"]
         }},
@@ -121,6 +155,16 @@
     ],
     [
     {"EN":{
+        "word": "elk",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "лось",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
         "word": "fish",
         "topics": ["animals"]
         }},
@@ -161,14 +205,47 @@
     ],
     [
     {"EN":{
-        "word": "lion",
-        "topics": ["animals"]
+        "word": "gorilla",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
-        "word": "лев",
+        "word": "горилла",
         "topics": ["животные"]
         }}
     ],
+    [
+    {"EN":{
+        "word": "hare",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "заяц",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "hippo",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "бегемот",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "hedgehog",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "еж",
+        "topics": ["животные"]
+        }}
+    ],	
     [
     {"EN":{
         "word": "horse",
@@ -181,11 +258,12 @@
     ],
     [
     {"EN":{
-        "word": "pig",
-        "topics": ["animals"]
+        "word": "jaguar",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
-        "word": "свинья",
+        "word": "ягуар",
         "topics": ["животные"]
         }}
     ],
@@ -201,11 +279,87 @@
     ],
     [
     {"EN":{
-        "word": "elk",
+        "word": "lion",
         "topics": ["animals"]
         }},
     {"RU": {
-        "word": "лось",
+        "word": "лев",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "pig",
+        "topics": ["animals"]
+        }},
+    {"RU": {
+        "word": "свинья",
+        "topics": ["животные"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "primate",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "примат",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "rhinoceros",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "носорог",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "rodent",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "грызун",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "skunk",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "скунс",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "wallaby",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "валлаби",
+        "topics": ["животные"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "wildcat",
+        "topics": ["animals"],
+		"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "дикий кот",
         "topics": ["животные"]
         }}
     ],
@@ -226,16 +380,6 @@
         }},
     {"RU": {
         "word": "росомаха",
-        "topics": ["животные"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "hedgehog",
-        "topics": ["animals"]
-        }},
-    {"RU": {
-        "word": "еж",
         "topics": ["животные"]
         }}
     ],
