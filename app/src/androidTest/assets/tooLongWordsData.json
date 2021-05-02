@@ -2,7 +2,8 @@
     [
         {"EN":{
             "word": "cookerhmookerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадуккулелеаца",
@@ -12,7 +13,8 @@
     [
         {"EN":{
             "word": "platehmookerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плоловонцадрицацаца",
@@ -22,7 +24,8 @@
     [
         {"EN":{
             "word": "cheesehmookerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцапросоцаца",
@@ -32,7 +35,8 @@
     [
         {"EN":{
             "word": "sunnyhmookerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "пколодецланцадрицацаца",
@@ -42,7 +46,8 @@
     [
         {"EN":{
             "word": "cookerhmookerhouse",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцканадааца",
@@ -52,7 +57,8 @@
     [
         {"EN":{
             "word": "pinchhmookerfoxes",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадрколесоа",
@@ -62,7 +68,8 @@
     [
         {"EN":{
             "word": "cookerhdrugspooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "огоньланцадрицацаца",
@@ -72,7 +79,8 @@
     [
         {"EN":{
             "word": "cookfrienderpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плкроссанцадрицацаца",
@@ -82,7 +90,8 @@
     [
         {"EN":{
             "word": "cooquiyeskerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плитатлантрицацаца",
@@ -92,7 +101,8 @@
     [
         {"EN":{
             "word": "cookerhmoocheatker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадрблинеца",
@@ -102,7 +112,8 @@
     [
         {"EN":{
             "word": "cookerhfishesoker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плитколеноцадрицацаца",
@@ -112,7 +123,8 @@
     [
         {"EN":{
             "word": "cookerhmookappleker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадрядроца",
@@ -122,7 +134,8 @@
     [
         {"EN":{
             "word": "mountainhmookerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиткорицадрицацаца",
@@ -132,7 +145,8 @@
     [
         {"EN":{
             "word": "cookerhmookealpaser",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадркофеца",
@@ -142,7 +156,8 @@
     [
         {"EN":{
             "word": "cookroksokerpooker",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плитпасекаицацаца",

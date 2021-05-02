@@ -49,9 +49,9 @@ import kotlin.collections.ArrayList
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
 
-    internal lateinit var crosswordView: CrosswordView
+    private lateinit var crosswordView: CrosswordView
     internal var name = ""
-    internal var delete = false
+    private var delete = false
 
     @ExperimentalUnsignedTypes
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +63,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         game_toolbar.setNavigationOnClickListener{
             onBackPressed()
         }
-        star_number.text = readConfig(filesDir, resources).toString()
+        star_number.text = readStarNumberFromConfig(filesDir, resources).toString()
         name = intent.getStringExtra(MainActivity.CROSSWORD_NAME_VARIABLE).toString()
         val isGenerated =
             intent.getBooleanExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, false)
@@ -348,13 +348,13 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         const val LETTER_OPEN_PRICE: Int = 1
         const val WORD_OPEN_PRICE: Int = 3
         const val BONUS_ON_SOLVE: Int = 5
-        const val CONFIG_NAME: String = "config.json"
+        const val CONFIG_NAME: String = "star_number.json"
         const val STATE_SUFFIX: String = "Fill.json"
         const val DATA_SUFFIX: String = ".json"
 
-        fun readConfig(path: File, resources: Resources): Int = with(File(path, CONFIG_NAME)) {
-            if (exists()) FileInputStream(this).use { ConfigReader().read(it) }
-            else resources.openRawResource(R.raw.config).use { ConfigReader().read(it) }
+        fun readStarNumberFromConfig(path: File, resources: Resources): Int = with(File(path, CONFIG_NAME)) {
+            if (exists()) FileInputStream(this).use { ConfigReader().readStarNumber(it) }
+            else resources.openRawResource(R.raw.star_number).use { ConfigReader().readStarNumber(it) }
         }
     }
 }
