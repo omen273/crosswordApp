@@ -15,7 +15,7 @@ class ConfigReader {
         ) {
             beginObject()
             var starNumber = 0
-            while(hasNext()) {
+            while (hasNext()) {
                 when (val tag = nextName()) {
                     "star_number" -> starNumber = nextInt()
                     else -> throw RuntimeException("The wrong json tag: $tag")
