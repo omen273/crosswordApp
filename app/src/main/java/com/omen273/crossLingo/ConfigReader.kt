@@ -15,10 +15,9 @@ class ConfigReader {
             )
         ) {
             beginObject()
-            val starNumber: Int
-            when (val tag = nextName()) {
-                    "star_number" -> starNumber = nextInt()
-                    else -> throw RuntimeException("The wrong json tag: $tag")
+            val starNumber = when (val tag = nextName()) {
+                "star_number" -> nextInt()
+                else -> throw RuntimeException("The wrong json tag: $tag")
             }
             endObject()
             starNumber

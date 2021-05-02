@@ -53,9 +53,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
-        Log.d("OC1", "OK")
         if(ChooseTopicsActivity.readLevelFromConfig(filesDir, resources) == null) {
-            Log.d("OC1", "NULL")
             showLevelDialog()
         }
         data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
