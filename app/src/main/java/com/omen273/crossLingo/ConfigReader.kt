@@ -15,12 +15,10 @@ class ConfigReader {
             )
         ) {
             beginObject()
-            var starNumber = 0
-            while (hasNext()) {
-                when (val tag = nextName()) {
+            val starNumber: Int
+            when (val tag = nextName()) {
                     "star_number" -> starNumber = nextInt()
                     else -> throw RuntimeException("The wrong json tag: $tag")
-                }
             }
             endObject()
             starNumber
@@ -35,20 +33,18 @@ class ConfigReader {
             ) {
                 beginObject()
                 var level: String? = null
-                while(hasNext()) {
-                    when (val tag = nextName()) {
-                        "level" -> {
-                            if(peek() == JsonToken.STRING) {
-                                val l = nextString()
-                                levelValidator(l)
-                                level = l
-                            }
-                            else {
-                                nextNull()
-                            }
+                when (val tag = nextName()) {
+                    "level" -> {
+                        if(peek() == JsonToken.STRING) {
+                            val l = nextString()
+                            levelValidator(l)
+                            level = l
                         }
-                        else -> throw RuntimeException("The wrong json tag: $tag")
+                        else {
+                            nextNull()
+                        }
                     }
+                    else -> throw RuntimeException("The wrong json tag: $tag")
                 }
                 endObject()
                 level
