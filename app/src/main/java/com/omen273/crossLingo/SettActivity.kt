@@ -33,7 +33,7 @@ class SettActivity : AppCompatActivity() {
 
     override fun onResume() {
         val currentLevel = ChooseTopicsActivity.readLevelFromConfig(filesDir, resources)
-        if(currentLevel != null) {
+        if (currentLevel != null) {
             val levels = resources.getStringArray(R.array.levels)
             val index = levels.indexOf(currentLevel)
             level_list.setSelection(index)
