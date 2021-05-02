@@ -14,7 +14,7 @@ data class LanguageItem(
 ) : Parcelable
 
 class WordsReader {
-    fun read(inputStream: InputStream, levelValidator : (level: String?) -> Unit): ArrayList<ArrayList<LanguageItem>> =
+    fun read(inputStream: InputStream, levelValidator : (level: String) -> Unit): ArrayList<ArrayList<LanguageItem>> =
         with(
             JsonReader(
                 inputStream.bufferedReader

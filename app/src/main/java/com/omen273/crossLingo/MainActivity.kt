@@ -53,9 +53,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
-        showLevelDialog()
+        Log.d("OC1", "OK")
+        if(ChooseTopicsActivity.readLevelFromConfig(filesDir, resources) == null) {
+            Log.d("OC1", "NULL")
+            showLevelDialog()
+        }
         data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
-                fun(level: String?){Utils.validateLevel(resources, level)}) }
+                fun(level: String){Utils.validateLevel(resources, level)}) }
         imageSize = computeImageSize()
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)
@@ -374,7 +378,10 @@ class MainActivity : AppCompatActivity() {
         val types = resources.getStringArray(R.array.levels)
         val b = AlertDialog.Builder(this).setTitle("Choose your level. " +
                 "You can change it in settings.").
-        setItems(types) { dialog, _ -> dialog.dismiss() }.create()
+        setItems(types) { dialog, selectedItem -> dialog.dismiss()
+            openFileOutput(ChooseTopicsActivity.LEVEL_NAME, MODE_PRIVATE).use {
+                ConfigWriter().write(it, types[selectedItem])
+            } }.create()
         b.show()
     }
 
