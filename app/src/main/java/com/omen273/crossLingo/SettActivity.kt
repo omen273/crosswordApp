@@ -19,7 +19,7 @@ class SettActivity : AppCompatActivity() {
             onBackPressed()
         }
 
-        level_list.onItemSelectedListener= object : AdapterView.OnItemSelectedListener{
+        level_list.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
 
