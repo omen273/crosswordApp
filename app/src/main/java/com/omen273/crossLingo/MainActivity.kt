@@ -52,7 +52,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
-        data = resources.openRawResource(R.raw.data).use { WordsReader().read(it) }
+        data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
+                fun(level: String?){Utils.validateLevel(resources, level)}) }
         imageSize = computeImageSize()
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)

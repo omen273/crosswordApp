@@ -129,7 +129,7 @@ fun getContext(): Context = InstrumentationRegistry.getInstrumentation().targetC
 
 fun getTestContext(): Context = InstrumentationRegistry.getInstrumentation().context
 
-fun readConfig(): Int = GameActivity.readConfig(getContext().filesDir, getContext().resources)
+fun readConfig(): Int = GameActivity.readStarNumberFromConfig(getContext().filesDir, getContext().resources)
 
 fun chooseGenerateCrossword() {
     onView(getItemFromCrosswordList(0, 0)).perform(ViewActions.click())
@@ -296,7 +296,8 @@ open class ChoseTopicsToastTest {
         ).apply {
             val data =
                 getTestContext().resources.assets.open(fileName)
-                    .use { WordsReader().read(it) }
+                    .use { WordsReader().read(it,
+                            fun(level: String?){Utils.validateLevel(getContext().resources, level)}) }
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
