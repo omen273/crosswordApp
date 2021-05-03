@@ -22,5 +22,5 @@
     <string name ="level">твой уровень</string>
     <string name ="settings">настройки</string>
     <string name ="choose_level_dialog_text">Пожалуйста, выберите ваш уровень.
-        Его можно изменить в настройках в дальнейшем.</string>
+        Его можно будет изменить в настройках.</string>
 </resources>
