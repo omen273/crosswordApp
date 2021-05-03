@@ -17,15 +17,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class SolveCrosswordWithTipsInstrumentedTest {
-
-    @get:Rule
-    var activityTestRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
-
-    @Rule
-    @JvmField
-    val retryTestRule = RetryTestRule()
+class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
 
     private fun menuClick(name: Int, id: Int, price: Int): Int {
         var stars = readConfig()

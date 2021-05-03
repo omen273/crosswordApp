@@ -23,6 +23,7 @@ import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
 import org.hamcrest.*
+import org.junit.Before
 import org.junit.Rule
 import org.junit.rules.TestRule
 import org.junit.runners.model.Statement
@@ -277,16 +278,7 @@ class RetryTestRule(val retryCount: Int = 3) : TestRule {
     }
 }
 
-open class ChoseTopicsToastTest {
-
-    @get:Rule
-    var activityTestRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
-
-    @Rule
-    @JvmField
-    val retryTestRule = RetryTestRule()
-
+open class ChoseTopicsToastTest: TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
     fun choseTopicsImpl(fileName: String, message: String) {
@@ -297,7 +289,7 @@ open class ChoseTopicsToastTest {
             val data =
                 getTestContext().resources.assets.open(fileName)
                     .use { WordsReader().read(it,
-                            fun(level: String?){Utils.validateLevel(getContext().resources, level)}) }
+                            fun(level: String){Utils.validateLevel(getContext().resources, level)}) }
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
@@ -310,15 +302,34 @@ open class ChoseTopicsToastTest {
     }
 }
 
-open class SolveCrossword {
+fun setLevelImpl(){
+    var level: String? = "test"
+    level = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
+    waitForCondition("", {level != "test"}, 300)
+    if(level == null) {
+        onView(withText("advanced(C1)"))
+                .inRoot(RootMatchers.isDialog())
+                .perform(ViewActions.click())
+    }
+}
+
+open class TestBaseClass {
 
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
+            ActivityScenarioRule(MainActivity::class.java)
 
     @Rule
     @JvmField
     val retryTestRule = RetryTestRule()
+
+    @Before
+    fun setLevel() {
+        setLevelImpl()
+    }
+}
+
+open class SolveCrossword : TestBaseClass() {
 
     protected lateinit var crossword: Crossword
 
@@ -345,15 +356,7 @@ open class SolveCrossword {
     }
 }
 
-abstract class BadCrosswordDataTest {
-
-    @get:Rule
-    var activityTestRule: ActivityScenarioRule<MainActivity> =
-            ActivityScenarioRule(MainActivity::class.java)
-
-    @Rule
-    @JvmField
-    val retryTestRule = RetryTestRule()
+abstract class BadCrosswordDataTest : TestBaseClass() {
 
     abstract fun spoil()
     lateinit var crossword: Crossword
