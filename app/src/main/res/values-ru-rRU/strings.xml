@@ -21,6 +21,6 @@
     <string name ="generate_crossword">создать кроссворд</string>
     <string name ="level">твой уровень</string>
     <string name ="settings">настройки</string>
-    <string name ="choose_level_dialog_text">Пожалуйста, выбирете ваш уровень.
+    <string name ="choose_level_dialog_text">Пожалуйста, выберите ваш уровень.
         Его можно изменить в настройках в дальнейшем.</string>
 </resources>

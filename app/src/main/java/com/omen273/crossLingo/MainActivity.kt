@@ -374,8 +374,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showLevelDialog() {
         val types = resources.getStringArray(R.array.levels)
-        val b = AlertDialog.Builder(this).setTitle("Choose your level. " +
-                "You can change it in settings.").
+        val b = AlertDialog.Builder(this).setTitle(R.string.choose_level_dialog_text).
         setItems(types) { dialog, selectedItem -> dialog.dismiss()
             openFileOutput(ChooseTopicsActivity.LEVEL_NAME, MODE_PRIVATE).use {
                 ConfigWriter().write(it, types[selectedItem])
