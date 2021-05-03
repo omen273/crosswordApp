@@ -193,7 +193,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
         private const val NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS = "multiple"
 
         fun readLevelFromConfig(path: File, resources: Resources): String? = with(File(path, LEVEL_NAME)) {
-            val validate = fun(level: String?){Utils.validateLevel(resources, level)}
+            val validate = fun(level: String){Utils.validateLevel(resources, level)}
             if (exists()) FileInputStream(this).use { ConfigReader().readLevel(it, validate) }
             else resources.openRawResource(R.raw.level).use { ConfigReader().readLevel(it, validate)
             }

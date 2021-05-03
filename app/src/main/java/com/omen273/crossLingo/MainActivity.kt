@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar_main.*
 import java.io.File
 
+
 class MainActivity : AppCompatActivity() {
     private val crosswords = hashSetOf<String>()
     private var data = arrayListOf<ArrayList<LanguageItem>>()
@@ -33,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         val dataset: MutableList<MutableList<LinearLayout>> = mutableListOf()
 
         override fun onCreateViewHolder(
-            parent: ViewGroup,
-            viewType: Int
+                parent: ViewGroup,
+                viewType: Int
         ): TableHolder = TableHolder(TableRow(parent.context))
 
         override fun onBindViewHolder(holder: TableHolder, position: Int) {
@@ -52,8 +53,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
+        if(ChooseTopicsActivity.readLevelFromConfig(filesDir, resources) == null) {
+            showLevelDialog()
+        }
         data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
-                fun(level: String?){Utils.validateLevel(resources, level)}) }
+                fun(level: String){Utils.validateLevel(resources, level)}) }
         imageSize = computeImageSize()
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)
@@ -111,8 +115,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     class DeleteCrossword(
-        private val context: MainActivity,
-        private val name: String
+            private val context: MainActivity,
+            private val name: String
     ) : DialogFragment() {
         override fun onCreateDialog(savedInstanceState: Bundle?): AlertDialog =
             activity?.let {
@@ -211,7 +215,7 @@ class MainActivity : AppCompatActivity() {
         addItemToRecyclerView(linearLayout)
         val dataset = (tableLayout.adapter as TableAdapter).dataset
         imageDatas[name] = ImageData(
-            path.lastModified(), dataset.lastIndex, dataset[dataset.lastIndex].lastIndex
+                path.lastModified(), dataset.lastIndex, dataset[dataset.lastIndex].lastIndex
         )
     }
 
@@ -236,7 +240,7 @@ class MainActivity : AppCompatActivity() {
                         }
                         try {
                             addItem(file)
-                        } catch (e:Exception){
+                        } catch (e: Exception){
                             Log.e("ERROR", e.message.toString())
                         }
                     }
@@ -250,17 +254,16 @@ class MainActivity : AppCompatActivity() {
             ACTIVITY_CHOOSE -> when (resultCode) {
                 ACTIVITY_GAME_OK -> {
                     val sharedPref =
-                        getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
+                            getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
                     val name = sharedPref.getString(CROSSWORD_NAME_VARIABLE, "") ?: return
                     val path = pathToImage(name)
-                    if(!path.exists()) {
+                    if (!path.exists()) {
                         Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
                         return
                     }
                     try {
                         addItem(pathToImage(name))
-                    }
-                    catch (e:Exception){
+                    } catch (e: Exception) {
                         Log.e("ERROR", e.message.toString())
                         return
                     }
@@ -280,16 +283,16 @@ class MainActivity : AppCompatActivity() {
                     val adapter = tableLayout.adapter as TableAdapter
                     val linearLayout = adapter.dataset[item.row][item.column]
                     val path = pathToImage(loadedName)
-                    if(!path.exists()) {
+                    if (!path.exists()) {
                         Log.e("ERROR", "The path to the image doesn't exist: ${path.absolutePath}")
                         return
                     }
                     (linearLayout.getChildAt(0) as ImageView).apply {
                         setImageDrawable(Drawable.createFromPath(path.absolutePath))
-                        if(drawable == null)  {
+                        if (drawable == null) {
                             Log.e("ERROR", "The bad image")
                             Toast.makeText(this@MainActivity, R.string.damaged_data,
-                              Toast.LENGTH_SHORT).show()
+                                    Toast.LENGTH_SHORT).show()
                             return
                         }
                     }
@@ -312,10 +315,10 @@ class MainActivity : AppCompatActivity() {
     private fun pathToImage(name: String) = File(pathToDrawable(), "$name${IMAGE_FORMAT}")
 
     private fun swapItems(
-        i: Int,
-        j: Int,
-        tempImage: Drawable,
-        tempText: CharSequence
+            i: Int,
+            j: Int,
+            tempImage: Drawable,
+            tempText: CharSequence
     ): Pair<Drawable, CharSequence> {
         var tempImage1 = tempImage
         var tempText1 = tempText
@@ -367,6 +370,16 @@ class MainActivity : AppCompatActivity() {
                 if (i == row && j == column) return
             }
         }
+    }
+
+    private fun showLevelDialog() {
+        val types = resources.getStringArray(R.array.levels)
+        val b = AlertDialog.Builder(this).setTitle(R.string.choose_level_dialog_text).
+        setItems(types) { dialog, selectedItem -> dialog.dismiss()
+            openFileOutput(ChooseTopicsActivity.LEVEL_NAME, MODE_PRIVATE).use {
+                ConfigWriter().write(it, types[selectedItem])
+            } }.create()
+        b.show()
     }
 
     companion object {

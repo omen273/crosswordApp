@@ -15,15 +15,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class ChooseTopicsInstrumentedTest {
-
-    @get:Rule
-    var activityTestRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
-
-    @Rule
-    @JvmField
-    val retryTestRule = RetryTestRule()
+class ChooseTopicsInstrumentedTest: TestBaseClass() {
 
     @Test
     fun chooseTopicsInstrumentedTest() {

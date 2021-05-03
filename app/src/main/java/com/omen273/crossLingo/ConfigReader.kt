@@ -1,6 +1,7 @@
 package com.omen273.crossLingo
 
 import android.util.JsonReader
+import android.util.JsonToken
 import java.io.InputStream
 import java.nio.charset.Charset
 
@@ -14,18 +15,15 @@ class ConfigReader {
             )
         ) {
             beginObject()
-            var starNumber = 0
-            while (hasNext()) {
-                when (val tag = nextName()) {
-                    "star_number" -> starNumber = nextInt()
-                    else -> throw RuntimeException("The wrong json tag: $tag")
-                }
+            val starNumber = when (val tag = nextName()) {
+                "star_number" -> nextInt()
+                else -> throw RuntimeException("The wrong json tag: $tag")
             }
             endObject()
             starNumber
         }
 
-    fun readLevel(inputStream: InputStream, levelValidator : (level: String?) -> Unit): String? =
+    fun readLevel(inputStream: InputStream, levelValidator : (level: String) -> Unit): String? =
             with(
                     JsonReader(
                             inputStream.bufferedReader
@@ -34,15 +32,18 @@ class ConfigReader {
             ) {
                 beginObject()
                 var level: String? = null
-                while(hasNext()) {
-                    when (val tag = nextName()) {
-                        "level" -> {
+                when (val tag = nextName()) {
+                    "level" -> {
+                        if(peek() == JsonToken.STRING) {
                             val l = nextString()
                             levelValidator(l)
                             level = l
                         }
-                        else -> throw RuntimeException("The wrong json tag: $tag")
+                        else {
+                            nextNull()
+                        }
                     }
+                    else -> throw RuntimeException("The wrong json tag: $tag")
                 }
                 endObject()
                 level

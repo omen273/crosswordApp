@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.AdapterView
 import kotlinx.android.synthetic.main.activity_sett.*
 import kotlinx.android.synthetic.main.toolbar_sett.*
-import java.io.File
 
 class SettActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

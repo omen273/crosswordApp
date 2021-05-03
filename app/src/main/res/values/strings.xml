@@ -28,4 +28,6 @@
         <item>proficiency(C2)</item>
     </string-array>
     <string name ="settings">settings</string>
+    <string name ="choose_level_dialog_text">Choose your level, please. You can change it later
+        in settings.</string>
 </resources>
