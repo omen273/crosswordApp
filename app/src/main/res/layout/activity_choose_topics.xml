@@ -24,7 +24,7 @@
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintHeight_percent="0.55"
         app:layout_constraintEnd_toEndOf="@id/topics"
         app:layout_constraintStart_toStartOf="@id/topics"
         app:layout_constraintTop_toBottomOf="@id/topics">
