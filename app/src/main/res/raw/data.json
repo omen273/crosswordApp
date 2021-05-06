@@ -821,7 +821,7 @@
     ],
     [
         {"EN":{
-            "word": "сasserole",
+            "word": "casserole",
             "topics": ["food"],
             "level": "advanced(C1)"
         }},
@@ -1052,17 +1052,6 @@
     ],
     [
         {"EN":{
-            "word": "raisin",
-            "topics": ["food"],
-            "level": "advanced(C1)"
-        }},
-        {"RU": {
-            "word": "изюм",
-            "topics": ["еда"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "soya",
             "topics": ["food"],
             "level": "advanced(C1)"
@@ -1090,7 +1079,7 @@
             "level": "advanced(C1)"
         }},
         {"RU": {
-            "word": "ириска",
+            "word": "ирис",
             "topics": ["еда"]
         }}
     ],
@@ -2392,17 +2381,6 @@
         }},
         {"RU": {
             "word": "кувшин",
-            "topics": ["приготовление еды"]
-        }}
-    ],
-    [
-        {"EN":{
-            "word": "saucer",
-            "topics": ["cooking"],
-            "level": "advanced(C1)"
-        }},
-        {"RU": {
-            "word": "блюдце",
             "topics": ["приготовление еды"]
         }}
     ],
