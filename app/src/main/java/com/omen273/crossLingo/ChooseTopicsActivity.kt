@@ -20,7 +20,8 @@ class ChooseTopicsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_topics)
-        val topicNames = getTopics()
+
+        val topicNames = getTopics().filter {getWords(hashSetOf(it)).size >= CROSSWORD_SIZE}
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 val wordsInList = getChosenTopics()
@@ -139,9 +140,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
             val wordItemTr = findWordItem(item)
             val clueItemTr = findClueItem(item)
             if (wordItemTr != null && clueItemTr != null &&
-                wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null &&
-                wordItemTr.word.all { it.isLetter() } && wordItemTr.word.length <= MAX_SIDE &&
-                wordItemTr.word.length > 1
+                wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null
             ) {
                 words[wordItemTr.word] = if(clueType == ClueType.WORD) clueItemTr.word
                 else clueItemTr.questions.random()
