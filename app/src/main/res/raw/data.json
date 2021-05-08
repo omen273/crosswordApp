@@ -1660,7 +1660,8 @@
     [
     {"EN":{
         "word": "acoustic",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "акустический",
@@ -1680,11 +1681,34 @@
     [
     {"EN":{
         "word": "amplify",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "делать громче",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "amplifier",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "усилитель",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "anthem",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "гимн",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -1705,6 +1729,28 @@
     {"RU": {
         "word": "бит",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bow",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "смычок",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "brass",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "духовые",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -1735,6 +1781,149 @@
     {"RU": {
         "word": "хор",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "clarinet",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кларнет",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "flute",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "флейта",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "harp",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "арфа",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "improvise",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "импровизировать",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "jukebox",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "музыкальный автомат",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "keyboardist",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "клавишник",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "percussion",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ударные",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "percussionist",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ударник",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "soloist",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "солист",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "string",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "струна",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "support",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "разогрев",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "verse",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "куплет",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "whistle",
+            "topics": ["music"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "свистеть",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -1810,7 +1999,8 @@
     [
     {"EN":{
         "word": "melody",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "мелодия",
@@ -1860,7 +2050,8 @@
     [
     {"EN":{
         "word": "cello",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "виолончель",
