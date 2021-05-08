@@ -386,349 +386,349 @@
     [
     {"EN":{
         "word": "beetroot",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "свекла",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "pepper",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "перец",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "corn",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "кукуруза",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "beans",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "бобы",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "cabbage",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "капуста",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "carrot",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "морковь",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "onion",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "лук",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "garlic",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "чеснок",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "potato",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "картофель",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "cucumber",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "огурец",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "lettuce",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "салат",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "pumpkin",
-        "topics": ["vegetables", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "тыква",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],  
     [
     {"EN":{
         "word": "eggplant",
-        "topics": ["vegetables", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "баклажан",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "spinach",
-        "topics": ["vegetables", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "шпинат",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "cauliflower",
-        "topics": ["vegetables", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "цветная капуста",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "tomato",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "помидор",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "turnip",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "репа",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "radish",
-        "topics": ["vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "редька",
-        "topics": ["овощи", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "apple",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "яблоко",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "apricot",
-        "topics": ["fruits", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "абрикос",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "avocado",
-        "topics": ["fruits", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "авокадо",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "banana",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "банан",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "blackberry",
-        "topics": ["fruits", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "ежевика",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "cantaloupe",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "дыня",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "cherry",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "вишня",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "fig",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "инжир",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "grapes",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "виноград",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "lemon",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "лимон",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "orange",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "апельсин",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "peach",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "персик",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "pineapple",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "ананас",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "plum",
-        "topics": ["fruits", "food"],
+        "topics": ["fruits and vegetables", "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "слива",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "strawberry",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "клубника",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "watermelon",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits and vegetables", "food"]
         }},
     {"RU": {
         "word": "арбуз",
-        "topics": ["фрукты", "еда"]
+        "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -745,12 +745,12 @@
     [
         {"EN":{
             "word": "asparagus",
-            "topics": ["vegetables", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "спаржа",
-            "topics": ["овощи", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -778,23 +778,23 @@
     [
         {"EN":{
             "word": "berry",
-            "topics": ["fruits", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "ягода",
-            "topics": ["фрукты", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
         {"EN":{
             "word": "blackcurrant",
-            "topics": ["fruits", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "черная смородина",
-            "topics": ["фрукты", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -833,23 +833,23 @@
     [
         {"EN":{
             "word": "celery",
-            "topics": ["vegetables", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "сельдерей",
-            "topics": ["овощи", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
         {"EN":{
             "word": "coconut",
-            "topics": ["fruits", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "кокос",
-            "topics": ["фрукты", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -921,12 +921,12 @@
     [
         {"EN":{
             "word": "grapefruit",
-            "topics": ["fruits", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "грейпфрут",
-            "topics": ["фрукты", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -965,12 +965,12 @@
     [
         {"EN":{
             "word": "lime",
-            "topics": ["fruits", "food"],
+            "topics": ["fruits and vegetables", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "лайм",
-            "topics": ["фрукты", "еда"]
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
