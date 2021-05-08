@@ -496,7 +496,8 @@
     [
     {"EN":{
         "word": "pumpkin",
-        "topics": ["vegetables", "food"]
+        "topics": ["vegetables", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "тыква",
@@ -506,7 +507,8 @@
     [
     {"EN":{
         "word": "eggplant",
-        "topics": ["vegetables", "food"]
+        "topics": ["vegetables", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "баклажан",
@@ -516,7 +518,8 @@
     [
     {"EN":{
         "word": "spinach",
-        "topics": ["vegetables", "food"]
+        "topics": ["vegetables", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "шпинат",
@@ -526,7 +529,8 @@
     [
     {"EN":{
         "word": "cauliflower",
-        "topics": ["vegetables", "food"]
+        "topics": ["vegetables", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "цветная капуста",
@@ -576,7 +580,8 @@
     [
     {"EN":{
         "word": "apricot",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "абрикос",
@@ -586,7 +591,8 @@
     [
     {"EN":{
         "word": "avocado",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "авокадо",
@@ -606,7 +612,8 @@
     [
     {"EN":{
         "word": "blackberry",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "ежевика",
@@ -696,7 +703,8 @@
     [
     {"EN":{
         "word": "plum",
-        "topics": ["fruits", "food"]
+        "topics": ["fruits", "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "слива",
@@ -721,6 +729,402 @@
     {"RU": {
         "word": "арбуз",
         "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "almond",
+        "topics": ["food"],
+        "level": "advanced(C1)"
+    }},
+    {"RU": {
+        "word": "миндаль",
+        "topics": ["еда"]
+    }}
+    ],
+    [
+        {"EN":{
+            "word": "asparagus",
+            "topics": ["vegetables", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "спаржа",
+            "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "barley",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ячмень",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "basil",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "базилик",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "berry",
+            "topics": ["fruits", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ягода",
+            "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "blackcurrant",
+            "topics": ["fruits", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "черная смородина",
+            "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "breadcrumbs",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "панировочные сухари",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bun",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "булочка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "casserole",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "запеканка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "celery",
+            "topics": ["vegetables", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "сельдерей",
+            "topics": ["овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "coconut",
+            "topics": ["fruits", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кокос",
+            "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cornflakes",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кукурузные хлопья",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "croissant",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "круассан",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "custard",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "заварной крем",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dough",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "тесто",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "doughnut",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "пончик",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "ginger",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "имбирь",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "grapefruit",
+            "topics": ["fruits", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "грейпфрут",
+            "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "jelly",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "желе",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lasagne",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лазанья",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lentil",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "чечевица",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lime",
+            "topics": ["fruits", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лайм",
+            "topics": ["фрукты", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "marmalade",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "джем",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mayonnaise",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "майонез",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "meatball",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "фрикаделька",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mince",
+            "topics": ["cooking", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "фарш",
+            "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mousse",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "мусс",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "popcorn",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "попкорн",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "porridge",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "каша",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "soya",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "соя",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "syrup",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "сироп",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "toffee",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ирис",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "vanilla",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ваниль",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "raisin",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "изюм",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "veal",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "телятина",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "yolk",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "желток",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -1525,16 +1929,6 @@
     ],
     [
     {"EN":{
-        "word": "bake",
-        "topics": ["cooking", "food"]
-        }},
-    {"RU": {
-        "word": "испечь",
-        "topics": ["приготовление еды", "еда"]
-        }}
-    ],
-    [
-    {"EN":{
         "word": "beat",
         "topics": ["cooking", "food"]
         }},
@@ -1556,7 +1950,8 @@
     [
     {"EN":{
         "word": "carve",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "нарезать",
@@ -1626,7 +2021,8 @@
     [
     {"EN":{
         "word": "grate",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "натереть",
@@ -1646,7 +2042,8 @@
     [
     {"EN":{
         "word": "grill",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "гриль",
@@ -1676,7 +2073,8 @@
     [
     {"EN":{
         "word": "mash",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "пюре",
@@ -1796,7 +2194,8 @@
     [
     {"EN":{
         "word": "steam",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "готовить на пару",
@@ -1806,7 +2205,8 @@
     [
     {"EN":{
         "word": "stir",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "перемешать",
@@ -1816,7 +2216,8 @@
     [
     {"EN":{
         "word": "stir",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "размешать",
@@ -1826,7 +2227,8 @@
     [
     {"EN":{
         "word": "tablespoon",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "столовая ложка",
@@ -1881,6 +2283,182 @@
     {"RU": {
         "word": "плита",
         "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+    {"EN":{
+        "word": "appetizer",
+        "topics": ["cooking",  "food"],
+        "level": "advanced(C1)"
+    }},
+    {"RU": {
+        "word": "закуска",
+        "topics": ["приготовление еды", "еда"]
+    }}
+    ],
+    [
+        {"EN":{
+            "word": "batter",
+            "topics": ["cooking",  "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кляр",
+            "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "corkscrew",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "штопор",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cutlery",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "столовые приборы",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "defrost",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "разморозить",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "grind",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "молоть",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "napkin",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "салфетка",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "opener",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "открывалка",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pitcher",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кувшин",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "saucer",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "блюдце",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "simmer",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "тушить",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "squeeze",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "выжимать",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "stew",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "тушить",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tablecloth",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "скатерть",
+            "topics": ["приготовление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tray",
+            "topics": ["cooking", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "поднос",
+            "topics": ["приготовление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "utensil",
+            "topics": ["cooking"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "утварь",
+            "topics": ["приготовление еды"]
         }}
     ],
     [
