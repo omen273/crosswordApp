@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.CheckBox
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_choose_topics.*
@@ -20,8 +21,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_topics)
-
-        val topicNames = getTopics().filter {getWords(hashSetOf(it)).size >= CROSSWORD_SIZE}
+        val topicNames = getTopics()
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 val wordsInList = getChosenTopics()
@@ -34,6 +34,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
                     }
                 }
                 for (topic in topicNames) {
+                    Log.d("OC1", "OK")
                     if (!wordsInList.contains(topic) && topic.startsWith(p0.toString())) {
                         with(CheckBox(this@ChooseTopicsActivity)) {
                             text = topic
@@ -140,7 +141,9 @@ class ChooseTopicsActivity : AppCompatActivity() {
             val wordItemTr = findWordItem(item)
             val clueItemTr = findClueItem(item)
             if (wordItemTr != null && clueItemTr != null &&
-                wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null
+                wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null &&
+                wordItemTr.word.all { it.isLetter() } && wordItemTr.word.length <= MAX_SIDE &&
+                wordItemTr.word.length > 1
             ) {
                 words[wordItemTr.word] = if(clueType == ClueType.WORD) clueItemTr.word
                 else clueItemTr.questions.random()
@@ -161,6 +164,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 itemTr.level == readLevelFromConfig(filesDir, resources)
     } as LanguageItem?
 
+    //returns only topics with more or equal to CROSSWORD_SIZE words
     private fun getTopics(): ArrayList<String> {
         val data = intent.extras?.get("data") as ArrayList<*>
         val topics = hashSetOf<String>()
@@ -171,7 +175,8 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 topics.addAll(wordItemTr.topics)
             }
         }
-        return ArrayList(topics).apply { sort() }
+        return ArrayList(topics.filter {
+            getWords(hashSetOf(it)).size >= CROSSWORD_SIZE}).apply { sort() }
     }
 
     internal fun getChosenTopics(): HashSet<String> {

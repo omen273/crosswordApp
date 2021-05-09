@@ -65,9 +65,7 @@ class WordsReader {
                     }
                     endObject()
                     endObject()
-                    if (languageItem.topics.isNotEmpty() && languageItem.word.length > 1
-                            && languageItem.word.length <= ChooseTopicsActivity.MAX_SIDE &&
-                            languageItem.word.all { it.isLetter() }) {
+                    if (languageItem.word.isNotEmpty() && languageItem.topics.isNotEmpty()) {
                         wordItem.add(languageItem)
                     }
                 }
