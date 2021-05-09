@@ -82,6 +82,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "cheetah",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гепард",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "chimpanzee",
         "topics": ["animals"],
@@ -111,6 +122,50 @@
     {"RU": {
         "word": "курица",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "deer",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "олень",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dinosaur",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "динозавр",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "domestic",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "домашний",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "donkey",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "осел",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -164,6 +219,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "extinction",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вымирание",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "fish",
         "topics": ["animals"]
@@ -204,6 +270,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "giraffe",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "жираф",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "gorilla",
         "topics": ["animals"],
@@ -212,6 +289,17 @@
     {"RU": {
         "word": "горилла",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "habitat",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ареал",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -268,9 +356,32 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "kangaroo",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кенгуру",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "kitten",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "котенок",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "leopard",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "леопард",
@@ -285,6 +396,28 @@
     {"RU": {
         "word": "лев",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mammal",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "млекопитающее",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pack",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "стая",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -306,6 +439,39 @@
     {"RU": {
         "word": "примат",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "puppy",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "щенок",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rat",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "крыса",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "reptile",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "рептилия",
+            "topics": ["животные"]
         }}
     ],
 	[
@@ -330,6 +496,17 @@
         "topics": ["животные"]
         }}
     ],
+    [
+        {"EN":{
+            "word": "seal",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тюлень",
+            "topics": ["животные"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "skunk",
@@ -341,6 +518,50 @@
         "topics": ["животные"]
         }}
     ],
+    [
+        {"EN":{
+            "word": "reptile",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "рептилия",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "species",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вид",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "squirrel",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "белка",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tortoise",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "черепаха",
+            "topics": ["животные"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "wallaby",
@@ -350,6 +571,17 @@
     {"RU": {
         "word": "валлаби",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "venom",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "яд",
+            "topics": ["животные"]
         }}
     ],
 	[
@@ -381,6 +613,17 @@
     {"RU": {
         "word": "росомаха",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "zebra",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "зебра",
+            "topics": ["животные"]
         }}
     ],
     [
