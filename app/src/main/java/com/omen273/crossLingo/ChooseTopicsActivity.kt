@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.widget.CheckBox
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_choose_topics.*
@@ -34,7 +33,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
                     }
                 }
                 for (topic in topicNames) {
-                    Log.d("OC1", "OK")
                     if (!wordsInList.contains(topic) && topic.startsWith(p0.toString())) {
                         with(CheckBox(this@ChooseTopicsActivity)) {
                             text = topic
@@ -164,7 +162,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 itemTr.level == readLevelFromConfig(filesDir, resources)
     } as LanguageItem?
 
-    //returns only topics with more or equal to CROSSWORD_SIZE words
+    //returns only topics with more or equal to CROSSWORD_SIZE the number of words
     private fun getTopics(): ArrayList<String> {
         val data = intent.extras?.get("data") as ArrayList<*>
         val topics = hashSetOf<String>()
