@@ -520,17 +520,6 @@
     ],
     [
         {"EN":{
-            "word": "reptile",
-            "topics": ["animals"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "рептилия",
-            "topics": ["животные"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "species",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
@@ -1252,12 +1241,12 @@
     [
         {"EN":{
             "word": "mince",
-            "topics": ["cooking", "food"],
+            "topics": ["cooking and eating", "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "фарш",
-            "topics": ["приготовление еды", "еда"]
+            "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
@@ -2344,555 +2333,822 @@
     [
     {"EN":{
         "word": "add",
-        "topics": ["cooking", "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "добавить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "bake",
-        "topics": ["cooking", "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "испечь",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "beat",
-        "topics": ["cooking", "food"]
+        "topics": ["cooking and eating"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "взбить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bitter",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "горький",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "boil",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "отварить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "carb",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "углевод",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "carve",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "нарезать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cheesy",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сырный",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "chop",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "нарезать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "chopsticks",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "палочки для еды",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "cook",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "готовить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "cookbook",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "книга рецептов",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "countertop",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "столешница",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cuisine",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кухня",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "dice",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "нарезать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dietary",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пищевой",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "dish",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating",  "food"]
         }},
     {"RU": {
         "word": "блюдо",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "fry",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "жарить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "flavour",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вкус",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "grate",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "натереть",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "grease",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "смазать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "grill",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "гриль",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "herb",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating",  "food"]
         }},
     {"RU": {
         "word": "приправа",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "ingredient",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating",  "food"]
         }},
     {"RU": {
         "word": "ингредиент",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "jar",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "банка",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "juicy",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сочный",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "mash",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating",  "food"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "пюре",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "melt",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "расплавить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "mix",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "смешать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mixer",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "миксер",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mug",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кружка",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "nutrition",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "питание",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "organic",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "натуральный",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "peel",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "очищать от кожуры",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "portion",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "порция",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "protein",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "белок",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "peel",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating",  "food"]
         }},
     {"RU": {
         "word": "кожура",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "pinch",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating",  "food"]
         }},
     {"RU": {
         "word": "щепотка",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "preheat",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "разогреть",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "prepare",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "приготовить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "recipe",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "рецепт",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "roast",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "жарить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "scale",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "весы",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "serve",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "подавать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sour",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кислый",
+            "topics": ["еда"]
         }}
     ],
     [
     {"EN":{
         "word": "spice",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating",  "food"]
         }},
     {"RU": {
         "word": "пряность",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
     {"EN":{
         "word": "sprinkle",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "посыпать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "spread",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "намазать",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "steam",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "готовить на пару",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "stir",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "перемешать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "stir",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "размешать",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "stove",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "плита",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "supper",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ужин",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "tablespoon",
-        "topics": ["cooking",  "food"],
+        "topics": ["cooking and eating"],
         "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "столовая ложка",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "takeaway",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "еда с собой",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "teaspoon",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "чайная ложка",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "toaster",
+            "topics": ["cooking and eating"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тостер",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "whisk",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "взбить",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "fork",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "вилка",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "pan",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "кастрюля",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "cooker",
-        "topics": ["cooking",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "плита",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
     {"EN":{
         "word": "appetizer",
-        "topics": ["cooking",  "food"],
+        "topics": ["food"],
         "level": "advanced(C1)"
     }},
     {"RU": {
         "word": "закуска",
-        "topics": ["приготовление еды", "еда"]
+        "topics": ["еда"]
     }}
     ],
     [
         {"EN":{
             "word": "batter",
-            "topics": ["cooking",  "food"],
+            "topics": ["cooking and eating",  "food"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "кляр",
-            "topics": ["приготовление еды", "еда"]
+            "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
         {"EN":{
             "word": "corkscrew",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "штопор",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "cutlery",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "столовые приборы",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "defrost",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "разморозить",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "grind",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "молоть",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "napkin",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "салфетка",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "opener",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "открывалка",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "pitcher",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "кувшин",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "saucer",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "блюдце",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "simmer",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "тушить",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "squeeze",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "выжимать",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "stew",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "тушить",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "tablecloth",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "скатерть",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "tray",
-            "topics": ["cooking", "food"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "поднос",
-            "topics": ["приготовление еды", "еда"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
         {"EN":{
             "word": "utensil",
-            "topics": ["cooking"],
+            "topics": ["cooking and eating"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "утварь",
-            "topics": ["приготовление еды"]
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
