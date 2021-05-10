@@ -294,9 +294,8 @@ open class BadTopic: TestBaseClass() {
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
         val topicList = withId(R.id.topicList)
-        val start = System.currentTimeMillis()
-        waitForCondition("", { System.currentTimeMillis() - start > 300 })
-        onView(topicList).check(ViewAssertions.matches(hasNChildren(topicList, 0)))
+        onView(isRoot()).perform(waitForView(topicList))
+        onView(topicList).check(ViewAssertions.matches(hasNChildren(topicList, 1)))
     }
 }
 
