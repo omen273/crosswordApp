@@ -278,10 +278,10 @@ class RetryTestRule(val retryCount: Int = 3) : TestRule {
     }
 }
 
-open class ChoseTopicsToastTest: TestBaseClass() {
+open class BadTopic: TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
-    fun choseTopicsImpl(fileName: String, message: String) {
+    fun check(fileName: String) {
         Intent(
             ApplicationProvider.getApplicationContext(),
             ChooseTopicsActivity::class.java
@@ -293,12 +293,9 @@ open class ChoseTopicsToastTest: TestBaseClass() {
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
-        chooseFirstTopic()
-        onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
-        onView(withId(R.id.ok_play)).perform(ViewActions.click())
-        ToastMatcher.onToast(message).check(
-            ViewAssertions.matches(isDisplayed())
-        )
+        val topicList = withId(R.id.topicList)
+        onView(isRoot()).perform(waitForView(topicList))
+        onView(topicList).check(ViewAssertions.matches(hasNChildren(topicList, 1)))
     }
 }
 

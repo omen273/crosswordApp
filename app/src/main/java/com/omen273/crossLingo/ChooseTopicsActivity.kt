@@ -162,6 +162,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 itemTr.level == readLevelFromConfig(filesDir, resources)
     } as LanguageItem?
 
+    //returns only topics with more or equal to CROSSWORD_SIZE the number of words
     private fun getTopics(): ArrayList<String> {
         val data = intent.extras?.get("data") as ArrayList<*>
         val topics = hashSetOf<String>()
@@ -172,7 +173,8 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 topics.addAll(wordItemTr.topics)
             }
         }
-        return ArrayList(topics).apply { sort() }
+        return ArrayList(topics.filter {
+            getWords(hashSetOf(it)).size >= CROSSWORD_SIZE}).apply { sort() }
     }
 
     internal fun getChosenTopics(): HashSet<String> {
