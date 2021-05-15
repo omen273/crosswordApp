@@ -616,6 +616,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "baguette",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "багет",
+            "topics": ["еда"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "beetroot",
         "topics": ["fruits and vegetables", "food"]
@@ -623,6 +634,237 @@
     {"RU": {
         "word": "свекла",
         "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "broccoli",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "брокколи",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cereal",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сухие завтраки",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "chili",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "чили",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "courgette",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кабачок",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cracker",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "крекер",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dairy",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "молочные продукты",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "gum",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "жевательная резинка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "herb",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "зелень",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "kebab",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кебаб",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "ketchup",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кетчуп",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mango",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "манго",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "margarine",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "маргарин",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "melon",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "дыня",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mustard",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "горчица",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "noodle",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "лапша",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "omelette",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "омлет",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pastry",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "выпечка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "raspberry",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "малина",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "vinegar",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "уксус",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "wheat",
+            "topics": ["food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пшеница",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "zucchini",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цукини",
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -708,7 +950,8 @@
     [
     {"EN":{
         "word": "cucumber",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "огурец",
@@ -865,7 +1108,8 @@
     [
     {"EN":{
         "word": "cherry",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "вишня",
@@ -956,7 +1200,8 @@
     [
     {"EN":{
         "word": "watermelon",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "арбуз",
@@ -1917,7 +2162,7 @@
         "level": "advanced(C1)"
         }},
     {"RU": {
-        "word": "делать громче",
+        "word": "усиливать",
         "topics": ["музыка"]
         }}
     ],
@@ -1946,7 +2191,8 @@
     [
     {"EN":{
         "word": "artist",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "артист",
@@ -1997,6 +2243,17 @@
     ],
     [
     {"EN":{
+        "word": "chart",
+        "topics": ["music"],
+        "level": "upper-intermediate(B2)"
+    }},
+    {"RU": {
+        "word": "хит-парад",
+        "topics": ["музыка"]
+    }}
+    ],
+    [
+    {"EN":{
         "word": "chord",
         "topics": ["music"]
         }},
@@ -2008,7 +2265,8 @@
     [
     {"EN":{
         "word": "chorus",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "хор",
@@ -2028,12 +2286,89 @@
     ],
     [
         {"EN":{
+            "word": "compose",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сочинять",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "composer",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "композитор",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "conductor",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "дирижер",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "country",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кантри",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "drumstick",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "барабанная палочка",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "flute",
             "topics": ["music"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "флейта",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "folk",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "фолк",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "gig",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "концерт",
             "topics": ["музыка"]
         }}
     ],
@@ -2050,12 +2385,34 @@
     ],
     [
         {"EN":{
+            "word": "headphones",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "наушники",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "improvise",
             "topics": ["music"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "импровизировать",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "intro",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вступление",
             "topics": ["музыка"]
         }}
     ],
@@ -2072,12 +2429,78 @@
     ],
     [
         {"EN":{
+            "word": "karaoke",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "караоке",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "keyboardist",
             "topics": ["music"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "клавишник",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "microphone",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "микрофон",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "note",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "нота",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "opera",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "опера",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "orchestra",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "оркестр",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "organ",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "орган",
             "topics": ["музыка"]
         }}
     ],
@@ -2105,12 +2528,155 @@
     ],
     [
         {"EN":{
+            "word": "pianist",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пианист",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pipe",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "дудка",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "punk",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "панк",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rap",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "рэп",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "reggae",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "регги",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rehearsal",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "репетиция",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rhythm",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ритм",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "salsa",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сальса",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "saxophone",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "саксофон",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "single",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сингл",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "soloist",
             "topics": ["music"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "солист",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "soul",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "соул",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "soundtrack",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "саундтрек",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "stereo",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "стерео",
             "topics": ["музыка"]
         }}
     ],
@@ -2138,12 +2704,67 @@
     ],
     [
         {"EN":{
+            "word": "symphony",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "симфония",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "track",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "трек",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "trombone",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тромбон",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tune",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "настраивать",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "verse",
             "topics": ["music"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "куплет",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "volume",
+            "topics": ["music"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "громкость",
             "topics": ["музыка"]
         }}
     ],
@@ -2211,7 +2832,8 @@
     [
     {"EN":{
         "word": "lyrics",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "текст песни",
@@ -2766,7 +3388,8 @@
     [
     {"EN":{
         "word": "roast",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "жарить",
@@ -2808,7 +3431,8 @@
     [
     {"EN":{
         "word": "spice",
-        "topics": ["cooking and eating",  "food"]
+        "topics": ["cooking and eating",  "food"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "пряность",
