@@ -730,17 +730,6 @@
     ],
     [
         {"EN":{
-            "word": "wool",
-            "topics": ["animals"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "шерсть",
-            "topics": ["животные"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "zebra",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
