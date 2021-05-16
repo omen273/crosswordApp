@@ -5,14 +5,12 @@ import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.RootMatchers.isDialog
 import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.omen273.crossLingo.R.id
 import junit.framework.TestCase.assertEquals
 import org.akop.ararat.core.Crossword
 import org.hamcrest.core.AnyOf.anyOf
-import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
