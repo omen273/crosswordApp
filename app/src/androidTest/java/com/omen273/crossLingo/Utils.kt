@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
+import android.widget.ListView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.*
@@ -299,12 +300,12 @@ open class BadTopic: TestBaseClass() {
     }
 }
 
-fun setLevelImpl(){
-    var level: String? = "test"
-    level = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
-    waitForCondition("", {level != "test"}, 300)
-    if(level == null) {
-        onView(withText("advanced(C1)"))
+fun setLevelImpl(level:String = "advanced(C1)"){
+    var configLevel: String? = "test"
+    configLevel = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
+    waitForCondition("", {configLevel != "test"}, 300)
+    if(configLevel == null) {
+        onView(withText(level))
                 .inRoot(RootMatchers.isDialog())
                 .perform(ViewActions.click())
     }
