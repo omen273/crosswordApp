@@ -28,7 +28,7 @@ class ValidateAllTopicsInListInstrumentedTest {
     //@Test
     fun validate() {
         while(level.hasNext()){
-            var topicPosition  = 0
+            var topicPosition = 0
             chooseGenerateCrossword()
             var end = false
             while (!end) {
