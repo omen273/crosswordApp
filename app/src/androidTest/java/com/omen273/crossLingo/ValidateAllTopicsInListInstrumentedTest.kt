@@ -25,7 +25,7 @@ class ValidateAllTopicsInListInstrumentedTest {
         setLevelImpl(levels[0])
     }
 
-    @Test
+    //@Test
     fun validate() {
         for(level in 1 until levels.size){
             var n  = 0
