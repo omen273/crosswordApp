@@ -17,25 +17,27 @@ class ValidateAllTopicsInListInstrumentedTest {
     var activityTestRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
-    private val levels = getContext().resources.getStringArray(R.array.levels)
+    private var level = getContext().resources.getStringArray(R.array.levels).iterator()
 
     @Before
     fun setLevel() {
-        if(levels.isEmpty()) throw Exception("Empty levels")
-        setLevelImpl(levels[0])
+        if(!level.hasNext()) throw Exception("Empty levels")
+        setLevelImpl(level.next())
     }
 
-    //@Test
+    @Test
     fun validate() {
-        for(level in 1 until levels.size){
-            var n  = 0
+        while(level.hasNext()){
+            var topicPosition  = 0
             chooseGenerateCrossword()
             var end = false
             while (!end) {
-                for (k in 0 until 10) {
+                val attemptNumber = 10
+                for (k in 0 until attemptNumber) {
                     try {
                         waitForView(withId(R.id.topicList), 100)
-                        Espresso.onView(nthChildOf(withId(R.id.topicList), n))
+                        Espresso.onView(nthChildOf(withId(R.id.topicList), topicPosition))
+                            .perform(ViewActions.scrollTo())
                         .perform(ViewActions.click())}
                     catch(e:Exception) {
                         end = true
@@ -50,14 +52,14 @@ class ValidateAllTopicsInListInstrumentedTest {
                         .perform(ViewActions.click())
                     chooseGenerateCrossword()
                 }
-                ++n
+                ++topicPosition
             }
             waitForView(ViewMatchers.withContentDescription(R.string.settings))
             Espresso.onView(ViewMatchers.withContentDescription(R.string.settings))
                 .perform(ViewActions.click())
             waitForView(withId(R.id.level_list))
             Espresso.onView(withId(R.id.level_list)).perform(ViewActions.click())
-            Espresso.onView(withText(levels[level])).perform(ViewActions.click())
+            Espresso.onView(withText(level.next())).perform(ViewActions.click())
             waitForView(ViewMatchers.withContentDescription(R.string.abc_action_bar_up_description))
             Espresso.onView(ViewMatchers.withContentDescription(R.string.abc_action_bar_up_description))
                 .perform(ViewActions.click())
