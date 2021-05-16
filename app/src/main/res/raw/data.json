@@ -3125,11 +3125,11 @@
     [
     {"EN":{
         "word": "dish",
-        "topics": ["cooking and eating",  "food"]
+        "topics": ["cooking and eating"]
         }},
     {"RU": {
         "word": "блюдо",
-        "topics": ["приготовление и употребление еды", "еда"]
+        "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
