@@ -59,7 +59,7 @@ class BadImageReadingInstrumentedTest {
         ).also { scenario = ActivityScenario.launch(it) }
         val start = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start > 300 })
-        setLevelImpl("")
+        setLevelImpl()
         val tableMatcher = withId(R.id.tableLayout)
         onView(tableMatcher).check(ViewAssertions.matches(hasNChildren(tableMatcher, 1)))
         val firstRowMatcher = nthChildOf(tableMatcher, 0)
