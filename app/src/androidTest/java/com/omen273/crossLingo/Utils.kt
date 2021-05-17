@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
+import android.widget.ListView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.*
@@ -278,10 +279,10 @@ class RetryTestRule(val retryCount: Int = 3) : TestRule {
     }
 }
 
-open class ChoseTopicsToastTest: TestBaseClass() {
+open class BadTopic: TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
-    fun choseTopicsImpl(fileName: String, message: String) {
+    fun check(fileName: String) {
         Intent(
             ApplicationProvider.getApplicationContext(),
             ChooseTopicsActivity::class.java
@@ -293,21 +294,18 @@ open class ChoseTopicsToastTest: TestBaseClass() {
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
-        chooseFirstTopic()
-        onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
-        onView(withId(R.id.ok_play)).perform(ViewActions.click())
-        ToastMatcher.onToast(message).check(
-            ViewAssertions.matches(isDisplayed())
-        )
+        val topicList = withId(R.id.topicList)
+        onView(isRoot()).perform(waitForView(topicList))
+        onView(topicList).check(ViewAssertions.matches(hasNChildren(topicList, 1)))
     }
 }
 
-fun setLevelImpl(){
-    var level: String? = "test"
-    level = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
-    waitForCondition("", {level != "test"}, 300)
-    if(level == null) {
-        onView(withText("advanced(C1)"))
+fun setLevelImpl(level:String = "advanced(C1)"){
+    var configLevel: String? = "test"
+    configLevel = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
+    waitForCondition("", {configLevel != "test"}, 300)
+    if(configLevel == null) {
+        onView(withText(level))
                 .inRoot(RootMatchers.isDialog())
                 .perform(ViewActions.click())
     }
