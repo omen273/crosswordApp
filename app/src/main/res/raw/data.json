@@ -72,6 +72,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "camel",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "верблюд",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "cat",
         "topics": ["animals"]
@@ -102,7 +113,18 @@
         "word": "шимпанзе",
         "topics": ["животные"]
         }}
-    ],	
+    ],
+    [
+        {"EN":{
+            "word": "crocodile",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "крокодил",
+            "topics": ["животные"]
+        }}
+    ],
     [
     {"EN":{
         "word": "cub",
@@ -181,7 +203,8 @@
     [
     {"EN":{
         "word": "dolphin",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "дельфин",
@@ -220,6 +243,17 @@
     ],
     [
         {"EN":{
+            "word": "endangered",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "вымирающий",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "extinction",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
@@ -242,7 +276,8 @@
     [
     {"EN":{
         "word": "fox",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "лиса",
@@ -257,6 +292,17 @@
     {"RU": {
         "word": "лягушка",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "fur",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "мех",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -281,6 +327,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "goat",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "козел",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "gorilla",
         "topics": ["animals"],
@@ -299,6 +356,17 @@
         }},
         {"RU": {
             "word": "ареал",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "hamster",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "хомяк",
             "topics": ["животные"]
         }}
     ],
@@ -421,6 +489,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "poisonous",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "ядовитый",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "pig",
         "topics": ["animals"]
@@ -507,6 +586,28 @@
             "topics": ["животные"]
         }}
     ],
+    [
+        {"EN":{
+            "word": "sheepdog",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "пастушья собака",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "shell",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "ракушка",
+            "topics": ["животные"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "skunk",
@@ -542,12 +643,34 @@
     ],
     [
         {"EN":{
+            "word": "tail",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "хвост",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "tortoise",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "черепаха",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "turkey",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "индейка",
             "topics": ["животные"]
         }}
     ],
@@ -587,7 +710,8 @@
     [
     {"EN":{
         "word": "wolf",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "волк",
@@ -613,6 +737,17 @@
         {"RU": {
             "word": "зебра",
             "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bacon",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "бекон",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -649,12 +784,34 @@
     ],
     [
         {"EN":{
+            "word": "burger",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "бургер",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "cereal",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "зерновые",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cheeseburger",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "чизбургер",
             "topics": ["еда"]
         }}
     ],
@@ -682,6 +839,17 @@
     ],
     [
         {"EN":{
+            "word": "course",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "блюдо",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "cracker",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -693,12 +861,45 @@
     ],
     [
         {"EN":{
+            "word": "curry",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "карри",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "dairy",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "молочные продукты",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "flour",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "мука",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "grain",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "зерно",
             "topics": ["еда"]
         }}
     ],
@@ -726,6 +927,17 @@
     ],
     [
         {"EN":{
+            "word": "honey",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "мед",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "kebab",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -743,6 +955,17 @@
         }},
         {"RU": {
             "word": "кетчуп",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "loaf",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "буханка",
             "topics": ["еда"]
         }}
     ],
@@ -781,6 +1004,17 @@
     ],
     [
         {"EN":{
+            "word": "mint",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "мята",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "mustard",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -803,12 +1037,34 @@
     ],
     [
         {"EN":{
+            "word": "olive",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "оливка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "omelette",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "омлет",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pancake",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "блинчик",
             "topics": ["еда"]
         }}
     ],
@@ -825,6 +1081,28 @@
     ],
     [
         {"EN":{
+            "word": "peanut",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "арахис",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pear",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "груша",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "raspberry",
             "topics": ["fruits and vegetables", "food"],
             "level": "upper-intermediate(B2)"
@@ -832,6 +1110,39 @@
         {"RU": {
             "word": "малина",
             "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "seafood",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "морепродукты",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "spaghetti",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "спагетти",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "steak",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "стейк",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -853,6 +1164,28 @@
         }},
         {"RU": {
             "word": "пшеница",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "white",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "яичный белок",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "yogurt",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "йогурт",
             "topics": ["еда"]
         }}
     ],
@@ -880,7 +1213,8 @@
     [
     {"EN":{
         "word": "corn",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "кукуруза",
@@ -900,7 +1234,8 @@
     [
     {"EN":{
         "word": "cabbage",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "капуста",
@@ -930,7 +1265,8 @@
     [
     {"EN":{
         "word": "garlic",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "чеснок",
@@ -961,7 +1297,8 @@
     [
     {"EN":{
         "word": "lettuce",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "салат",
@@ -1128,8 +1465,9 @@
     ],
     [
     {"EN":{
-        "word": "grapes",
-        "topics": ["fruits and vegetables", "food"]
+        "word": "grape",
+        "topics": ["fruits and vegetables", "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "виноград",
@@ -1169,7 +1507,8 @@
     [
     {"EN":{
         "word": "pineapple",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "ананас",
@@ -1927,11 +2266,12 @@
     [
     {"EN":{
         "word": "performance",
-        "topics": ["sports"]
+        "topics": ["sports", "music"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "выступление",
-        "topics": ["спорт"]
+        "topics": ["спорт", "музыка"]
         }}
     ],
     [
@@ -2148,7 +2488,8 @@
     [
     {"EN":{
         "word": "album",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "альбом",
@@ -2330,6 +2671,28 @@
     ],
     [
         {"EN":{
+            "word": "disco",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "диско",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "drummer",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "барабанщик",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "drumstick",
             "topics": ["music"],
             "level": "upper-intermediate(B2)"
@@ -2440,6 +2803,17 @@
     ],
     [
         {"EN":{
+            "word": "keyboard",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "клавишные",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "keyboardist",
             "topics": ["music"],
             "level": "advanced(C1)"
@@ -2451,12 +2825,34 @@
     ],
     [
         {"EN":{
+            "word": "live",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "живой",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "microphone",
             "topics": ["music"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "микрофон",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "musical",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "мюзикл",
             "topics": ["музыка"]
         }}
     ],
@@ -2528,6 +2924,17 @@
     ],
     [
         {"EN":{
+            "word": "performer",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "исполнитель",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "pianist",
             "topics": ["music"],
             "level": "upper-intermediate(B2)"
@@ -2567,6 +2974,17 @@
         }},
         {"RU": {
             "word": "рэп",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "record",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "запись",
             "topics": ["музыка"]
         }}
     ],
@@ -2649,6 +3067,17 @@
     ],
     [
         {"EN":{
+            "word": "songwriter",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "автор песен",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "soul",
             "topics": ["music"],
             "level": "upper-intermediate(B2)"
@@ -2715,6 +3144,28 @@
     ],
     [
         {"EN":{
+            "word": "tape",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "кассета",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tour",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "тур",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "track",
             "topics": ["music"],
             "level": "upper-intermediate(B2)"
@@ -2732,6 +3183,17 @@
         }},
         {"RU": {
             "word": "тромбон",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "trumpet",
+            "topics": ["music"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "труба",
             "topics": ["музыка"]
         }}
     ],
@@ -2782,10 +3244,11 @@
     [
     {"EN":{
         "word": "drum",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
-        "word": "ударные",
+        "word": "барабан",
         "topics": ["музыка"]
         }}
     ],
@@ -2965,11 +3428,23 @@
     [
     {"EN":{
         "word": "bake",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "испечь",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "barbecue",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "барбекю",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -3013,6 +3488,28 @@
         {"RU": {
             "word": "углевод",
             "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cafeteria",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "столовая",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "calorie",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "калория",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -3072,11 +3569,23 @@
     [
     {"EN":{
         "word": "cookbook",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "книга рецептов",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cookery",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "кулинария",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -3113,6 +3622,17 @@
     ],
     [
         {"EN":{
+            "word": "diet",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "диета",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "dietary",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -3135,7 +3655,8 @@
     [
     {"EN":{
         "word": "fry",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "жарить",
@@ -3196,9 +3717,21 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "hot",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "горячий",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "ingredient",
-        "topics": ["cooking and eating",  "food"]
+        "topics": ["cooking and eating",  "food"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "ингредиент",
@@ -3228,6 +3761,39 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "kettle",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "чайник",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "liquid",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "жидкий",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lunch",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "обед",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "mash",
         "topics": ["cooking and eating",  "food"],
@@ -3249,9 +3815,21 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "microwave",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "микроволновая печь",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "mix",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "смешать",
@@ -3315,6 +3893,17 @@
     ],
     [
         {"EN":{
+            "word": "picnic",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "пикник",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "portion",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -3322,6 +3911,17 @@
         {"RU": {
             "word": "порция",
             "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pot",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "горшок",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -3389,7 +3989,7 @@
     {"EN":{
         "word": "roast",
         "topics": ["cooking and eating"],
-        "level": "upper-intermediate(B2)"
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "жарить",
@@ -3429,6 +4029,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "slice",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "нарезать тонкими ломтиками",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "spice",
         "topics": ["cooking and eating",  "food"],
@@ -3437,6 +4048,17 @@
     {"RU": {
         "word": "пряность",
         "topics": ["приготовление и употребление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "spicy",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "острый",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -3538,6 +4160,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "tasty",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "вкусный",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "teaspoon",
         "topics": ["cooking and eating"],
@@ -3550,12 +4183,67 @@
     ],
     [
         {"EN":{
+            "word": "thick",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "густой",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "thin",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "водянистый",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "toast",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "подрумянить",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "toaster",
             "topics": ["cooking and eating"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "тостер",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "warm",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "теплый",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "weigh",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "взвешивать",
             "topics": ["приготовление и употребление еды"]
         }}
     ],
@@ -3582,7 +4270,8 @@
     [
     {"EN":{
         "word": "pan",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "кастрюля",
