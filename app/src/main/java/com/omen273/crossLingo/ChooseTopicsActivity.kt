@@ -9,6 +9,8 @@ import android.text.TextWatcher
 import android.widget.CheckBox
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_choose_topics.*
+import kotlinx.android.synthetic.main.toolbar_activity_choose_topic.*
+import kotlinx.android.synthetic.main.toolbar_sett.*
 import java.io.File
 import java.io.FileInputStream
 
@@ -20,6 +22,12 @@ class ChooseTopicsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_topics)
+        setSupportActionBar(choose_topics_toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        choose_topics_toolbar.setNavigationOnClickListener{
+            onBackPressed()
+        }
         val topicNames = getTopics()
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
