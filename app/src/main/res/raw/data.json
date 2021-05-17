@@ -32,9 +32,21 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "beak",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пастушья собака",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "bear",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "медведь",
@@ -52,6 +64,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "behaviour",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "поведение",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "bird",
         "topics": ["animals"]
@@ -59,6 +82,17 @@
     {"RU": {
         "word": "птица",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "blackbird",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "черный дрозд",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -170,6 +204,17 @@
     ],
     [
         {"EN":{
+            "word": "dive",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пикировать",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "domestic",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
@@ -214,11 +259,23 @@
     [
     {"EN":{
         "word": "duck",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "утка",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "eagle",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "орел",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -264,6 +321,39 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "family",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "семейство",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "feather",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "перо",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "feed",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "кормить",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "fish",
         "topics": ["animals"]
@@ -287,7 +377,8 @@
     [
     {"EN":{
         "word": "frog",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "лягушка",
@@ -334,6 +425,17 @@
         }},
         {"RU": {
             "word": "козел",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "goose",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вымирание",
             "topics": ["животные"]
         }}
     ],
@@ -446,6 +548,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "lamb",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "ягненок",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "leopard",
         "topics": ["animals"],
@@ -479,12 +592,89 @@
     ],
     [
         {"EN":{
+            "word": "migrate",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "мигрировать",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "monkey",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "обезьяна",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "owl",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сова",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "pack",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "стая",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "parrot",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "попугай",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "penguin",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "пингвин",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pet",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "питомец",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "pigeon",
+            "topics": ["animals"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "голубь",
             "topics": ["животные"]
         }}
     ],
@@ -528,6 +718,17 @@
         }},
         {"RU": {
             "word": "щенок",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rabbit",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "кролик",
             "topics": ["животные"]
         }}
     ],
@@ -654,6 +855,17 @@
     ],
     [
         {"EN":{
+            "word": "tiger",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "тигр",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "tortoise",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
@@ -683,6 +895,50 @@
     {"RU": {
         "word": "валлаби",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "walk",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "выгуливать",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "whale",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "кит",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "wild",
+            "topics": ["animals"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "дикий",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "wing",
+            "topics": ["animals"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "крыло",
+            "topics": ["животные"]
         }}
     ],
     [
