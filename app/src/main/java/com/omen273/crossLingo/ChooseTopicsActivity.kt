@@ -58,8 +58,11 @@ class ChooseTopicsActivity : AppCompatActivity() {
                                 putExtra(WORDS_VARIABLE, chosenWords)
                                 putExtra(
                                     MainActivity.CROSSWORD_NAME_VARIABLE,
-                                    if (chosenTopics.size == 1) getChosenTopics().iterator()
-                                        .next() else NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS
+                                    (if (chosenTopics.size == 1) getChosenTopics().iterator()
+                                        .next() else NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS) + " ("
+                                            + (readLevelFromConfig(filesDir, resources)
+                                        ?.substringAfter('(')
+                                        ?: return@setOnClickListener) + ' '
                                 )
                                 putExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, true)
                                 putExtra(
