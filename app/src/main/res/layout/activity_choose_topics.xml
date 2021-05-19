@@ -4,7 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <include
+        layout = "@layout/toolbar_activity_choose_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <EditText
         android:id="@+id/topics"
         android:layout_width="wrap_content"
@@ -14,17 +20,15 @@
         android:ems="10"
         android:hint="@string/hintTopics"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_topics_toolbar"/>
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintHeight_percent="0.45"
         app:layout_constraintEnd_toEndOf="@id/topics"
         app:layout_constraintStart_toStartOf="@id/topics"
         app:layout_constraintTop_toBottomOf="@id/topics">
@@ -49,7 +53,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
