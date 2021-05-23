@@ -1,5 +1,16 @@
 [
     [
+        {"EN":{
+            "word": "animal",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "животное",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "ant",
         "topics": ["animals"]
@@ -77,7 +88,8 @@
     [
     {"EN":{
         "word": "bird",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "птица",
@@ -119,7 +131,8 @@
     [
     {"EN":{
         "word": "cat",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "кот",
@@ -150,6 +163,17 @@
     ],
     [
         {"EN":{
+            "word": "cow",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "корова",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "crocodile",
             "topics": ["animals"],
             "level": "intermediate(B1)"
@@ -173,7 +197,8 @@
     [
     {"EN":{
         "word": "chicken",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "курица",
@@ -279,9 +304,21 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "egg",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "яйцо",
+            "topics": ["животные"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "elephant",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "слон",
@@ -356,11 +393,23 @@
     [
     {"EN":{
         "word": "fish",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "рыба",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "fly",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "муха",
+            "topics": ["животные"]
         }}
     ],
     [
@@ -507,7 +556,8 @@
     [
     {"EN":{
         "word": "horse",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "лошадь",
@@ -572,7 +622,8 @@
     [
     {"EN":{
         "word": "lion",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "лев",
@@ -609,6 +660,17 @@
         }},
         {"RU": {
             "word": "обезьяна",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mouse",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "мышь",
             "topics": ["животные"]
         }}
     ],
@@ -692,7 +754,8 @@
     [
     {"EN":{
         "word": "pig",
-        "topics": ["animals"]
+        "topics": ["animals"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "свинья",
@@ -789,6 +852,17 @@
     ],
     [
         {"EN":{
+            "word": "sheep",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "овца",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "sheepdog",
             "topics": ["animals"],
             "level": "intermediate(B1)"
@@ -822,6 +896,17 @@
     ],
     [
         {"EN":{
+            "word": "snake",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "змея",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "species",
             "topics": ["animals"],
             "level": "upper-intermediate(B2)"
@@ -839,6 +924,17 @@
         }},
         {"RU": {
             "word": "белка",
+            "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "swim",
+            "topics": ["animals"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "плавать",
             "topics": ["животные"]
         }}
     ],
@@ -997,6 +1093,17 @@
     ],
     [
         {"EN":{
+            "word": "alcohol",
+            "topics": ["cooking and eating", "food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "алкоголь",
+            "topics": ["приготовление и употребление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "bacon",
             "topics": ["food"],
             "level": "intermediate(B1)"
@@ -1029,6 +1136,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "beer",
+            "topics": ["food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "пиво",
+            "topics": ["еда"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "beetroot",
         "topics": ["fruits and vegetables", "food"]
@@ -1036,6 +1154,17 @@
     {"RU": {
         "word": "свекла",
         "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bread",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "хлеб",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -1062,6 +1191,28 @@
     ],
     [
         {"EN":{
+            "word": "butter",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "масло",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cake",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "пирожное",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "candy",
             "topics": ["food"],
             "level": "elementary(A2)"
@@ -1079,6 +1230,28 @@
         }},
         {"RU": {
             "word": "зерновые",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "champagne",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "шампанское",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cheese",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "сыр",
             "topics": ["еда"]
         }}
     ],
@@ -1112,6 +1285,28 @@
         }},
         {"RU": {
             "word": "чипсы",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "chocolate",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "шоколад",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "coffee",
+            "topics": ["food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "кофе",
             "topics": ["еда"]
         }}
     ],
@@ -1161,6 +1356,17 @@
     ],
     [
         {"EN":{
+            "word": "cream",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "сливки",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "curry",
             "topics": ["food"],
             "level": "intermediate(B1)"
@@ -1178,6 +1384,28 @@
         }},
         {"RU": {
             "word": "молочные продукты",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "drink",
+            "topics": ["food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "напиток",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "fizzy",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "газированный",
             "topics": ["еда"]
         }}
     ],
@@ -1211,6 +1439,17 @@
         }},
         {"RU": {
             "word": "жевательная резинка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "ham",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "ветчина",
             "topics": ["еда"]
         }}
     ],
@@ -1282,6 +1521,17 @@
     ],
     [
         {"EN":{
+            "word": "lemonade",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "лимонад",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "loaf",
             "topics": ["food"],
             "level": "intermediate(B1)"
@@ -1315,6 +1565,17 @@
     ],
     [
         {"EN":{
+            "word": "meat",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "мясо",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "melon",
             "topics": ["fruits and vegetables", "food"],
             "level": "upper-intermediate(B2)"
@@ -1322,6 +1583,28 @@
         {"RU": {
             "word": "дыня",
             "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "milk",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "молоко",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "milky",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "молочный",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -1491,6 +1774,17 @@
     ],
     [
         {"EN":{
+            "word": "pizza",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "пицца",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "pork",
             "topics": ["food"],
             "level": "elementary(A2)"
@@ -1509,6 +1803,50 @@
         {"RU": {
             "word": "малина",
             "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rice",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "рис",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "salad",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "салат",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "salt",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "соль",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sandwich",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "сэндвич",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -1557,6 +1895,28 @@
     ],
     [
         {"EN":{
+            "word": "soda",
+            "topics": ["food"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "газировка",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "soup",
+            "topics": ["food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "суп",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "spaghetti",
             "topics": ["food"],
             "level": "intermediate(B1)"
@@ -1574,6 +1934,17 @@
         }},
         {"RU": {
             "word": "стейк",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sugar",
+            "topics": ["food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "сахар",
             "topics": ["еда"]
         }}
     ],
@@ -1601,6 +1972,17 @@
     ],
     [
         {"EN":{
+            "word": "water",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "вода",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "wheat",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -1618,6 +2000,17 @@
         }},
         {"RU": {
             "word": "яичный белок",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "wine",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "вино",
             "topics": ["еда"]
         }}
     ],
@@ -1646,7 +2039,8 @@
     [
     {"EN":{
         "word": "pepper",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "перец",
@@ -1689,7 +2083,8 @@
     [
     {"EN":{
         "word": "carrot",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "морковь",
@@ -1699,11 +2094,23 @@
     [
     {"EN":{
         "word": "onion",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "лук",
         "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "fruit",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "фрукт",
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -1720,7 +2127,8 @@
     [
     {"EN":{
         "word": "potato",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "картофель",
@@ -1796,7 +2204,8 @@
     [
     {"EN":{
         "word": "tomato",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "помидор",
@@ -1824,9 +2233,21 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "vegetable",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "овощ",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "apple",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "яблоко",
@@ -1858,7 +2279,8 @@
     [
     {"EN":{
         "word": "banana",
-        "topics": ["fruits and vegetables", "food"]
+        "topics": ["fruits and vegetables", "food"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "банан",
@@ -1916,6 +2338,17 @@
     {"RU": {
         "word": "виноград",
         "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "juice",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "сок",
+            "topics": ["фрукты и овощи", "еда"]
         }}
     ],
     [
@@ -2732,13 +3165,25 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "practice",
+            "topics": ["sports", "music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "практика",
+            "topics": ["спорт", "музыка"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "practise",
-        "topics": ["sports"]
+        "topics": ["sports", "music"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "тренироваться",
-        "topics": ["спорт"]
+        "topics": ["спорт", "музыка"]
         }}
     ],
     [
@@ -3834,7 +4279,8 @@
     [
     {"EN":{
         "word": "band",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "группа",
@@ -3852,6 +4298,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "concert",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "концерт",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "fan",
         "topics": ["music"]
@@ -3859,6 +4316,17 @@
     {"RU": {
         "word": "поклонник",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "festival",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "фестиваль",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -3957,11 +4425,45 @@
     [
     {"EN":{
         "word": "guitar",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "гитара",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "listen",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "слушать",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "music",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "музыка",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "play",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "играть",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -3978,11 +4480,67 @@
     [
     {"EN":{
         "word": "piano",
-        "topics": ["music"]
+        "topics": ["music"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "пианино",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "player",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "плеер",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "radio",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "радио",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sing",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "петь",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "singer",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "певец",
+            "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "song",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "песня",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -3993,6 +4551,17 @@
     {"RU": {
         "word": "синтезатор",
         "topics": ["музыка"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "write",
+            "topics": ["music"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "писать",
+            "topics": ["музыка"]
         }}
     ],
     [
@@ -4014,6 +4583,17 @@
     {"RU": {
         "word": "испечь",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bar",
+            "topics": ["cooking and eating", "food"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "бар",
+            "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
@@ -4062,12 +4642,45 @@
     ],
     [
         {"EN":{
+            "word": "bottle",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "бутылка",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "bowl",
             "topics": ["cooking and eating"],
             "level": "elementary(A2)"
         }},
         {"RU": {
             "word": "миска",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "breakfast",
+            "topics": ["cooking and eating", "food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "завтрак",
+            "topics": ["приготовление и употребление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cafe",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "кафе",
             "topics": ["приготовление и употребление еды"]
         }}
     ],
@@ -4216,6 +4829,17 @@
     ],
     [
         {"EN":{
+            "word": "delicious",
+            "topics": ["cooking and eating", "food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "вкусный",
+            "topics": ["приготовление и употребление еды", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "dessert",
             "topics": ["food"],
             "level": "elementary(A2)"
@@ -4239,7 +4863,7 @@
         {"EN":{
             "word": "diet",
             "topics": ["cooking and eating"],
-            "level": "intermediate(B1)"
+            "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "диета",
@@ -4258,13 +4882,36 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "dinner",
+            "topics": ["cooking and eating", "food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "ужин",
+            "topics": ["приготовление и употребление еды", "еда"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "dish",
-        "topics": ["cooking and eating"]
+        "topics": ["cooking and eating"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "блюдо",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "drink",
+            "topics": ["cooking and eating"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "пить",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -4280,6 +4927,17 @@
     ],
     [
         {"EN":{
+            "word": "eat",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "есть",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "fat",
             "topics": ["cooking and eating"],
             "level": "elementary(A2)"
@@ -4287,6 +4945,17 @@
         {"RU": {
             "word": "жир",
             "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "food",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "еда",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -4309,6 +4978,17 @@
         {"RU": {
             "word": "вкус",
             "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "glass",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "стакан",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -4341,6 +5021,17 @@
     {"RU": {
         "word": "гриль",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "healthy",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "здоровый",
+            "topics": ["еда"]
         }}
     ],
     [
@@ -4433,12 +5124,12 @@
     [
         {"EN":{
             "word": "lunch",
-            "topics": ["cooking and eating"],
-            "level": "intermediate(B1)"
+            "topics": ["cooking and eating", "food"],
+            "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "обед",
-            "topics": ["приготовление и употребление еды"]
+            "topics": ["приготовление и употребление еды", "еда"]
         }}
     ],
     [
@@ -4453,6 +5144,17 @@
         }}
     ],
     [
+        {"EN":{
+            "word": "meal",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "прием пищи",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "melt",
         "topics": ["cooking and eating"]
@@ -4460,6 +5162,17 @@
     {"RU": {
         "word": "расплавить",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "menu",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "меню",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -4596,6 +5309,28 @@
     ],
     [
         {"EN":{
+            "word": "pour",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "наливать",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "prepare",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "приготовить",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
             "word": "protein",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
@@ -4654,6 +5389,17 @@
     {"RU": {
         "word": "рецепт",
         "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "restaurant",
+            "topics": ["cooking and eating"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "ресторан",
+            "topics": ["приготовление и употребление еды"]
         }}
     ],
     [
@@ -4893,6 +5639,28 @@
         }},
         {"RU": {
             "word": "вкусный",
+            "topics": ["приготовление и употребление еды"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tea",
+            "topics": ["food"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "чай",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "teapot",
+            "topics": ["cooking and eating"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "чайник",
             "topics": ["приготовление и употребление еды"]
         }}
     ],
@@ -7236,11 +8004,12 @@
 	[
     {"EN":{
         "word": "kitchen",
-        "topics": ["home"]
+        "topics": ["home", "cooking and eating"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "кухня",
-        "topics": ["дом"]
+        "topics": ["дом", "приготовление и употребление еды"]
         }}
     ],    
 	[
