@@ -1093,17 +1093,6 @@
     ],
     [
         {"EN":{
-            "word": "alcohol",
-            "topics": ["cooking and eating", "food"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "алкоголь",
-            "topics": ["приготовление и употребление еды", "еда"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "bacon",
             "topics": ["food"],
             "level": "intermediate(B1)"
@@ -1132,17 +1121,6 @@
         }},
         {"RU": {
             "word": "говядина",
-            "topics": ["еда"]
-        }}
-    ],
-    [
-        {"EN":{
-            "word": "beer",
-            "topics": ["food"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "пиво",
             "topics": ["еда"]
         }}
     ],
@@ -1230,17 +1208,6 @@
         }},
         {"RU": {
             "word": "зерновые",
-            "topics": ["еда"]
-        }}
-    ],
-    [
-        {"EN":{
-            "word": "champagne",
-            "topics": ["food"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "шампанское",
             "topics": ["еда"]
         }}
     ],
@@ -2000,17 +1967,6 @@
         }},
         {"RU": {
             "word": "яичный белок",
-            "topics": ["еда"]
-        }}
-    ],
-    [
-        {"EN":{
-            "word": "wine",
-            "topics": ["food"],
-            "level": "beginner(A1)"
-        }},
-        {"RU": {
-            "word": "вино",
             "topics": ["еда"]
         }}
     ],
