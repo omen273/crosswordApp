@@ -8238,4 +8238,37 @@
         "topics": ["образование"]
         }}
     ]
+	[
+    {"EN":{
+        "word": "advancement",
+        "topics": ["science"],
+	"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "продвижение",
+        "topics": ["наука"]
+        }}
+    ], 
+	[
+    {"EN":{
+        "word": "analyse",
+        "topics": ["science"],
+	"level": "intermediate(B1)"
+        }},
+    {"RU": {
+        "word": "анализировть",
+        "topics": ["наука"]
+        }}
+    ],     
+	[
+    {"EN":{
+        "word": "case study",
+        "topics": ["science"],
+        "level": "upper-intermediate(B2)"
+        }},
+    {"RU": {
+        "word": "тематическое исследование",
+        "topics": ["наука"]
+        }}
+    ]
 ]
