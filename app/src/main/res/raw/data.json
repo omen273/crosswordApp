@@ -5524,12 +5524,12 @@
     [
         {"EN":{
             "word": "stove",
-            "topics": ["cooking and eating"],
+            "topics": ["cooking and eating", "home"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "плита",
-            "topics": ["приготовление и употребление еды"]
+            "topics": ["приготовление и употребление еды", "дом"]
         }}
     ],
     [
@@ -5753,12 +5753,12 @@
     [
     {"EN":{
         "word": "cooker",
-        "topics": ["cooking and eating"],
+        "topics": ["home", "cooking and eating"],
         "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "плита",
-        "topics": ["приготовление и употребление еды"]
+        "topics": ["дом", "приготовление и употребление еды"]
         }}
     ],
     [
@@ -7826,41 +7826,243 @@
         "word": "нанимать",
         "topics": ["работа"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "alarm",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "сигнализация",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "antenna",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "антенна",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "attic",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "чердак",
         "topics": ["дом"]
         }}
-    ],    
-	[
+    ],
+    [
+        {"EN":{
+            "word": "apartment",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "квартира",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "armchair",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "кресло",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "balcony",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "балкон",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "basement",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "подвал",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bath",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "ванна",
+            "topics": ["дом"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "bathroom",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "ванная",
         "topics": ["дом"]
         }}
-    ],    
-	[
+    ],
+    [
+        {"EN":{
+            "word": "bed",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "кровать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "bedroom",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "спальня",
         "topics": ["дом"]
         }}
-    ],    
-	[
+    ],
+    [
+        {"EN":{
+            "word": "bin",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "мусорная корзина",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "blind",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "штора",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "boiler",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "котел",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bookshelf",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "книжный шкаф",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "borrow",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "арендовать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "broom",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "метла",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "brush",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "щетка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bucket",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ведро",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "bunk",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "двухъярусная кровать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cabinet",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кабинет",
+            "topics": ["дом"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "carpet",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "ковер",
@@ -7870,7 +8072,8 @@
 	[
     {"EN":{
         "word": "ceiling",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "потолок",
@@ -7880,23 +8083,256 @@
 	[
     {"EN":{
         "word": "cellar",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
-        "word": "подвал",
+        "word": "погреб",
         "topics": ["дом"]
         }}
-    ],       
+    ],
+    [
+        {"EN":{
+            "word": "chest",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "сундук",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "chimney",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "дымоход",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "clean",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "убираться",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cleaning",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "уборка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "closet",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "туалет",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "clutter",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "беспорядок",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "corner",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "угол",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cottage",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "коттедж",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "couch",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кушетка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "curtain",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "занавеска",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cushion",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "подушка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "decor",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "декор",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "decorate",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "украшать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "desk",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "письменный стол",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dishwasher",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "посудомоечная машина",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "door",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "дверь",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "doorbell",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "звонок",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "doorstep",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "порог",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "doorway",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "дверной проем",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "downstairs",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "вниз по лестнице",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "downstairs",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "нижний этаж",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "drawer",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ящик",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "dryer",
@@ -7906,21 +8342,78 @@
         "word": "сушилка",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "dust",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "пыль",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "entrance",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "вход",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "evict",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "выселять",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "fireplace",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "камин",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "freezer",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "морозильник",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "front",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "фасад",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "floor",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "этаж",
@@ -7930,14 +8423,70 @@
 	[
     {"EN":{
         "word": "fan",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "вентилятор",
         "topics": ["дом"]
         }}
-    ],    
-	[
+    ],
+    [
+        {"EN":{
+            "word": "fridge",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "холодильник",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "furnish",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "обставить",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "furnished",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "меблированный",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "furniture",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "мебель",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "garage",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "гараж",
+            "topics": ["дом"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "garden",
         "topics": ["home"]
@@ -7950,13 +8499,124 @@
 	[
     {"EN":{
         "word": "hall",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "зал",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "hallway",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "коридор",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "hammock",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "гамак",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "heater",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "обогреватель",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "heating",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "отопление",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "home",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "дом",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "house",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "жилой дом",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "housemate",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "сосед",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "housework",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "работа по дому",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "interior",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "интерьер",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "iron",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "утюг",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "kitchen",
@@ -7977,47 +8637,623 @@
         "word": "ключ",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "ladder",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "стремянка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lamp",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "лампа",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "landing",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лестничная площадка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "landlord",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "домовладелец",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lease",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "аренда",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lend",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "сдавать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "library",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "библиотека",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "light",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "освещение",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lock",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "замок",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lounge",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гостиная",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "mailbox",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "почтовый ящик",
         "topics": ["дом"]
         }}
-    ],    
-	[
+    ],
+    [
+        {"EN":{
+            "word": "mansion",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "особняк",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mat",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "коврик",
+            "topics": ["дом"]
+        }}
+    ],
+    [
     {"EN":{
         "word": "mirror",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "зеркало",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "mop",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "швабра",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mortgage",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ипотека",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "move",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "переезжать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "paint",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "краска",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "paint",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "красить",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "picture",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "картина",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "playroom",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "детская",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "plug",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "штепсельная вилка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "polish",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "полировать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "porch",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "крыльцо",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "rent",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "арендовать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "residential",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "жилой",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "roof",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "крыша",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "room",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "комната",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "rug",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "ковер",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sauna",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "сауна",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "shelf",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "полка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "shower",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "душ",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "shutters",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ставни",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sink",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "раковина",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "socket",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "розетка",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sofa",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "диван",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "stair",
+            "topics": ["home"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "лестница",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "staircase",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лестница",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "stool",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "табурет",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "storeroom",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кладовая",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "studio",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "студия",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "study",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "кабинет",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sweep",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "подметать",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "telephone",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "телефон",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "television",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "телевизор",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tenant",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "арендатор",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "threshold",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "порог",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "tile",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "плитка",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "toilet",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "туалет",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "upstairs",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "вверх по лестнице",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "upstairs",
+            "topics": ["home"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "верхний этаж",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "vacuum",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пылесосить",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "vase",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "ваза",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "villa",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вилла",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "wardrobe",
+            "topics": ["home"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "гардероб",
+            "topics": ["дом"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "washbasin",
+            "topics": ["home"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "умывальник",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "washer",
@@ -8031,17 +9267,30 @@
 	[
     {"EN":{
         "word": "window",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "окно",
         "topics": ["дом"]
         }}
-    ],    
+    ],
+    [
+        {"EN":{
+            "word": "windowsill",
+            "topics": ["home"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "подоконник",
+            "topics": ["дом"]
+        }}
+    ],
 	[
     {"EN":{
         "word": "wall",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "стена",
@@ -8051,7 +9300,8 @@
 	[
     {"EN":{
         "word": "cupboard",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "elementary(A2)"
         }},
     {"RU": {
         "word": "шкаф",
@@ -8061,17 +9311,19 @@
 	[
     {"EN":{
         "word": "table",
-        "topics": ["home"]
+        "topics": ["home", "cooking and eating"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "стол",
-        "topics": ["дом"]
+        "topics": ["дом", "приготовление и употребление еды"]
         }}
     ],    
 	[
     {"EN":{
         "word": "chair",
-        "topics": ["home"]
+        "topics": ["home"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "стул",
@@ -8201,11 +9453,12 @@
 	[
     {"EN":{
         "word": "dormitory",
-        "topics": ["education"]
+        "topics": ["education", "home"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "общежитие",
-        "topics": ["образование"]
+        "topics": ["образование", "дом"]
         }}
     ],    
 	[
