@@ -8237,7 +8237,7 @@
         "word": "бакалавр",
         "topics": ["образование"]
         }}
-    ]
+    ],
 	[
     {"EN":{
         "word": "advancement",
@@ -8259,16 +8259,5 @@
         "word": "анализировть",
         "topics": ["наука"]
         }}
-    ],     
-	[
-    {"EN":{
-        "word": "case study",
-        "topics": ["science"],
-        "level": "upper-intermediate(B2)"
-        }},
-    {"RU": {
-        "word": "тематическое исследование",
-        "topics": ["наука"]
-        }}
-    ]
+    ],     	
 ]
