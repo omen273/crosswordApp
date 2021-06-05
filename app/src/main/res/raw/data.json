@@ -446,16 +446,6 @@
         }}
     ],
     [
-    {"EN":{
-        "word": "goose",
-        "topics": ["animals"]
-        }},
-    {"RU": {
-        "word": "гусь",
-        "topics": ["животные"]
-        }}
-    ],
-    [
         {"EN":{
             "word": "giraffe",
             "topics": ["animals"],
@@ -5288,12 +5278,12 @@
     [
         {"EN":{
             "word": "protein",
-            "topics": ["food"],
+            "topics": ["food", "science"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "белок",
-            "topics": ["еда"]
+            "topics": ["еда", "наука"]
         }}
     ],
     [
@@ -7416,17 +7406,7 @@
         "word": "длина волны",
         "topics": ["наука"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "protein",
-        "topics": ["science"]
-        }},
-    {"RU": {
-        "word": "белок",
-        "topics": ["наука"]
-        }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "humidity",
