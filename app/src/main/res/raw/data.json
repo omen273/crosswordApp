@@ -8469,12 +8469,12 @@
     [
         {"EN":{
             "word": "carbohydrate",
-            "topics": ["science"],
+            "topics": ["science", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["наука"]
+            "topics": ["наука", "еда"]
         }}
     ]
 ]
