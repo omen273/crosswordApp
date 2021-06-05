@@ -8227,12 +8227,12 @@
 	[
     {"EN":{
         "word": "thesis",
-        "topics": ["science"],
+        "topics": ["science", "education"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "диссертация",
-        "topics": ["наука"]
+        "topics": ["наука", "образование"]
         }}
     ],
 	[
@@ -8282,12 +8282,12 @@
     [
         {"EN":{
             "word": "addition",
-            "topics": ["education"],
-            "level": "advanced(C1)"
+            "topics": ["science"],
+            "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "сложение",
-            "topics": ["образование"]
+            "topics": ["наука"]
         }}
     ],
     [
@@ -8297,7 +8297,7 @@
             "level": "advanced(C1)"
         }},
         {"RU": {
-            "word": "ведомость",
+            "word": "сертификат",
             "topics": ["образование"]
         }}
     ],
@@ -8425,12 +8425,12 @@
     [
         {"EN":{
             "word": "subtraction",
-            "topics": ["education"],
+            "topics": ["science"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "вычитание",
-            "topics": ["образование"]
+            "topics": ["наука"]
         }}
     ],
     [
