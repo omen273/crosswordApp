@@ -8131,7 +8131,8 @@
 	[
     {"EN":{
         "word": "student",
-        "topics": ["education"]
+        "topics": ["education"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "студент",
@@ -8141,7 +8142,8 @@
 	[
     {"EN":{
         "word": "teacher",
-        "topics": ["education"]
+        "topics": ["education"],
+	"level": "beginner(A1)"
         }},
     {"RU": {
         "word": "учитель",
@@ -8181,7 +8183,8 @@
 	[
     {"EN":{
         "word": "learn",
-        "topics": ["education"]
+        "topics": ["education"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "учиться",
@@ -8191,7 +8194,8 @@
 	[
     {"EN":{
         "word": "school",
-        "topics": ["education"]
+        "topics": ["education"],
+	"level": "beginner(A1)"
         }},
     {"RU": {
         "word": "школа",
@@ -8201,7 +8205,8 @@
 	[
     {"EN":{
         "word": "dormitory",
-        "topics": ["education"]
+        "topics": ["education"],
+	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "общежитие",
@@ -8235,7 +8240,30 @@
         }},
     {"RU": {
         "word": "бакалавр",
-        "topics": ["образование"]
+        "topics": ["образование"],
+	"level": "advanced(C1)"
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "thesis",
+        "topics": ["science"],
+	"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "диссертация",
+        "topics": ["наука"]
+        }}
+    ],
+	[
+    {"EN":{
+        "word": "pseudoscience",
+        "topics": ["science"],
+	"level": "advanced(C1)"
+        }},
+    {"RU": {
+        "word": "псевдонаука",
+        "topics": ["наука"]
         }}
     ],
 	[
@@ -8259,5 +8287,5 @@
         "word": "анализировть",
         "topics": ["наука"]
         }}
-    ]    	
+    ]
 ]
