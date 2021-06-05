@@ -8216,12 +8216,12 @@
 	[
     {"EN":{
         "word": "bachelor",
-        "topics": ["education"]
+        "topics": ["education"],
+        "level": "advanced(C1)"
         }},
     {"RU": {
         "word": "бакалавр",
-        "topics": ["образование"],
-	"level": "advanced(C1)"
+        "topics": ["образование"]
         }}
     ],
 	[
@@ -8264,7 +8264,7 @@
 	"level": "intermediate(B1)"
         }},
     {"RU": {
-        "word": "анализировть",
+        "word": "анализировать",
         "topics": ["наука"]
         }}
     ],
@@ -8440,7 +8440,7 @@
             "level": "advanced(C1)"
         }},
         {"RU": {
-            "word": "чертверть",
+            "word": "четверть",
             "topics": ["образование"]
         }}
     ],
