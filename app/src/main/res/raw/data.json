@@ -8287,5 +8287,214 @@
         "word": "анализировть",
         "topics": ["наука"]
         }}
+    ],
+    [
+        {"EN":{
+            "word": "academy",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "академия",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "addition",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "сложение",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "certificate",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "ведомость",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "contents",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "оглавление",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "department",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кафедра",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "equation",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "уравнение",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "faculty",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "отделение, факультет",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "finals",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "выпускные экзамены",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "freshman",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "первокурсник",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "graduation",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "выпуск",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lecturer",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лектор",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mark",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "оценка",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "register",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "журнал",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sophomore",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "второкурсник",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "subtraction",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "вычитание",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "term",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "чертверть",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "textbook",
+            "topics": ["education"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "учебник",
+            "topics": ["образование"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cell",
+            "topics": ["science"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "клетка",
+            "topics": ["наука"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "carbohydrate",
+            "topics": ["science"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "углевод",
+            "topics": ["наука"]
+        }}
     ]
 ]
