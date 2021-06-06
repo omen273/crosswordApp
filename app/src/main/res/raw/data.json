@@ -7974,23 +7974,12 @@
     ],
     [
         {"EN":{
-            "word": "borrow",
-            "topics": ["home"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "арендовать",
-            "topics": ["дом"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "broom",
             "topics": ["home"],
             "level": "advanced(C1)"
         }},
         {"RU": {
-            "word": "метла",
+            "word": "веник",
             "topics": ["дом"]
         }}
     ],
@@ -8166,7 +8155,7 @@
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
-            "word": "кушетка",
+            "word": "диван",
             "topics": ["дом"]
         }}
     ],
