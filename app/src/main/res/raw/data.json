@@ -7620,31 +7620,34 @@
 	[
     {"EN":{
         "word": "thousand",
-        "topics": ["numbers"]
+         "topics": ["science"],
+         "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "тысяча",
-        "topics": ["числа"]
+        "topics": ["наука"]
         }}
     ],    
 	[
     {"EN":{
         "word": "hundred",
-        "topics": ["numbers"]
+        "topics": ["science"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "сотня",
-        "topics": ["числа"]
+        "topics": ["наука"]
         }}
     ],    
 	[
     {"EN":{
         "word": "million",
-        "topics": ["numbers"]
+        "topics": ["science"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "миллион",
-        "topics": ["числа"]
+        "topics": ["наука"]
         }}
     ],    
 	[
@@ -9716,6 +9719,237 @@
         {"RU": {
             "word": "углевод",
             "topics": ["наука", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "light",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "свет",
+            "topics": ["наука"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sun",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "солнце",
+            "topics": ["наука"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "computer",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "компьютер",
+            "topics": ["наука"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "menu",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "меню",
+            "topics": ["наука"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mouse",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "мышь",
+            "topics": ["наука"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "open",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "открыть",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "video",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "видео",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "break",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "сломать",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "clock",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "часы",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "machine",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "машина",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "add",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "добавить",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "add",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "добавить",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "kilometre",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "километр",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "metre",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "метр",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mile",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "миля",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mile",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "миля",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "number",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "число",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "fact",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "факт",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "result",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "результат",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "science",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "наука",
+            "topics": ["наука"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "scientist",
+            "topics": ["science"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "ученый",
+            "topics": ["наука"]
         }}
     ]
 ]
