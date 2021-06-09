@@ -5278,12 +5278,12 @@
     [
         {"EN":{
             "word": "protein",
-            "topics": ["food", "science"],
+            "topics": ["food", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "белок",
-            "topics": ["еда", "наука"]
+            "topics": ["еда", "наука и техника"]
         }}
     ],
     [
@@ -7260,181 +7260,181 @@
 	[
     {"EN":{
         "word": "acid",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "кислота",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "altitude",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "высота",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "anticipate",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "предсказывать",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],        
 	[
     {"EN":{
         "word": "conductivity",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "проводимость",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "consecutive",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "последовательный",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "contradict",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "противоречить",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "determine",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "определять",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "emit",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "излучать",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],   
 	[
     {"EN":{
         "word": "friction",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "трение",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "herbivore",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "травоядное",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "mass",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "масса",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "residual",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "остаток",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "variable",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "переменная",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "velocity",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "скорость",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "wavelength",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "длина волны",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],
 	[
     {"EN":{
         "word": "humidity",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "влажность",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "ion",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "ион",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "trial",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "тестирование",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
@@ -7620,34 +7620,34 @@
 	[
     {"EN":{
         "word": "thousand",
-         "topics": ["science"],
+         "topics": ["science and technology"],
          "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "тысяча",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "hundred",
-        "topics": ["science"],
+        "topics": ["science and technology"],
         "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "сотня",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "million",
-        "topics": ["science"],
+        "topics": ["science and technology"],
         "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "миллион",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],    
 	[
@@ -9471,45 +9471,45 @@
 	[
     {"EN":{
         "word": "thesis",
-        "topics": ["science", "education"],
+        "topics": ["science and technology", "education"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "диссертация",
-        "topics": ["наука", "образование"]
+        "topics": ["наука и техника", "образование"]
         }}
     ],
 	[
     {"EN":{
         "word": "pseudoscience",
-        "topics": ["science"],
+        "topics": ["science and technology"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "псевдонаука",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],
 	[
     {"EN":{
         "word": "advancement",
-        "topics": ["science"],
+        "topics": ["science and technology"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "развитие",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ], 
 	[
     {"EN":{
         "word": "analyse",
-        "topics": ["science"],
+        "topics": ["science and technology"],
 	"level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "анализировать",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],
     [
@@ -9526,12 +9526,12 @@
     [
         {"EN":{
             "word": "addition",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "сложение",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
@@ -9669,12 +9669,12 @@
     [
         {"EN":{
             "word": "subtraction",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "вычитание",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
@@ -9702,254 +9702,320 @@
     [
         {"EN":{
             "word": "cell",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "клетка",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "carbohydrate",
-            "topics": ["science", "food"],
+            "topics": ["science and technology", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["наука", "еда"]
+            "topics": ["наука и техника", "еда"]
         }}
     ],
     [
         {"EN":{
             "word": "light",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "свет",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "sun",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "солнце",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "computer",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "компьютер",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "menu",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "меню",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "mouse",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "мышь",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "open",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
-            "word": "открыть",
-            "topics": ["наука"]
+            "word": "открыть файл",
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "video",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "видео",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "break",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "сломать",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "clock",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "часы",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "machine",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "машина",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "add",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "добавить",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "add",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "добавить",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "kilometre",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "километр",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "metre",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "метр",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "mile",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "миля",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "mile",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "миля",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "number",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "число",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "fact",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "факт",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "result",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "результат",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "science",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "наука",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "scientist",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "ученый",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "behavior",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "поведение",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "biology",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "биология",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "female",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "женский",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "male",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "мужской",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "virus",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "вирус",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "virus",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "вирус",
+            "topics": ["наука и техника"]
         }}
     ]
 ]
