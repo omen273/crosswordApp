@@ -9722,7 +9722,7 @@
         {"EN":{
             "word": "attend",
 	    "topics": ["education"],
-            "level": "pre-intermediate(A2)"
+            "level": "elementary(A2)"
         }},
 	        {"RU": {
 		"word": "присутствовать",
@@ -9732,14 +9732,14 @@
 	[{
 			"EN": {
 				"word": "biology",
-				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
 				"word": "биология",
-				"topics": ["образование"]
+				"topics": ["образование", "наука и техника"]
 			}
 		}
 	],
@@ -9747,7 +9747,7 @@
 			"EN": {
 				"word": "board",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
@@ -9760,14 +9760,14 @@
 	[{
 			"EN": {
 				"word": "chemistry",
-				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
 				"word": "химия",
-				"topics": ["образование"]
+				"topics": ["образование", "наука и техника"]
 			}
 		}
 	],
@@ -9775,7 +9775,7 @@
 			"EN": {
 				"word": "comprehension",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
@@ -9789,7 +9789,7 @@
 			"EN": {
 				"word": "degree",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
@@ -9803,7 +9803,7 @@
 			"EN": {
 				"word": "essay",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
@@ -9817,12 +9817,12 @@
 			"EN": {
 				"word": "fail",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
-				"word": "ошибаться, не сдать",
+				"word": "не сдать",
 				"topics": ["образование"]
 			}
 		}
@@ -9831,7 +9831,7 @@
 			"EN": {
 				"word": "knowledge",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
@@ -9844,42 +9844,42 @@
 	[{
 			"EN": {
 				"word": "mathematics",
-				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
 				"word": "математика",
-				"topics": ["образование"]
+				"topics": ["образование", "наука и техника"]
 			}
 		}
 	],
 	[{
 			"EN": {
 				"word": "physics",
-				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
 				"word": "физика",
-				"topics": ["образование"]
+				"topics": ["образование", "наука и техника"]
 			}
 		}
 	],
 	[{
 			"EN": {
 				"word": "research",
-				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
 				"word": "исследование",
-				"topics": ["образование"]
+				"topics": ["образование", "наука и техника"]
 			}
 		}
 	],
@@ -9887,12 +9887,12 @@
 			"EN": {
 				"word": "schedule",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
-				"word": "график",
+				"word": "расписание",
 				"topics": ["образование"]
 			}
 		}
@@ -9901,7 +9901,7 @@
 			"EN": {
 				"word": "task",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
@@ -9915,12 +9915,12 @@
 			"EN": {
 				"word": "timetable",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
-				"word": "расписание уроков",
+				"word": "расписание",
 				"topics": ["образование"]
 			}
 		}
@@ -9929,12 +9929,12 @@
 			"EN": {
 				"word": "uniform",
 				"topics": ["education"],
-				"level": "pre-intermediate(A2)"
+				"level": "elementary(A2)"
 			}
 		},
 		{
 			"RU": {
-				"word": "форма одежды",
+				"word": "униформа",
 				"topics": ["образование"]
 			}
 		}
