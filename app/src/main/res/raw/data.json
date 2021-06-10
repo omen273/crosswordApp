@@ -9717,5 +9717,620 @@
             "word": "углевод",
             "topics": ["наука", "еда"]
         }}
-    ]
+    ], 	[{
+			"EN": {
+				"word": "bag",
+				"topics": ["dress"],
+				"level": "beginner (A1)"
+			}
+		},
+		{
+			"RU": {
+				"word": "сумка",
+				"topics": ["одежда и обувь"]
+			}
+		},
+		[{
+				"EN": {
+					"word": "boot",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "ботинок",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "clothes",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "одежда",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "glasses",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "очки",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "hat",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шляпа",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "jacket",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "куртка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "jeans",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "джинсы",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "pair",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пара",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "sweater",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "свитер",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "coat",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пальто",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "dress",
+					"topics": ["dress"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "платье",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],	[{
+				"EN": {
+					"word": "beit",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пояс",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "button",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "низ",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "comfortable",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "удобный",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "designer",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "дизайнер",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "fashion",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "мода",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "formal",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "официальный",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "jewellery",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "украшения",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "purse",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "сумочка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "remove",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "снимать",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "size",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "размер",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],			[{
+				"EN": {
+					"word": "shoulder",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "плечо",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "style",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "стиль",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],	[{
+				"EN": {
+					"word": "sunglasses",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "солнечные очки",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "top",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "верх",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "uniform",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "униформа",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],	
+		[{
+				"EN": {
+					"word": "shorts",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шорты",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "apron",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "фартук",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "badge",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "значок",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "bathrobe",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "халат",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "casual",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "повседневный",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "collar",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "воротник",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "disguise",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "маскировка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "fabric",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "ткань",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "fit",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "подходить",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "heel",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "каблук",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "helmet",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шлем",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "lace",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "кружево",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "lining",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "подкладка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "slipper",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "тапочка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "stripy",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "полосатый",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "tracksuit",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "спортивный костюм",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "vest",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "жилет",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "wardrobe",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "гардероб",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "waterproof",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "водонепроницаемый",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		]
 ]
