@@ -9717,5 +9717,226 @@
             "word": "углевод",
             "topics": ["наука", "еда"]
         }}
-    ]
+    ],
+    [
+        {"EN":{
+            "word": "attend",
+	    "topics": ["education"],
+            "level": "elementary(A2)"
+        }},
+	        {"RU": {
+		"word": "присутствовать",
+		"topics": ["образование"]
+	}}
+	],
+	[{
+			"EN": {
+				"word": "biology",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "биология",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "board",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "доска",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "chemistry",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "химия",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "comprehension",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "понимание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "degree",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "степень",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "essay",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "сочинение",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "fail",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "не сдать",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "knowledge",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "знание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "mathematics",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "математика",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "physics",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "физика",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "research",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "исследование",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "schedule",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "расписание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "task",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "задание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "timetable",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "расписание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "uniform",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "униформа",
+				"topics": ["образование"]
+			}
+		}
+	]
 ]
