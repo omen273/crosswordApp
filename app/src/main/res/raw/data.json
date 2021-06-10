@@ -9717,5 +9717,890 @@
             "word": "углевод",
             "topics": ["наука", "еда"]
         }}
-    ]
+    ],
+		[{
+			"EN": {
+				"word": "actress",
+				"topics": ["movies"],
+				"level": "beginner (A1)"
+			}
+		},
+		{
+			"RU": {
+				"word": "актриса",
+				"topics": ["фильмы"]
+			}
+		},
+		[{
+				"EN": {
+					"word": "camera",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "камера",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "cinema",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "кинотеатр",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "dialogue",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "диалог",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "disk",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "диск",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "film",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "кинопленка",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "play",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "игра",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "poster",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "афиша",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "producer",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "продюсер",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "shot",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "кадр",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "sound",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "звук",
+					"topics": ["одежда"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "soundtrack",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "саундтрек",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "star",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "звезда",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "take",
+					"topics": ["movies"],
+					"level": "beginner (A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "дубль",
+					"topics": ["фильмы"]
+				}
+			}
+		],	
+	[{
+			"EN": {
+				"word": "act",
+				"topics": ["movies"],
+				"level": "elementary(A2)"
+			}
+			},
+			{
+				"RU": {
+					"word": "играть",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "audience",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "аудитория",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "cartoon",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "мультфильм",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "character",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "персонаж",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "comedy",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "комедия",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "director",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "режиссер",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "ending",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "окончание",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "hollywood",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "голливуд",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "perform",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "исполнять",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "review",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "обзор",
+					"topics": ["фильмы"]
+				}
+			}
+		],			[{
+				"EN": {
+					"word": "screen",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "экран",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "scriptwriter",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "сценарист",
+					"topics": ["фильмы"]
+				}
+			}
+		],	[{
+				"EN": {
+					"word": "showing",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "показ",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "starring",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "главные роли",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "subtitle",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "субтитр",
+					"topics": ["фильмы"]
+				}
+			}
+		],	
+		[{
+				"EN": {
+					"word": "thriller",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "триллер",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "western",
+					"topics": ["movies"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "вестерн",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+	[{
+			"EN": {
+				"word": " ",
+				"topics": ["movies"],
+				"level": "intermediate(B1)"
+			}
+			},
+			{
+				"RU": {
+					"word": "играть",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+				"word": "audience",
+				"topics": ["movies"],
+				"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "аудитория",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "cartoon",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "мультфильм",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "character",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "персонаж",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "comedy",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "комедия",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "director",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "режиссер",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "ending",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "окончание",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "hollywood",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "голливуд",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "perform",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "исполнять",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "review",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "обзор",
+					"topics": ["фильмы"]
+				}
+			}
+		],			[{
+				"EN": {
+					"word": "screen",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "экран",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "scriptwriter",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "сценарист",
+					"topics": ["фильмы"]
+				}
+			}
+		],	[{
+				"EN": {
+					"word": "showing",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "показ",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "starring",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "главные роли",
+					"topics": ["фильмы"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "subtitle",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "субтитр",
+					"topics": ["фильмы"]
+				}
+			}
+		],	
+		[{
+				"EN": {
+					"word": "thriller",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "триллер",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "western",
+					"topics": ["movies"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "вестерн",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "adapt",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "адаптировать",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "aisle",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "ряд",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "animation",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "анимация",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "booking",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "бронирование",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "cast",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "роли",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "cue",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "реплика",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "editor",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "монтажер",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "genre",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "жанр",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "interval",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "промежуток",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "masterpiece",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шедевр",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "preview",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "предпросмотр",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "produce",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "выпускать",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "rehearsal",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "репетиция",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "scenario",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "сценарий",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "storyline",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "сюжет",
+					"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "stunt",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+				"word": ["трюк"],
+				"topics": ["фильмы"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "villain",
+					"topics": ["movies"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "злодей",
+					"topics": ["фильмы"]
+				}
+			}
+		]
 ]
