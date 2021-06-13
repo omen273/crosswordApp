@@ -12392,5 +12392,214 @@
 				"topics": ["образование"]
 			}
 		}
-	]
+	],
+    [{
+        "EN": {
+            "word": "baggy",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "мешковатый",
+                "topics": ["одежда и обувь"]
+            }
+        }],
+        [{
+            "EN": {
+                "word": "blouse",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "блузка",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "bra",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "бюстгальтер",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "chain",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "цепь",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "cotton",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "хлопок",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "denim",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "джинса",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "diamond",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "алмаз",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "earring",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "серьга",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "fashionable",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "модный",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "fasten",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "закреплять",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "fur",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "мех",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "glove",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "перчатка",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "leather",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "кожа",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "swimsuit",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "купальник",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "underwear",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "белье",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ]
 ]
