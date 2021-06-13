@@ -10951,17 +10951,6 @@
     ],
 	[
         {"EN":{
-            "word": "calorie",
-            "topics": ["maths and measurement", "science and technology"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "калория",
-            "topics": ["математика и измерения", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
             "word": "degree",
             "topics": ["maths and measurement", "science and technology"],
             "level": "intermediate(B1)"
