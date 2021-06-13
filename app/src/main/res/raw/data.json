@@ -6659,16 +6659,6 @@
     ],
 	[
     {"EN":{
-        "word": "shorts",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "шорты",
-        "topics": ["одежда и обувь"]
-        }}
-    ],
-	[
-    {"EN":{
         "word": "pajamas",
         "topics": ["dress"]
         }},
@@ -6722,10 +6712,11 @@
 	[
     {"EN":{
         "word": "stockings",
-        "topics": ["dress"]
+        "topics": ["dress"],
+      "level": "advanced(C1)"
         }},
     {"RU": {
-        "word": "колготки",
+        "word": "чулки",
         "topics": ["одежда и обувь"]
         }}
     ],
@@ -9696,7 +9687,7 @@
 			},
 			{
 				"RU": {
-					"word": "одежда",
+					"word": "одежда и обувь",
 					"topics": ["одежда и обувь"]
 				}
 			}
@@ -9725,7 +9716,7 @@
 			{
 				"RU": {
 					"word": "шляпа",
-					"topics": ["одежда"]
+					"topics": ["одежда и обувь"]
 				}
 			}
 		],
@@ -9753,7 +9744,7 @@
 			{
 				"RU": {
 					"word": "джинсы",
-					"topics": ["одежда"]
+					"topics": ["одежда и обувь"]
 				}
 			}
 		],
@@ -9767,7 +9758,7 @@
 			{
 				"RU": {
 					"word": "пара",
-					"topics": ["одежда"]
+					"topics": ["одежда и обувь"]
 				}
 			}
 		],
@@ -10318,5 +10309,495 @@
 					"topics": ["одежда и обувь"]
 				}
 			}
-		]
+		],
+  [{
+    "EN": {
+      "word": "accessory",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "аксессуар",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "beads",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бусы",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "bow",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бант",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "bracelet",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "браслет",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "buckle",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "пряжка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "checked",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "клетчатый",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cloak",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "мантия",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cuff",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "манжета",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cut",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "покрой",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "fastener",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "застежка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "flat",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "без каблука",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "fly",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "ширинка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "footwear",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "обувь",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "gem",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "драгоценный камень",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "goggles",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "защитные очки",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "hood",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "капюшон",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "in",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "модный",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "linen",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "лен",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "nylon",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "нейлон",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "pearl",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "жемчуг",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "ribbon",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "лента",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "shawl",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "шаль",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "shoelace",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "шнурок",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "skintight",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "облегающий",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sleeveless",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "без рукавов",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sneaker",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "кроссовка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sole",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "подошва",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "strap",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бретелька",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "strapless",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "без бретелек",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "stylish",
+      "topics": ["dress"],
+      "level": "upper-intermediate(B2)"
+    }
+  },
+    {
+      "RU": {
+        "word": "стильный",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "veil",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "вуаль",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "velvet",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бархат",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "waistline",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "талия",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "wetsuit",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "гидрокостюм",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "wig",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "парик",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ]
 ]
