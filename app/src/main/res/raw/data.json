@@ -6680,7 +6680,8 @@
 	[
     {"EN":{
         "word": "shoes",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "ботинки",
@@ -6710,7 +6711,8 @@
 	[
     {"EN":{
         "word": "skirt",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "юбка",
@@ -6740,7 +6742,8 @@
 	[
     {"EN":{
         "word": "shirt",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "рубашка",
@@ -9782,6 +9785,34 @@
 				}
 			}
 		],
+    [{
+        "EN": {
+            "word": "watch",
+            "topics": ["dress"],
+            "level": "beginner(A1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "часы",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "wear",
+            "topics": ["dress"],
+            "level": "beginner(A1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "носить",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
 		[{
 				"EN": {
 					"word": "coat",
@@ -9809,7 +9840,22 @@
 					"topics": ["одежда и обувь"]
 				}
 			}
-		],	[{
+		],
+    [{
+        "EN": {
+            "word": "dress",
+            "topics": ["dress"],
+            "level": "beginner(A1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "одеваться",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+        [{
 				"EN": {
 					"word": "belt",
 					"topics": ["dress"],
