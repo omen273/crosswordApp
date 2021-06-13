@@ -9844,17 +9844,6 @@
     ],
 	[
         {"EN":{
-            "word": "add",
-            "topics": ["science and technology"],
-            "level": "beginner(A1)"
-        }},
-        {"RU": {
-            "word": "добавить",
-            "topics": ["наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
             "word": "kilometre",
             "topics": ["science and technology"],
             "level": "beginner(A1)"
@@ -9872,17 +9861,6 @@
         }},
         {"RU": {
             "word": "метр",
-            "topics": ["наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "mile",
-            "topics": ["science and technology"],
-            "level": "beginner(A1)"
-        }},
-        {"RU": {
-            "word": "миля",
             "topics": ["наука и техника"]
         }}
     ],
@@ -9993,28 +9971,6 @@
         }},
         {"RU": {
             "word": "мужской",
-            "topics": ["наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "virus",
-            "topics": ["science and technology"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "вирус",
-            "topics": ["наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "virus",
-            "topics": ["science and technology"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "вирус",
             "topics": ["наука и техника"]
         }}
     ],
@@ -10273,17 +10229,6 @@
     ],
 	[
         {"EN":{
-            "word": "kilogram",
-            "topics": ["maths and measurement", "science and technology"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "килограмм",
-            "topics": ["математика и измерения", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
             "word": "maths",
             "topics": ["maths and measurement", "science and technology"],
             "level": "elementary(A2)"
@@ -10378,17 +10323,6 @@
         }},
         {"RU": {
             "word": "присоединяться",
-            "topics": ["электроника", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "data",
-            "topics": ["computers", "science and technology"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "данные",
             "topics": ["электроника", "наука и техника"]
         }}
     ],
@@ -10669,17 +10603,6 @@
     ],
 	[
         {"EN":{
-            "word": "medicine",
-            "topics": ["science and technology"],
-            "level": "elementary(A2)"
-        }},
-        {"RU": {
-            "word": "медицина",
-            "topics": ["наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
             "word": "method",
             "topics": ["science and technology"],
             "level": "elementary(A2)"
@@ -10763,17 +10686,6 @@
         }},
         {"RU": {
             "word": "инженер",
-            "topics": ["наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "gadget",
-            "topics": ["science and technology"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "гаджет",
             "topics": ["наука и техника"]
         }}
     ],
@@ -11125,7 +11037,7 @@
             "level": "intermediate(B1)"
         }},
         {"RU": {
-            "word": "милиграмм",
+            "word": "миллиграмм",
             "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
@@ -11136,18 +11048,7 @@
             "level": "intermediate(B1)"
         }},
         {"RU": {
-            "word": "милилитр",
-            "topics": ["математика и измерения", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "milliliter",
-            "topics": ["maths and measurement", "science and technology"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "милилитр",
+            "word": "миллилитр",
             "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
@@ -11158,7 +11059,7 @@
             "level": "intermediate(B1)"
         }},
         {"RU": {
-            "word": "милиметр",
+            "word": "миллиметр",
             "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
@@ -11170,17 +11071,6 @@
         }},
         {"RU": {
             "word": "минус",
-            "topics": ["математика и измерения", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "percentage",
-            "topics": ["maths and measurement", "science and technology"],
-            "level": "intermediate(B1)"
-        }},
-        {"RU": {
-            "word": "процент",
             "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
