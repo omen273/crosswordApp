@@ -4666,12 +4666,12 @@
     [
         {"EN":{
             "word": "calorie",
-            "topics": ["cooking and eating"],
+            "topics": ["cooking and eating", "maths and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
             "word": "калория",
-            "topics": ["приготовление и употребление еды"]
+            "topics": ["приготовление и употребление еды", "математика и измерения", "наука и техника"]
         }}
     ],
     [
@@ -7440,224 +7440,242 @@
 	[
     {"EN":{
         "word": "one",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "один",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "first",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "первый",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "two",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "два",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "second",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "второй",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "three",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "три",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "third",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "третий",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "four",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "четыре",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "five",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "пять",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "six",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "шесть",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "seven",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "семь",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "eight",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "восемь",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "nine",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "девять",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "ten",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "десять",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],     
 	[
     {"EN":{
         "word": "eleven",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "одиннадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "twelve",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "двенадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "thirteen",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "тринадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "fifteen",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "пятнадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "twenty",
-        "topics": ["numbers"]
+         "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "двадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "thousand",
-         "topics": ["science and technology"],
+         "topics": ["maths and measurement", "science and technology"],
          "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "тысяча",
-        "topics": ["наука и техника"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "hundred",
-        "topics": ["science and technology"],
+        "topics": ["maths and measurement", "science and technology"],
         "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "сотня",
-        "topics": ["наука и техника"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "million",
-        "topics": ["science and technology"],
+        "topics": ["maths and measurement","science and technology"],
         "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "миллион",
-        "topics": ["наука и техника"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
     {"EN":{
         "word": "zero",
-        "topics": ["numbers"]
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "ноль",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
     ],    
 	[
@@ -9525,17 +9543,6 @@
     ],
     [
         {"EN":{
-            "word": "addition",
-            "topics": ["science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "сложение",
-            "topics": ["наука и техника"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "certificate",
             "topics": ["education"],
             "level": "advanced(C1)"
@@ -9776,17 +9783,6 @@
             "topics": ["наука и техника"]
         }}
     ],
-    [
-        {"EN":{
-            "word": "open",
-            "topics": ["science and technology"],
-            "level": "beginner(A1)"
-        }},
-        {"RU": {
-            "word": "открыть файл",
-            "topics": ["наука и техника"]
-        }}
-    ],
 	[
         {"EN":{
             "word": "video",
@@ -9834,56 +9830,56 @@
 	[
         {"EN":{
             "word": "add",
-            "topics": ["science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "добавить",
-            "topics": ["наука и техника"]
+            "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "kilometre",
-            "topics": ["science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "километр",
-            "topics": ["наука и техника"]
+            "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "metre",
-            "topics": ["science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "метр",
-            "topics": ["наука и техника"]
+            "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "mile",
-            "topics": ["science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "миля",
-            "topics": ["наука и техника"]
+            "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
 	[
         {"EN":{
             "word": "number",
-            "topics": ["science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "число",
-            "topics": ["наука и техника"]
+            "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
 	[
@@ -10945,7 +10941,7 @@
 	[
         {"EN":{
             "word": "addition",
-            "topics": ["математика и измерения", "science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10956,7 +10952,7 @@
 	[
         {"EN":{
             "word": "calorie",
-            "topics": ["математика и измерения", "science and technology"],
+            "topics": ["maths and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
