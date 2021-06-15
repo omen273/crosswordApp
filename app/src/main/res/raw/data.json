@@ -6660,7 +6660,8 @@
 	[
     {"EN":{
         "word": "pajamas",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "пижама",
@@ -6680,18 +6681,9 @@
     ],
 	[
     {"EN":{
-        "word": "boots",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "ботинки",
-        "topics": ["одежда и обувь"]
-        }}
-    ],
-	[
-    {"EN":{
         "word": "raincoat",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "дождевик",
@@ -11105,14 +11097,14 @@
 		}],
 		[{
 				"EN": {
-					"word": "boot",
+					"word": "boots",
 					"topics": ["dress"],
 					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
-					"word": "ботинок",
+					"word": "ботинки",
 					"topics": ["одежда и обувь"]
 				}
 			}
@@ -11121,12 +11113,12 @@
 				"EN": {
 					"word": "clothes",
 					"topics": ["dress"],
-					"level": "beginner(A1)"
+					"level": "intermediate(B1)"
 				}
 			},
 			{
 				"RU": {
-					"word": "одежда и обувь",
+					"word": "одежда",
 					"topics": ["одежда и обувь"]
 				}
 			}
@@ -11500,14 +11492,14 @@
 		[{
 				"EN": {
 					"word": "apron",
-					"topics": ["dress"],
+					"topics": ["dress", "cooking and eating"],
 					"level": "upper-intermediate(B2)"
 				}
 			},
 			{
 				"RU": {
 					"word": "фартук",
-					"topics": ["одежда и обувь"]
+					"topics": ["одежда и обувь", "приготовление и употребление еды"]
 				}
 			}
 		],
@@ -12448,6 +12440,20 @@
                 }
             }
         ],
+    [{
+        "EN": {
+            "word": "costume",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "костюм",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
         [{
             "EN": {
                 "word": "cotton",
@@ -12471,7 +12477,7 @@
         },
             {
                 "RU": {
-                    "word": "джинса",
+                    "word": "деним",
                     "topics": ["одежда и обувь"]
                 }
             }
@@ -12534,20 +12540,6 @@
         ],
         [{
             "EN": {
-                "word": "fur",
-                "topics": ["dress"],
-                "level": "intermediate(B1)"
-            }
-        },
-            {
-                "RU": {
-                    "word": "мех",
-                    "topics": ["одежда и обувь"]
-                }
-            }
-        ],
-        [{
-            "EN": {
                 "word": "glove",
                 "topics": ["dress"],
                 "level": "intermediate(B1)"
@@ -12560,20 +12552,62 @@
                 }
             }
         ],
-        [{
-            "EN": {
-                "word": "leather",
-                "topics": ["dress"],
-                "level": "intermediate(B1)"
+    [{
+        "EN": {
+            "word": "material",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "ткань",
+                "topics": ["одежда и обувь"]
             }
-        },
-            {
-                "RU": {
-                    "word": "кожа",
-                    "topics": ["одежда и обувь"]
-                }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "necklace",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "ожерелье",
+                "topics": ["одежда и обувь"]
             }
-        ],
+        }
+    ],
+    [{
+        "EN": {
+            "word": "panties",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "трусики",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "sweatshirt",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "толстовка",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
         [{
             "EN": {
                 "word": "swimsuit",
@@ -12588,6 +12622,48 @@
                 }
             }
         ],
+    [{
+        "EN": {
+            "word": "tight",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "узкий",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "tights",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "колготки",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "trendy",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "модный",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
         [{
             "EN": {
                 "word": "underwear",
