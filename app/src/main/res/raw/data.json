@@ -11576,14 +11576,14 @@
 		[{
 				"EN": {
 					"word": "fabric",
-					"topics": ["dress"],
+					"topics": ["dress", "physics and chemistry", "science and technology"],
 					"level": "upper-intermediate(B2)"
 				}
 			},
 			{
 				"RU": {
 					"word": "ткань",
-					"topics": ["одежда и обувь"]
+					"topics": ["одежда и обувь", "физика и химия", "наука и техника"]
 				}
 			}
 		],
@@ -12900,5 +12900,401 @@
             "word": "провод",
             "topics": ["инженерия", "наука и техника"]
         }}
-    ]	
+    ],
+	[
+        {"EN":{
+            "word": "absorb",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "поглощать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "acid",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кислота",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "atom",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "атом",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "brick",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кирпич",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "calcium",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кальций",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "carbon",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "углерод",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "charger",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "зарядное устройство",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "compound",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "соединение",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "concrete",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "бетонный",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "contract",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сжиматься",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "crack",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ломать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "element",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "элемент",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "emission",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "эмиссия",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "field",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "поле",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "flexible",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гибкий",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "heavy",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тяжелый",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "hydroelectric",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гидроэлектрический",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "matter",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "материя",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "melt",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "плавиться",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mineral",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "минерал",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "molecule",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "молекула",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "motion",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "движение",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "oxygen",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кислород",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "physical",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "физический",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "pressure",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "давление",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "product",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "продукт",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "proof",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "устойчивый",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "radiation",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "излучение",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "react",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "реагировать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "shape",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "формировать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "solar",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "солнечный",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "solution",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "раствор",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "steel",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сталь",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "stress",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "давление",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "stretch",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "растягивать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "tin",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "олово",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ]					
 ]
