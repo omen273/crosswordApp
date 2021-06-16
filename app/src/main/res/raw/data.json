@@ -11378,5 +11378,214 @@
 				"topics": ["образование"]
 			}
 		}
-	]
+	],
+	[
+        {"EN":{
+            "word": "activate",
+            "topics": ["engineering", "physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "включать",
+            "topics": ["инженерия", "физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "appliance",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "устройство",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "cable",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кабель",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "circuit",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цепь",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "controller",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "контроллер",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "current",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ток",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "cycle",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цикл",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "electronics",
+            "topics": ["engineering", "computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "электроника",
+            "topics": ["инженерия", "электроника", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "indicate",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "показывать",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "instrument",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "инструмент",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "mechanical",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "механический",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "mechanism",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "механизм",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "motor",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "двигатель",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "run",
+            "topics": ["engineering", "computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "запустить",
+            "topics": ["инженерия", "компьютеры", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "sensor",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сенсор",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "switch",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "переключатель",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "technician",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "техник",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "timer",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "таймер",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "wire",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "провод",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ]	
 ]
