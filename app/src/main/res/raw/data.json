@@ -13296,5 +13296,368 @@
             "word": "олово",
             "topics": ["физика и химия", "наука и техника"]
         }}
-    ]					
+    ],
+	[
+        {"EN":{
+            "word": "angle",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "угол",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "area",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "площадь",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "calculate",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вычислить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "calculator",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "калькулятор",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "count",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "число",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "deduction",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "заключение",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "depth",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "глубина",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "digit",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цифра",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "division",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "деление",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "fraction",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "доля",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gram",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "грамм",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "horizontal",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "горизонтальный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "inch",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "дюйм",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "liter",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "литр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mathematician",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "математик",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "maximum",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "максимум",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "measure",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "измерять",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "minimum",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "минимум",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "multiple",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "произведение",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "multiply",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "умножить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "negative",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "отрицательный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "parallel",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "параллельный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "plus",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "плюс",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "positive",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "положительный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "probability",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вероятность",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "problem",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "задача",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "scale",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "шкала",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "set",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "множество",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sum",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сумма",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "tonne",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тонна",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "unit",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цифра",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "vertical",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вертикальный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "volume",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "объем",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ]																								
 ]
