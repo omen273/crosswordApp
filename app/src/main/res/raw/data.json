@@ -13018,7 +13018,7 @@
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
-            "word": "ломать",
+            "word": "трескаться",
             "topics": ["физика и химия", "наука и техника"]
         }}
     ],
@@ -13442,17 +13442,6 @@
     ],
 	[
         {"EN":{
-            "word": "liter",
-            "topics": ["maths and measurement", "science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "литр",
-            "topics": ["математика и измерения", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
             "word": "mathematician",
             "topics": ["maths and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
@@ -13536,17 +13525,6 @@
         }},
         {"RU": {
             "word": "параллельный",
-            "topics": ["математика и измерения", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "plus",
-            "topics": ["maths and measurement", "science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "плюс",
             "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
