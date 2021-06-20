@@ -13637,5 +13637,390 @@
             "word": "объем",
             "topics": ["математика и измерения", "наука и техника"]
         }}
-    ]																								
+    ],
+	[
+        {"EN":{
+            "word": "animation",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "анимация",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "bug",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ошибка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "code",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "код",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "command",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "команда",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "crash",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "падение",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "cut",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вырезать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "database",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "база данных",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "delete",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "удалить",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "disk",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "диск",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "edit",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "редактировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "export",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "экспортировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "filename",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "имя файла",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "folder",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "папка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "graphics",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "графика",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "handheld",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ручной",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "icon",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "иконка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "import",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "импортировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "input",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ввод",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "install",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "устанавливать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "instruction",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "инструкция",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "keyword",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ключевое слово",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "logon",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вход в систему",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "monitor",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "монитор",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "network",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сеть",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "operation",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "операция",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "output",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вывод",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "password",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пароль",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "printout",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "распечатать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "process",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "процесс",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "programming",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "программирование",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "scan",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сканировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "select",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "выбирать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "touchscreen",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сенсорный экран",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "uncheck",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "убрать выбор",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "virtual",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "виртуальный",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ]																														
 ]
