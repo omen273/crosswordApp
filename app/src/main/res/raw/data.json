@@ -898,12 +898,12 @@
     [
         {"EN":{
             "word": "species",
-            "topics": ["animals"],
+            "topics": ["biology", "science and technology", "animals"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "вид",
-            "topics": ["животные"]
+            "topics": ["биология", "наука и техника", "животные"]
         }}
     ],
     [
@@ -4644,12 +4644,12 @@
     [
         {"EN":{
             "word": "carb",
-            "topics": ["food"],
+            "topics": ["biology", "science and technology", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["еда"]
+            "topics": ["биология", "наука и техника", "еда"]
         }}
     ],
     [
@@ -7185,16 +7185,6 @@
     ],
 	[
     {"EN":{
-        "word": "acid",
-        "topics": ["science and technology"]
-        }},
-    {"RU": {
-        "word": "кислота",
-        "topics": ["наука и техника"]
-        }}
-    ],
-	[
-    {"EN":{
         "word": "altitude",
         "topics": ["science and technology"]
         }},
@@ -7350,16 +7340,6 @@
         }},
     {"RU": {
         "word": "ион",
-        "topics": ["наука и техника"]
-        }}
-    ],
-	[
-    {"EN":{
-        "word": "trial",
-        "topics": ["science and technology"]
-        }},
-    {"RU": {
-        "word": "тестирование",
         "topics": ["наука и техника"]
         }}
     ],
@@ -9634,24 +9614,13 @@
     ],
     [
         {"EN":{
-            "word": "cell",
-            "topics": ["science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "клетка",
-            "topics": ["наука и техника"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "carbohydrate",
-            "topics": ["science and technology", "food"],
+            "topics": ["biology", "science and technology", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["наука и техника", "еда"]
+            "topics": ["биология", "наука и техника", "еда"]
         }}
     ],
     [
@@ -13641,12 +13610,12 @@
 	[
         {"EN":{
             "word": "animation",
-            "topics": ["computers", "science and technology"],
+            "topics": ["computers", "science and technology", "movies"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "анимация",
-            "topics": ["электроника", "наука и техника"]
+            "topics": ["электроника", "наука и техника", "кино"]
         }}
     ],
 	[
@@ -13799,7 +13768,7 @@
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
-            "word": "ручной",
+            "word": "портативный",
             "topics": ["электроника", "наука и техника"]
         }}
     ],
@@ -13898,7 +13867,7 @@
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
-            "word": "сеть",
+            "word": "объединять в сеть",
             "topics": ["электроника", "наука и техника"]
         }}
     ],
@@ -14069,17 +14038,6 @@
     ],
 	[
         {"EN":{
-            "word": "carb",
-            "topics": ["biology", "science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "углевод",
-            "topics": ["биология", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
             "word": "cell",
             "topics": ["biology", "science and technology"],
             "level": "upper-intermediate(B2)"
@@ -14196,17 +14154,6 @@
         }},
         {"RU": {
             "word": "организм",
-            "topics": ["биология", "наука и техника"]
-        }}
-    ],
-	[
-        {"EN":{
-            "word": "species",
-            "topics": ["science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "вид",
             "topics": ["биология", "наука и техника"]
         }}
     ],
