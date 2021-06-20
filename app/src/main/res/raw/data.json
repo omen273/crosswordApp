@@ -14202,12 +14202,210 @@
 	[
         {"EN":{
             "word": "species",
-            "topics": ["biology", "science and technology"],
+            "topics": ["science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "вид",
             "topics": ["биология", "наука и техника"]
         }}
-    ]																														
+    ],
+	[
+        {"EN":{
+            "word": "archaeology",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "археология",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "classify",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "классифицировать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "conduct",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "проводить",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "detect",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "обнаруживать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "evaluation",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "оценка",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "finding",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "результат",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "geology",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "геология",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "hypothesis",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гипотеза",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "law",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "закон",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "microscope",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "микроскоп",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "model",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "моделировать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "principle",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "принцип",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "procedure",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "процедура",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "proof",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "доказательство",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "psychologist",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "психолог",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sample",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "образец",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "telescope",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "телескоп",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "trial",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "испытание",
+            "topics": ["наука и техника"]
+        }}
+    ]																															
 ]
