@@ -5278,12 +5278,12 @@
     [
         {"EN":{
             "word": "protein",
-            "topics": ["food", "science and technology"],
+            "topics": ["food", "biology", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "белок",
-            "topics": ["еда", "наука и техника"]
+            "topics": ["еда", "биология", "наука и техника"]
         }}
     ],
     [
@@ -13388,12 +13388,12 @@
 	[
         {"EN":{
             "word": "division",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["maths and measurement", "biology", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "деление",
-            "topics": ["математика и измерения", "наука и техника"]
+            "topics": ["математика и измерения", "биология", "наука и техника"]
         }}
     ],
 	[
@@ -14021,6 +14021,193 @@
         {"RU": {
             "word": "виртуальный",
             "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "bacteria",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "бактерия",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "being",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "существо",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "biochemistry",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "биохимия",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "biological",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "биологический",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "carb",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "углевод",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "cell",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "клетка",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "dna",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "днк",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "egg",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "яйцеклетка",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "evolution",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "эволюция",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "fossil",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "окаменелость",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gene",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ген",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "genetics",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "генетика",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "germ",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "микроб",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "nerve",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "нерв",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "nutrient",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "питательное вещество",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "organism",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "организм",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "species",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вид",
+            "topics": ["биология", "наука и техника"]
         }}
     ]																														
 ]
