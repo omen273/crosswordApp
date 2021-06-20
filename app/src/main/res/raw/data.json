@@ -3381,12 +3381,12 @@
     [
         {"EN":{
             "word": "audience",
-            "topics": ["music"],
+            "topics": ["music", "movies"],
             "level": "elementary(A2)"
         }},
         {"RU": {
             "word": "публика",
-            "topics": ["музыка"]
+            "topics": ["музыка", "кино"]
         }}
     ],
     [
@@ -3950,12 +3950,12 @@
     [
         {"EN":{
             "word": "rehearsal",
-            "topics": ["music"],
+            "topics": ["music", "movies"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "репетиция",
-            "topics": ["музыка"]
+            "topics": ["музыка", "кино"]
         }}
     ],
     [
@@ -4049,12 +4049,12 @@
     [
         {"EN":{
             "word": "soundtrack",
-            "topics": ["music"],
-            "level": "upper-intermediate(B2)"
+            "topics": ["music", "movies"],
+            "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "саундтрек",
-            "topics": ["музыка"]
+            "topics": ["музыка", "кино"]
         }}
     ],
     [
@@ -4278,7 +4278,8 @@
     [
     {"EN":{
         "word": "genre",
-        "topics": ["music", "movies"]
+        "topics": ["music", "movies"],
+        "level": "upper-intermediate(B2)"
         }},
     {"RU": {
         "word": "жанр",
@@ -4320,11 +4321,12 @@
     [
     {"EN":{
         "word": "producer",
-        "topics": ["music"]
+        "topics": ["music", "movies"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "продюсер",
-        "topics": ["музыка"]
+        "topics": ["музыка", "кино"]
         }}
     ],
     [
@@ -4344,16 +4346,6 @@
         }},
     {"RU": {
         "word": "рифма",
-        "topics": ["музыка"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "single",
-        "topics": ["music"]
-        }},
-    {"RU": {
-        "word": "сингл",
         "topics": ["музыка"]
         }}
     ],
@@ -5929,46 +5921,6 @@
     ],
     [
     {"EN":{
-        "word": "cast",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "в ролях",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "cinema",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "кинотеатр",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "comedy",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "комедия",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "director",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "режиссер",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
         "word": "documentary",
         "topics": ["movies"]
         }},
@@ -6000,7 +5952,8 @@
     [
     {"EN":{
         "word": "film",
-        "topics": ["movies"]
+        "topics": ["movies"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "фильм",
@@ -6037,46 +5990,6 @@
         "topics": ["кино"]
         }}
     ],
-    [
-    {"EN":{
-        "word": "screen",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "экран",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "star",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "звезда",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "stunt",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "трюк",
-        "topics": ["кино"]
-        }}
-    ],
-    [
-    {"EN":{
-        "word": "thriller",
-        "topics": ["movies"]
-        }},
-    {"RU": {
-        "word": "триллер",
-        "topics": ["кино"]
-        }}
-    ],    
 	[
     {"EN":{
         "word": "movie",
@@ -9722,26 +9635,26 @@
 			"EN": {
 				"word": "actress",
 				"topics": ["movies"],
-				"level": "beginner (A1)"
+				"level": "beginner(A1)"
 			}
 		},
 		{
 			"RU": {
 				"word": "актриса",
-				"topics": ["фильмы"]
+				"topics": ["кино"]
 			}
-		},
+		}],
 		[{
 				"EN": {
 					"word": "camera",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "камера",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9749,13 +9662,13 @@
 				"EN": {
 					"word": "cinema",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "кинотеатр",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9763,41 +9676,13 @@
 				"EN": {
 					"word": "dialogue",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "диалог",
-					"topics": ["фильмы"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "disk",
-					"topics": ["movies"],
-					"level": "beginner (A1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "диск",
-					"topics": ["одежда"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "film",
-					"topics": ["movies"],
-					"level": "beginner (A1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "кинопленка",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9805,13 +9690,13 @@
 				"EN": {
 					"word": "play",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
-					"word": "игра",
-					"topics": ["одежда"]
+					"word": "пьеса",
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9819,27 +9704,13 @@
 				"EN": {
 					"word": "poster",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "афиша",
-					"topics": ["одежда"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "producer",
-					"topics": ["movies"],
-					"level": "beginner (A1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "продюсер",
-					"topics": ["одежда"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9847,13 +9718,13 @@
 				"EN": {
 					"word": "shot",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "кадр",
-					"topics": ["одежда"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9861,27 +9732,13 @@
 				"EN": {
 					"word": "sound",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "звук",
-					"topics": ["одежда"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "soundtrack",
-					"topics": ["movies"],
-					"level": "beginner (A1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "саундтрек",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9889,13 +9746,13 @@
 				"EN": {
 					"word": "star",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "звезда",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9903,13 +9760,13 @@
 				"EN": {
 					"word": "take",
 					"topics": ["movies"],
-					"level": "beginner (A1)"
+					"level": "beginner(A1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "дубль",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],	
@@ -9923,23 +9780,10 @@
 			{
 				"RU": {
 					"word": "играть",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
-		],		[{
-				"EN": {
-					"word": "audience",
-					"topics": ["movies"],
-					"level": "elementary(A2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "аудитория",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
+		], [{
 				"EN": {
 					"word": "cartoon",
 					"topics": ["movies"],
@@ -9949,7 +9793,7 @@
 			{
 				"RU": {
 					"word": "мультфильм",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],		[{
@@ -9962,7 +9806,7 @@
 			{
 				"RU": {
 					"word": "персонаж",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],		[{
@@ -9975,7 +9819,7 @@
 			{
 				"RU": {
 					"word": "комедия",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -9989,7 +9833,7 @@
 			{
 				"RU": {
 					"word": "режиссер",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10003,7 +9847,7 @@
 			{
 				"RU": {
 					"word": "окончание",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],		[{
@@ -10016,7 +9860,7 @@
 			{
 				"RU": {
 					"word": "голливуд",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],		[{
@@ -10029,7 +9873,7 @@
 			{
 				"RU": {
 					"word": "исполнять",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],		[{
@@ -10042,7 +9886,7 @@
 			{
 				"RU": {
 					"word": "обзор",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],			[{
@@ -10055,36 +9899,10 @@
 			{
 				"RU": {
 					"word": "экран",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
-		],		[{
-				"EN": {
-					"word": "scriptwriter",
-					"topics": ["movies"],
-					"level": "elementary(A2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "сценарист",
-					"topics": ["фильмы"]
-				}
-			}
-		],	[{
-				"EN": {
-					"word": "showing",
-					"topics": ["movies"],
-					"level": "elementary(A2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "показ",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
+		], [{
 				"EN": {
 					"word": "starring",
 					"topics": ["movies"],
@@ -10094,246 +9912,47 @@
 			{
 				"RU": {
 					"word": "главные роли",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "subtitle",
-					"topics": ["movies"],
-					"level": "elementary(A2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "субтитр",
-					"topics": ["фильмы"]
-				}
-			}
-		],	
-		[{
-				"EN": {
-					"word": "thriller",
-					"topics": ["movies"],
-					"level": "elementary(A2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "триллер",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
 		[{
 				"EN": {
-					"word": "western",
+					"word": "screenwriter",
 					"topics": ["movies"],
-					"level": "elementary(A2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "вестерн",
-					"topics": ["фильмы"]
-				}
-			}
-		],
-	[{
-			"EN": {
-				"word": " ",
-				"topics": ["movies"],
-				"level": "intermediate(B1)"
-			}
-			},
-			{
-				"RU": {
-					"word": "играть",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-				"word": "audience",
-				"topics": ["movies"],
-				"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "аудитория",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "cartoon",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "мультфильм",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "character",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "персонаж",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "comedy",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "комедия",
-					"topics": ["фильмы"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "director",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "режиссер",
-					"topics": ["фильмы"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "ending",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "окончание",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "hollywood",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "голливуд",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "perform",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "исполнять",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "review",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "обзор",
-					"topics": ["фильмы"]
-				}
-			}
-		],			[{
-				"EN": {
-					"word": "screen",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "экран",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "scriptwriter",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
+					"level": "upper-intermediate(B2)"
 				}
 			},
 			{
 				"RU": {
 					"word": "сценарист",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],	[{
 				"EN": {
 					"word": "showing",
 					"topics": ["movies"],
-					"level": "intermediate(B1)"
+					"level": "advanced(C1)"
 				}
 			},
 			{
 				"RU": {
 					"word": "показ",
-					"topics": ["фильмы"]
-				}
-			}
-		],		[{
-				"EN": {
-					"word": "starring",
-					"topics": ["movies"],
-					"level": "intermediate(B1)"
-				}
-			},
-			{
-				"RU": {
-					"word": "главные роли",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],		[{
 				"EN": {
 					"word": "subtitle",
 					"topics": ["movies"],
-					"level": "intermediate(B1)"
+					"level": "upper-intermediate(B2)"
 				}
 			},
 			{
 				"RU": {
 					"word": "субтитр",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],	
@@ -10347,7 +9966,7 @@
 			{
 				"RU": {
 					"word": "триллер",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10361,7 +9980,7 @@
 			{
 				"RU": {
 					"word": "вестерн",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10375,7 +9994,7 @@
 			{
 				"RU": {
 					"word": "адаптировать",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10389,7 +10008,7 @@
 			{
 				"RU": {
 					"word": "ряд",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10403,7 +10022,7 @@
 			{
 				"RU": {
 					"word": "анимация",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10417,7 +10036,7 @@
 			{
 				"RU": {
 					"word": "бронирование",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10430,8 +10049,8 @@
 			},
 			{
 				"RU": {
-					"word": "роли",
-					"topics": ["фильмы"]
+					"word": "в ролях",
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10445,7 +10064,7 @@
 			{
 				"RU": {
 					"word": "реплика",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10459,21 +10078,7 @@
 			{
 				"RU": {
 					"word": "монтажер",
-					"topics": ["фильмы"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "genre",
-					"topics": ["movies"],
-					"level": "upper-intermediate(B2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "жанр",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10487,7 +10092,7 @@
 			{
 				"RU": {
 					"word": "промежуток",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10501,7 +10106,7 @@
 			{
 				"RU": {
 					"word": "шедевр",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10515,7 +10120,7 @@
 			{
 				"RU": {
 					"word": "предпросмотр",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10529,21 +10134,7 @@
 			{
 				"RU": {
 					"word": "выпускать",
-					"topics": ["фильмы"]
-				}
-			}
-		],
-		[{
-				"EN": {
-					"word": "rehearsal",
-					"topics": ["movies"],
-					"level": "upper-intermediate(B2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "репетиция",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10557,7 +10148,7 @@
 			{
 				"RU": {
 					"word": "сценарий",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10571,7 +10162,7 @@
 			{
 				"RU": {
 					"word": "сюжет",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		],
@@ -10585,7 +10176,7 @@
 			{
 				"RU": {
 				"word": ["трюк"],
-				"topics": ["фильмы"]
+				"topics": ["кино"]
 				}
 			}
 		],
@@ -10599,7 +10190,7 @@
 			{
 				"RU": {
 					"word": "злодей",
-					"topics": ["фильмы"]
+					"topics": ["кино"]
 				}
 			}
 		]
