@@ -898,12 +898,12 @@
     [
         {"EN":{
             "word": "species",
-            "topics": ["animals"],
+            "topics": ["biology", "science and technology", "animals"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "вид",
-            "topics": ["животные"]
+            "topics": ["биология", "наука и техника", "животные"]
         }}
     ],
     [
@@ -4636,12 +4636,12 @@
     [
         {"EN":{
             "word": "carb",
-            "topics": ["food"],
+            "topics": ["biology", "science and technology", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["еда"]
+            "topics": ["биология", "наука и техника", "еда"]
         }}
     ],
     [
@@ -5270,12 +5270,12 @@
     [
         {"EN":{
             "word": "protein",
-            "topics": ["food", "science and technology"],
+            "topics": ["food", "biology", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "белок",
-            "topics": ["еда", "наука и техника"]
+            "topics": ["еда", "биология", "наука и техника"]
         }}
     ],
     [
@@ -7083,16 +7083,6 @@
     ],
 	[
     {"EN":{
-        "word": "acid",
-        "topics": ["science and technology"]
-        }},
-    {"RU": {
-        "word": "кислота",
-        "topics": ["наука и техника"]
-        }}
-    ],
-	[
-    {"EN":{
         "word": "altitude",
         "topics": ["science and technology"]
         }},
@@ -7248,16 +7238,6 @@
         }},
     {"RU": {
         "word": "ион",
-        "topics": ["наука и техника"]
-        }}
-    ],
-	[
-    {"EN":{
-        "word": "trial",
-        "topics": ["science and technology"]
-        }},
-    {"RU": {
-        "word": "тестирование",
         "topics": ["наука и техника"]
         }}
     ],
@@ -9532,24 +9512,13 @@
     ],
     [
         {"EN":{
-            "word": "cell",
-            "topics": ["science and technology"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "клетка",
-            "topics": ["наука и техника"]
-        }}
-    ],
-    [
-        {"EN":{
             "word": "carbohydrate",
-            "topics": ["science and technology", "food"],
+            "topics": ["biology", "science and technology", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["наука и техника", "еда"]
+            "topics": ["биология", "наука и техника", "еда"]
         }}
     ],
     [
@@ -9610,12 +9579,12 @@
 	[
         {"EN":{
             "word": "video",
-            "topics": ["science and technology"],
+            "topics": ["science and technology", "movies"],
             "level": "beginner(A1)"
         }},
         {"RU": {
             "word": "видео",
-            "topics": ["наука и техника"]
+            "topics": ["наука и техника", "кино"]
         }}
     ],
 	[
@@ -13286,12 +13255,12 @@
 	[
         {"EN":{
             "word": "division",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["maths and measurement", "biology", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "деление",
-            "topics": ["математика и измерения", "наука и техника"]
+            "topics": ["математика и измерения", "биология", "наука и техника"]
         }}
     ],
 	[
@@ -14019,20 +13988,6 @@
 		],
 		[{
 				"EN": {
-					"word": "animation",
-					"topics": ["movies"],
-					"level": "upper-intermediate(B2)"
-				}
-			},
-			{
-				"RU": {
-					"word": "анимация",
-					"topics": ["кино"]
-				}
-			}
-		],
-		[{
-				"EN": {
 					"word": "booking",
 					"topics": ["movies"],
 					"level": "upper-intermediate(B2)"
@@ -14180,7 +14135,7 @@
 			},
 			{
 				"RU": {
-				"word": ["трюк"],
+				"word": "трюк",
 				"topics": ["кино"]
 				}
 			}
@@ -14229,20 +14184,6 @@
     ],
     [{
         "EN": {
-            "word": "video",
-            "topics": ["movies"],
-            "level": "beginner(A1)"
-        }
-    },
-        {
-            "RU": {
-                "word": "видео",
-                "topics": ["кино"]
-            }
-        }
-    ],
-    [{
-        "EN": {
             "word": "watch",
             "topics": ["movies"],
             "level": "beginner(A1)"
@@ -14254,5 +14195,753 @@
                 "topics": ["кино"]
             }
         }
+    ],
+	[
+        {"EN":{
+            "word": "animation",
+            "topics": ["computers", "science and technology", "movies"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "анимация",
+            "topics": ["электроника", "наука и техника", "кино"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "bug",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ошибка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "code",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "код",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "command",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "команда",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "crash",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "падение",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "cut",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вырезать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "database",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "база данных",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "delete",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "удалить",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "disk",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "диск",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "edit",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "редактировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "export",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "экспортировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "filename",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "имя файла",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "folder",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "папка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "graphics",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "графика",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "handheld",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "портативный",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "icon",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "иконка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "import",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "импортировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "input",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ввод",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "install",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "устанавливать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "instruction",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "инструкция",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "keyword",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ключевое слово",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "logon",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вход в систему",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "monitor",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "монитор",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "network",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "объединять в сеть",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "operation",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "операция",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "output",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вывод",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "password",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "пароль",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "printout",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "распечатать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "process",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "процесс",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "programming",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "программирование",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "scan",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сканировать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "select",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "выбирать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "touchscreen",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сенсорный экран",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "uncheck",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "убрать выбор",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "virtual",
+            "topics": ["computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "виртуальный",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "bacteria",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "бактерия",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "being",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "существо",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "biochemistry",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "биохимия",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "biological",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "биологический",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "cell",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "клетка",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "dna",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "днк",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "egg",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "яйцеклетка",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "evolution",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "эволюция",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "fossil",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "окаменелость",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gene",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ген",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "genetics",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "генетика",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "germ",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "микроб",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "nerve",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "нерв",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "nutrient",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "питательное вещество",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "organism",
+            "topics": ["biology", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "организм",
+            "topics": ["биология", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "archaeology",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "археология",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "classify",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "классифицировать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "conduct",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "проводить",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "detect",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "обнаруживать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "evaluation",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "оценка",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "finding",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "результат",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "geology",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "геология",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "hypothesis",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гипотеза",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "law",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "закон",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "microscope",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "микроскоп",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "model",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "моделировать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "principle",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "принцип",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "procedure",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "процедура",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "proof",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "доказательство",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "psychologist",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "психолог",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sample",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "образец",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "telescope",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "телескоп",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "trial",
+            "topics": ["science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "испытание",
+            "topics": ["наука и техника"]
+        }}
     ]
 ]
