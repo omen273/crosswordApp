@@ -30,7 +30,7 @@
         "word": "антилопа",
         "topics": ["животные"]
         }}
-    ],	
+    ],
     [
     {"EN":{
         "word": "bat",
@@ -542,7 +542,7 @@
         "word": "еж",
         "topics": ["животные"]
         }}
-    ],	
+    ],
     [
     {"EN":{
         "word": "horse",
@@ -2113,7 +2113,7 @@
         "word": "тыква",
         "topics": ["фрукты и овощи", "еда"]
         }}
-    ],  
+    ],
     [
     {"EN":{
         "word": "eggplant",
@@ -4658,12 +4658,12 @@
     [
         {"EN":{
             "word": "calorie",
-            "topics": ["cooking and eating"],
+            "topics": ["cooking and eating", "maths and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
             "word": "калория",
-            "topics": ["приготовление и употребление еды"]
+            "topics": ["приготовление и употребление еды", "математика и измерения", "наука и техника"]
         }}
     ],
     [
@@ -5270,12 +5270,12 @@
     [
         {"EN":{
             "word": "protein",
-            "topics": ["food", "science"],
+            "topics": ["food", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "белок",
-            "topics": ["еда", "наука"]
+            "topics": ["еда", "наука и техника"]
         }}
     ],
     [
@@ -5994,7 +5994,7 @@
         "word": "январь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "february",
@@ -6004,7 +6004,7 @@
         "word": "февраль",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "march",
@@ -6014,7 +6014,7 @@
         "word": "март",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "april",
@@ -6024,7 +6024,7 @@
         "word": "апрель",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "may",
@@ -6034,7 +6034,7 @@
         "word": "май",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "june",
@@ -6044,7 +6044,7 @@
         "word": "июнь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "july",
@@ -6054,7 +6054,7 @@
         "word": "июль",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "august",
@@ -6064,7 +6064,7 @@
         "word": "август",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "september",
@@ -6074,7 +6074,7 @@
         "word": "сентябрь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "october",
@@ -6084,7 +6084,7 @@
         "word": "октябрь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "november",
@@ -6094,7 +6094,7 @@
         "word": "ноябрь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "december",
@@ -6104,7 +6104,7 @@
         "word": "декабрь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "monday",
@@ -6114,7 +6114,7 @@
         "word": "понедельник",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "tuesday",
@@ -6124,7 +6124,7 @@
         "word": "вторник",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "wednesday",
@@ -6134,7 +6134,7 @@
         "word": "среда",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "thursday",
@@ -6144,7 +6144,7 @@
         "word": "четверг",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "friday",
@@ -6154,7 +6154,7 @@
         "word": "пятница",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "saturday",
@@ -6164,7 +6164,7 @@
         "word": "суббота",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "sunday",
@@ -6174,7 +6174,7 @@
         "word": "воскресенье",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "morning",
@@ -6184,7 +6184,7 @@
         "word": "утро",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "evening",
@@ -6194,7 +6194,7 @@
         "word": "вечер",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "afternoon",
@@ -6204,7 +6204,7 @@
         "word": "после обеда",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "day",
@@ -6214,7 +6214,7 @@
         "word": "день",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "night",
@@ -6224,7 +6224,7 @@
         "word": "ночь",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "sunrise",
@@ -6234,7 +6234,7 @@
         "word": "рассвет",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "sunset",
@@ -6244,7 +6244,7 @@
         "word": "закат",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "second",
@@ -6254,7 +6254,7 @@
         "word": "секунда",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "minute",
@@ -6264,7 +6264,7 @@
         "word": "минута",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hour",
@@ -6274,7 +6274,7 @@
         "word": "час",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "week",
@@ -6284,7 +6284,7 @@
         "word": "неделя",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "month",
@@ -6294,7 +6294,7 @@
         "word": "месяц",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "year",
@@ -6304,7 +6304,7 @@
         "word": "год",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "decade",
@@ -6314,7 +6314,7 @@
         "word": "десять лет",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "century",
@@ -6324,7 +6324,7 @@
         "word": "столетие",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "millennium",
@@ -6334,7 +6334,7 @@
         "word": "тысячелетие",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "winter",
@@ -6344,7 +6344,7 @@
         "word": "зима",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "spring",
@@ -6354,7 +6354,7 @@
         "word": "весна",
         "topics": ["время"]
         }}
-    ],       
+    ],
 	[
     {"EN":{
         "word": "summer",
@@ -6364,7 +6364,7 @@
         "word": "лето",
         "topics": ["время"]
         }}
-    ],      
+    ],
 	[
     {"EN":{
         "word": "fall",
@@ -6374,7 +6374,7 @@
         "word": "осень",
         "topics": ["время"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "vacation",
@@ -6384,7 +6384,7 @@
         "word": "отпуск",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "accommodation",
@@ -6394,7 +6394,7 @@
         "word": "проживание",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "book",
@@ -6404,7 +6404,7 @@
         "word": "забронировать",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "airplane",
@@ -6414,7 +6414,7 @@
         "word": "самолет",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "train",
@@ -6424,7 +6424,7 @@
         "word": "поезд",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "bus",
@@ -6434,7 +6434,7 @@
         "word": "автобус",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ship",
@@ -6444,7 +6444,7 @@
         "word": "корабль",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "mountain",
@@ -6454,7 +6454,7 @@
         "word": "гора",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "sea",
@@ -6464,7 +6464,7 @@
         "word": "море",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ocean",
@@ -6474,7 +6474,7 @@
         "word": "океан",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hotel",
@@ -6484,7 +6484,7 @@
         "word": "отель",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "borders",
@@ -6494,7 +6494,7 @@
         "word": "границы",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "customs",
@@ -6504,7 +6504,7 @@
         "word": "таможня",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "station",
@@ -6514,7 +6514,7 @@
         "word": "станция",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "airport",
@@ -6524,7 +6524,7 @@
         "word": "аэрпорт",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "beach",
@@ -6534,7 +6534,7 @@
         "word": "пляж",
         "topics": ["путешествия"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "museum",
@@ -6544,47 +6544,7 @@
         "word": "музей",
         "topics": ["путешествия"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "sweater",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "свитер",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
-	[
-    {"EN":{
-        "word": "jacket",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "куртка",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
-	[
-    {"EN":{
-        "word": "coat",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "пальто",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
-	[
-    {"EN":{
-        "word": "jeans",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "джинсы",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "socks",
@@ -6594,97 +6554,62 @@
         "word": "носки",
         "topics": ["одежда и обувь"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "shorts",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "шорты",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
-	[
-    {"EN":{
-        "word": "vest",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "жилет",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "pajamas",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "пижама",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "shoes",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "ботинки",
         "topics": ["одежда и обувь"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "boots",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "ботинки",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "raincoat",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "дождевик",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "skirt",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "юбка",
         "topics": ["одежда и обувь"]
         }}
-    ],    
-	[
-    {"EN":{
-        "word": "dress",
-        "topics": ["dress"]
-        }},
-    {"RU": {
-        "word": "платье",
-        "topics": ["одежда и обувь"]
-        }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "stockings",
-        "topics": ["dress"]
+        "topics": ["dress"],
+      "level": "advanced(C1)"
         }},
     {"RU": {
-        "word": "колготки",
+        "word": "чулки",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "suit",
@@ -6694,17 +6619,18 @@
         "word": "костюм",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "shirt",
-        "topics": ["dress"]
+        "topics": ["dress"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "рубашка",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "tie",
@@ -6714,7 +6640,7 @@
         "word": "галстук",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "cap",
@@ -6724,7 +6650,7 @@
         "word": "шапка",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "scarf",
@@ -6734,7 +6660,7 @@
         "word": "шарф",
         "topics": ["одежда и обувь"]
         }}
-    ],       
+    ],
 	[
     {"EN":{
         "word": "pants",
@@ -6744,7 +6670,7 @@
         "word": "штаны",
         "topics": ["одежда и обувь"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "arm",
@@ -6754,7 +6680,7 @@
         "word": "рука",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "eye",
@@ -6764,7 +6690,7 @@
         "word": "глаз",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "eyebrow",
@@ -6774,7 +6700,7 @@
         "word": "бровь",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "belly",
@@ -6784,7 +6710,7 @@
         "word": "живот",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "leg",
@@ -6794,7 +6720,7 @@
         "word": "нога",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "thumb",
@@ -6804,7 +6730,7 @@
         "word": "большой палец",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "elbow",
@@ -6814,7 +6740,7 @@
         "word": "локоть",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "finger",
@@ -6824,7 +6750,7 @@
         "word": "палец",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "foot",
@@ -6834,7 +6760,7 @@
         "word": "нога",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ankle",
@@ -6844,7 +6770,7 @@
         "word": "лодыжка",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hair",
@@ -6854,7 +6780,7 @@
         "word": "волосы",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "neck",
@@ -6864,7 +6790,7 @@
         "word": "шея",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hand",
@@ -6874,7 +6800,7 @@
         "word": "рука",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "wrist",
@@ -6884,7 +6810,7 @@
         "word": "запястье",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hip",
@@ -6894,7 +6820,7 @@
         "word": "бедро",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "chin",
@@ -6904,7 +6830,7 @@
         "word": "подбородок",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "knee",
@@ -6914,7 +6840,7 @@
         "word": "колено",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "head",
@@ -6924,7 +6850,7 @@
         "word": "голова",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "lip",
@@ -6934,7 +6860,7 @@
         "word": "губа",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "mouth",
@@ -6944,7 +6870,7 @@
         "word": "рот",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "nose",
@@ -6954,7 +6880,7 @@
         "word": "нос",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "thigh",
@@ -6964,7 +6890,7 @@
         "word": "бедро",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ear",
@@ -6974,7 +6900,7 @@
         "word": "ухо",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "back",
@@ -6984,7 +6910,7 @@
         "word": "спина",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "underarm",
@@ -6994,7 +6920,7 @@
         "word": "подмышка",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "shoulder",
@@ -7004,7 +6930,7 @@
         "word": "плечо",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "forehead",
@@ -7014,7 +6940,7 @@
         "word": "лоб",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "calf",
@@ -7024,7 +6950,7 @@
         "word": "икра",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "cheek",
@@ -7034,7 +6960,7 @@
         "word": "щека",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "tooth",
@@ -7044,7 +6970,7 @@
         "word": "зуб",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "toe",
@@ -7054,7 +6980,7 @@
         "word": "палец на ноге",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "tongue",
@@ -7064,7 +6990,7 @@
         "word": "язык",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "chest",
@@ -7074,7 +7000,7 @@
         "word": "грудь",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "lung",
@@ -7084,7 +7010,7 @@
         "word": "легкое",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "stomach",
@@ -7094,7 +7020,7 @@
         "word": "желудок",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "heart",
@@ -7104,7 +7030,7 @@
         "word": "сердце",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "liver",
@@ -7114,7 +7040,7 @@
         "word": "печень",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "brain",
@@ -7124,7 +7050,7 @@
         "word": "мозг",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "blood",
@@ -7134,7 +7060,7 @@
         "word": "кровь",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "throat",
@@ -7144,7 +7070,7 @@
         "word": "горло",
         "topics": ["тело"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "kidney",
@@ -7154,407 +7080,428 @@
         "word": "почка",
         "topics": ["тело"]
         }}
-    ],       
+    ],
 	[
     {"EN":{
         "word": "acid",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "кислота",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "altitude",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "высота",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "anticipate",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "предсказывать",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],        
+    ],
 	[
     {"EN":{
         "word": "conductivity",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "проводимость",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "consecutive",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "последовательный",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "contradict",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "противоречить",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "determine",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "определять",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "emit",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "излучать",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],   
+    ],
 	[
     {"EN":{
         "word": "friction",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "трение",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "herbivore",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "травоядное",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "mass",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "масса",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "residual",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "остаток",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "variable",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "переменная",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "velocity",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "скорость",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "wavelength",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "длина волны",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],
 	[
     {"EN":{
         "word": "humidity",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "влажность",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ion",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "ион",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "trial",
-        "topics": ["science"]
+        "topics": ["science and technology"]
         }},
     {"RU": {
         "word": "тестирование",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "one",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "один",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "first",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "первый",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "two",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "два",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "second",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "второй",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "three",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "три",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "third",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "третий",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "four",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "четыре",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "five",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "пять",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "six",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "шесть",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "seven",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "семь",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "eight",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "восемь",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "nine",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "девять",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ten",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "десять",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],     
+    ],
 	[
     {"EN":{
         "word": "eleven",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "одиннадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "twelve",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "двенадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "thirteen",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "тринадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "fifteen",
-        "topics": ["numbers"]
+        "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "пятнадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "twenty",
-        "topics": ["numbers"]
+         "level": "beginner(A1)",
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "двадцать",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "thousand",
-        "topics": ["numbers"]
+         "topics": ["maths and measurement", "science and technology"],
+         "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "тысяча",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hundred",
-        "topics": ["numbers"]
+        "topics": ["maths and measurement", "science and technology"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "сотня",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "million",
-        "topics": ["numbers"]
+        "topics": ["maths and measurement","science and technology"],
+        "level": "beginner(A1)"
         }},
     {"RU": {
         "word": "миллион",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "zero",
-        "topics": ["numbers"]
+        "topics": ["maths and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "ноль",
-        "topics": ["числа"]
+        "topics": ["математика и измерения", "наука и техника"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "commuter",
@@ -7564,7 +7511,7 @@
         "word": "человек, ездящий на работу",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "employee",
@@ -7574,7 +7521,7 @@
         "word": "сотрудник",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "employer",
@@ -7584,7 +7531,7 @@
         "word": "работодатель",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "job",
@@ -7594,7 +7541,7 @@
         "word": "работа",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "occupation",
@@ -7604,7 +7551,7 @@
         "word": "род занятий",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "profession",
@@ -7614,7 +7561,7 @@
         "word": "профессия",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "worker",
@@ -7624,7 +7571,7 @@
         "word": "работник",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "application",
@@ -7634,7 +7581,7 @@
         "word": "заявка",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "trainee",
@@ -7644,7 +7591,7 @@
         "word": "стажер",
         "topics": ["работа"]
         }}
-    ],        
+    ],
 	[
     {"EN":{
         "word": "interview",
@@ -7654,7 +7601,7 @@
         "word": "собеседование",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "vacancy",
@@ -7664,7 +7611,7 @@
         "word": "вакансия",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "flextime",
@@ -7674,7 +7621,7 @@
         "word": "гибкий график",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "unemployment",
@@ -7684,7 +7631,7 @@
         "word": "безработица",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "wage",
@@ -7694,7 +7641,7 @@
         "word": "зарплата",
         "topics": ["работа"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hire",
@@ -7935,7 +7882,7 @@
         "word": "ковер",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "ceiling",
@@ -7946,7 +7893,7 @@
         "word": "потолок",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "cellar",
@@ -8286,7 +8233,7 @@
         "word": "этаж",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "fan",
@@ -8362,7 +8309,7 @@
         "word": "сад",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "hall",
@@ -8494,7 +8441,7 @@
         "word": "кухня",
         "topics": ["дом", "приготовление и употребление еды"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "key",
@@ -9130,7 +9077,7 @@
         "word": "стиральная машина",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "window",
@@ -9163,7 +9110,7 @@
         "word": "стена",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "cupboard",
@@ -9174,7 +9121,7 @@
         "word": "шкаф",
         "topics": ["дом"]
         }}
-    ],       
+    ],
 	[
     {"EN":{
         "word": "table",
@@ -9185,7 +9132,7 @@
         "word": "стол",
         "topics": ["дом", "приготовление и употребление еды"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "chair",
@@ -9196,7 +9143,7 @@
         "word": "стул",
         "topics": ["дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "graduate",
@@ -9206,7 +9153,7 @@
         "word": "выпускник",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "curriculum",
@@ -9216,7 +9163,7 @@
         "word": "расписание",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "qualification",
@@ -9226,7 +9173,7 @@
         "word": "квалификация",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "coursework",
@@ -9236,7 +9183,7 @@
         "word": "курсовая работа",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "concentrate",
@@ -9246,7 +9193,7 @@
         "word": "концентрироваться",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "student",
@@ -9257,7 +9204,7 @@
         "word": "студент",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "teacher",
@@ -9268,7 +9215,7 @@
         "word": "учитель",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "exam",
@@ -9278,7 +9225,7 @@
         "word": "экзамен",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "lesson",
@@ -9288,7 +9235,7 @@
         "word": "урок",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "tutor",
@@ -9298,7 +9245,7 @@
         "word": "репетитор",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "learn",
@@ -9309,7 +9256,7 @@
         "word": "учиться",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "school",
@@ -9320,7 +9267,7 @@
         "word": "школа",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "dormitory",
@@ -9331,7 +9278,7 @@
         "word": "общежитие",
         "topics": ["образование", "дом"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "university",
@@ -9341,7 +9288,7 @@
         "word": "университет",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "master",
@@ -9351,7 +9298,7 @@
         "word": "магистр",
         "topics": ["образование"]
         }}
-    ],    
+    ],
 	[
     {"EN":{
         "word": "bachelor",
@@ -9366,45 +9313,45 @@
 	[
     {"EN":{
         "word": "thesis",
-        "topics": ["science", "education"],
+        "topics": ["science and technology", "education"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "диссертация",
-        "topics": ["наука", "образование"]
+        "topics": ["наука и техника", "образование"]
         }}
     ],
 	[
     {"EN":{
         "word": "pseudoscience",
-        "topics": ["science"],
+        "topics": ["science and technology"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "псевдонаука",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],
 	[
     {"EN":{
         "word": "advancement",
-        "topics": ["science"],
+        "topics": ["science and technology"],
 	"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "развитие",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
-    ], 
+    ],
 	[
     {"EN":{
         "word": "analyse",
-        "topics": ["science"],
+        "topics": ["science and technology"],
 	"level": "intermediate(B1)"
         }},
     {"RU": {
         "word": "анализировать",
-        "topics": ["наука"]
+        "topics": ["наука и техника"]
         }}
     ],
     [
@@ -9416,17 +9363,6 @@
         {"RU": {
             "word": "академия",
             "topics": ["образование"]
-        }}
-    ],
-    [
-        {"EN":{
-            "word": "addition",
-            "topics": ["science"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "сложение",
-            "topics": ["наука"]
         }}
     ],
     [
@@ -9564,12 +9500,12 @@
     [
         {"EN":{
             "word": "subtraction",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "advanced(C1)"
         }},
         {"RU": {
             "word": "вычитание",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
@@ -9597,23 +9533,4007 @@
     [
         {"EN":{
             "word": "cell",
-            "topics": ["science"],
+            "topics": ["science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "клетка",
-            "topics": ["наука"]
+            "topics": ["наука и техника"]
         }}
     ],
     [
         {"EN":{
             "word": "carbohydrate",
-            "topics": ["science", "food"],
+            "topics": ["science and technology", "food"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
             "word": "углевод",
-            "topics": ["наука", "еда"]
+            "topics": ["наука и техника", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "light",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "свет",
+            "topics": ["наука и техника"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "sun",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "солнце",
+            "topics": ["наука и техника"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "computer",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "компьютер",
+            "topics": ["наука и техника"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "menu",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "меню",
+            "topics": ["наука и техника"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mouse",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "мышь",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "video",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "видео",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "break",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "сломать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "clock",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "часы",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "machine",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "машина",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "add",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "добавить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "kilometre",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "километр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "metre",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "метр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mile",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "миля",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "number",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "число",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "fact",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "факт",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "result",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "результат",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "science",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "наука",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "scientist",
+            "topics": ["science and technology"],
+            "level": "beginner(A1)"
+        }},
+        {"RU": {
+            "word": "ученый",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "behavior",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "поведение",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "biology",
+            "topics": ["science and technology", "education"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "биология",
+            "topics": ["наука и техника", "образование"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "female",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "женский",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "male",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "мужской",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "electric",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "электрический",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "electricity",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "электричество",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gas",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "газ",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gold",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "золото",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "heat",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "тепло",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "light",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "легкий",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "material",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "материал",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "metal",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "металл",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "petrol",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "бензин",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "physics",
+            "topics": ["physics and chemistry", "science and technology", "education"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "физика",
+            "topics": ["физика и химия", "наука и техника", "образование"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "plastic",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "пластик",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "silver",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "серебро",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "stone",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "камень",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "wood",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "дерево",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "average",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "средний",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "billion",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "миллиард",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "centimeter",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "сантиметр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "count",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "считать",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "double",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "удваивать",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "figure",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "цифра",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "foot",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "фут",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "height",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "высота",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "kilogram",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "килограмм",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "maths",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "математика",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "ruler",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "линейка",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "size",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "размер",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "solution",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "решение",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "symbol",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "символ",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "weight",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "вес",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "app",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "приложение",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "button",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "кнопка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "connect",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "присоединяться",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "data",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "данные",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "digital",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "цифровой",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "document",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "документ",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "download",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "загрузка",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "laptop",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "ноутбук",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "memory",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "память",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "network",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "сеть",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "option",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "опция",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "print",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "печатать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "program",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "программа",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "save",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "сохранять",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "screen",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "экран",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "search",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "поиск",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "tablet",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "планшет",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "upload",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "загружать",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "user",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "пользователь",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "virus",
+            "topics": ["computers", "science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "вирус",
+            "topics": ["электроника", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "virus",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "вирус",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "chemistry",
+            "topics": ["physics and chemistry","science and technology", "education"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "химия",
+            "topics": ["физика и химия", "наука и техника", "образование"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "develop",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "развиваться",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "discovery",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "открытие",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "equipment",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "оборудование",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "evidence",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "доказательство",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "lab",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "лаборатория",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "medicine",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "медицина",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "method",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "метод",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "survey",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "опрос",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "technology",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "технология",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "test",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "эксперимент",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "device",
+            "topics": ["science and technology"],
+            "level": "elementary(A2)"
+        }},
+        {"RU": {
+            "word": "устройство",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "battery",
+            "topics": ["science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "аккумулятор",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "engineer",
+            "topics": ["science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "инженер",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gadget",
+            "topics": ["science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "гаджет",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "press",
+            "topics": ["science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "нажимать",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "robot",
+            "topics": ["science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "робот",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "turbine",
+            "topics": ["science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "турбина",
+            "topics": ["наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "alcohol",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "спирт",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "bend",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "сгибать",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "block",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "блок",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "charge",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "заряжать",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "chemist",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "химик",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "expand",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "расширять",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "force",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "сила",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "iron",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "железо",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "liquid",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "жидкость",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "physicist",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "физик",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "pull",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "тянуть",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "reaction",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "реакция",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "reflect",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "отражать",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sand",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "песок",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sheet",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "лист",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "solid",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "твердый",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "stick",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "приклеивать",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "substance",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "вещество",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "wave",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "волна",
+            "topics": ["физика и химия","наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "addition",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "сложение",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "degree",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "градус",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "divide",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "делить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "equal",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "равный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "graph",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "график",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "length",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "длина",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "liter",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "литр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "milligram",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "миллиграмм",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "milliliter",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "миллилитр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "millimeter",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "миллиметр",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "minus",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "минус",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "percentage",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "процент",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "plus",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "плюс",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "point",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "точка",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "pound",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "фунт",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sign",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "знак",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "square",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "квадратный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "statistics",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "статистика",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "times",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "умножить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "yard",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "intermediate(B1)"
+        }},
+        {"RU": {
+            "word": "ярд",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "attend",
+	    "topics": ["education"],
+            "level": "elementary(A2)"
+        }},
+	        {"RU": {
+		"word": "присутствовать",
+		"topics": ["образование"]
+	}}
+	],
+	[{
+                "EN": {
+                "word": "bag",
+                "topics": ["dress"],
+                "level": "beginner(A1)"
+                }},
+        {"RU": {
+				"word": "сумка",
+				"topics": ["одежда и обувь"]
+			}
+		}],
+		[{
+				"EN": {
+					"word": "boots",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "ботинки",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "clothes",
+					"topics": ["dress"],
+					"level": "intermediate(B1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "одежда",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "glasses",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "очки",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "hat",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шляпа",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "jacket",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "куртка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "jeans",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "джинсы",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "pair",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пара",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "sweater",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "свитер",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+    [{
+        "EN": {
+            "word": "watch",
+            "topics": ["dress"],
+            "level": "beginner(A1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "часы",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "wear",
+            "topics": ["dress"],
+            "level": "beginner(A1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "носить",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+		[{
+				"EN": {
+					"word": "coat",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пальто",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "dress",
+					"topics": ["dress"],
+					"level": "beginner(A1)"
+				}
+			},
+			{
+				"RU": {
+					"word": "платье",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+    [{
+        "EN": {
+            "word": "dress",
+            "topics": ["dress"],
+            "level": "beginner(A1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "одеваться",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+        [{
+				"EN": {
+					"word": "belt",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пояс",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "button",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "пуговица",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "comfortable",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "удобный",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "designer",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "дизайнер",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "fashion",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "мода",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "formal",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "официальный",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "jewellery",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "украшения",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "purse",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "сумочка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "remove",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "снимать",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "size",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "размер",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],			[{
+				"EN": {
+					"word": "shoulder",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "плечо",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "style",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "стиль",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],	[{
+				"EN": {
+					"word": "sunglasses",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "солнечные очки",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "top",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "верх",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],		[{
+				"EN": {
+					"word": "uniform",
+					"topics": ["dress"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "униформа",
+					"topics": ["одежда и обувь", "education"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "shorts",
+					"topics": ["dress", "образование"],
+					"level": "elementary(A2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шорты",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "apron",
+					"topics": ["dress", "cooking and eating"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "фартук",
+					"topics": ["одежда и обувь", "приготовление и употребление еды"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "badge",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "значок",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "bathrobe",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "халат",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "casual",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "повседневный",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "collar",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "воротник",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "disguise",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "маскировка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "fabric",
+					"topics": ["dress", "physics and chemistry", "science and technology"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "ткань",
+					"topics": ["одежда и обувь", "физика и химия", "наука и техника"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "fit",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "подходить",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "heel",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "каблук",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "helmet",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "шлем",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "lace",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "кружево",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "lining",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "подкладка",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "slipper",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "тапок",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "stripy",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "полосатый",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "tracksuit",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "спортивный костюм",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "vest",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "жилет",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "wardrobe",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "гардероб",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+		[{
+				"EN": {
+					"word": "waterproof",
+					"topics": ["dress"],
+					"level": "upper-intermediate(B2)"
+				}
+			},
+			{
+				"RU": {
+					"word": "водонепроницаемый",
+					"topics": ["одежда и обувь"]
+				}
+			}
+		],
+  [{
+    "EN": {
+      "word": "accessory",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "аксессуар",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "beads",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бусы",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "bow",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бант",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "bracelet",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "браслет",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "buckle",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "пряжка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "checked",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "клетчатый",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cloak",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "мантия",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cuff",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "манжета",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cut",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "покрой",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "fastener",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "застежка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "flat",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "без каблука",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "fly",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "ширинка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "footwear",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "обувь",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "gem",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "драгоценный камень",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "goggles",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "защитные очки",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "hood",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "капюшон",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "in",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "модный",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "linen",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "лен",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "nylon",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "нейлон",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "pearl",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "жемчуг",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "ribbon",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "лента",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "shawl",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "шаль",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "shoelace",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "шнурок",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "skintight",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "облегающий",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sleeveless",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "без рукавов",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sneaker",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "кроссовка",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sole",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "подошва",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "strap",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бретелька",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "strapless",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "без бретелек",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "stylish",
+      "topics": ["dress"],
+      "level": "upper-intermediate(B2)"
+    }
+  },
+    {
+      "RU": {
+        "word": "стильный",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "veil",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "вуаль",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "velvet",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бархат",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "waistline",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "талия",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "wetsuit",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "гидрокостюм",
+        "topics": ["одежда и обувь"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "wig",
+      "topics": ["dress"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "парик",
+        "topics": ["одежда и обувь"]
+      }
+    }
+	],
+	[{
+			"EN": {
+				"word": "board",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "доска",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "comprehension",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "понимание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "degree",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "степень",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "essay",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "сочинение",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "fail",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "не сдать",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "knowledge",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "знание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "mathematics",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "математика",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "research",
+				"topics": ["education", "science and technology"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "исследование",
+				"topics": ["образование", "наука и техника"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "schedule",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "расписание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "task",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "задание",
+				"topics": ["образование"]
+			}
+		}
+	],
+	[{
+			"EN": {
+				"word": "timetable",
+				"topics": ["education"],
+				"level": "elementary(A2)"
+			}
+		},
+		{
+			"RU": {
+				"word": "расписание",
+				"topics": ["образование"]
+			}
+		}
+	],
+    [{
+        "EN": {
+            "word": "baggy",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "мешковатый",
+                "topics": ["одежда и обувь"]
+            }
+        }],
+        [{
+            "EN": {
+                "word": "blouse",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "блузка",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "bra",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "бюстгальтер",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "chain",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "цепь",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+    [{
+        "EN": {
+            "word": "costume",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "костюм",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+        [{
+            "EN": {
+                "word": "cotton",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "хлопок",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "denim",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "деним",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "diamond",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "алмаз",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "earring",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "серьга",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "fashionable",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "модный",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "fasten",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "застегнуть",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+        [{
+            "EN": {
+                "word": "glove",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "перчатка",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+    [{
+        "EN": {
+            "word": "material",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "ткань",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "necklace",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "ожерелье",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "panties",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "трусики",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "sweatshirt",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "толстовка",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+        [{
+            "EN": {
+                "word": "swimsuit",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "купальник",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+    [{
+        "EN": {
+            "word": "tight",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "узкий",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "tights",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "колготки",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+    [{
+        "EN": {
+            "word": "trendy",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "модный",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+        [{
+            "EN": {
+                "word": "underwear",
+                "topics": ["dress"],
+                "level": "intermediate(B1)"
+            }
+        },
+            {
+                "RU": {
+                    "word": "белье",
+                    "topics": ["одежда и обувь"]
+                }
+            }
+        ],
+    [{
+        "EN": {
+            "word": "wool",
+            "topics": ["dress"],
+            "level": "intermediate(B1)"
+        }
+    },
+        {
+            "RU": {
+                "word": "шерсть",
+                "topics": ["одежда и обувь"]
+            }
+        }
+    ],
+	[
+        {"EN":{
+            "word": "activate",
+            "topics": ["engineering", "physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "включать",
+            "topics": ["инженерия", "физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "appliance",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "устройство",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "cable",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кабель",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "circuit",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цепь",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "controller",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "контроллер",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "current",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "ток",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "cycle",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цикл",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "electronics",
+            "topics": ["engineering", "computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "электроника",
+            "topics": ["инженерия", "электроника", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "indicate",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "показывать",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "instrument",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "инструмент",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "mechanical",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "механический",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "mechanism",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "механизм",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "motor",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "двигатель",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "run",
+            "topics": ["engineering", "computers", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "запустить",
+            "topics": ["инженерия", "компьютеры", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "sensor",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сенсор",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "switch",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "переключатель",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],	
+	[
+        {"EN":{
+            "word": "technician",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "техник",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "timer",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "таймер",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "wire",
+            "topics": ["engineering", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "провод",
+            "topics": ["инженерия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "absorb",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "поглощать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "acid",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кислота",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "atom",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "атом",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "brick",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кирпич",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "calcium",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кальций",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "carbon",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "углерод",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "charger",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "зарядное устройство",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "compound",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "соединение",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "concrete",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "бетонный",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "contract",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сжиматься",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "crack",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "трескаться",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "element",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "элемент",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "emission",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "эмиссия",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "field",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "поле",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "flexible",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гибкий",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "heavy",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тяжелый",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "hydroelectric",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "гидроэлектрический",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "matter",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "материя",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "melt",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "плавиться",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mineral",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "минерал",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "molecule",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "молекула",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "motion",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "движение",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "oxygen",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "кислород",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "physical",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "физический",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "pressure",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "давление",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "product",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "продукт",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "proof",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "устойчивый",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "radiation",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "излучение",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "react",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "реагировать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "shape",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "формировать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "solar",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "солнечный",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "solution",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "раствор",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "steel",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сталь",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "stress",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "давление",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "stretch",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "растягивать",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "tin",
+            "topics": ["physics and chemistry", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "олово",
+            "topics": ["физика и химия", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "angle",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "угол",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "area",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "площадь",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "calculate",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вычислить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "calculator",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "калькулятор",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "count",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "число",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "deduction",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "заключение",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "depth",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "глубина",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "digit",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цифра",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "division",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "деление",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "fraction",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "доля",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "gram",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "грамм",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "horizontal",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "горизонтальный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "inch",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "дюйм",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "mathematician",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "математик",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "maximum",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "максимум",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "measure",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "измерять",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "minimum",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "минимум",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "multiple",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "произведение",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "multiply",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "умножить",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "negative",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "отрицательный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "parallel",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "параллельный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "positive",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "положительный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "probability",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вероятность",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "problem",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "задача",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "scale",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "шкала",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "set",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "множество",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "sum",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "сумма",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "tonne",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "тонна",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "unit",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "цифра",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "vertical",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "вертикальный",
+            "topics": ["математика и измерения", "наука и техника"]
+        }}
+    ],
+	[
+        {"EN":{
+            "word": "volume",
+            "topics": ["maths and measurement", "science and technology"],
+            "level": "upper-intermediate(B2)"
+        }},
+        {"RU": {
+            "word": "объем",
+            "topics": ["математика и измерения", "наука и техника"]
         }}
     ],
     [{
