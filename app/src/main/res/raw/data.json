@@ -76,7 +76,7 @@
     ],
     [
         {"EN":{
-            "word": "behaviour",
+            "word": "behavior",
             "topics": ["animals"],
             "level": "elementary(A2)"
         }},
@@ -2683,7 +2683,7 @@
     ],
     [
         {"EN":{
-            "word": "porridge",
+            "word": "oatmeal",
             "topics": ["food"],
             "level": "advanced(C1)"
         }},
@@ -3123,7 +3123,7 @@
     ],
     [
     {"EN":{
-        "word": "practise",
+        "word": "practice",
         "topics": ["sports", "music"],
         "level": "beginner(A1)"
         }},
@@ -4658,7 +4658,7 @@
     [
         {"EN":{
             "word": "calorie",
-            "topics": ["cooking and eating", "maths and measurement", "science and technology"],
+            "topics": ["cooking and eating", "math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -4909,7 +4909,7 @@
     ],
     [
         {"EN":{
-            "word": "flavour",
+            "word": "flavor",
             "topics": ["food"],
             "level": "upper-intermediate(B2)"
         }},
@@ -7245,7 +7245,7 @@
     {"EN":{
         "word": "one",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "один",
@@ -7256,7 +7256,7 @@
     {"EN":{
         "word": "first",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "первый",
@@ -7267,7 +7267,7 @@
     {"EN":{
         "word": "two",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "два",
@@ -7278,7 +7278,7 @@
     {"EN":{
         "word": "second",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "второй",
@@ -7289,7 +7289,7 @@
     {"EN":{
         "word": "three",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "три",
@@ -7300,7 +7300,7 @@
     {"EN":{
         "word": "third",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "третий",
@@ -7311,7 +7311,7 @@
     {"EN":{
         "word": "four",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "четыре",
@@ -7322,7 +7322,7 @@
     {"EN":{
         "word": "five",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "пять",
@@ -7333,7 +7333,7 @@
     {"EN":{
         "word": "six",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "шесть",
@@ -7344,7 +7344,7 @@
     {"EN":{
         "word": "seven",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "семь",
@@ -7355,7 +7355,7 @@
     {"EN":{
         "word": "eight",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "восемь",
@@ -7366,7 +7366,7 @@
     {"EN":{
         "word": "nine",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "девять",
@@ -7377,7 +7377,7 @@
     {"EN":{
         "word": "ten",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "десять",
@@ -7388,7 +7388,7 @@
     {"EN":{
         "word": "eleven",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "одиннадцать",
@@ -7399,7 +7399,7 @@
     {"EN":{
         "word": "twelve",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "двенадцать",
@@ -7410,7 +7410,7 @@
     {"EN":{
         "word": "thirteen",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "тринадцать",
@@ -7421,7 +7421,7 @@
     {"EN":{
         "word": "fifteen",
         "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "пятнадцать",
@@ -7432,7 +7432,7 @@
     {"EN":{
         "word": "twenty",
          "level": "beginner(A1)",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "двадцать",
@@ -7442,7 +7442,7 @@
 	[
     {"EN":{
         "word": "thousand",
-         "topics": ["maths and measurement", "science and technology"],
+         "topics": ["math and measurement", "science and technology"],
          "level": "beginner(A1)"
         }},
     {"RU": {
@@ -7453,7 +7453,7 @@
 	[
     {"EN":{
         "word": "hundred",
-        "topics": ["maths and measurement", "science and technology"],
+        "topics": ["math and measurement", "science and technology"],
         "level": "beginner(A1)"
         }},
     {"RU": {
@@ -7464,7 +7464,7 @@
 	[
     {"EN":{
         "word": "million",
-        "topics": ["maths and measurement","science and technology"],
+        "topics": ["math and measurement","science and technology"],
         "level": "beginner(A1)"
         }},
     {"RU": {
@@ -7475,7 +7475,7 @@
 	[
     {"EN":{
         "word": "zero",
-        "topics": ["maths and measurement", "science and technology"]
+        "topics": ["math and measurement", "science and technology"]
         }},
     {"RU": {
         "word": "ноль",
@@ -9037,17 +9037,6 @@
             "topics": ["дом"]
         }}
     ],
-    [
-        {"EN":{
-            "word": "washbasin",
-            "topics": ["home"],
-            "level": "upper-intermediate(B2)"
-        }},
-        {"RU": {
-            "word": "умывальник",
-            "topics": ["дом"]
-        }}
-    ],
 	[
     {"EN":{
         "word": "washer",
@@ -9325,7 +9314,7 @@
     ],
 	[
     {"EN":{
-        "word": "analyse",
+        "word": "analyze",
         "topics": ["science and technology"],
 	"level": "intermediate(B1)"
         }},
@@ -9623,7 +9612,7 @@
 	[
         {"EN":{
             "word": "add",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
@@ -9633,8 +9622,8 @@
     ],
 	[
         {"EN":{
-            "word": "kilometre",
-            "topics": ["maths and measurement", "science and technology"],
+            "word": "kilometer",
+            "topics": ["math and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
@@ -9644,8 +9633,8 @@
     ],
 	[
         {"EN":{
-            "word": "metre",
-            "topics": ["maths and measurement", "science and technology"],
+            "word": "meter",
+            "topics": ["math and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
@@ -9656,7 +9645,7 @@
 	[
         {"EN":{
             "word": "mile",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
@@ -9667,7 +9656,7 @@
 	[
         {"EN":{
             "word": "number",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "beginner(A1)"
         }},
         {"RU": {
@@ -9920,7 +9909,7 @@
 	[
         {"EN":{
             "word": "average",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9931,7 +9920,7 @@
 	[
         {"EN":{
             "word": "billion",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9942,7 +9931,7 @@
 	[
         {"EN":{
             "word": "centimeter",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9953,7 +9942,7 @@
 	[
         {"EN":{
             "word": "count",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9964,7 +9953,7 @@
 	[
         {"EN":{
             "word": "double",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9975,7 +9964,7 @@
 	[
         {"EN":{
             "word": "figure",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9986,7 +9975,7 @@
 	[
         {"EN":{
             "word": "foot",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -9997,7 +9986,7 @@
 	[
         {"EN":{
             "word": "height",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10008,7 +9997,7 @@
 	[
         {"EN":{
             "word": "kilogram",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10018,8 +10007,8 @@
     ],
 	[
         {"EN":{
-            "word": "maths",
-            "topics": ["maths and measurement", "science and technology"],
+            "word": "math",
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10030,7 +10019,7 @@
 	[
         {"EN":{
             "word": "ruler",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10041,7 +10030,7 @@
 	[
         {"EN":{
             "word": "size",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10052,7 +10041,7 @@
 	[
         {"EN":{
             "word": "solution",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10063,7 +10052,7 @@
 	[
         {"EN":{
             "word": "symbol",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10074,7 +10063,7 @@
 	[
         {"EN":{
             "word": "weight",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "elementary(A2)"
         }},
         {"RU": {
@@ -10723,7 +10712,7 @@
 	[
         {"EN":{
             "word": "addition",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10734,7 +10723,7 @@
 	[
         {"EN":{
             "word": "degree",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10745,7 +10734,7 @@
 	[
         {"EN":{
             "word": "divide",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10756,7 +10745,7 @@
 	[
         {"EN":{
             "word": "equal",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10767,7 +10756,7 @@
 	[
         {"EN":{
             "word": "graph",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10778,7 +10767,7 @@
 	[
         {"EN":{
             "word": "length",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10789,7 +10778,7 @@
 	[
         {"EN":{
             "word": "liter",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10800,7 +10789,7 @@
 	[
         {"EN":{
             "word": "milligram",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10811,7 +10800,7 @@
 	[
         {"EN":{
             "word": "milliliter",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10822,7 +10811,7 @@
 	[
         {"EN":{
             "word": "millimeter",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10833,7 +10822,7 @@
 	[
         {"EN":{
             "word": "minus",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10844,7 +10833,7 @@
 	[
         {"EN":{
             "word": "percentage",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10855,7 +10844,7 @@
 	[
         {"EN":{
             "word": "plus",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10866,7 +10855,7 @@
 	[
         {"EN":{
             "word": "point",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10877,7 +10866,7 @@
 	[
         {"EN":{
             "word": "pound",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10888,7 +10877,7 @@
 	[
         {"EN":{
             "word": "sign",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10899,7 +10888,7 @@
 	[
         {"EN":{
             "word": "square",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10910,7 +10899,7 @@
 	[
         {"EN":{
             "word": "statistics",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10921,7 +10910,7 @@
 	[
         {"EN":{
             "word": "times",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -10932,7 +10921,7 @@
 	[
         {"EN":{
             "word": "yard",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "intermediate(B1)"
         }},
         {"RU": {
@@ -11226,7 +11215,7 @@
 		],
 		[{
 				"EN": {
-					"word": "jewellery",
+					"word": "jewelry",
 					"topics": ["dress"],
 					"level": "elementary(A2)"
 				}
@@ -12505,7 +12494,7 @@
     ],
     [{
         "EN": {
-            "word": "tights",
+            "word": "pantyhose",
             "topics": ["dress"],
             "level": "intermediate(B1)"
         }
@@ -13167,7 +13156,7 @@
 	[
         {"EN":{
             "word": "angle",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13178,7 +13167,7 @@
 	[
         {"EN":{
             "word": "area",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13189,7 +13178,7 @@
 	[
         {"EN":{
             "word": "calculate",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13200,7 +13189,7 @@
 	[
         {"EN":{
             "word": "calculator",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13211,7 +13200,7 @@
 	[
         {"EN":{
             "word": "count",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13222,7 +13211,7 @@
 	[
         {"EN":{
             "word": "deduction",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13233,7 +13222,7 @@
 	[
         {"EN":{
             "word": "depth",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13244,7 +13233,7 @@
 	[
         {"EN":{
             "word": "digit",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13255,7 +13244,7 @@
 	[
         {"EN":{
             "word": "division",
-            "topics": ["maths and measurement", "biology", "science and technology"],
+            "topics": ["math and measurement", "biology", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13266,7 +13255,7 @@
 	[
         {"EN":{
             "word": "fraction",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13277,7 +13266,7 @@
 	[
         {"EN":{
             "word": "gram",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13288,7 +13277,7 @@
 	[
         {"EN":{
             "word": "horizontal",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13299,7 +13288,7 @@
 	[
         {"EN":{
             "word": "inch",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13310,7 +13299,7 @@
 	[
         {"EN":{
             "word": "mathematician",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13321,7 +13310,7 @@
 	[
         {"EN":{
             "word": "maximum",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13332,7 +13321,7 @@
 	[
         {"EN":{
             "word": "measure",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13343,7 +13332,7 @@
 	[
         {"EN":{
             "word": "minimum",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13354,7 +13343,7 @@
 	[
         {"EN":{
             "word": "multiple",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13365,7 +13354,7 @@
 	[
         {"EN":{
             "word": "multiply",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13376,7 +13365,7 @@
 	[
         {"EN":{
             "word": "negative",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13387,7 +13376,7 @@
 	[
         {"EN":{
             "word": "parallel",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13398,7 +13387,7 @@
 	[
         {"EN":{
             "word": "positive",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13409,7 +13398,7 @@
 	[
         {"EN":{
             "word": "probability",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13420,7 +13409,7 @@
 	[
         {"EN":{
             "word": "problem",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13431,7 +13420,7 @@
 	[
         {"EN":{
             "word": "scale",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13442,7 +13431,7 @@
 	[
         {"EN":{
             "word": "set",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13453,7 +13442,7 @@
 	[
         {"EN":{
             "word": "sum",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13464,7 +13453,7 @@
 	[
         {"EN":{
             "word": "tonne",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13475,7 +13464,7 @@
 	[
         {"EN":{
             "word": "unit",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13486,7 +13475,7 @@
 	[
         {"EN":{
             "word": "vertical",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
@@ -13497,7 +13486,7 @@
 	[
         {"EN":{
             "word": "volume",
-            "topics": ["maths and measurement", "science and technology"],
+            "topics": ["math and measurement", "science and technology"],
             "level": "upper-intermediate(B2)"
         }},
         {"RU": {
