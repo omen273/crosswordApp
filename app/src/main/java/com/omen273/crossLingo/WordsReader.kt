@@ -9,11 +9,12 @@ import java.nio.charset.Charset
 @Parcelize
 data class LanguageItem(
     var language: String, var word: String,
-    var topics: ArrayList<String>, var questions: ArrayList<String>
+    var topics: ArrayList<String>, var questions: ArrayList<String>,
+    var level:String
 ) : Parcelable
 
 class WordsReader {
-    fun read(inputStream: InputStream): ArrayList<ArrayList<LanguageItem>> =
+    fun read(inputStream: InputStream, levelValidator : (level: String) -> Unit): ArrayList<ArrayList<LanguageItem>> =
         with(
             JsonReader(
                 inputStream.bufferedReader
@@ -29,7 +30,7 @@ class WordsReader {
                     beginObject()
                     val languageItem = LanguageItem(
                         "", "",
-                        arrayListOf(), arrayListOf()
+                        arrayListOf(), arrayListOf(), ""
                     )
                     languageItem.language = nextName()
                     beginObject()
@@ -53,6 +54,11 @@ class WordsReader {
                                     languageItem.questions.add(nextString())
                                 }
                                 endArray()
+                            }
+                            "level" -> {
+                                val level = nextString()
+                                levelValidator(level)
+                                languageItem.level = level
                             }
                             else -> throw RuntimeException("The wrong json tag: $tag")
                         }

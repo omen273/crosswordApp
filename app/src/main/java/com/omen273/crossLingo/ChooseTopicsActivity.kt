@@ -1,6 +1,7 @@
 package com.omen273.crossLingo
 
 import android.content.Intent
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -8,6 +9,10 @@ import android.text.TextWatcher
 import android.widget.CheckBox
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_choose_topics.*
+import kotlinx.android.synthetic.main.toolbar_activity_choose_topic.*
+import kotlinx.android.synthetic.main.toolbar_sett.*
+import java.io.File
+import java.io.FileInputStream
 
 class ChooseTopicsActivity : AppCompatActivity() {
     private val crosswordLanguage = "EN"
@@ -17,6 +22,12 @@ class ChooseTopicsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_topics)
+        setSupportActionBar(choose_topics_toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        choose_topics_toolbar.setNavigationOnClickListener{
+            onBackPressed()
+        }
         val topicNames = getTopics()
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
@@ -55,8 +66,11 @@ class ChooseTopicsActivity : AppCompatActivity() {
                                 putExtra(WORDS_VARIABLE, chosenWords)
                                 putExtra(
                                     MainActivity.CROSSWORD_NAME_VARIABLE,
-                                    if (chosenTopics.size == 1) getChosenTopics().iterator()
-                                        .next() else NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS
+                                    (if (chosenTopics.size == 1) getChosenTopics().iterator()
+                                        .next() else NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS) + " ("
+                                            + (readLevelFromConfig(filesDir, resources)
+                                        ?.substringAfter('(')
+                                        ?: return@setOnClickListener) + ' '
                                 )
                                 putExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, true)
                                 putExtra(
@@ -133,15 +147,8 @@ class ChooseTopicsActivity : AppCompatActivity() {
         val words = hashMapOf<String, String>()
         for (wordItem in data) {
             val item = wordItem as ArrayList<*>
-            val wordItemTr = item.find {
-                val itemTr = it as LanguageItem
-                itemTr.language == crosswordLanguage
-            } as LanguageItem?
-            val clueItemTr = item.find {
-                val itemTr = it as LanguageItem
-                itemTr.language == clueLanguage &&
-                    (clueType == ClueType.WORD || itemTr.questions.isNotEmpty())
-            } as LanguageItem?
+            val wordItemTr = findWordItem(item)
+            val clueItemTr = findClueItem(item)
             if (wordItemTr != null && clueItemTr != null &&
                 wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null &&
                 wordItemTr.word.all { it.isLetter() } && wordItemTr.word.length <= MAX_SIDE &&
@@ -154,24 +161,31 @@ class ChooseTopicsActivity : AppCompatActivity() {
         return words
     }
 
+    private fun findClueItem(item: ArrayList<*>) = item.find {
+        val itemTr = it as LanguageItem
+        itemTr.language == clueLanguage &&
+                (clueType == ClueType.WORD || itemTr.questions.isNotEmpty())
+    } as LanguageItem?
+
+    private fun findWordItem(item: ArrayList<*>) = item.find {
+        val itemTr = it as LanguageItem
+        itemTr.language == crosswordLanguage &&
+                itemTr.level == readLevelFromConfig(filesDir, resources)
+    } as LanguageItem?
+
+    //returns only topics with more or equal to CROSSWORD_SIZE the number of words
     private fun getTopics(): ArrayList<String> {
         val data = intent.extras?.get("data") as ArrayList<*>
         val topics = hashSetOf<String>()
         for (wordItem in data) {
             val item = wordItem as ArrayList<*>
-            val wordItemTr = item.find {
-                val itemTr = it as LanguageItem
-                itemTr.language == crosswordLanguage
-            } as LanguageItem?
-            if (wordItemTr != null && item.find {
-                    val itemTr = it as LanguageItem
-                    itemTr.language == clueLanguage &&
-                        (clueType == ClueType.WORD || itemTr.questions.isNotEmpty())
-                } != null) {
+            val wordItemTr = findWordItem(item)
+            if (wordItemTr != null && findClueItem(item) != null) {
                 topics.addAll(wordItemTr.topics)
             }
         }
-        return ArrayList(topics).apply { sort() }
+        return ArrayList(topics.filter {
+            getWords(hashSetOf(it)).size >= CROSSWORD_SIZE}).apply { sort() }
     }
 
     internal fun getChosenTopics(): HashSet<String> {
@@ -188,6 +202,14 @@ class ChooseTopicsActivity : AppCompatActivity() {
         const val CROSSWORD_SIZE: Int = 14
         const val MAX_SIDE: Int = 15
         const val WORDS_VARIABLE: String = "words"
+        const val LEVEL_NAME: String = "level.json"
         private const val NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS = "multiple"
+
+        fun readLevelFromConfig(path: File, resources: Resources): String? = with(File(path, LEVEL_NAME)) {
+            val validate = fun(level: String){Utils.validateLevel(resources, level)}
+            if (exists()) FileInputStream(this).use { ConfigReader().readLevel(it, validate) }
+            else resources.openRawResource(R.raw.level).use { ConfigReader().readLevel(it, validate)
+            }
+        }
     }
 }

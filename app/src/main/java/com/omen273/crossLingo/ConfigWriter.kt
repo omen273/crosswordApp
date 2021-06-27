@@ -11,6 +11,14 @@ class ConfigWriter {
             beginObject()
             name("star_number").value(starNumber)
             endObject()
-            flush()
+            close()
         }
+
+    fun write(outputStream: OutputStream, level: String): Unit =
+            with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
+                beginObject()
+                name("level").value(level)
+                endObject()
+                close()
+            }
 }
