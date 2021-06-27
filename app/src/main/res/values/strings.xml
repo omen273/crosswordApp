@@ -25,7 +25,6 @@
         <item>intermediate(B1)</item>
         <item>upper-intermediate(B2)</item>
         <item>advanced(C1)</item>
-        <item>proficiency(C2)</item>
     </string-array>
     <string name ="settings">settings</string>
     <string name ="choose_level_dialog_text">Choose your level, please. You can change it later
