@@ -20,7 +20,6 @@ import java.io.File
 
 class MainActivity : AppCompatActivity() {
     private val crosswords = hashSetOf<String>()
-    private var data = arrayListOf<ArrayList<LanguageItem>>()
     private var imageSize: Int = 0
 
     private class ImageData(var lastModificationDate: Long, var row: Int, var column: Int)
@@ -56,8 +55,7 @@ class MainActivity : AppCompatActivity() {
         if(ChooseTopicsActivity.readLevelFromConfig(filesDir, resources) == null) {
             showLevelDialog()
         }
-        data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
-                fun(level: String){Utils.validateLevel(resources, level)}) }
+
         imageSize = computeImageSize()
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)
@@ -87,7 +85,6 @@ class MainActivity : AppCompatActivity() {
         }.also { im ->
             im.setOnClickListener {
                 val generated = Intent(this, ChooseTopicsActivity::class.java)
-                generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, data)
                 generated.putExtra(CROSSWORD_IMAGE_SIZE_VARIABLE, imageSize)
                 startActivityForResult(generated, ACTIVITY_CHOOSE)
             }
