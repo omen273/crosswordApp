@@ -21,11 +21,15 @@ class ImpossibleToBuildInstrumentedTest : TestBaseClass() {
                 ApplicationProvider.getApplicationContext(),
                 ChooseTopicsActivity::class.java
         ).apply {
-            val data =
-                    getTestContext().resources.assets.open("impossibleToBuild.json")
-                            .use { WordsReader().read(it,
-                                    fun(level: String){Utils.validateLevel(getContext().resources, level)}) }
+            val transformer = DataTransformer(
+                getTestContext().resources.assets.open("impossibleToBuild.json")
+                    .use { WordsReader().read(it,
+                        fun(level: String){Utils.
+                        validateLevel(getContext().resources, level)}) })
+            val data = transformer.dataByLevelsByTopics
+            val topics = transformer.sortedTopicsByLevel
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
+            putExtra(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE, topics)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
         chooseFirstTopic()

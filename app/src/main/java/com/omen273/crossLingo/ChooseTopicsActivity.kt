@@ -13,12 +13,28 @@ import kotlinx.android.synthetic.main.toolbar_activity_choose_topic.*
 import kotlinx.android.synthetic.main.toolbar_sett.*
 import java.io.File
 import java.io.FileInputStream
+import java.util.*
+import kotlin.collections.HashMap
+import kotlin.collections.HashSet
 
 class ChooseTopicsActivity : AppCompatActivity() {
-    private val crosswordLanguage = "EN"
-    private val clueLanguage = "RU"
-    private val clueType = ClueType.WORD
-    private var data = arrayListOf<ArrayList<LanguageItem>>()
+
+    private fun getTopics(): ArrayList<String> {
+        val data = intent.extras?.get(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE) as HashMap<*, *>
+        val level = readLevelFromConfig(filesDir, resources)
+        return if (topics != null) data[level] as ArrayList<String> else arrayListOf()
+    }
+
+    private fun getWords(topics: HashSet<String>) : HashMap<String, String>{
+        val data = intent.extras?.get(MainActivity.CROSSWORD_DATA_NAME_VARIABLE) as HashMap<*, *>
+        val res =  hashMapOf<String, String>()
+        val level = readLevelFromConfig(filesDir, resources)
+        val dataLevel = data[level] as HashMap<*, *>?
+        for(topic in topics) {
+            dataLevel?.get(topic)?.let { res.putAll(it as HashMap<String, String>) }
+        }
+        return res
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +45,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
         choose_topics_toolbar.setNavigationOnClickListener{
             onBackPressed()
         }
-        data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
-            fun(level: String){Utils.validateLevel(resources, level)}) }
         val topicNames = getTopics()
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
@@ -144,54 +158,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
 
     @Suppress("unused")
     enum class ClueType { WORD, QUESTION }
-
-    private fun getWords(topics: HashSet<String>): HashMap<String, String> {
-        val words = hashMapOf<String, String>()
-        for (wordItem in data) {
-            val item = wordItem as ArrayList<*>
-            val wordItemTr = findWordItem(item)
-            val clueItemTr = findClueItem(item)
-            if (wordItemTr != null && clueItemTr != null &&
-                wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null &&
-                wordItemTr.word.all { it.isLetter() } && wordItemTr.word.length <= MAX_SIDE &&
-                wordItemTr.word.length > 1
-            ) {
-                words[wordItemTr.word] = if(clueType == ClueType.WORD) clueItemTr.word
-                else clueItemTr.questions.random()
-            }
-        }
-        return words
-    }
-
-    private fun findClueItem(item: ArrayList<*>) = item.find {
-        val itemTr = it as LanguageItem
-        itemTr.language == clueLanguage &&
-                (clueType == ClueType.WORD || itemTr.questions.isNotEmpty())
-    } as LanguageItem?
-
-    private fun findWordItem(item: ArrayList<*>) = item.find {
-        val itemTr = it as LanguageItem
-        itemTr.language == crosswordLanguage &&
-                itemTr.level == readLevelFromConfig(filesDir, resources)
-    } as LanguageItem?
-
-    //returns only topics with more or equal to CROSSWORD_SIZE the number of words
-    private fun getTopics(): ArrayList<String> {
-        val topics = hashSetOf<String>()
-        val topicSizes = hashMapOf<String, Int>()
-        for (wordItem in data) {
-            val item = wordItem as ArrayList<*>
-            val wordItemTr = findWordItem(item)
-            if (wordItemTr != null && findClueItem(item) != null) {
-                topics.addAll(wordItemTr.topics)
-                for(topic in wordItemTr.topics) {
-                    if(topic in topicSizes) topicSizes[topic] = topicSizes[topic] !!+ 1
-                    else topicSizes[topic] = 1
-                }
-            }
-        }
-        return ArrayList(topicSizes.filter {it.value >= CROSSWORD_SIZE}.keys).apply{sort()}
-    }
 
     internal fun getChosenTopics(): HashSet<String> {
         val topics: HashSet<String> = hashSetOf()
