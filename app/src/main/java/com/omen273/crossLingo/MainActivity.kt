@@ -20,13 +20,15 @@ import java.io.File
 
 class MainActivity : AppCompatActivity() {
     private val crosswords = hashSetOf<String>()
-    private var data = arrayListOf<ArrayList<LanguageItem>>()
     private var imageSize: Int = 0
 
     private class ImageData(var lastModificationDate: Long, var row: Int, var column: Int)
 
     private val imageDatas = hashMapOf<String, ImageData>()
     private var loadedName = ""
+
+    lateinit var data: HashMap<String, wordsWithTipsByTopic>
+    lateinit var topics: HashMap<String, ArrayList<String>>
 
     private class TableAdapter : RecyclerView.Adapter<TableAdapter.TableHolder>() {
         class TableHolder(val tableRow: TableRow) : RecyclerView.ViewHolder(tableRow)
@@ -53,11 +55,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
+        val transformer = DataTransformer(resources.openRawResource(R.raw.data).use { WordsReader().read(it,
+            fun(level: String){Utils.validateLevel(resources, level)}) })
+        data = transformer.dataByLevelsByTopics
+        topics = transformer.sortedTopicsByLevel
         if(ChooseTopicsActivity.readLevelFromConfig(filesDir, resources) == null) {
             showLevelDialog()
         }
-        data = resources.openRawResource(R.raw.data).use { WordsReader().read(it,
-                fun(level: String){Utils.validateLevel(resources, level)}) }
+
         imageSize = computeImageSize()
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)
@@ -87,8 +92,9 @@ class MainActivity : AppCompatActivity() {
         }.also { im ->
             im.setOnClickListener {
                 val generated = Intent(this, ChooseTopicsActivity::class.java)
-                generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, data)
                 generated.putExtra(CROSSWORD_IMAGE_SIZE_VARIABLE, imageSize)
+                generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, data)
+                generated.putExtra(CROSSWORD_TOPICS_NAME_VARIABLE, topics)
                 startActivityForResult(generated, ACTIVITY_CHOOSE)
             }
             item.addView(im)
@@ -396,6 +402,7 @@ class MainActivity : AppCompatActivity() {
         const val CROSSWORD_NAME_VARIABLE: String = "name"
         const val CROSSWORD_IS_GENERATED_VARIABLE: String = "isGenerated"
         const val CROSSWORD_DATA_NAME_VARIABLE: String = "data"
+        const val CROSSWORD_TOPICS_NAME_VARIABLE: String = "topics"
         const val CROSSWORD_IMAGE_SIZE_VARIABLE: String = "imageSize"
         const val DEFAULT_ENCODING: String = "UTF-8"
     }
