@@ -18,4 +18,15 @@
     <string name ="damaged_data">The crossword data is damaged</string>
     <string name ="number_of_stars">number of stars</string>
     <string name ="generate_crossword">generate crossword</string>
+    <string name ="level">your level</string>
+    <string-array name="levels">
+        <item>beginner(A1)</item>
+        <item>elementary(A2)</item>
+        <item>intermediate(B1)</item>
+        <item>upper-intermediate(B2)</item>
+        <item>advanced(C1)</item>
+    </string-array>
+    <string name ="settings">settings</string>
+    <string name ="choose_level_dialog_text">Choose your level, please. You can change it later
+        in settings.</string>
 </resources>

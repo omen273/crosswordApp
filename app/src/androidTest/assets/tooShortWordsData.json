@@ -2,7 +2,8 @@
     [
         {"EN":{
             "word": "a",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадуккулелеаца",
@@ -12,7 +13,8 @@
     [
         {"EN":{
             "word": "b",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плоловонцадрицацаца",
@@ -22,7 +24,8 @@
     [
         {"EN":{
             "word": "c",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцапросоцаца",
@@ -32,7 +35,8 @@
     [
         {"EN":{
             "word": "d",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "пколодецланцадрицацаца",
@@ -42,7 +46,8 @@
     [
         {"EN":{
             "word": "e",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцканадааца",
@@ -52,7 +57,8 @@
     [
         {"EN":{
             "word": "f",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадрколесоа",
@@ -62,7 +68,8 @@
     [
         {"EN":{
             "word": "g",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "огоньланцадрицацаца",
@@ -72,7 +79,8 @@
     [
         {"EN":{
             "word": "h",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плкроссанцадрицацаца",
@@ -82,7 +90,8 @@
     [
         {"EN":{
             "word": "i",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плитатлантрицацаца",
@@ -92,7 +101,8 @@
     [
         {"EN":{
             "word": "j",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадрблинеца",
@@ -102,7 +112,8 @@
     [
         {"EN":{
             "word": "k",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плитколеноцадрицацаца",
@@ -112,7 +123,8 @@
     [
         {"EN":{
             "word": "l",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадрядроца",
@@ -122,7 +134,8 @@
     [
         {"EN":{
             "word": "m",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиткорицадрицацаца",
@@ -132,7 +145,8 @@
     [
         {"EN":{
             "word": "n",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плиталанцадркофеца",
@@ -142,11 +156,178 @@
     [
         {"EN":{
             "word": "o",
-            "topics": ["test"]
+            "topics": ["test"],
+			"level": "advanced(C1)"
         }},
         {"RU": {
             "word": "плитпасекаицацаца",
             "topics": ["тест"]
+        }}
+    ]
+	,
+    [
+        {"EN":{
+            "word": "cornflakes",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кукурузные хлопья",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "croissant",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "круассан",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "custard",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "заварной крем",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dough",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "тесто",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "doughnut",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "пончик",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "ginger",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "имбирь",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "grapefruit",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "грейпфрут",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "jelly",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "желе",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lasagne",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лазанья",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lentil",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "чечевица",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lime",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лайм",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "marmalade",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "джем",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mayonnaise",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "майонез",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "meatball",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "фрикаделька",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mince",
+            "topics": ["cooking", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "фарш",
+            "topics": ["приготовление еды", "еда"]
         }}
     ]
 ]

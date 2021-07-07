@@ -1,6 +1,7 @@
 package com.omen273.crossLingo
 
 import android.content.Intent
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -8,15 +9,42 @@ import android.text.TextWatcher
 import android.widget.CheckBox
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_choose_topics.*
+import kotlinx.android.synthetic.main.toolbar_activity_choose_topic.*
+import kotlinx.android.synthetic.main.toolbar_sett.*
+import java.io.File
+import java.io.FileInputStream
+import java.util.*
+import kotlin.collections.HashMap
+import kotlin.collections.HashSet
 
 class ChooseTopicsActivity : AppCompatActivity() {
-    private val crosswordLanguage = "EN"
-    private val clueLanguage = "RU"
-    private val clueType = ClueType.WORD
+
+    private fun getTopics(): ArrayList<String> {
+        val data = intent.extras?.get(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE) as HashMap<*, *>
+        val level = readLevelFromConfig(filesDir, resources)
+        return if (topics != null) data[level] as ArrayList<String> else arrayListOf()
+    }
+
+    private fun getWords(topics: HashSet<String>) : HashMap<String, String>{
+        val data = intent.extras?.get(MainActivity.CROSSWORD_DATA_NAME_VARIABLE) as HashMap<*, *>
+        val res =  hashMapOf<String, String>()
+        val level = readLevelFromConfig(filesDir, resources)
+        val dataLevel = data[level] as HashMap<*, *>?
+        for(topic in topics) {
+            dataLevel?.get(topic)?.let { res.putAll(it as HashMap<String, String>) }
+        }
+        return res
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_topics)
+        setSupportActionBar(choose_topics_toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        choose_topics_toolbar.setNavigationOnClickListener{
+            onBackPressed()
+        }
         val topicNames = getTopics()
         topics.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
@@ -55,8 +83,11 @@ class ChooseTopicsActivity : AppCompatActivity() {
                                 putExtra(WORDS_VARIABLE, chosenWords)
                                 putExtra(
                                     MainActivity.CROSSWORD_NAME_VARIABLE,
-                                    if (chosenTopics.size == 1) getChosenTopics().iterator()
-                                        .next() else NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS
+                                    (if (chosenTopics.size == 1) getChosenTopics().iterator()
+                                        .next() else NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS) + " ("
+                                            + (readLevelFromConfig(filesDir, resources)
+                                        ?.substringAfter('(')
+                                        ?: return@setOnClickListener) + ' '
                                 )
                                 putExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, true)
                                 putExtra(
@@ -128,52 +159,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
     @Suppress("unused")
     enum class ClueType { WORD, QUESTION }
 
-    private fun getWords(topics: HashSet<String>): HashMap<String, String> {
-        val data = intent.extras?.get("data") as ArrayList<*>
-        val words = hashMapOf<String, String>()
-        for (wordItem in data) {
-            val item = wordItem as ArrayList<*>
-            val wordItemTr = item.find {
-                val itemTr = it as LanguageItem
-                itemTr.language == crosswordLanguage
-            } as LanguageItem?
-            val clueItemTr = item.find {
-                val itemTr = it as LanguageItem
-                itemTr.language == clueLanguage &&
-                    (clueType == ClueType.WORD || itemTr.questions.isNotEmpty())
-            } as LanguageItem?
-            if (wordItemTr != null && clueItemTr != null &&
-                wordItemTr.topics.find { it1 -> topics.find { it == it1 } != null } != null &&
-                wordItemTr.word.all { it.isLetter() } && wordItemTr.word.length <= MAX_SIDE &&
-                wordItemTr.word.length > 1
-            ) {
-                words[wordItemTr.word] = if(clueType == ClueType.WORD) clueItemTr.word
-                else clueItemTr.questions.random()
-            }
-        }
-        return words
-    }
-
-    private fun getTopics(): ArrayList<String> {
-        val data = intent.extras?.get("data") as ArrayList<*>
-        val topics = hashSetOf<String>()
-        for (wordItem in data) {
-            val item = wordItem as ArrayList<*>
-            val wordItemTr = item.find {
-                val itemTr = it as LanguageItem
-                itemTr.language == crosswordLanguage
-            } as LanguageItem?
-            if (wordItemTr != null && item.find {
-                    val itemTr = it as LanguageItem
-                    itemTr.language == clueLanguage &&
-                        (clueType == ClueType.WORD || itemTr.questions.isNotEmpty())
-                } != null) {
-                topics.addAll(wordItemTr.topics)
-            }
-        }
-        return ArrayList(topics).apply { sort() }
-    }
-
     internal fun getChosenTopics(): HashSet<String> {
         val topics: HashSet<String> = hashSetOf()
         for (i in 0 until topicList.childCount) {
@@ -188,6 +173,14 @@ class ChooseTopicsActivity : AppCompatActivity() {
         const val CROSSWORD_SIZE: Int = 14
         const val MAX_SIDE: Int = 15
         const val WORDS_VARIABLE: String = "words"
+        const val LEVEL_NAME: String = "level.json"
         private const val NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS = "multiple"
+
+        fun readLevelFromConfig(path: File, resources: Resources): String? = with(File(path, LEVEL_NAME)) {
+            val validate = fun(level: String){Utils.validateLevel(resources, level)}
+            if (exists()) FileInputStream(this).use { ConfigReader().readLevel(it, validate) }
+            else resources.openRawResource(R.raw.level).use { ConfigReader().readLevel(it, validate)
+            }
+        }
     }
 }

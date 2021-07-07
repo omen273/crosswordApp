@@ -2,7 +2,8 @@
     [
     {"EN":{
         "word": "ant",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "муравей",
@@ -12,7 +13,8 @@
     [
     {"EN":{
         "word": "bat",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "летучая мышь",
@@ -22,7 +24,8 @@
     [
     {"EN":{
         "word": "bear",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "медведь",
@@ -32,7 +35,8 @@
     [
     {"EN":{
         "word": "bee",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "пчела",
@@ -42,7 +46,8 @@
     [
     {"EN":{
         "word": "bird",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "птица",
@@ -52,7 +57,8 @@
     [
     {"EN":{
         "word": "buffalo",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "бык",
@@ -62,7 +68,8 @@
     [
     {"EN":{
         "word": "cat",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "кот",
@@ -72,7 +79,8 @@
     [
     {"EN":{
         "word": "chicken",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "курица",
@@ -82,7 +90,8 @@
     [
     {"EN":{
         "word": "dog",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "собака",
@@ -92,7 +101,8 @@
     [
     {"EN":{
         "word": "dolphin",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "дельфин",
@@ -102,7 +112,8 @@
     [
     {"EN":{
         "word": "duck",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "утка",
@@ -112,7 +123,8 @@
     [
     {"EN":{
         "word": "elephant",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "слон",
@@ -122,11 +134,177 @@
     [
     {"EN":{
         "word": "fish",
-        "topics": ["animals"]
+        "topics": ["animals"],
+		"level": "advanced(C1)"
         }},
     {"RU": {
         "word": "рыба",
         "topics": ["животные"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "cornflakes",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "кукурузные хлопья",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "croissant",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "круассан",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "custard",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "заварной крем",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "dough",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "тесто",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "doughnut",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "пончик",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "ginger",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "имбирь",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "grapefruit",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "грейпфрут",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "jelly",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "желе",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lasagne",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лазанья",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lentil",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "чечевица",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "lime",
+            "topics": ["fruits and vegetables", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "лайм",
+            "topics": ["фрукты и овощи", "еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "marmalade",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "джем",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mayonnaise",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "майонез",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "meatball",
+            "topics": ["food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "фрикаделька",
+            "topics": ["еда"]
+        }}
+    ],
+    [
+        {"EN":{
+            "word": "mince",
+            "topics": ["cooking", "food"],
+            "level": "advanced(C1)"
+        }},
+        {"RU": {
+            "word": "фарш",
+            "topics": ["приготовление еды", "еда"]
         }}
     ]
 ]

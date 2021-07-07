@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
+import android.widget.ListView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.*
@@ -23,6 +24,7 @@ import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
 import org.hamcrest.*
+import org.junit.Before
 import org.junit.Rule
 import org.junit.rules.TestRule
 import org.junit.runners.model.Statement
@@ -129,7 +131,7 @@ fun getContext(): Context = InstrumentationRegistry.getInstrumentation().targetC
 
 fun getTestContext(): Context = InstrumentationRegistry.getInstrumentation().context
 
-fun readConfig(): Int = GameActivity.readConfig(getContext().filesDir, getContext().resources)
+fun readConfig(): Int = GameActivity.readStarNumberFromConfig(getContext().filesDir, getContext().resources)
 
 fun chooseGenerateCrossword() {
     onView(getItemFromCrosswordList(0, 0)).perform(ViewActions.click())
@@ -277,47 +279,59 @@ class RetryTestRule(val retryCount: Int = 3) : TestRule {
     }
 }
 
-open class ChoseTopicsToastTest {
-
-    @get:Rule
-    var activityTestRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
-
-    @Rule
-    @JvmField
-    val retryTestRule = RetryTestRule()
-
+open class BadTopic: TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
-    fun choseTopicsImpl(fileName: String, message: String) {
+    fun check(fileName: String) {
         Intent(
             ApplicationProvider.getApplicationContext(),
             ChooseTopicsActivity::class.java
         ).apply {
-            val data =
+            val transformer = DataTransformer(
                 getTestContext().resources.assets.open(fileName)
-                    .use { WordsReader().read(it) }
+                    .use { WordsReader().read(it,
+                        fun(level: String){Utils.
+                        validateLevel(getContext().resources, level)}) })
+            val data = transformer.dataByLevelsByTopics
+            val topics = transformer.sortedTopicsByLevel
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
+            putExtra(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE, topics)
             putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
-        chooseFirstTopic()
-        onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
-        onView(withId(R.id.ok_play)).perform(ViewActions.click())
-        ToastMatcher.onToast(message).check(
-            ViewAssertions.matches(isDisplayed())
-        )
+        val topicList = withId(R.id.topicList)
+        onView(isRoot()).perform(waitForView(topicList))
+        onView(topicList).check(ViewAssertions.matches(hasNChildren(topicList, 1)))
     }
 }
 
-open class SolveCrossword {
+fun setLevelImpl(level:String = "advanced(C1)"){
+    var configLevel: String? = "test"
+    configLevel = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
+    waitForCondition("", {configLevel != "test"}, 300)
+    if(configLevel == null) {
+        onView(withText(level))
+                .inRoot(RootMatchers.isDialog())
+                .perform(ViewActions.click())
+    }
+}
+
+open class TestBaseClass {
 
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
-        ActivityScenarioRule(MainActivity::class.java)
+            ActivityScenarioRule(MainActivity::class.java)
 
     @Rule
     @JvmField
     val retryTestRule = RetryTestRule()
+
+    @Before
+    fun setLevel() {
+        setLevelImpl()
+    }
+}
+
+open class SolveCrossword : TestBaseClass() {
 
     protected lateinit var crossword: Crossword
 
@@ -344,15 +358,7 @@ open class SolveCrossword {
     }
 }
 
-abstract class BadCrosswordDataTest {
-
-    @get:Rule
-    var activityTestRule: ActivityScenarioRule<MainActivity> =
-            ActivityScenarioRule(MainActivity::class.java)
-
-    @Rule
-    @JvmField
-    val retryTestRule = RetryTestRule()
+abstract class BadCrosswordDataTest : TestBaseClass() {
 
     abstract fun spoil()
     lateinit var crossword: Crossword
