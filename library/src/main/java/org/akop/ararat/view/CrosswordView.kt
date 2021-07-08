@@ -143,9 +143,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     internal val rendererLock = Any()
     private val inPlaceRenderer = Renderer(this)
 
-    fun isSelectedCellSolved(): Boolean? = selectedWord?.let {
-        getCellContents(it, selectedCell) ==
-            it.cells[selectedCell].chars
+    fun isSelectedCellSolved(): Boolean? = selectedWord?.let {val s = Selectable(it, selectedCell)
+        return puzzleCells[s.row][s.column]!!.isFlagSet(Cell.FLAG_SOLVED)
     }
 
     fun isSelectedWordSolved(): Boolean = isWordSolved(selectedWord)
