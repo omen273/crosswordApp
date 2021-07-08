@@ -2,6 +2,8 @@ package com.omen273.crossLingo
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.Typeface.BOLD
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
@@ -380,7 +382,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun showLevelDialog() {
         val types = resources.getStringArray(R.array.levels)
-        val b = AlertDialog.Builder(this).setTitle(R.string.choose_level_dialog_text).
+        val titleView = TextView(this)
+        titleView.text = getString(R.string.choose_level_dialog_text)
+        titleView.textSize = 18f
+        titleView.setPadding(20,10,20,10)
+        titleView.setTypeface(null,BOLD)
+        titleView.setTextColor(Color.BLACK)
+        val b = AlertDialog.Builder(this).setCustomTitle(titleView).
         setItems(types) { dialog, selectedItem -> dialog.dismiss()
             openFileOutput(ChooseTopicsActivity.LEVEL_NAME, MODE_PRIVATE).use {
                 ConfigWriter().write(it, types[selectedItem])
