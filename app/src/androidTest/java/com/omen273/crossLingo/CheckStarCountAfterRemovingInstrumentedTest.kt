@@ -10,7 +10,7 @@ class CheckStarCountAfterRemovingInstrumentedTest: SolveCrossword() {
 
     @Test
     fun solveCrosswordInstrumentedTest() {
-        val START_STAR_NAMBER = 10
+        val START_STAR_NAMBER = 50
         waitForCondition("Stars number checking", {START_STAR_NAMBER  == readConfig()})
         crossword = generateCrossword()
         loadFirstCrossword()
