@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="hintTopics">choose topics</string>
+    <string name="hintTopics">select topics</string>
     <string name="sizeName">size:</string>
     <string name="okButton">OK</string>
     <string name="solve_square">Solve square</string>
@@ -9,8 +9,8 @@
     <string name="reset">RESET</string>
     <string name="another_crossword">ANOTHER CROSSWORD</string>
     <string name="remove">REMOVE</string>
-    <string name="choose_at_least_one_topic">Please, choose at least one topic</string>
-    <string name="not_enough_words">The chosen topics doesn\'t consist of %1$d words</string>
+    <string name="choose_at_least_one_topic">Please, select at least one topic</string>
+    <string name="not_enough_words">The selected topics doesn\'t consist of %1$d words</string>
     <string name="choose_other_words">Please, choose other words. I can\'t build crossword</string>
     <string name="delete_crossword_question">Do you want to delete %1$s?</string>
     <string name="yes">YES</string>
@@ -27,6 +27,6 @@
         <item>advanced(C1)</item>
     </string-array>
     <string name ="settings">settings</string>
-    <string name ="choose_level_dialog_text">Choose your level, please. You can change it later
+    <string name ="choose_level_dialog_text">Select your level, please. You can change it later
         in settings.</string>
 </resources>
