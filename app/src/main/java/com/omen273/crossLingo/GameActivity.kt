@@ -232,18 +232,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
-                    val targetSize =
-                        intent.getIntExtra(
-                                MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE,
-                                200
-                        )
-                    val defaultQuality = 100
-                    val ratio = if (crosswordView.puzzleBitmap != null)
-                        targetSize * defaultQuality / maxOf(
-                                (crosswordView.puzzleBitmap ?: return@use).width,
-                                (crosswordView.puzzleBitmap ?: return@use).height
-                        ) else defaultQuality
-                    crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, ratio, it)
+                    crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, 0, it)
                 }
             }
         }

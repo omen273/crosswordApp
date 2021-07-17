@@ -90,10 +90,6 @@ class ChooseTopicsActivity : AppCompatActivity() {
                                         ?: return@setOnClickListener) + ' '
                                 )
                                 putExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, true)
-                                putExtra(
-                                    MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE,
-                                    extras?.getInt(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE)
-                                )
                                 topicList.removeAllViews()
                                 startActivityForResult(this, MainActivity.ACTIVITY_GAME)
                             }

@@ -94,7 +94,6 @@ class MainActivity : AppCompatActivity() {
         }.also { im ->
             im.setOnClickListener {
                 val generated = Intent(this, ChooseTopicsActivity::class.java)
-                generated.putExtra(CROSSWORD_IMAGE_SIZE_VARIABLE, imageSize)
                 generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, data)
                 generated.putExtra(CROSSWORD_TOPICS_NAME_VARIABLE, topics)
                 startActivityForResult(generated, ACTIVITY_CHOOSE)
@@ -211,7 +210,6 @@ class MainActivity : AppCompatActivity() {
             Intent(this@MainActivity, GameActivity::class.java).apply {
                 putExtra(CROSSWORD_NAME_VARIABLE, textView.text)
                 putExtra(CROSSWORD_IS_GENERATED_VARIABLE, false)
-                putExtra(CROSSWORD_IMAGE_SIZE_VARIABLE, imageSize)
                 loadedName = textView.text.toString().removeSuffix(IMAGE_FORMAT)
                 startActivityForResult(this, ACTIVITY_GAME)
             }
@@ -411,7 +409,6 @@ class MainActivity : AppCompatActivity() {
         const val CROSSWORD_IS_GENERATED_VARIABLE: String = "isGenerated"
         const val CROSSWORD_DATA_NAME_VARIABLE: String = "data"
         const val CROSSWORD_TOPICS_NAME_VARIABLE: String = "topics"
-        const val CROSSWORD_IMAGE_SIZE_VARIABLE: String = "imageSize"
         const val DEFAULT_ENCODING: String = "UTF-8"
     }
 }
