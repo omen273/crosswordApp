@@ -31,6 +31,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.scale
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.toolbar_game.*
@@ -232,7 +233,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
-                    crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, 0, it)
+                    val size = 256
+                    val width = crosswordView.puzzleBitmap?.width
+                    val height = crosswordView.puzzleBitmap?.height
+                    val max = maxOf(width!!, height!!)
+                    crosswordView.puzzleBitmap?.scale(size * width/ max, size * height/ max, false)
+                        ?.compress(Bitmap.CompressFormat.PNG, 0, it)
                 }
             }
         }

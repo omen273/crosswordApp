@@ -296,7 +296,6 @@ open class BadTopic: TestBaseClass() {
             val topics = transformer.sortedTopicsByLevel
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
             putExtra(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE, topics)
-            putExtra(MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE, 0)
         }.also { scenario = ActivityScenario.launch(it) }
         val topicList = withId(R.id.topicList)
         onView(isRoot()).perform(waitForView(topicList))

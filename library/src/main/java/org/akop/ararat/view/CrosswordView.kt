@@ -458,7 +458,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
         cellStrokePaint.color = cellStrokeColor
         cellStrokePaint.style = Paint.Style.STROKE
-        // cellStrokePaint.setStrokeWidth(1);
+        cellStrokePaint.strokeWidth = 2f
 
         circleStrokePaint.color = circleStrokeColor
         circleStrokePaint.style = Paint.Style.STROKE
@@ -2018,7 +2018,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                     }, v.mistakeCellFillPaint)
                 }
             }
-
             canvas.drawRect(cellRect, v.cellStrokePaint)
 
             if (fastRender) return

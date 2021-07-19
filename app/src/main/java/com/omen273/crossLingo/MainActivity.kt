@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface.BOLD
+import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
@@ -70,6 +71,7 @@ class MainActivity : AppCompatActivity() {
             it.layoutManager = LinearLayoutManager(this)
             it.adapter = TableAdapter()
         }
+
         addItemToRecyclerView(createGeneratingImage())
         addItems()
 
@@ -397,7 +399,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val ITEMS_IN_ROW = 2
         private const val MARGIN = 10
-        const val IMAGE_FORMAT: String = ".jpg"
+        const val IMAGE_FORMAT: String = ".png"
         const val ACTIVITY_GAME: Int = 1
         const val ACTIVITY_CHOOSE: Int = 2
         const val ACTIVITY_GAME_OK: Int = 1
