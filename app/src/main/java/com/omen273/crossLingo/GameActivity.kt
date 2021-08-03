@@ -233,11 +233,14 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
-                    val size = 256
-                    val width = crosswordView.puzzleBitmap?.width
-                    val height = crosswordView.puzzleBitmap?.height
-                    val max = maxOf(width!!, height!!)
-                    crosswordView.puzzleBitmap?.scale(size * width/ max, size * height/ max, false)
+                    var size = resources.displayMetrics.widthPixels /
+                            MainActivity.ITEMS_IN_ROW - 2 * MainActivity.MARGIN
+                    val minSize = 500
+                    if(size < minSize && crosswordView.puzzleBitmap != null) {
+                            size = maxOf(crosswordView.puzzleBitmap!!.height,
+                                crosswordView.puzzleBitmap!!.width)
+                    }
+                    crosswordView.puzzleBitmap?.scale(size, size, false)
                         ?.compress(Bitmap.CompressFormat.PNG, 0, it)
                 }
             }
