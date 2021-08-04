@@ -458,7 +458,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
         cellStrokePaint.color = cellStrokeColor
         cellStrokePaint.style = Paint.Style.STROKE
-        cellStrokePaint.strokeWidth = 1f
+        cellStrokePaint.strokeWidth = 2f
 
         circleStrokePaint.color = circleStrokeColor
         circleStrokePaint.style = Paint.Style.STROKE

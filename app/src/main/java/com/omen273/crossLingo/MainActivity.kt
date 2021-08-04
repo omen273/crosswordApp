@@ -2,6 +2,7 @@ package com.omen273.crossLingo
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.Typeface.BOLD
 import android.graphics.drawable.Drawable
@@ -39,9 +40,18 @@ class MainActivity : AppCompatActivity() {
 
         val dataset: MutableList<MutableList<LinearViewData>> = mutableListOf()
 
+        internal fun addItemToRecyclerView(path: File, text: String) {
+            if (dataset.isEmpty() || dataset[dataset.lastIndex].size == ITEMS_IN_ROW) {
+                dataset.add(mutableListOf(LinearViewData(path, text)))
+                notifyItemInserted(dataset.lastIndex)
+            } else {
+                dataset[dataset.lastIndex].add(LinearViewData(path, text))
+                notifyItemChanged(dataset.lastIndex)
+            }
+        }
+
         private fun createDefaultTextView(context: Context) =
             TextView(context).apply {
-                text = dataset[0][0].text
                 gravity = Gravity.CENTER
             }
 
@@ -66,7 +76,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 item.addView(im)
             }
-            item.addView(createDefaultTextView(context))
+            item.addView(createDefaultTextView(context).also{
+                it.text = activity.getString(R.string.generate_crossword)})
             return item
         }
 
@@ -81,24 +92,31 @@ class MainActivity : AppCompatActivity() {
             return linearLayout
         }
 
+        companion object ViewHolderType{
+            val TOP_ROW = 0
+            val ONLY_CROSSWORDS_ROW = 1
+            val IMAGE_POSITION = 0
+            val TEXT_POSITION = 1
+        }
+
         override fun onCreateViewHolder(
                 parent: ViewGroup,
                 viewType: Int
         ): TableHolder {
             val tableRow = TableRow(parent.context)
             when (viewType) {
-                0 -> {
+                TOP_ROW -> {
                     tableRow.addView(createGeneratingLayout(parent.context))
                 }
-                1->{
+                ONLY_CROSSWORDS_ROW ->{
                     tableRow.addView(createCrosswordLayout(parent.context))
                 }
             }
+
             for(i in 1 until ITEMS_IN_ROW ) {
                 val view = createCrosswordLayout(parent.context)
                 view.visibility = View.INVISIBLE
                 tableRow.addView(view)
-
             }
             return TableHolder(tableRow)
         }
@@ -107,9 +125,9 @@ class MainActivity : AppCompatActivity() {
             val currentRow = dataset[position]
             val lastIndex = currentRow.lastIndex
             for(currentColumn in 0 .. lastIndex) {
-                if (position != 0 || currentColumn != 0) {
+                if (getItemViewType(position) == ONLY_CROSSWORDS_ROW || currentColumn != 0) {
                     val currentLayout = holder.tableRow.getChildAt(currentColumn) as LinearLayout
-                    val currentImageView = currentLayout.getChildAt(0) as ImageView
+                    val currentImageView = currentLayout.getChildAt(IMAGE_POSITION) as ImageView
                     currentImageView.setImageDrawable(Drawable.createFromPath(currentRow[currentColumn].path.absolutePath))
                     if (currentImageView.drawable == null) {
                         Log.e("ERROR", "The bad image")
@@ -120,7 +138,7 @@ class MainActivity : AppCompatActivity() {
                         activity.deleteCrosswordImpl(Position(position, currentColumn), false)
                         break;
                     }
-                    val currentTextView = currentLayout.getChildAt(1) as TextView
+                    val currentTextView = currentLayout.getChildAt(TEXT_POSITION) as TextView
                     currentTextView.text = currentRow[currentColumn].text
                     currentImageView.setOnClickListener {
                         Intent(activity, GameActivity::class.java).apply {
@@ -148,7 +166,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        override fun getItemViewType(position: Int) = if(position == 0 ) 0 else 1
+        override fun getItemViewType(position: Int) = if(position == 0) 0 else 1
         override fun getItemCount(): Int = dataset.size
     }
 
@@ -159,40 +177,24 @@ class MainActivity : AppCompatActivity() {
         val transformer = DataTransformer(resources.openRawResource(R.raw.data).use { WordsReader().read(it,
             fun(level: String){Utils.validateLevel(resources, level)}) })
         data = transformer.dataByLevelsByTopics
-        data = transformer.dataByLevelsByTopics
         topics = transformer.sortedTopicsByLevel
         if(ChooseTopicsActivity.readLevelFromConfig(filesDir, resources) == null) {
             showLevelDialog()
         }
 
-        imageSize = computeImageSize()
+        imageSize = computeImageSize(resources)
         tableLayout.also {
             it.layoutManager = LinearLayoutManager(this)
             it.adapter = TableAdapter(this)
         }
 
-        //will add path for the first item inside recylceview
-        addItemToRecyclerView( File(""), getString(R.string.generate_crossword))
+        //will add path and name for the first item inside recylceview
+        (tableLayout.adapter as TableAdapter).addItemToRecyclerView( File(""), "")
         addItems()
 
         settingsImage.setOnClickListener {
             val settings = Intent(this, SettActivity::class.java)
             startActivity(settings) }
-    }
-
-    private fun computeImageSize(): Int =
-        resources.displayMetrics.widthPixels / ITEMS_IN_ROW - 2 * MARGIN
-
-    private fun addItemToRecyclerView(path: File, text: String) {
-        val adapter = tableLayout.adapter as TableAdapter
-        val dataset = adapter.dataset
-        if (dataset.isEmpty() || dataset[dataset.lastIndex].size == ITEMS_IN_ROW) {
-            dataset.add(mutableListOf(LinearViewData(path, text)))
-            adapter.notifyItemInserted(dataset.lastIndex)
-        } else {
-            dataset[dataset.lastIndex].add(LinearViewData(path, text))
-            adapter.notifyItemChanged(dataset.lastIndex)
-        }
     }
 
     class DeleteCrossword(
@@ -285,7 +287,7 @@ class MainActivity : AppCompatActivity() {
                             continue
                         }
                         try {
-                            addItemToRecyclerView(file, name)
+                            (tableLayout.adapter as TableAdapter).addItemToRecyclerView(file, name)
                         } catch (e: Exception){
                             Log.e("ERROR", e.message.toString())
                         }
@@ -308,7 +310,7 @@ class MainActivity : AppCompatActivity() {
                         return
                     }
                     try {
-                        addItemToRecyclerView(path, name)
+                        (tableLayout.adapter as TableAdapter).addItemToRecyclerView(path, name)
                     } catch (e: Exception) {
                         Log.e("ERROR", e.message.toString())
                         return
@@ -373,8 +375,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val ITEMS_IN_ROW = 2
-        const val MARGIN = 30
+        private const val ITEMS_IN_ROW = 2
+        private const val MARGIN = 30
         const val IMAGE_FORMAT: String = ".png"
         const val ACTIVITY_GAME: Int = 1
         const val ACTIVITY_CHOOSE: Int = 2
@@ -388,5 +390,7 @@ class MainActivity : AppCompatActivity() {
         const val CROSSWORD_DATA_NAME_VARIABLE: String = "data"
         const val CROSSWORD_TOPICS_NAME_VARIABLE: String = "topics"
         const val DEFAULT_ENCODING: String = "UTF-8"
+        fun computeImageSize(resources: Resources): Int =
+            resources.displayMetrics.widthPixels / ITEMS_IN_ROW - 2 * MARGIN
     }
 }

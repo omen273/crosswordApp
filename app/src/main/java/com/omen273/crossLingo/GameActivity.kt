@@ -233,8 +233,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
-                    var size = resources.displayMetrics.widthPixels /
-                            MainActivity.ITEMS_IN_ROW - 2 * MainActivity.MARGIN
+                    var size = MainActivity.computeImageSize(resources)
                     val minSize = 500
                     if(size < minSize && crosswordView.puzzleBitmap != null) {
                             size = maxOf(crosswordView.puzzleBitmap!!.height,
