@@ -22,6 +22,8 @@ package com.omen273.crossLingo
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
@@ -233,13 +235,24 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
+                    if(crosswordView.puzzleBitmap == null) return
+                    val bitmap = crosswordView.puzzleBitmap!!
+                    val maxDimension = maxOf(bitmap.width, bitmap.height)
+                    val dstBmp = Bitmap.createBitmap(maxDimension, maxDimension, Bitmap.Config.ARGB_8888)
+
+                    val canvas = Canvas(dstBmp)
+                    canvas.drawColor(Color.BLACK)
+                    canvas.drawBitmap(
+                        bitmap,
+                        (maxDimension - bitmap.width).toFloat() / 2,
+                        (maxDimension - bitmap.height).toFloat() / 2,
+                        null
+                    )
+                    dstBmp?.compress(Bitmap.CompressFormat.PNG, 0, it)
                     var size = MainActivity.computeImageSize(resources)
                     val minSize = 500
-                    if(size < minSize && crosswordView.puzzleBitmap != null) {
-                            size = maxOf(crosswordView.puzzleBitmap!!.height,
-                                crosswordView.puzzleBitmap!!.width)
-                    }
-                    crosswordView.puzzleBitmap?.scale(size, size, false)
+                    size = minOf(size, minSize)
+                    dstBmp?.scale(size, size, false)
                         ?.compress(Bitmap.CompressFormat.PNG, 0, it)
                 }
             }
