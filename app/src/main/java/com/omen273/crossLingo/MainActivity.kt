@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             TextView(context).apply {
                 gravity = Gravity.CENTER
                 //try to make all pictures the same size
+                textSize = 12f
                 minLines = 2
             }
 
