@@ -188,6 +188,7 @@ class MainActivity : AppCompatActivity() {
             it.adapter = TableAdapter(this)
         }
 
+        tableLayout.setHasFixedSize(true)
         //will add path and name for the first item inside recylceview
         (tableLayout.adapter as TableAdapter).addItemToRecyclerView( File(""), "")
         addItems()
