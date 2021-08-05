@@ -378,7 +378,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val ITEMS_IN_ROW = 2
         private const val MARGIN = 28
-        const val IMAGE_FORMAT: String = ".png"
+        const val IMAGE_FORMAT: String = ".jpg"
         const val ACTIVITY_GAME: Int = 1
         const val ACTIVITY_CHOOSE: Int = 2
         const val ACTIVITY_GAME_OK: Int = 1

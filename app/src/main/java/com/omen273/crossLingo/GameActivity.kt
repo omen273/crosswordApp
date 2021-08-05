@@ -248,12 +248,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                         (maxDimension - bitmap.height).toFloat() / 2,
                         null
                     )
-                    dstBmp?.compress(Bitmap.CompressFormat.PNG, 0, it)
                     var size = MainActivity.computeImageSize(resources)
                     val minSize = 500
                     size = minOf(size, minSize)
                     dstBmp?.scale(size, size, false)
-                        ?.compress(Bitmap.CompressFormat.PNG, 0, it)
+                        ?.compress(Bitmap.CompressFormat.JPEG, 0, it)
                 }
             }
         }
