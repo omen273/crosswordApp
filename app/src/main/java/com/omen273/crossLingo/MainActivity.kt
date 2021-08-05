@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
         private fun createDefaultTextView(context: Context) =
             TextView(context).apply {
                 gravity = Gravity.CENTER
+                //try to make all pictures the same size
+                minLines = 2
             }
 
         private fun createDefaultImageView(context: Context) = ImageView(context).apply {
