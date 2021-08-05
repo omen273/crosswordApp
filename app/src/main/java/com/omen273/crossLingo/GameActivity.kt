@@ -252,7 +252,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     val minSize = 500
                     size = minOf(size, minSize)
                     dstBmp?.scale(size, size, false)
-                        ?.compress(Bitmap.CompressFormat.JPEG, 0, it)
+                        ?.compress(Bitmap.CompressFormat.JPEG, 40, it)
                 }
             }
         }
