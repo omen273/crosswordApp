@@ -335,7 +335,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onBackPressed() {
-        Log.d("TRT1", "BackPress")
         setResult(if (delete) MainActivity.ACTIVITY_GAME_REMOVE else MainActivity.ACTIVITY_GAME_OK)
         writeConfig()
         if (!delete) {
