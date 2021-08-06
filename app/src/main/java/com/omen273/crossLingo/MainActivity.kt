@@ -324,7 +324,6 @@ class MainActivity : AppCompatActivity() {
                     rightShift(lastRowIndex, tableRow.lastIndex)
                     adapter.notifyDataSetChanged()
                 }
-                ACTIVITY_GAME_REMOVE -> deleteCrosswordImpl(currentCrosswordPosition)
                 ACTIVITY_GAME_BAD_DATA -> Toast.makeText(this@MainActivity, R.string.damaged_data,
                         Toast.LENGTH_SHORT).show()
             }

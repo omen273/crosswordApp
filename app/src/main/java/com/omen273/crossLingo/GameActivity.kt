@@ -55,6 +55,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
     private var delete = false
+    private var onBackPressedCallBefore = false
 
     @ExperimentalUnsignedTypes
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -210,21 +211,26 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
-    @ExperimentalUnsignedTypes
-    override fun onPause() {
-        writeConfig()
+    private fun saveData() {
         if (!delete) {
             //check that a crossword has been drawn otherwise doesn't save it
             // not thrown an exception because it is a normal situation in case of
             //two another crossword usages. Please see https://github.com/omen273/crosswordApp/issues/138
             //for details
-            if(crosswordView.puzzleBitmap != null ) {
+            if (crosswordView.puzzleBitmap != null) {
                 writeCrossword()
                 writeState()
                 saveScreenshot()
             }
-        } else {
-            delete = false
+        }
+    }
+
+    @ExperimentalUnsignedTypes
+    override fun onPause() {
+        writeConfig()
+        if(!onBackPressedCallBefore) {
+            onBackPressedCallBefore = false
+            saveData()
         }
         super.onPause()
     }
@@ -349,7 +355,13 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onBackPressed() {
-        setResult(if (delete) MainActivity.ACTIVITY_GAME_REMOVE else MainActivity.ACTIVITY_GAME_OK)
+        setResult(if (delete) {
+            onBackPressedCallBefore = true
+            delete = false
+            MainActivity.ACTIVITY_GAME_REMOVE
+        } else {
+            saveData()
+            MainActivity.ACTIVITY_GAME_OK})
         super.onBackPressed()
     }
 
