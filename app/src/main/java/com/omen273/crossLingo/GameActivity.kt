@@ -350,6 +350,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         } else {
             delete = false
         }
+        Log.d("TRT1", "save new item")
         super.onBackPressed()
     }
 

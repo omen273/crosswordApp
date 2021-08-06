@@ -125,6 +125,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: TableHolder, position: Int) {
+            Log.d("TRT1", "onBind new item position: $position")
             val currentRow = dataset[position]
             val lastIndex = currentRow.lastIndex
             for(currentColumn in 0 .. lastIndex) {
@@ -323,6 +324,7 @@ class MainActivity : AppCompatActivity() {
                     val lastRowIndex = adapter.dataset.lastIndex
                     val tableRow = adapter.dataset[lastRowIndex]
                     rightShift(lastRowIndex, tableRow.lastIndex)
+                    Log.d("TRT1", "add new item")
                     adapter.notifyDataSetChanged()
                 }
                 ACTIVITY_GAME_REMOVE -> deleteCrosswordImpl(currentCrosswordPosition)
@@ -376,6 +378,12 @@ class MainActivity : AppCompatActivity() {
                 ConfigWriter().write(it, types[selectedItem])
             } }.create()
         b.show()
+    }
+
+    override fun onResume() {
+        //try to force update of recycleview
+        tableLayout.adapter = tableLayout.adapter
+        super.onResume()
     }
 
     companion object {
