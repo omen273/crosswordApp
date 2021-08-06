@@ -125,7 +125,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: TableHolder, position: Int) {
-            Log.d("TRT1", "onBind new item position: $position")
             val currentRow = dataset[position]
             val lastIndex = currentRow.lastIndex
             for(currentColumn in 0 .. lastIndex) {
@@ -254,7 +253,6 @@ class MainActivity : AppCompatActivity() {
         for (i in lastIndexRow downTo pos.row) {
             val rowLastIndex = data[i].lastIndex
             for (j in rowLastIndex downTo 0) {
-                if(i == lastIndexRow && j == lastRowColumnIndex) continue
                 data[i][j] = prev.also{prev = data[i][j]}
                 if (i == pos.row && j == pos.column) break
             }
@@ -324,7 +322,6 @@ class MainActivity : AppCompatActivity() {
                     val lastRowIndex = adapter.dataset.lastIndex
                     val tableRow = adapter.dataset[lastRowIndex]
                     rightShift(lastRowIndex, tableRow.lastIndex)
-                    Log.d("TRT1", "add new item")
                     adapter.notifyDataSetChanged()
                 }
                 ACTIVITY_GAME_REMOVE -> deleteCrosswordImpl(currentCrosswordPosition)
