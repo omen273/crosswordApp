@@ -228,10 +228,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     @ExperimentalUnsignedTypes
     override fun onPause() {
         writeConfig()
-        if(!onBackPressedCallBefore) {
-            onBackPressedCallBefore = false
-            saveData()
-        }
+        if(!onBackPressedCallBefore) saveData()
+        else onBackPressedCallBefore = false
         super.onPause()
     }
 
@@ -355,8 +353,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onBackPressed() {
+        onBackPressedCallBefore = true
         setResult(if (delete) {
-            onBackPressedCallBefore = true
             delete = false
             MainActivity.ACTIVITY_GAME_REMOVE
         } else {
