@@ -22,6 +22,8 @@ package com.omen273.crossLingo
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
@@ -31,6 +33,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.scale
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.toolbar_game.*
@@ -52,6 +55,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
     private var delete = false
+    private var onBackPressedCallBefore = false
 
     @ExperimentalUnsignedTypes
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -207,23 +211,26 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
-    @ExperimentalUnsignedTypes
-    override fun onPause() {
-        super.onPause()
-        writeConfig()
+    private fun saveData() {
         if (!delete) {
             //check that a crossword has been drawn otherwise doesn't save it
             // not thrown an exception because it is a normal situation in case of
             //two another crossword usages. Please see https://github.com/omen273/crosswordApp/issues/138
             //for details
-            if(crosswordView.puzzleBitmap != null ) {
+            if (crosswordView.puzzleBitmap != null) {
                 writeCrossword()
                 writeState()
                 saveScreenshot()
             }
-        } else {
-            delete = false
         }
+    }
+
+    @ExperimentalUnsignedTypes
+    override fun onPause() {
+        writeConfig()
+        if(!onBackPressedCallBefore) saveData()
+        else onBackPressedCallBefore = false
+        super.onPause()
     }
 
     private fun saveScreenshot() {
@@ -232,18 +239,24 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
-                    val targetSize =
-                        intent.getIntExtra(
-                                MainActivity.CROSSWORD_IMAGE_SIZE_VARIABLE,
-                                200
-                        )
-                    val defaultQuality = 100
-                    val ratio = if (crosswordView.puzzleBitmap != null)
-                        targetSize * defaultQuality / maxOf(
-                                (crosswordView.puzzleBitmap ?: return@use).width,
-                                (crosswordView.puzzleBitmap ?: return@use).height
-                        ) else defaultQuality
-                    crosswordView.puzzleBitmap?.compress(Bitmap.CompressFormat.JPEG, ratio, it)
+                    if(crosswordView.puzzleBitmap == null) return
+                    val bitmap = crosswordView.puzzleBitmap!!
+                    val maxDimension = maxOf(bitmap.width, bitmap.height)
+                    val dstBmp = Bitmap.createBitmap(maxDimension, maxDimension, Bitmap.Config.ARGB_8888)
+
+                    val canvas = Canvas(dstBmp)
+                    canvas.drawColor(Color.BLACK)
+                    canvas.drawBitmap(
+                        bitmap,
+                        (maxDimension - bitmap.width).toFloat() / 2,
+                        (maxDimension - bitmap.height).toFloat() / 2,
+                        null
+                    )
+                    var size = MainActivity.computeImageSize(resources)
+                    val minSize = 500
+                    size = minOf(size, minSize)
+                    dstBmp?.scale(size, size, false)
+                        ?.compress(Bitmap.CompressFormat.JPEG, 40, it)
                 }
             }
         }
@@ -340,7 +353,13 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onBackPressed() {
-        setResult(if (delete) MainActivity.ACTIVITY_GAME_REMOVE else MainActivity.ACTIVITY_GAME_OK)
+        onBackPressedCallBefore = true
+        setResult(if (delete) {
+            delete = false
+            MainActivity.ACTIVITY_GAME_REMOVE
+        } else {
+            saveData()
+            MainActivity.ACTIVITY_GAME_OK})
         super.onBackPressed()
     }
 

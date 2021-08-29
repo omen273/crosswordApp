@@ -6,6 +6,7 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions
+import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Before
@@ -60,9 +61,8 @@ class BadImageReadingInstrumentedTest {
         val start = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start > 300 })
         setLevelImpl()
-        val tableMatcher = withId(R.id.tableLayout)
-        onView(tableMatcher).check(ViewAssertions.matches(hasNChildren(tableMatcher, 1)))
-        val firstRowMatcher = nthChildOf(tableMatcher, 0)
-        onView(firstRowMatcher).check(ViewAssertions.matches(hasNChildren(firstRowMatcher, 1)))
+        ToastMatcher.onToast(R.string.damaged_data).check(
+            ViewAssertions.matches(ViewMatchers.isDisplayed())
+        )
     }
 }
