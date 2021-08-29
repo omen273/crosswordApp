@@ -313,16 +313,16 @@ class MainActivity : AppCompatActivity() {
                         return
                     }
                     try {
-                        (tableLayout.adapter as TableAdapter).addItemToRecyclerView(path, name)
+                        val adapter = tableLayout.adapter as TableAdapter
+                        adapter.addItemToRecyclerView(path, name)
+                        val lastRowIndex = adapter.dataset.lastIndex
+                        val tableRow = adapter.dataset[lastRowIndex]
+                        rightShift(lastRowIndex, tableRow.lastIndex)
+                        adapter.notifyDataSetChanged()
                     } catch (e: Exception) {
                         Log.e("ERROR", e.message.toString())
                         return
                     }
-                    val adapter = tableLayout.adapter as TableAdapter
-                    val lastRowIndex = adapter.dataset.lastIndex
-                    val tableRow = adapter.dataset[lastRowIndex]
-                    rightShift(lastRowIndex, tableRow.lastIndex)
-                    adapter.notifyDataSetChanged()
                 }
                 ACTIVITY_GAME_BAD_DATA -> Toast.makeText(this@MainActivity, R.string.damaged_data,
                         Toast.LENGTH_SHORT).show()
@@ -377,7 +377,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
-        //try to force update of recycleview
+        //try to force update of recycleview otherwise the last item is not redrawn sometimes
         tableLayout.adapter = tableLayout.adapter
         super.onResume()
     }
