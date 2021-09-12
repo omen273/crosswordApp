@@ -12,18 +12,31 @@
         <activity
             android:name="com.omen273.crossLingo.GameActivity"
             android:windowSoftInputMode="adjustResize"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.omen273.crossLingo.SettActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.omen273.crossLingo.ChooseTopicsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.omen273.crossLingo.SettActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.omen273.crossLingo.ChooseTopicsActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.omen273.crossLingo.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.omen273.crossLingo.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="greenekatherine.github.io" />
             </intent-filter>
         </activity>
     </application>
