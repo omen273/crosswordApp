@@ -68,67 +68,77 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             onBackPressed()
         }
         star_number.text = readStarNumberFromConfig(filesDir, resources).toString()
-        name = intent.getStringExtra(MainActivity.CROSSWORD_NAME_VARIABLE).toString()
         val isGenerated =
             intent.getBooleanExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, false)
-        val crossword =
-            if (isGenerated) {
-                @Suppress("UNCHECKED_CAST")
-                val wordsMap =
-                    intent.getSerializableExtra(ChooseTopicsActivity.WORDS_VARIABLE)
-                        as HashMap<String, String>
-                when (val crosswordParams = generateCrossword(wordsMap)) {
-                    null -> {
-                        setResult(MainActivity.ACTIVITY_GAME_FAIL)
-                        finish()
-                        return
-                    }
-                    else -> {
-                        name = generateName(name)
-                        val sharedPref =
-                            getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
-                        with(sharedPref.edit()) {
-                            putString(MainActivity.CROSSWORD_NAME_VARIABLE, name)
-                            apply()
+        val crossword = when (val restoredCrossword = savedInstanceState?.getParcelable("crossword") as Crossword?) {
+            null -> {
+                name = intent.getStringExtra(MainActivity.CROSSWORD_NAME_VARIABLE).toString()
+                if (isGenerated) {
+                    @Suppress("UNCHECKED_CAST")
+                    val wordsMap =
+                        intent.getSerializableExtra(ChooseTopicsActivity.WORDS_VARIABLE)
+                                as HashMap<String, String>
+                    when (val crosswordParams = generateCrossword(wordsMap)) {
+                        null -> {
+                            setResult(MainActivity.ACTIVITY_GAME_FAIL)
+                            finish()
+                            return
                         }
+                        else -> {
+                            name = generateName(name)
+                            val sharedPref =
+                                getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
+                            with(sharedPref.edit()) {
+                                putString(MainActivity.CROSSWORD_NAME_VARIABLE, name)
+                                apply()
+                            }
 
-                        buildCrossword {
-                            flags = 0
-                            width = crosswordParams.width
-                            height = crosswordParams.height
-                            title = name
-                            author = "author"
-                            copyright = "copyright"
-                            comment = "comment"
-                            if (crosswordParams.words.size < 2) {
-                                throw RuntimeException(
+                            buildCrossword {
+                                flags = 0
+                                width = crosswordParams.width
+                                height = crosswordParams.height
+                                title = name
+                                author = "author"
+                                copyright = "copyright"
+                                comment = "comment"
+                                if (crosswordParams.words.size < 2) {
+                                    throw RuntimeException(
                                         "The crossword should consist " +
                                                 "of more or equal to two words."
-                                )
-                            }
-                            var prev: WordParams = crosswordParams.words[0]
-                            var n = 1
-                            for ((i, word) in
-                            crosswordParams.words.sortedWith(compareBy({ it.y }, { it.x }))
-                                .withIndex()) {
-                                words += buildWord {
-                                    direction =
-                                        if (word.isHorizontal) Crossword.Word.DIR_ACROSS
-                                        else Crossword.Word.DIR_DOWN
-                                    hint = wordsMap[word.word.toLowerCase(Locale.ROOT)].toString()
-                                    number =
-                                        if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
-                                        else n++
-                                    startRow = word.y
-                                    startColumn = word.x
-                                    for (ch in word.word) addCell(ch.toString(), 0)
-                                    prev = word
+                                    )
+                                }
+                                var prev: WordParams = crosswordParams.words[0]
+                                var n = 1
+                                for ((i, word) in
+                                crosswordParams.words.sortedWith(compareBy({ it.y }, { it.x }))
+                                    .withIndex()) {
+                                    words += buildWord {
+                                        direction =
+                                            if (word.isHorizontal) Crossword.Word.DIR_ACROSS
+                                            else Crossword.Word.DIR_DOWN
+                                        hint =
+                                            wordsMap[word.word.toLowerCase(Locale.ROOT)].toString()
+                                        number =
+                                            if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
+                                            else n++
+                                        startRow = word.y
+                                        startColumn = word.x
+                                        for (ch in word.word) addCell(ch.toString(), 0)
+                                        prev = word
+                                    }
                                 }
                             }
                         }
                     }
-                }
-            } else readCrossword()
+                } else readCrossword()
+            }
+            else -> {
+                if(delete) onBackPressed()
+                name = savedInstanceState?.getCharSequence("name") as String
+                delete = savedInstanceState.getBoolean("delete")
+                restoredCrossword
+            }
+        }
 
         crosswordView.also { cv ->
             val tv = TypedValue()
@@ -141,11 +151,18 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.viewR = window.decorView.rootView
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
-            if (!isGenerated) try{readState(fillName).also { st -> cv.restoreState(st) }}
-            catch (e: Exception) {
-                Log.e("ERROR", "The bad crossword state")
-                setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
-                finish()
+            val state = savedInstanceState?.getParcelable("state")
+                    as CrosswordState?
+            if(state != null)
+                crosswordView.restoreState(state)
+            else {
+                if (!isGenerated) try {
+                    readState(fillName).also { st -> cv.restoreState(st) }
+                } catch (e: Exception) {
+                    Log.e("ERROR", "The bad crossword state")
+                    setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
+                    finish()
+                }
             }
             cv.onLongPressListener = this
             cv.onStateChangeListener = this
@@ -186,12 +203,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             ++i
         }
         return res
-    }
-
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
-        val state = savedInstanceState.getParcelable("state") as CrosswordState?
-        if (state != null) crosswordView.restoreState(state)
     }
 
     @ExperimentalUnsignedTypes
@@ -280,6 +291,10 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putParcelable("state", crosswordView.state)
+        if(crosswordView.crossword != null)
+            outState.putParcelable("crossword", crosswordView.crossword)
+        outState.putCharSequence("name", name)
+        outState.putBoolean("delete", delete)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
