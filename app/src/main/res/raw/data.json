@@ -13423,24 +13423,6 @@
   [
     {
       "EN": {
-        "word": "application",
-        "topics": [
-          "work"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "заявка",
-        "topics": [
-          "работа"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "trainee",
         "topics": [
           "work"
@@ -16134,24 +16116,6 @@
   [
     {
       "EN": {
-        "word": "graduate",
-        "topics": [
-          "education"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "выпускник",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "curriculum",
         "topics": [
           "education"
@@ -16161,24 +16125,6 @@
     {
       "RU": {
         "word": "расписание",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "qualification",
-        "topics": [
-          "education"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "квалификация",
         "topics": [
           "образование"
         ]
@@ -16660,63 +16606,6 @@
   [
     {
       "EN": {
-        "word": "graduation",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "выпуск",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "lecturer",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "лектор",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "mark",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "оценка",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "register",
         "topics": [
           "education"
@@ -16767,25 +16656,6 @@
         "word": "вычитание",
         "topics": [
           "наука и техника"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "term",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "четверть",
-        "topics": [
-          "образование"
         ]
       }
     }
@@ -25850,6 +25720,546 @@
         "topics": [
           "наука и техника"
         ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "academic",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "академический",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "application",
+        "topics": ["education", "work"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "заявление",
+        "topics": ["образование", "работа"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "assignment",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "задание",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bell",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "звонок",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "campus",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "кампус",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "canteen",
+        "topics": ["education", "cooking and eating"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "столовая",
+        "topics": ["образование", "приготовление и употребление еды"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "classwork",
+        "topics": ["education", "cooking and eating"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "классная работа",
+        "topics": ["образование", "приготовление и употребление еды"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "coach",
+        "topics": ["education", "sports"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "тренировать",
+        "topics": ["образование", "спорт"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "diploma",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "диплом",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "doctor",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "доктор",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "educational",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "образовательный",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "engineering",
+        "topics": ["education", "engineering"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "инженерия",
+        "topics": ["образование", "инженерия"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "exchange",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "учеба по обмену",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "grad",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выпускник",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "grade",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "оценка",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "graduate",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выпускник",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "graduation",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выпуск",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "gymnastics",
+        "topics": ["education", "sports"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "гимнастика",
+        "topics": ["образование", "спорт"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "laboratory",
+        "topics": ["education", "science and technology"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "лаборатория",
+        "topics": ["образование", "наука и техника"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "law",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "юриспруденция",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "lecturer",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "лектор",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "mark",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "оценка",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "memorize",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "запоминать",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pass",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сдать",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pe",
+        "topics": ["education", "sports"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "физкультура",
+        "topics": ["образование", "спорт"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "playground",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "игровая площадка",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "politics",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "политология",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "president",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "председатель",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "primary",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "начальный",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "programme",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "программа",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "qualification",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "квалификация",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "revise",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пересматривать",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "semester",
+        "topics": ["education", "time"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "семестр",
+        "topics": ["образование", "время"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "term",
+        "topics": ["education", "time"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "триместр",
+        "topics": ["образование", "время"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "whiteboard",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "доска",
+        "topics": ["образование"]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "written",
+        "topics": ["education"],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "письменный",
+        "topics": ["образование"]
       }
     }
   ]
