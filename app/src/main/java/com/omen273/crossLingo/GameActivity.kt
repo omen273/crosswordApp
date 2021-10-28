@@ -116,7 +116,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                             if (word.isHorizontal) Crossword.Word.DIR_ACROSS
                                             else Crossword.Word.DIR_DOWN
                                         hint =
-                                            wordsMap[word.word.toLowerCase(Locale.ROOT)].toString()
+                                            wordsMap[word.word.lowercase(Locale.ROOT)].toString()
                                         number =
                                             if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
                                             else n++
