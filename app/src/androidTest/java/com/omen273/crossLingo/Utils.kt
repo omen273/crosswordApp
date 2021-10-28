@@ -370,8 +370,8 @@ abstract class BadCrosswordDataTest : TestBaseClass() {
         waitForCondition("", { System.currentTimeMillis() - start1 > 300 })
         onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
         onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
-        onView(withText(R.string.damaged_data))
-              .inRoot(RootMatchers.isDialog())
-            .check(ViewAssertions.matches(isDisplayed()))
+        ToastMatcher.onToast(R.string.damaged_data).check(
+            ViewAssertions.matches(isDisplayed())
+        )
     }
 }
