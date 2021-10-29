@@ -6669,7 +6669,8 @@
       "EN": {
         "word": "musical",
         "topics": [
-          "music"
+          "music",
+          "movies"
         ],
         "level": "elementary(A2)"
       }
@@ -6678,7 +6679,8 @@
       "RU": {
         "word": "мюзикл",
         "topics": [
-          "музыка"
+          "музыка",
+          "кино"
         ]
       }
     }
@@ -6810,25 +6812,6 @@
     {
       "RU": {
         "word": "ударник",
-        "topics": [
-          "музыка"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "perform",
-        "topics": [
-          "music"
-        ],
-        "level": "elementary(A2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "выступать",
         "topics": [
           "музыка"
         ]
@@ -7642,7 +7625,8 @@
         "word": "producer",
         "topics": [
           "music",
-          "movies"
+          "movies",
+          "work"
         ],
         "level": "intermediate(B1)"
       }
@@ -7652,7 +7636,8 @@
         "word": "продюсер",
         "topics": [
           "музыка",
-          "кино"
+          "кино",
+          "работа"
         ]
       }
     }
@@ -7736,7 +7721,7 @@
       "EN": {
         "word": "listen",
         "topics": [
-          "music"
+          "music", "movies"
         ],
         "level": "beginner(A1)"
       }
@@ -7745,7 +7730,7 @@
       "RU": {
         "word": "слушать",
         "topics": [
-          "музыка"
+          "музыка", "кино"
         ]
       }
     }
@@ -17835,7 +17820,8 @@
         "word": "digital",
         "topics": [
           "computers",
-          "science and technology"
+          "science and technology",
+          "movies"
         ],
         "level": "elementary(A2)"
       }
@@ -17845,7 +17831,8 @@
         "word": "цифровой",
         "topics": [
           "электроника",
-          "наука и техника"
+          "наука и техника",
+          "кино"
         ]
       }
     }
@@ -18045,7 +18032,8 @@
         "word": "screen",
         "topics": [
           "computers",
-          "science and technology"
+          "science and technology",
+          "movies"
         ],
         "level": "elementary(A2)"
       }
@@ -18055,7 +18043,8 @@
         "word": "экран",
         "topics": [
           "электроника",
-          "наука и техника"
+          "наука и техника",
+          "кино"
         ]
       }
     }
@@ -23707,7 +23696,8 @@
       "EN": {
         "word": "director",
         "topics": [
-          "movies"
+          "movies",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -23716,7 +23706,8 @@
       "RU": {
         "word": "режиссер",
         "topics": [
-          "кино"
+          "кино",
+          "работа"
         ]
       }
     }
@@ -23840,7 +23831,7 @@
       "EN": {
         "word": "perform",
         "topics": [
-          "movies"
+          "movies", "music"
         ],
         "level": "elementary(A2)"
       }
@@ -23848,6 +23839,44 @@
     {
       "RU": {
         "word": "исполнять",
+        "topics": [
+          "кино", "музыка"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "record",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "записывать",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "recording",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "запись",
         "topics": [
           "кино"
         ]
@@ -23895,7 +23924,7 @@
   [
     {
       "EN": {
-        "word": "screen",
+        "word": "schedule",
         "topics": [
           "movies"
         ],
@@ -23904,26 +23933,7 @@
     },
     {
       "RU": {
-        "word": "экран",
-        "topics": [
-          "кино"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "starring",
-        "topics": [
-          "movies"
-        ],
-        "level": "elementary(A2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "главные роли",
+        "word": "программа",
         "topics": [
           "кино"
         ]
@@ -24170,7 +24180,7 @@
     },
     {
       "RU": {
-        "word": "предпросмотр",
+        "word": "предпоказ",
         "topics": [
           "кино"
         ]
@@ -25727,14 +25737,18 @@
     {
       "EN": {
         "word": "academic",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "академический",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25742,14 +25756,20 @@
     {
       "EN": {
         "word": "application",
-        "topics": ["education", "work"],
+        "topics": [
+          "education",
+          "work"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "заявление",
-        "topics": ["образование", "работа"]
+        "topics": [
+          "образование",
+          "работа"
+        ]
       }
     }
   ],
@@ -25757,14 +25777,18 @@
     {
       "EN": {
         "word": "assignment",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "задание",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25772,14 +25796,18 @@
     {
       "EN": {
         "word": "bell",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "звонок",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25787,14 +25815,18 @@
     {
       "EN": {
         "word": "campus",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "кампус",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25802,14 +25834,20 @@
     {
       "EN": {
         "word": "canteen",
-        "topics": ["education", "cooking and eating"],
+        "topics": [
+          "education",
+          "cooking and eating"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "столовая",
-        "topics": ["образование", "приготовление и употребление еды"]
+        "topics": [
+          "образование",
+          "приготовление и употребление еды"
+        ]
       }
     }
   ],
@@ -25817,14 +25855,18 @@
     {
       "EN": {
         "word": "classwork",
-        "topics": ["education", "cooking and eating"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "классная работа",
-        "topics": ["образование", "приготовление и употребление еды"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25832,14 +25874,20 @@
     {
       "EN": {
         "word": "coach",
-        "topics": ["education", "sports"],
+        "topics": [
+          "education",
+          "sports"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "тренировать",
-        "topics": ["образование", "спорт"]
+        "topics": [
+          "образование",
+          "спорт"
+        ]
       }
     }
   ],
@@ -25847,14 +25895,18 @@
     {
       "EN": {
         "word": "diploma",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "диплом",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25862,14 +25914,18 @@
     {
       "EN": {
         "word": "doctor",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "доктор",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25877,14 +25933,18 @@
     {
       "EN": {
         "word": "educational",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "образовательный",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25892,14 +25952,20 @@
     {
       "EN": {
         "word": "engineering",
-        "topics": ["education", "engineering"],
+        "topics": [
+          "education",
+          "engineering"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "инженерия",
-        "topics": ["образование", "инженерия"]
+        "topics": [
+          "образование",
+          "инженерия"
+        ]
       }
     }
   ],
@@ -25907,14 +25973,18 @@
     {
       "EN": {
         "word": "exchange",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "учеба по обмену",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25922,14 +25992,18 @@
     {
       "EN": {
         "word": "grad",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "выпускник",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25937,14 +26011,18 @@
     {
       "EN": {
         "word": "grade",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "оценка",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25952,14 +26030,18 @@
     {
       "EN": {
         "word": "graduate",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "выпускник",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25967,14 +26049,18 @@
     {
       "EN": {
         "word": "graduation",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "выпуск",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -25982,14 +26068,20 @@
     {
       "EN": {
         "word": "gymnastics",
-        "topics": ["education", "sports"],
+        "topics": [
+          "education",
+          "sports"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "гимнастика",
-        "topics": ["образование", "спорт"]
+        "topics": [
+          "образование",
+          "спорт"
+        ]
       }
     }
   ],
@@ -25997,14 +26089,20 @@
     {
       "EN": {
         "word": "laboratory",
-        "topics": ["education", "science and technology"],
+        "topics": [
+          "education",
+          "science and technology"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "лаборатория",
-        "topics": ["образование", "наука и техника"]
+        "topics": [
+          "образование",
+          "наука и техника"
+        ]
       }
     }
   ],
@@ -26012,14 +26110,18 @@
     {
       "EN": {
         "word": "law",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "юриспруденция",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26027,14 +26129,18 @@
     {
       "EN": {
         "word": "lecturer",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "лектор",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26042,14 +26148,18 @@
     {
       "EN": {
         "word": "mark",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "оценка",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26057,14 +26167,18 @@
     {
       "EN": {
         "word": "memorize",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "запоминать",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26072,14 +26186,18 @@
     {
       "EN": {
         "word": "pass",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "сдать",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26087,14 +26205,20 @@
     {
       "EN": {
         "word": "pe",
-        "topics": ["education", "sports"],
+        "topics": [
+          "education",
+          "sports"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "физкультура",
-        "topics": ["образование", "спорт"]
+        "topics": [
+          "образование",
+          "спорт"
+        ]
       }
     }
   ],
@@ -26102,14 +26226,18 @@
     {
       "EN": {
         "word": "playground",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "игровая площадка",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26117,14 +26245,18 @@
     {
       "EN": {
         "word": "politics",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "политология",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26132,14 +26264,18 @@
     {
       "EN": {
         "word": "president",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "председатель",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26147,14 +26283,18 @@
     {
       "EN": {
         "word": "primary",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "начальный",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26162,14 +26302,18 @@
     {
       "EN": {
         "word": "programme",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "программа",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26177,14 +26321,18 @@
     {
       "EN": {
         "word": "qualification",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "квалификация",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26192,14 +26340,18 @@
     {
       "EN": {
         "word": "revise",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "пересматривать",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26207,14 +26359,20 @@
     {
       "EN": {
         "word": "semester",
-        "topics": ["education", "time"],
+        "topics": [
+          "education",
+          "time"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "семестр",
-        "topics": ["образование", "время"]
+        "topics": [
+          "образование",
+          "время"
+        ]
       }
     }
   ],
@@ -26222,14 +26380,20 @@
     {
       "EN": {
         "word": "term",
-        "topics": ["education", "time"],
+        "topics": [
+          "education",
+          "time"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "триместр",
-        "topics": ["образование", "время"]
+        "topics": [
+          "образование",
+          "время"
+        ]
       }
     }
   ],
@@ -26237,14 +26401,18 @@
     {
       "EN": {
         "word": "whiteboard",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "доска",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
       }
     }
   ],
@@ -26252,14 +26420,687 @@
     {
       "EN": {
         "word": "written",
-        "topics": ["education"],
+        "topics": [
+          "education"
+        ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
         "word": "письменный",
-        "topics": ["образование"]
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "act",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "играть",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "advertise",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "рекламировать",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "advertisement",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реклама",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cartoon",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "мультфильм",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "celebrity",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "знаменитость",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "character",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "персонаж",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "comedy",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "комедия",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "director",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "режиссер",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ending",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "окончание",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hollywood",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "голливуд",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "review",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "обзор",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "scriptwriter",
+        "topics": [
+          "movies"
+        ],
+        "level": "upper-intermediate(B2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сценарист",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "subtitle",
+        "topics": [
+          "movies"
+        ],
+        "level": "upper-intermediate(B2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "субтитры",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ad",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реклама",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "agent",
+        "topics": [
+          "movies",
+          "work"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "представитель",
+        "topics": [
+          "кино",
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cameraman",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "оператор",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "channel",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "канал",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "commercial",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реклама",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "costume",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "костюмы",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "curtain",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": [
+          "занавес"
+        ],
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "direct",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "режиссировать",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "episode",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "эпизод",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "line",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реплика",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "location",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "локация",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "part",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "роль",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "preview",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "анонс",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "repeat",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "повтор",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "scenery",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "декорации",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "script",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сценарий",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "series",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сериал",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "stage",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сцена",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "story",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "история",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "studio",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "студия",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "superhero",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "супергерой",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "viewer",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "зритель",
+        "topics": [
+          "кино"
+        ]
       }
     }
   ]
