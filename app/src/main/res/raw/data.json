@@ -1617,7 +1617,8 @@
       "EN": {
         "word": "tail",
         "topics": [
-          "animals"
+          "animals",
+          "travel"
         ],
         "level": "intermediate(B1)"
       }
@@ -1626,7 +1627,8 @@
       "RU": {
         "word": "хвост",
         "topics": [
-          "животные"
+          "животные",
+          "путешествия"
         ]
       }
     }
@@ -1769,7 +1771,8 @@
       "EN": {
         "word": "wing",
         "topics": [
-          "animals"
+          "animals",
+          "travel"
         ],
         "level": "intermediate(B1)"
       }
@@ -1778,7 +1781,8 @@
       "RU": {
         "word": "крыло",
         "topics": [
-          "животные"
+          "животные",
+          "путешествия"
         ]
       }
     }
@@ -28601,6 +28605,440 @@
         "topics": [
           "путешествия"
         ]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "accommodation",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "размещение",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "arrival",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "прибытие",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "board",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "сесть",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "break",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "короткий отпуск",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "campfire",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "костер",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "campsite",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "стоянка",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "captain",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "капитан",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cottage",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "коттедж",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "currency",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "валюта",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "cyclist",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "велосипедист",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "departure",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "вылет",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "destination",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "пункт назначения",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "driverless",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "беспилотный",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "explore",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "исследовать",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "express",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "экспресс",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "ferry",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "переправа",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "helicopter",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "вертолет",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "hitchhiking",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "автостоп",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "hostel",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "хостел",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "reservation",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "бронирование",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "return",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "обратный путь",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "safari",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "сафари",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sail",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "парус",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sailor",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "матрос",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sand",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "песок",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "seaside",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "побережье",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "shuttle",
+      "topics": ["travel"],
+      "level": "advanced(C1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "трансфер",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sight",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "вид",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "sunbathe",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "загорать",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "tent",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "палатка",
+        "topics": ["путешествия"]
+      }
+    }
+  ],
+  [{
+    "EN": {
+      "word": "unpack",
+      "topics": ["travel"],
+      "level": "intermediate(B1)"
+    }
+  },
+    {
+      "RU": {
+        "word": "распаковывать",
+        "topics": ["путешествия"]
       }
     }
   ]
