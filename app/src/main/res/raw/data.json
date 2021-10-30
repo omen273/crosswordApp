@@ -14402,7 +14402,8 @@
       "EN": {
         "word": "floor",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "elementary(A2)"
       }
@@ -14411,7 +14412,8 @@
       "RU": {
         "word": "этаж",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -20984,7 +20986,8 @@
       "EN": {
         "word": "schedule",
         "topics": [
-          "education"
+          "education",
+          "travel"
         ],
         "level": "elementary(A2)"
       }
@@ -20993,7 +20996,8 @@
       "RU": {
         "word": "расписание",
         "topics": [
-          "образование"
+          "образование",
+          "путешествия"
         ]
       }
     }
@@ -27197,6 +27201,25 @@
   [
     {
       "EN": {
+        "word": "desk",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "стойка регистрации",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
         "word": "driver",
         "topics": [
           "travel"
@@ -27625,6 +27648,956 @@
     {
       "RU": {
         "word": "посетитель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "accident",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "авария",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "adventure",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "приключение",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "airline",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "авиакомпания",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "baggage",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "багаж",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "camp",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "разбить лагерь",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "camping",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поход",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "catch",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "успеть",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "change",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пересаживаться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "coach",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "вагон",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cycle",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипед",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "engine",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "двигатель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "gate",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выход на посадку",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "instructor",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "инструктор",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "international",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "международный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "foreign",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "иностранный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "guest",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "постоялец",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "guide",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "экскурсовод",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hiking",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пеший туризм",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "land",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "приземляться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "luggage",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "багаж",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "metro",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "метро",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "motorcycle",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "мотоцикл",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pack",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "упаковывать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "passenger",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пассажир",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "parking",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "парковка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "petrol",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бензин",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "platform",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "платформа",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pilot",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пилот",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "postcard",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "открытка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "railway",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "железная дорога",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "reception",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "стойка регистрации",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "route",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "маршрут",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sail",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "плыть",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "seat",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "место",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ship",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "корабль",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sightseeing",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "просмотр достопримечательностей",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "single",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "одноместный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "souvenir",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сувенир",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "subway",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "метро",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "suitcase",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "чемодан",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "timetable",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "расписание",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tour",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "тур",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tourism",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "туризм",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "track",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "путь",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "traveller",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "путешественник",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "twin",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "двуместный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "van",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "фургон",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "vehicle",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "автотранспорт",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "walking",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "ходьба",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "wheel",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "колесо",
         "topics": [
           "путешествия"
         ]
