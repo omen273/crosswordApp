@@ -7721,7 +7721,8 @@
       "EN": {
         "word": "listen",
         "topics": [
-          "music", "movies"
+          "music",
+          "movies"
         ],
         "level": "beginner(A1)"
       }
@@ -7730,7 +7731,8 @@
       "RU": {
         "word": "слушать",
         "topics": [
-          "музыка", "кино"
+          "музыка",
+          "кино"
         ]
       }
     }
@@ -11303,42 +11305,6 @@
   [
     {
       "EN": {
-        "word": "book",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "забронировать",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "airplane",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "самолет",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "train",
         "topics": [
           "travel"
@@ -11348,24 +11314,6 @@
     {
       "RU": {
         "word": "поезд",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "bus",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "автобус",
         "topics": [
           "путешествия"
         ]
@@ -11414,7 +11362,8 @@
         "word": "sea",
         "topics": [
           "travel"
-        ]
+        ],
+        "level": "beginner(A1)"
       }
     },
     {
@@ -11438,24 +11387,6 @@
     {
       "RU": {
         "word": "океан",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "hotel",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "отель",
         "topics": [
           "путешествия"
         ]
@@ -11492,60 +11423,6 @@
     {
       "RU": {
         "word": "таможня",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "station",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "станция",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "airport",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "аэрпорт",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "beach",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "пляж",
         "topics": [
           "путешествия"
         ]
@@ -13593,7 +13470,8 @@
       "EN": {
         "word": "apartment",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "beginner(A1)"
       }
@@ -13602,7 +13480,8 @@
       "RU": {
         "word": "квартира",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -15435,7 +15314,8 @@
       "EN": {
         "word": "room",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "beginner(A1)"
       }
@@ -15444,7 +15324,8 @@
       "RU": {
         "word": "комната",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -23831,7 +23712,8 @@
       "EN": {
         "word": "perform",
         "topics": [
-          "movies", "music"
+          "movies",
+          "music"
         ],
         "level": "elementary(A2)"
       }
@@ -23840,7 +23722,8 @@
       "RU": {
         "word": "исполнять",
         "topics": [
-          "кино", "музыка"
+          "кино",
+          "музыка"
         ]
       }
     }
@@ -27098,6 +26981,652 @@
         "word": "зритель",
         "topics": [
           "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "abroad",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "за границей",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "airplane",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "самолет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "airport",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "аэропорт",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "backpack",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "рюкзак",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "beach",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пляж",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bicycle",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипед",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bike",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипед",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "boat",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "лодка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "book",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бронировать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bus",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "автобус",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "car",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "автомобиль",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "driver",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "водитель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "flight",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "рейс",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hotel",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "journey",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "путешествие",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "park",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "парковаться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "passport",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "паспорт",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "plane",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "самолет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pool",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бассейн",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ride",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "ездить",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "road",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "дорога",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "station",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "станция",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "stop",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "остановка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "stay",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "останавливаться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "street",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "улица",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "taxi",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "такси",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ticket",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "билет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tourist",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "турист",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "traffic",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "движение на дорогах",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "train",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поезд",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "trip",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поездка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "turn",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поворачивать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "vacation",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отпуск",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "visitor",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "посетитель",
+        "topics": [
+          "путешествия"
         ]
       }
     }
