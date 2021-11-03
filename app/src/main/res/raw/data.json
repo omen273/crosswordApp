@@ -23977,25 +23977,6 @@
   [
     {
       "EN": {
-        "word": "preview",
-        "topics": [
-          "movies"
-        ],
-        "level": "upper-intermediate(B2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "предпоказ",
-        "topics": [
-          "кино"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "produce",
         "topics": [
           "movies"
@@ -27529,25 +27510,6 @@
     {
       "RU": {
         "word": "разбить лагерь",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "camping",
-        "topics": [
-          "travel"
-        ],
-        "level": "elementary(A2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "отдых в палатке",
         "topics": [
           "путешествия"
         ]
