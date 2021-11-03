@@ -21,4 +21,12 @@ class ConfigWriter {
                 endObject()
                 close()
             }
+
+    fun write(outputStream: OutputStream, blindPrinting: Boolean): Unit =
+        with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
+            beginObject()
+            name("move_cursor_to_solved_squares").value(blindPrinting)
+            endObject()
+            close()
+        }
 }

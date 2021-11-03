@@ -15,6 +15,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.RootMatchers
+import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.espresso.util.HumanReadables
 import androidx.test.espresso.util.TreeIterables
@@ -334,14 +335,15 @@ open class SolveCrossword : TestBaseClass() {
 
     protected lateinit var crossword: Crossword
 
-    fun solve() {
+    fun solve(printAllLetters: Boolean = false, actionChecking:Boolean = false) {
         onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
         val visited =
             Array(crossword.height) { Array(crossword.width) { false } }
         for (word in crossword.wordsAcross) {
             for ((j, cell) in word.cells.withIndex()) {
                 testCell(word, cell.chars)
-                visited[word.startRow][word.startColumn + j] = true
+                if(!printAllLetters)
+                    visited[word.startRow][word.startColumn + j] = true
             }
         }
         for (word in crossword.wordsDown) {
@@ -351,9 +353,15 @@ open class SolveCrossword : TestBaseClass() {
                 }
             }
         }
-        onView(withText(R.string.youve_solved_the_puzzle))
-            .inRoot(RootMatchers.isDialog())
-            .check(ViewAssertions.matches(isDisplayed()))
+        //it doesn't work sometimes for R.string.youve_solved_the_puzzle
+        //printAllLetter mode
+        if(actionChecking)
+            onView(withText(R.string.remove)).inRoot(RootMatchers.isDialog())
+                .perform(ViewActions.click())
+        else
+            onView(withText(R.string.youve_solved_the_puzzle))
+                .inRoot(RootMatchers.isDialog())
+                .check(ViewAssertions.matches(isDisplayed()))
     }
 }
 

@@ -48,4 +48,20 @@ class ConfigReader {
                 endObject()
                 level
             }
+
+    fun moveCursorToSolvedSquares(inputStream: InputStream): Boolean =
+        with(
+            JsonReader(
+                inputStream.bufferedReader
+                    (Charset.forName(MainActivity.DEFAULT_ENCODING))
+            )
+        ) {
+            beginObject()
+            val moveCursor = when (val tag = nextName()) {
+                "move_cursor_to_solved_squares" -> nextBoolean()
+                else -> throw RuntimeException("The wrong json tag: $tag")
+            }
+            endObject()
+            moveCursor
+        }
 }

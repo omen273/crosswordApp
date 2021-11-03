@@ -151,6 +151,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.viewR = window.decorView.rootView
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
+            cv.moveCursorToSolvedCell =
+                SettActivity.readPrintToFilledCellsFromConfig(filesDir, resources)
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if(state != null)
