@@ -1617,7 +1617,8 @@
       "EN": {
         "word": "tail",
         "topics": [
-          "animals"
+          "animals",
+          "travel"
         ],
         "level": "intermediate(B1)"
       }
@@ -1626,7 +1627,8 @@
       "RU": {
         "word": "хвост",
         "topics": [
-          "животные"
+          "животные",
+          "путешествия"
         ]
       }
     }
@@ -1769,7 +1771,8 @@
       "EN": {
         "word": "wing",
         "topics": [
-          "animals"
+          "animals",
+          "travel"
         ],
         "level": "intermediate(B1)"
       }
@@ -1778,7 +1781,8 @@
       "RU": {
         "word": "крыло",
         "topics": [
-          "животные"
+          "животные",
+          "путешествия"
         ]
       }
     }
@@ -6669,7 +6673,8 @@
       "EN": {
         "word": "musical",
         "topics": [
-          "music"
+          "music",
+          "movies"
         ],
         "level": "elementary(A2)"
       }
@@ -6678,7 +6683,8 @@
       "RU": {
         "word": "мюзикл",
         "topics": [
-          "музыка"
+          "музыка",
+          "кино"
         ]
       }
     }
@@ -6810,25 +6816,6 @@
     {
       "RU": {
         "word": "ударник",
-        "topics": [
-          "музыка"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "perform",
-        "topics": [
-          "music"
-        ],
-        "level": "elementary(A2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "выступать",
         "topics": [
           "музыка"
         ]
@@ -7642,7 +7629,8 @@
         "word": "producer",
         "topics": [
           "music",
-          "movies"
+          "movies",
+          "work"
         ],
         "level": "intermediate(B1)"
       }
@@ -7652,7 +7640,8 @@
         "word": "продюсер",
         "topics": [
           "музыка",
-          "кино"
+          "кино",
+          "работа"
         ]
       }
     }
@@ -7736,7 +7725,8 @@
       "EN": {
         "word": "listen",
         "topics": [
-          "music"
+          "music",
+          "movies"
         ],
         "level": "beginner(A1)"
       }
@@ -7745,7 +7735,8 @@
       "RU": {
         "word": "слушать",
         "topics": [
-          "музыка"
+          "музыка",
+          "кино"
         ]
       }
     }
@@ -11282,132 +11273,6 @@
   [
     {
       "EN": {
-        "word": "vacation",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "отпуск",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "accommodation",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "проживание",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "book",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "забронировать",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "airplane",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "самолет",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "train",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "поезд",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "bus",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "автобус",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "ship",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "корабль",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "mountain",
         "topics": [
           "travel"
@@ -11429,7 +11294,8 @@
         "word": "sea",
         "topics": [
           "travel"
-        ]
+        ],
+        "level": "beginner(A1)"
       }
     },
     {
@@ -11453,24 +11319,6 @@
     {
       "RU": {
         "word": "океан",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "hotel",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "отель",
         "topics": [
           "путешествия"
         ]
@@ -11507,60 +11355,6 @@
     {
       "RU": {
         "word": "таможня",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "station",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "станция",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "airport",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "аэрпорт",
-        "topics": [
-          "путешествия"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "beach",
-        "topics": [
-          "travel"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "пляж",
         "topics": [
           "путешествия"
         ]
@@ -13423,24 +13217,6 @@
   [
     {
       "EN": {
-        "word": "application",
-        "topics": [
-          "work"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "заявка",
-        "topics": [
-          "работа"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "trainee",
         "topics": [
           "work"
@@ -13626,7 +13402,8 @@
       "EN": {
         "word": "apartment",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "beginner(A1)"
       }
@@ -13635,7 +13412,8 @@
       "RU": {
         "word": "квартира",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -14139,16 +13917,18 @@
       "EN": {
         "word": "cottage",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "intermediate(B1)"
       }
     },
     {
       "RU": {
-        "word": "коттедж",
+        "word": "деревенский дом",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -14556,7 +14336,8 @@
       "EN": {
         "word": "floor",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "elementary(A2)"
       }
@@ -14565,7 +14346,8 @@
       "RU": {
         "word": "этаж",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -15468,7 +15250,8 @@
       "EN": {
         "word": "room",
         "topics": [
-          "home"
+          "home",
+          "travel"
         ],
         "level": "beginner(A1)"
       }
@@ -15477,7 +15260,8 @@
       "RU": {
         "word": "комната",
         "topics": [
-          "дом"
+          "дом",
+          "путешествия"
         ]
       }
     }
@@ -16134,24 +15918,6 @@
   [
     {
       "EN": {
-        "word": "graduate",
-        "topics": [
-          "education"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "выпускник",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "curriculum",
         "topics": [
           "education"
@@ -16161,24 +15927,6 @@
     {
       "RU": {
         "word": "расписание",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "qualification",
-        "topics": [
-          "education"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "квалификация",
         "topics": [
           "образование"
         ]
@@ -16660,63 +16408,6 @@
   [
     {
       "EN": {
-        "word": "graduation",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "выпуск",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "lecturer",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "лектор",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "mark",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "оценка",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
         "word": "register",
         "topics": [
           "education"
@@ -16767,25 +16458,6 @@
         "word": "вычитание",
         "topics": [
           "наука и техника"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "term",
-        "topics": [
-          "education"
-        ],
-        "level": "advanced(C1)"
-      }
-    },
-    {
-      "RU": {
-        "word": "четверть",
-        "topics": [
-          "образование"
         ]
       }
     }
@@ -17438,7 +17110,8 @@
         "word": "petrol",
         "topics": [
           "physics and chemistry",
-          "science and technology"
+          "science and technology",
+          "travel"
         ],
         "level": "elementary(A2)"
       }
@@ -17448,7 +17121,8 @@
         "word": "бензин",
         "topics": [
           "физика и химия",
-          "наука и техника"
+          "наука и техника",
+          "путешествия"
         ]
       }
     }
@@ -17965,7 +17639,8 @@
         "word": "digital",
         "topics": [
           "computers",
-          "science and technology"
+          "science and technology",
+          "movies"
         ],
         "level": "elementary(A2)"
       }
@@ -17975,7 +17650,8 @@
         "word": "цифровой",
         "topics": [
           "электроника",
-          "наука и техника"
+          "наука и техника",
+          "кино"
         ]
       }
     }
@@ -18175,7 +17851,8 @@
         "word": "screen",
         "topics": [
           "computers",
-          "science and technology"
+          "science and technology",
+          "movies"
         ],
         "level": "elementary(A2)"
       }
@@ -18185,7 +17862,8 @@
         "word": "экран",
         "topics": [
           "электроника",
-          "наука и техника"
+          "наука и техника",
+          "кино"
         ]
       }
     }
@@ -18939,7 +18617,8 @@
         "word": "sand",
         "topics": [
           "physics and chemistry",
-          "science and technology"
+          "science and technology",
+          "travel"
         ],
         "level": "intermediate(B1)"
       }
@@ -18949,7 +18628,8 @@
         "word": "песок",
         "topics": [
           "физика и химия",
-          "наука и техника"
+          "наука и техника",
+          "путешествия"
         ]
       }
     }
@@ -21244,7 +20924,8 @@
       "EN": {
         "word": "schedule",
         "topics": [
-          "education"
+          "education",
+          "travel"
         ],
         "level": "elementary(A2)"
       }
@@ -21253,7 +20934,8 @@
       "RU": {
         "word": "расписание",
         "topics": [
-          "образование"
+          "образование",
+          "путешествия"
         ]
       }
     }
@@ -21271,25 +20953,6 @@
     {
       "RU": {
         "word": "задание",
-        "topics": [
-          "образование"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "timetable",
-        "topics": [
-          "education"
-        ],
-        "level": "elementary(A2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "расписание",
         "topics": [
           "образование"
         ]
@@ -23837,7 +23500,8 @@
       "EN": {
         "word": "director",
         "topics": [
-          "movies"
+          "movies",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -23846,7 +23510,8 @@
       "RU": {
         "word": "режиссер",
         "topics": [
-          "кино"
+          "кино",
+          "работа"
         ]
       }
     }
@@ -23970,7 +23635,8 @@
       "EN": {
         "word": "perform",
         "topics": [
-          "movies"
+          "movies",
+          "music"
         ],
         "level": "elementary(A2)"
       }
@@ -23978,6 +23644,45 @@
     {
       "RU": {
         "word": "исполнять",
+        "topics": [
+          "кино",
+          "музыка"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "record",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "записывать",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "recording",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "запись",
         "topics": [
           "кино"
         ]
@@ -24025,7 +23730,7 @@
   [
     {
       "EN": {
-        "word": "screen",
+        "word": "schedule",
         "topics": [
           "movies"
         ],
@@ -24034,26 +23739,7 @@
     },
     {
       "RU": {
-        "word": "экран",
-        "topics": [
-          "кино"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "starring",
-        "topics": [
-          "movies"
-        ],
-        "level": "elementary(A2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "главные роли",
+        "word": "программа",
         "topics": [
           "кино"
         ]
@@ -24282,25 +23968,6 @@
     {
       "RU": {
         "word": "шедевр",
-        "topics": [
-          "кино"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "preview",
-        "topics": [
-          "movies"
-        ],
-        "level": "upper-intermediate(B2)"
-      }
-    },
-    {
-      "RU": {
-        "word": "предпросмотр",
         "topics": [
           "кино"
         ]
@@ -25849,6 +25516,3334 @@
         "word": "испытание",
         "topics": [
           "наука и техника"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "academic",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "академический",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "application",
+        "topics": [
+          "education",
+          "work"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "заявление",
+        "topics": [
+          "образование",
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "assignment",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "задание",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bell",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "звонок",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "campus",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "кампус",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "canteen",
+        "topics": [
+          "education",
+          "cooking and eating"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "столовая",
+        "topics": [
+          "образование",
+          "приготовление и употребление еды"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "classwork",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "классная работа",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "coach",
+        "topics": [
+          "education",
+          "sports"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "тренировать",
+        "topics": [
+          "образование",
+          "спорт"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "diploma",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "диплом",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "doctor",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "доктор",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "educational",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "образовательный",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "engineering",
+        "topics": [
+          "education",
+          "engineering"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "инженерия",
+        "topics": [
+          "образование",
+          "инженерия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "exchange",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "учеба по обмену",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "grad",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выпускник",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "grade",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "оценка",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "graduate",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выпускник",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "graduation",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выпуск",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "gymnastics",
+        "topics": [
+          "education",
+          "sports"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "гимнастика",
+        "topics": [
+          "образование",
+          "спорт"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "laboratory",
+        "topics": [
+          "education",
+          "science and technology"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "лаборатория",
+        "topics": [
+          "образование",
+          "наука и техника"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "law",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "юриспруденция",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "lecturer",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "лектор",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "mark",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "оценка",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "memorize",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "запоминать",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pass",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сдать",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pe",
+        "topics": [
+          "education",
+          "sports"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "физкультура",
+        "topics": [
+          "образование",
+          "спорт"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "playground",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "игровая площадка",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "politics",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "политология",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "president",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "председатель",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "primary",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "начальный",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "program",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "программа",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "qualification",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "квалификация",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "revise",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пересматривать",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "semester",
+        "topics": [
+          "education",
+          "time"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "семестр",
+        "topics": [
+          "образование",
+          "время"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "term",
+        "topics": [
+          "education",
+          "time"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "триместр",
+        "topics": [
+          "образование",
+          "время"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "whiteboard",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "доска",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "written",
+        "topics": [
+          "education"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "письменный",
+        "topics": [
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "act",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "играть",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "advertise",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "рекламировать",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "advertisement",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реклама",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "celebrity",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "знаменитость",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "scriptwriter",
+        "topics": [
+          "movies"
+        ],
+        "level": "upper-intermediate(B2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сценарист",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "subtitle",
+        "topics": [
+          "movies"
+        ],
+        "level": "upper-intermediate(B2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "субтитры",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ad",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реклама",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "agent",
+        "topics": [
+          "movies",
+          "work"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "представитель",
+        "topics": [
+          "кино",
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cameraman",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "оператор",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "channel",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "канал",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "commercial",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реклама",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "costume",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "костюмы",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "curtain",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "занавес",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "direct",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "режиссировать",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "episode",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "эпизод",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "line",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "реплика",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "location",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "локация",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "part",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "роль",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "preview",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "анонс",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "repeat",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "повтор",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "scenery",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "декорации",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "script",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сценарий",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "series",
+        "topics": [
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сериал",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "stage",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сцена",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "story",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "история",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "studio",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "студия",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "superhero",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "супергерой",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "viewer",
+        "topics": [
+          "movies"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "зритель",
+        "topics": [
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "abroad",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "за границей",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "airplane",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "самолет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "airport",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "аэропорт",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "backpack",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "рюкзак",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "beach",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пляж",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bicycle",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипед",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bike",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипед",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "boat",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "лодка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "book",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бронировать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "bus",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "автобус",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "car",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "автомобиль",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "desk",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "стойка регистрации",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "driver",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "водитель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "flight",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "рейс",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hotel",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "journey",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "путешествие",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "park",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "парковаться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "passport",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "паспорт",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "plane",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "самолет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pool",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бассейн",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ride",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "ездить",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "road",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "дорога",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "station",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "станция",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "stop",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "остановка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "stay",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "останавливаться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "street",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "улица",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "taxi",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "такси",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ticket",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "билет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tourist",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "турист",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "traffic",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "дорожный трафик",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "train",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поезд",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "trip",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поездка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "turn",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "поворачивать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "vacation",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отпуск",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "visitor",
+        "topics": [
+          "travel"
+        ],
+        "level": "beginner(A1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "посетитель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "accident",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "авария",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "adventure",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "приключение",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "airline",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "авиакомпания",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "baggage",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "багаж",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "camp",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "разбить лагерь",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "catch",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "успеть",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "change",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пересаживаться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cycle",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипед",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "engine",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "двигатель",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "gate",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "выход на посадку",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "instructor",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "инструктор",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "international",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "международный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "foreign",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "иностранный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "guest",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "гость",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "guide",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "гид",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hiking",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пеший туризм",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "land",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "приземляться",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "luggage",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "багаж",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "metro",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "метро",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "motorcycle",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "мотоцикл",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pack",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "упаковывать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "passenger",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пассажир",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "parking",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "парковка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "platform",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "платформа",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pilot",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пилот",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "postcard",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "открытка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "railway",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "железная дорога",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "reception",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "стойка регистрации",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "route",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "маршрут",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sail",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "плыть",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "seat",
+        "topics": [
+          "travel",
+          "movies"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "место",
+        "topics": [
+          "путешествия",
+          "кино"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ship",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "корабль",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sightseeing",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "просмотр достопримечательностей",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "single",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "одноместный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "souvenir",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сувенир",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "subway",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "метро",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "suitcase",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "чемодан",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tour",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "тур",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tourism",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "туризм",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "track",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "железнодорожный путь",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "traveler",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "путешественник",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "twin",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "двухместный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "van",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "фургон",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "vehicle",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "транспортное средство",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "walking",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "ходьба",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "wheel",
+        "topics": [
+          "travel"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "колесо",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "accommodation",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "размещение",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "arrival",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "прибытие",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "board",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сесть",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "break",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "короткий отпуск",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "campfire",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "костер",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "campsite",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "стоянка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "captain",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "капитан",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "currency",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "валюта",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cyclist",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "велосипедист",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "departure",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отправление",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "destination",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "пункт назначения",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "driverless",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "беспилотный",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "explore",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "исследовать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "express",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "экспресс",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "ferry",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "паром",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "helicopter",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "вертолет",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hitchhiking",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "автостоп",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hostel",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "хостел",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "reservation",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бронирование",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "return",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "обратный путь",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "safari",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сафари",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sail",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "парус",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sailor",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "матрос",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "seaside",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "побережье",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "shuttle",
+        "topics": [
+          "travel"
+        ],
+        "level": "advanced(C1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "трансфер",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sight",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "вид",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sunbathe",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "загорать",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "tent",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "палатка",
+        "topics": [
+          "путешествия"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "unpack",
+        "topics": [
+          "travel"
+        ],
+        "level": "intermediate(B1)"
+      }
+    },
+    {
+      "RU": {
+        "word": "распаковывать",
+        "topics": [
+          "путешествия"
         ]
       }
     }
