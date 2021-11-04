@@ -9,6 +9,7 @@ import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.filters.SdkSuppress
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -17,6 +18,7 @@ import java.io.File
 import java.io.FileOutputStream
 
 @RunWith(AndroidJUnit4::class)
+@SdkSuppress(maxSdkVersion = 29)
 class BadImageReadingInstrumentedTest {
 
     @Rule
