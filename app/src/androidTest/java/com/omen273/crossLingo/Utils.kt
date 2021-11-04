@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
-import android.widget.ListView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.*
@@ -372,7 +371,7 @@ abstract class BadCrosswordDataTest : TestBaseClass() {
         onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
         onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
         ToastMatcher.onToast(R.string.damaged_data).check(
-                ViewAssertions.matches(isDisplayed())
+            ViewAssertions.matches(isDisplayed())
         )
     }
 }
