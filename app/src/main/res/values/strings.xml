@@ -29,5 +29,5 @@
     <string name ="settings">settings</string>
     <string name ="choose_level_dialog_text">Select your level, please. You can change it later
         in settings.</string>
-    <string name="move_cursor_to_solved_squares_text">move cursor to solved squares</string>
+    <string name ="move_selection_to_solved_squares">move selection to solved squares</string>
 </resources>

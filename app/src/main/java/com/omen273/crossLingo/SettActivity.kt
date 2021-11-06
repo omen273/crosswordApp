@@ -17,22 +17,27 @@ class SettActivity : AppCompatActivity() {
         setSupportActionBar(sett_toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        sett_toolbar.setNavigationOnClickListener{
+        sett_toolbar.setNavigationOnClickListener {
             onBackPressed()
         }
 
-        level_list.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+        level_list.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
 
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
                 openFileOutput(ChooseTopicsActivity.LEVEL_NAME, MODE_PRIVATE).use {
                     ConfigWriter().write(it, parent?.selectedItem.toString())
                 }
             }
         }
 
-        move_cursor_to_filled_cell.setOnCheckedChangeListener { _, p1 ->
+        move_selection_to_solved_squares.setOnCheckedChangeListener { _, p1 ->
             openFileOutput(MOVE_TO_FILLED_CELLS_FILE, MODE_PRIVATE).use {
                 ConfigWriter().write(it, p1)
             }
@@ -44,16 +49,23 @@ class SettActivity : AppCompatActivity() {
             val index = levels.indexOf(currentLevel)
             level_list.setSelection(index)
         }
-        move_cursor_to_filled_cell.isChecked = readPrintToFilledCellsFromConfig(filesDir, resources)
+        move_selection_to_solved_squares.isChecked =
+            readMoveSelectionToSolvedSquares(filesDir, resources)
     }
 
     companion object {
-        private const val MOVE_TO_FILLED_CELLS_FILE:String = "move_cursor_to_solved_squares.json"
-        fun readPrintToFilledCellsFromConfig(path: File, resources: Resources): Boolean = with(File(path,
-            MOVE_TO_FILLED_CELLS_FILE
-        )) {
+        private const val MOVE_TO_FILLED_CELLS_FILE: String =
+            "move_selection_to_solved_squares.json"
+
+        fun readMoveSelectionToSolvedSquares(path: File, resources: Resources): Boolean = with(
+            File(
+                path,
+                MOVE_TO_FILLED_CELLS_FILE
+            )
+        ) {
             if (exists()) FileInputStream(this).use { ConfigReader().moveCursorToSolvedSquares(it) }
-            else resources.openRawResource(R.raw.move_cursor_to_solved_squares).use { ConfigReader().moveCursorToSolvedSquares(it) }
-            }
+            else resources.openRawResource(R.raw.move_selection_to_solved_squares)
+                .use { ConfigReader().moveCursorToSolvedSquares(it) }
+        }
     }
 }
