@@ -23,5 +23,5 @@
     <string name ="settings">настройки</string>
     <string name ="choose_level_dialog_text">Пожалуйста, выберите ваш уровень.
         Его можно будет изменить в настройках.</string>
-    <string name="move_selection_to_solved_squares_text">печатать в решенные клетки</string>
+    <string name="move_selection_to_solved_squares">печатать в решенные клетки</string>
 </resources>
