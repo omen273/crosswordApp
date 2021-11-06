@@ -50,7 +50,7 @@ import kotlin.collections.ArrayList
 
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
-    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
+    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener, CrosswordView.OnPrintLetterListener {
 
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
@@ -153,6 +153,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val fillName = name + STATE_SUFFIX
             cv.moveCursorToSolvedCell =
                 SettActivity.readPrintToFilledCellsFromConfig(filesDir, resources)
+            activateOnMoveCursorToSolvedCellsMode = cv.moveCursorToSolvedCell
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if(state != null)
@@ -169,10 +170,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.onLongPressListener = this
             cv.onStateChangeListener = this
             cv.onSelectionChangeListener = this
+            cv.onPrintLetterListener = this
             cv.inputValidator = { ch -> !ch.first().isISOControl() }
             cv.undoMode = CrosswordView.UNDO_SMART
             cv.markerDisplayMode = CrosswordView.MARKER_CUSTOM or CrosswordView.MARKER_SOLVED
-            onSelectionChanged(cv, cv.selectedWord, cv.selectedCell)
+            onSelectionChanged(cv,  cv.selectedWord, cv.selectedCell)
         }
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog()
     }
@@ -361,12 +363,81 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordUnsolved(view: CrosswordView) {}
 
-    override fun onSelectionChanged(view: CrosswordView, word: Crossword.Word?, position: Int) {
+    private var hits = 0
+    private var activateOnMoveCursorToSolvedCellsMode = false
+
+    @kotlin.ExperimentalStdlibApi
+    private fun detectMoveCursorToSolvedCellsMode(selection: CrosswordView.Selectable?,
+                                                  puzzleCells: Array<Array<CrosswordView.Cell?>>,
+                                                  ch: Char,
+                                                  position: Int)
+    {
+        Log.d("TRT1", "position: $position")
+        Log.d("TRT1", "letter: ${ch.uppercaseChar()}")
+        val startRow = selection?.word?.startRow
+        val startColumn = selection?.word?.startColumn
+        val row = selection?.row
+        val column = selection?.column
+        var solved = 0
+        if(startRow != null && startColumn != null && row != null && column != null) {
+            when (selection.word.direction) {
+                Crossword.Word.DIR_ACROSS -> {
+                    for( i in column - 1 downTo startColumn)
+                        if ( puzzleCells[row][i]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                            ++solved
+                }
+                Crossword.Word.DIR_DOWN -> {
+                    for( i in row - 1 downTo startRow)
+                        if ( puzzleCells[i][column]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                            ++solved
+                }
+            }
+        }
+
+        if (selection != null) {
+            Log.d("TRT1", "targetChar: ${selection.word.cells[position - solved].chars[0]}")
+        }
+        if (selection != null) {
+            if(solved > 0 && ch.uppercaseChar() ==
+                selection.word.cells[position - solved].chars[0] &&
+                ch.uppercaseChar() != selection.word.cells[position].chars[0]
+            )
+                ++hits
+        }
+
+        Log.d("TRT1", "hits: $hits")
+        val MAX_HITS_NUMBER = 3
+        if(hits >= MAX_HITS_NUMBER && !activateOnMoveCursorToSolvedCellsMode)
+        {
+            Log.d("TRT1", "activate")
+            val builder = AlertDialog.Builder(this).setMessage("Do you want to use another mode?")
+                .setPositiveButton(R.string.yes) { _, _ ->
+                    SettActivity.writePrintToFilledCellsToConfig(this, true)
+                    crosswordView.moveCursorToSolvedCell = true}
+                .setNegativeButton(R.string.no) { _, _ ->
+                }.create()
+            builder.setCancelable(false)
+            builder.show()
+            activateOnMoveCursorToSolvedCellsMode = true
+        }
+    }
+
+    override fun onSelectionChanged(view: CrosswordView, word: Crossword.Word?,
+                                    position: Int) {
         hint.text = when (word?.direction) {
             Crossword.Word.DIR_ACROSS -> getString(R.string.tip, word.number, word.hint)
             Crossword.Word.DIR_DOWN -> getString(R.string.tip, word.number, word.hint)
             else -> ""
         }
+    }
+
+    @ExperimentalStdlibApi
+    override fun onPrintLetter(selection: CrosswordView.Selectable?,
+                               puzzleCells: Array<Array<CrosswordView.Cell?>>,
+                               ch: Char,
+                               position: Int)
+    {
+        detectMoveCursorToSolvedCellsMode(selection, puzzleCells, ch, position)
     }
 
     override fun onBackPressed() {

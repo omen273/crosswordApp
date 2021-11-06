@@ -1,5 +1,6 @@
 package com.omen273.crossLingo
 
+import android.content.Context
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_sett.*
 import kotlinx.android.synthetic.main.toolbar_sett.*
 import java.io.File
 import java.io.FileInputStream
+import java.io.FileOutputStream
 
 class SettActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,9 +35,7 @@ class SettActivity : AppCompatActivity() {
         }
 
         move_cursor_to_filled_cell.setOnCheckedChangeListener { _, p1 ->
-            openFileOutput(MOVE_TO_FILLED_CELLS_FILE, MODE_PRIVATE).use {
-                ConfigWriter().write(it, p1)
-            }
+            writePrintToFilledCellsToConfig(this, p1)
         }
 
         val currentLevel = ChooseTopicsActivity.readLevelFromConfig(filesDir, resources)
@@ -48,12 +48,22 @@ class SettActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val MOVE_TO_FILLED_CELLS_FILE:String = "move_cursor_to_solved_squares.json"
-        fun readPrintToFilledCellsFromConfig(path: File, resources: Resources): Boolean = with(File(path,
-            MOVE_TO_FILLED_CELLS_FILE
-        )) {
+        private const val MOVE_TO_FILLED_CELLS_FILE: String = "move_cursor_to_solved_squares.json"
+        fun readPrintToFilledCellsFromConfig(path: File, resources: Resources): Boolean = with(
+            File(
+                path,
+                MOVE_TO_FILLED_CELLS_FILE
+            )
+        ) {
             if (exists()) FileInputStream(this).use { ConfigReader().moveCursorToSolvedSquares(it) }
-            else resources.openRawResource(R.raw.move_cursor_to_solved_squares).use { ConfigReader().moveCursorToSolvedSquares(it) }
+            else resources.openRawResource(R.raw.move_cursor_to_solved_squares)
+                .use { ConfigReader().moveCursorToSolvedSquares(it) }
+        }
+
+        fun writePrintToFilledCellsToConfig(context: Context, flag: Boolean) {
+            context.openFileOutput(MOVE_TO_FILLED_CELLS_FILE, MODE_PRIVATE).use {
+                ConfigWriter().write(it, flag)
             }
+        }
     }
 }
