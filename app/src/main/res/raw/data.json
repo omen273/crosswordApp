@@ -5383,7 +5383,8 @@
         "word": "manager",
         "topics": [
           "sports"
-        ]
+        ],
+        "level": "intermediate(B1)"
       }
     },
     {
@@ -6694,7 +6695,8 @@
       "EN": {
         "word": "musician",
         "topics": [
-          "music"
+          "music",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -6703,7 +6705,8 @@
       "RU": {
         "word": "музыкант",
         "topics": [
-          "музыка"
+          "музыка",
+          "работа"
         ]
       }
     }
@@ -8166,7 +8169,8 @@
       "EN": {
         "word": "chef",
         "topics": [
-          "cooking and eating"
+          "cooking and eating",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -8175,7 +8179,8 @@
       "RU": {
         "word": "шеф-повар",
         "topics": [
-          "приготовление и употребление еды"
+          "приготовление и употребление еды",
+          "работа"
         ]
       }
     }
@@ -8336,6 +8341,27 @@
         "word": "готовить",
         "topics": [
           "приготовление и употребление еды"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cook",
+        "topics": [
+          "cooking and eating",
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "повар",
+        "topics": [
+          "приготовление и употребление еды",
+          "работа"
         ]
       }
     }
@@ -13100,42 +13126,6 @@
     {
       "RU": {
         "word": "человек, ездящий на работу",
-        "topics": [
-          "работа"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "employee",
-        "topics": [
-          "work"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "сотрудник",
-        "topics": [
-          "работа"
-        ]
-      }
-    }
-  ],
-  [
-    {
-      "EN": {
-        "word": "employer",
-        "topics": [
-          "work"
-        ]
-      }
-    },
-    {
-      "RU": {
-        "word": "работодатель",
         "topics": [
           "работа"
         ]
@@ -19110,16 +19100,18 @@
       "EN": {
         "word": "attend",
         "topics": [
-          "education"
+          "education",
+          "work"
         ],
         "level": "elementary(A2)"
       }
     },
     {
       "RU": {
-        "word": "присутствовать",
+        "word": "посещать",
         "topics": [
-          "образование"
+          "образование",
+          "работа"
         ]
       }
     }
@@ -19452,7 +19444,8 @@
       "EN": {
         "word": "designer",
         "topics": [
-          "dress"
+          "dress",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -19461,7 +19454,8 @@
       "RU": {
         "word": "дизайнер",
         "topics": [
-          "одежда и обувь"
+          "одежда и обувь",
+          "работа"
         ]
       }
     }
@@ -20891,7 +20885,8 @@
       "EN": {
         "word": "task",
         "topics": [
-          "education"
+          "education",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -20900,7 +20895,8 @@
       "RU": {
         "word": "задание",
         "topics": [
-          "образование"
+          "образование",
+          "работа"
         ]
       }
     }
@@ -27562,7 +27558,8 @@
       "EN": {
         "word": "instructor",
         "topics": [
-          "travel"
+          "travel",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -27571,7 +27568,8 @@
       "RU": {
         "word": "инструктор",
         "topics": [
-          "путешествия"
+          "путешествия",
+          "работа"
         ]
       }
     }
@@ -27828,7 +27826,8 @@
       "EN": {
         "word": "pilot",
         "topics": [
-          "travel"
+          "travel",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -27837,7 +27836,8 @@
       "RU": {
         "word": "пилот",
         "topics": [
-          "путешествия"
+          "путешествия",
+          "работа"
         ]
       }
     }
@@ -28096,7 +28096,8 @@
       "EN": {
         "word": "tourism",
         "topics": [
-          "travel"
+          "travel",
+          "work"
         ],
         "level": "elementary(A2)"
       }
@@ -28105,7 +28106,8 @@
       "RU": {
         "word": "туризм",
         "topics": [
-          "путешествия"
+          "путешествия",
+          "работа"
         ]
       }
     }
@@ -29379,6 +29381,1038 @@
         "word": "писатель",
         "topics": [
           "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "accept",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "принять, согласиться",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "achieve",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "достигнуть",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "apply",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "подать заявку",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "assistant",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "ассистент",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "boss",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "начальник",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "builder",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "строитель",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "businessman",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "бизнесмен",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "cleaner",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "уборщик",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "colleague",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "коллега",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "creative",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "творческий",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "department",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отдел",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "dentist",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "стоматолог",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "detective",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "детектив",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "director",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "директор",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "earn",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "зарабатывать",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "employ",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "трудоустраивать",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "employee",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сотрудник",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "employer",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "работодатель",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "experience",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "опыт",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "factory",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "фабрика",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "hairdresser",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "парикмахер",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "head",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "глава",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "increase",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "увеличивать",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "industry",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "индустрия",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "interviewer",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "собеседующий",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "journalist",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "журналист",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "lawyer",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "юрист",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "leader",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "руководитель",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "manage",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "управлять",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "manager",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "менеджер",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "medical",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "медицинский",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "model",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "модель",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "network",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сеть контактов",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "off",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "отгул",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "offer",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "предложение о работе",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "officer",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "чиновник",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "painter",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "маляр",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "pay",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "зарплата",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "physical",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "физическая (работа)",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "professor",
+        "topics": [
+          "work",
+          "education"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "профессор",
+        "topics": [
+          "работа",
+          "образование"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "receptionist",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "секретарь приемной",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "researcher",
+        "topics": [
+          "work",
+          "science and technology"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "исследователь",
+        "topics": [
+          "работа",
+          "наука и техника"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "question",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "спрашивать (на собеседовании)",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "reduce",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "снижать",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "rise",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "повышать",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "salary",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "зарплата",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "save",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "сохранять",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "schedule",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "график",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "sales",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "продажи",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "secretary",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "секретарь",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "service",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "услуги",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "soldier",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "солдат",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "target",
+        "topics": [
+          "work"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "цель",
+        "topics": [
+          "работа"
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "EN": {
+        "word": "train",
+        "topics": [
+          "work",
+          "education"
+        ],
+        "level": "elementary(A2)"
+      }
+    },
+    {
+      "RU": {
+        "word": "тренировать",
+        "topics": [
+          "работа",
+          "образование"
         ]
       }
     }
