@@ -57,7 +57,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private var delete = false
     private var onBackPressedCallBefore = false
 
-    @ExperimentalUnsignedTypes
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
@@ -118,7 +117,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                             if (word.isHorizontal) Crossword.Word.DIR_ACROSS
                                             else Crossword.Word.DIR_DOWN
                                         hint =
-                                            wordsMap[word.word.toLowerCase(Locale.ROOT)].toString()
+                                            wordsMap[word.word.lowercase(Locale.ROOT)].toString()
                                         number =
                                             if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
                                             else n++
@@ -214,7 +213,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         return res
     }
 
-    @ExperimentalUnsignedTypes
     private fun generateName(title: String): String {
         val last = fileList().filter { it.startsWith(title) }
             .filter { !it.endsWith(STATE_SUFFIX) }
@@ -245,7 +243,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
-    @ExperimentalUnsignedTypes
     override fun onPause() {
         writeConfig()
         if (!onBackPressedCallBefore) saveData()
