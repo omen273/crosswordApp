@@ -57,20 +57,20 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private var delete = false
     private var onBackPressedCallBefore = false
 
-    @ExperimentalUnsignedTypes
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
         crosswordView = findViewById(R.id.crossword)
         setSupportActionBar(game_toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        game_toolbar.setNavigationOnClickListener{
+        game_toolbar.setNavigationOnClickListener {
             onBackPressed()
         }
         star_number.text = readStarNumberFromConfig(filesDir, resources).toString()
         val isGenerated =
             intent.getBooleanExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, false)
-        val crossword = when (val restoredCrossword = savedInstanceState?.getParcelable("crossword") as Crossword?) {
+        val crossword = when (val restoredCrossword =
+            savedInstanceState?.getParcelable("crossword") as Crossword?) {
             null -> {
                 name = intent.getStringExtra(MainActivity.CROSSWORD_NAME_VARIABLE).toString()
                 if (isGenerated) {
@@ -117,7 +117,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                             if (word.isHorizontal) Crossword.Word.DIR_ACROSS
                                             else Crossword.Word.DIR_DOWN
                                         hint =
-                                            wordsMap[word.word.toLowerCase(Locale.ROOT)].toString()
+                                            wordsMap[word.word.lowercase(Locale.ROOT)].toString()
                                         number =
                                             if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
                                             else n++
@@ -133,7 +133,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 } else readCrossword()
             }
             else -> {
-                if(delete) onBackPressed()
+                if (delete) onBackPressed()
                 name = savedInstanceState?.getCharSequence("name") as String
                 delete = savedInstanceState.getBoolean("delete")
                 restoredCrossword
@@ -144,19 +144,20 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val tv = TypedValue()
             var actionBarHeight = 0
             if (theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
-                actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
+                actionBarHeight =
+                    TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
             }
             cv.toolbarHeight = actionBarHeight
             cv.hintView = hint
             cv.viewR = window.decorView.rootView
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
-            cv.moveCursorToSolvedCell =
-                SettActivity.readPrintToFilledCellsFromConfig(filesDir, resources)
-            activateOnMoveCursorToSolvedCellsMode = cv.moveCursorToSolvedCell
+            cv.moveSelectionToSolvedSquares =
+                SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
+            activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
-            if(state != null)
+            if (state != null)
                 crosswordView.restoreState(state)
             else {
                 if (!isGenerated) try {
@@ -180,10 +181,15 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
-        buildCrossword { try{UClickJsonFormatter().read(this, it)} catch (e: Exception) {
-            Log.e("ERROR", "The bad crossword data")
-            setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
-            finish()} }
+        buildCrossword {
+            try {
+                UClickJsonFormatter().read(this, it)
+            } catch (e: Exception) {
+                Log.e("ERROR", "The bad crossword data")
+                setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
+                finish()
+            }
+        }
     }
 
     private fun readState(fillName: String): CrosswordState = openFileInput(fillName).use {
@@ -200,16 +206,15 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         while (res == null && i < maxAttemptCount) {
             val stepAdding = 0.6 * maxTime * i
             res = CrosswordBuilderWrapper().getCrossword(
-                    ArrayList(inp.keys),
-                    ChooseTopicsActivity.CROSSWORD_SIZE, ChooseTopicsActivity.MAX_SIDE,
-                    maxTime + stepAdding.toInt()
+                ArrayList(inp.keys),
+                ChooseTopicsActivity.CROSSWORD_SIZE, ChooseTopicsActivity.MAX_SIDE,
+                maxTime + stepAdding.toInt()
             )
             ++i
         }
         return res
     }
 
-    @ExperimentalUnsignedTypes
     private fun generateName(title: String): String {
         val last = fileList().filter { it.startsWith(title) }
             .filter { !it.endsWith(STATE_SUFFIX) }
@@ -219,8 +224,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         return if (last == null) title + "1"
         else {
             val number = last.subSequence(
-                    title.length,
-                    last.length - DATA_SUFFIX.length
+                title.length,
+                last.length - DATA_SUFFIX.length
             ).toString().toUInt() + 1u
             title + number.toString()
         }
@@ -240,10 +245,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
-    @ExperimentalUnsignedTypes
     override fun onPause() {
         writeConfig()
-        if(!onBackPressedCallBefore) saveData()
+        if (!onBackPressedCallBefore) saveData()
         else onBackPressedCallBefore = false
         super.onPause()
     }
@@ -254,10 +258,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             if (!path.exists()) path.mkdir()
             File(path, "$name${MainActivity.IMAGE_FORMAT}").apply {
                 FileOutputStream(this).use {
-                    if(crosswordView.puzzleBitmap == null) return
+                    if (crosswordView.puzzleBitmap == null) return
                     val bitmap = crosswordView.puzzleBitmap!!
                     val maxDimension = maxOf(bitmap.width, bitmap.height)
-                    val dstBmp = Bitmap.createBitmap(maxDimension, maxDimension, Bitmap.Config.ARGB_8888)
+                    val dstBmp =
+                        Bitmap.createBitmap(maxDimension, maxDimension, Bitmap.Config.ARGB_8888)
 
                     val canvas = Canvas(dstBmp)
                     canvas.drawColor(Color.BLACK)
@@ -274,8 +279,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                         ?.compress(Bitmap.CompressFormat.JPEG, 40, it)
                 }
             }
-        }
-        else{
+        } else {
             throw Exception("Media is not mounted")
         }
     }
@@ -295,7 +299,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putParcelable("state", crosswordView.state)
-        if(crosswordView.crossword != null)
+        if (crosswordView.crossword != null)
             outState.putParcelable("crossword", crosswordView.crossword)
         outState.putCharSequence("name", name)
         outState.putBoolean("delete", delete)
@@ -310,12 +314,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         when (item.itemId) {
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false &&
-                        star_number.text.toString().toInt() >= LETTER_OPEN_PRICE
+                    star_number.text.toString().toInt() >= LETTER_OPEN_PRICE
                 ) {
                     crosswordView.selectedWord?.let {
                         crosswordView.solveChar(
-                                it,
-                                crosswordView.selectedCell
+                            it,
+                            crosswordView.selectedCell
                         )
                     }
                     star_number.text = (star_number.text.toString().toInt() -
@@ -326,7 +330,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             }
             R.id.menu_solve_word -> {
                 if (!crosswordView.isSelectedWordSolved() &&
-                        star_number.text.toString().toInt() >= WORD_OPEN_PRICE
+                    star_number.text.toString().toInt() >= WORD_OPEN_PRICE
                 ) {
                     crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                     star_number.text = (star_number.text.toString().toInt() -
@@ -345,12 +349,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     private fun showFinishGameDialog() {
         val builder = AlertDialog.Builder(this).setMessage(R.string.youve_solved_the_puzzle)
-                .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
-                .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
-                .setNeutralButton(R.string.remove) { _, _ ->
-                    delete = true
-                    onBackPressed()
-                }.create()
+            .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
+            .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
+            .setNeutralButton(R.string.remove) { _, _ ->
+                delete = true
+                onBackPressed()
+            }.create()
         builder.setCancelable(false)
         builder.show()
         builder.window?.setGravity(Gravity.BOTTOM)
@@ -413,7 +417,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val builder = AlertDialog.Builder(this).setMessage("Do you want to use another mode?")
                 .setPositiveButton(R.string.yes) { _, _ ->
                     SettActivity.writePrintToFilledCellsToConfig(this, true)
-                    crosswordView.moveCursorToSolvedCell = true}
+                    crosswordView.moveSelectionToSolvedSquares = true}
                 .setNegativeButton(R.string.no) { _, _ ->
                 }.create()
             builder.setCancelable(false)
@@ -442,12 +446,15 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onBackPressed() {
         onBackPressedCallBefore = true
-        setResult(if (delete) {
-            delete = false
-            MainActivity.ACTIVITY_GAME_REMOVE
-        } else {
-            saveData()
-            MainActivity.ACTIVITY_GAME_OK})
+        setResult(
+            if (delete) {
+                delete = false
+                MainActivity.ACTIVITY_GAME_REMOVE
+            } else {
+                saveData()
+                MainActivity.ACTIVITY_GAME_OK
+            }
+        )
         super.onBackPressed()
     }
 
@@ -459,9 +466,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         const val STATE_SUFFIX: String = "Fill.json"
         const val DATA_SUFFIX: String = ".json"
 
-        fun readStarNumberFromConfig(path: File, resources: Resources): Int = with(File(path, CONFIG_NAME)) {
-            if (exists()) FileInputStream(this).use { ConfigReader().readStarNumber(it) }
-            else resources.openRawResource(R.raw.star_number).use { ConfigReader().readStarNumber(it) }
-        }
+        fun readStarNumberFromConfig(path: File, resources: Resources): Int =
+            with(File(path, CONFIG_NAME)) {
+                if (exists()) FileInputStream(this).use { ConfigReader().readStarNumber(it) }
+                else resources.openRawResource(R.raw.star_number)
+                    .use { ConfigReader().readStarNumber(it) }
+            }
     }
 }

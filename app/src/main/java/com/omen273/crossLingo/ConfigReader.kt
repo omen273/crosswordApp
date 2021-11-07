@@ -58,7 +58,7 @@ class ConfigReader {
         ) {
             beginObject()
             val moveCursor = when (val tag = nextName()) {
-                "move_cursor_to_solved_squares" -> nextBoolean()
+                "move_selection_to_solved_squares" -> nextBoolean()
                 else -> throw RuntimeException("The wrong json tag: $tag")
             }
             endObject()

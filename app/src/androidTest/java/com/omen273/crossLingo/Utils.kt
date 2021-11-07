@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
-import android.widget.ListView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.*
@@ -44,7 +43,7 @@ fun nthChildOf(parentMatcher: Matcher<View?>, childPosition: Int): Matcher<View?
             }
             val group = view.parent as ViewGroup
             return parentMatcher.matches(view.parent) &&
-                group.getChildAt(childPosition) == view
+                    group.getChildAt(childPosition) == view
         }
 
         override fun describeTo(description: Description?) {
@@ -69,15 +68,19 @@ fun hasNChildren(matcher: Matcher<View?>, childrenNumber: Int): Matcher<View?> {
     }
 }
 
-fun getItemFromCrosswordList(row: Int, column: Int, name:String? = null): Matcher<View?> {
+fun getItemFromCrosswordList(row: Int, column: Int, name: String? = null): Matcher<View?> {
     onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
     //WORKAROUND: wait some time to load all items in the view
     //TODO wait for certain item loading
     val start = System.currentTimeMillis()
     waitForCondition("", { System.currentTimeMillis() - start > 300 })
-    if(name != null) {
-        onView(nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 1)).
-        perform(waitForView(withText(name)))
+    if (name != null) {
+        onView(
+            nthChildOf(
+                nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column),
+                1
+            )
+        ).perform(waitForView(withText(name)))
     }
     return nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 0)
 }
@@ -85,17 +88,16 @@ fun getItemFromCrosswordList(row: Int, column: Int, name:String? = null): Matche
 fun generateCrossword(pressHome: Boolean = true, chooseTopics: List<Int> = listOf(0)): Crossword {
     chooseGenerateCrossword()
     onView(isRoot()).perform(waitForView(withId(R.id.topicList)))
-    for(i in chooseTopics) {
+    for (i in chooseTopics) {
         onView(nthChildOf(withId(R.id.topicList), i)).perform(ViewActions.click())
     }
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
-    if(!pressHome) {
+    if (!pressHome) {
         Espresso.pressBack()
         Espresso.pressBack()
-    }
-    else {
+    } else {
         onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(ViewActions.click())
     }
     return getLastCrossword()
@@ -112,7 +114,7 @@ fun getLastCrossword(): Crossword {
         MainActivity.IMAGE_DIRECTORY
     )
     val last: File = imagesPath.listFiles()?.maxByOrNull { it.lastModified() }
-            ?: throw RuntimeException("Screen shoot doesn't exist")
+        ?: throw RuntimeException("Screen shoot doesn't exist")
     val crosswordName =
         last.name.removeSuffix(MainActivity.IMAGE_FORMAT) + GameActivity.DATA_SUFFIX
     return getContext().openFileInput(crosswordName).use {
@@ -132,7 +134,8 @@ fun getContext(): Context = InstrumentationRegistry.getInstrumentation().targetC
 
 fun getTestContext(): Context = InstrumentationRegistry.getInstrumentation().context
 
-fun readConfig(): Int = GameActivity.readStarNumberFromConfig(getContext().filesDir, getContext().resources)
+fun readConfig(): Int =
+    GameActivity.readStarNumberFromConfig(getContext().filesDir, getContext().resources)
 
 fun chooseGenerateCrossword() {
     onView(getItemFromCrosswordList(0, 0)).perform(ViewActions.click())
@@ -272,7 +275,10 @@ class RetryTestRule(val retryCount: Int = 3) : TestRule {
                 }
 
                 if (description != null) {
-                    Log.e("ERROR", description.displayName + ": giving up after " + retryCount + " failures")
+                    Log.e(
+                        "ERROR",
+                        description.displayName + ": giving up after " + retryCount + " failures"
+                    )
                 }
                 throw caughtThrowable!!
             }
@@ -280,7 +286,7 @@ class RetryTestRule(val retryCount: Int = 3) : TestRule {
     }
 }
 
-open class BadTopic: TestBaseClass() {
+open class BadTopic : TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
     fun check(fileName: String) {
@@ -290,9 +296,12 @@ open class BadTopic: TestBaseClass() {
         ).apply {
             val transformer = DataTransformer(
                 getTestContext().resources.assets.open(fileName)
-                    .use { WordsReader().read(it,
-                        fun(level: String){Utils.
-                        validateLevel(getContext().resources, level)}) })
+                    .use {
+                        WordsReader().read(it,
+                            fun(level: String) {
+                                Utils.validateLevel(getContext().resources, level)
+                            })
+                    })
             val data = transformer.dataByLevelsByTopics
             val topics = transformer.sortedTopicsByLevel
             putExtra(MainActivity.CROSSWORD_DATA_NAME_VARIABLE, data)
@@ -304,14 +313,15 @@ open class BadTopic: TestBaseClass() {
     }
 }
 
-fun setLevelImpl(level:String = "advanced(C1)"){
+fun setLevelImpl(level: String = "advanced(C1)") {
     var configLevel: String? = "test"
-    configLevel = ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
-    waitForCondition("", {configLevel != "test"}, 300)
-    if(configLevel == null) {
+    configLevel =
+        ChooseTopicsActivity.readLevelFromConfig(getContext().filesDir, getContext().resources)
+    waitForCondition("", { configLevel != "test" }, 300)
+    if (configLevel == null) {
         onView(withText(level))
-                .inRoot(RootMatchers.isDialog())
-                .perform(ViewActions.click())
+            .inRoot(RootMatchers.isDialog())
+            .perform(ViewActions.click())
     }
 }
 
@@ -319,7 +329,7 @@ open class TestBaseClass {
 
     @get:Rule
     var activityTestRule: ActivityScenarioRule<MainActivity> =
-            ActivityScenarioRule(MainActivity::class.java)
+        ActivityScenarioRule(MainActivity::class.java)
 
     @Rule
     @JvmField
@@ -335,14 +345,14 @@ open class SolveCrossword : TestBaseClass() {
 
     protected lateinit var crossword: Crossword
 
-    fun solve(printAllLetters: Boolean = false, actionChecking:Boolean = false) {
+    fun solve(printAllLetters: Boolean = false, actionChecking: Boolean = false) {
         onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
         val visited =
             Array(crossword.height) { Array(crossword.width) { false } }
         for (word in crossword.wordsAcross) {
             for ((j, cell) in word.cells.withIndex()) {
                 testCell(word, cell.chars)
-                if(!printAllLetters)
+                if (!printAllLetters)
                     visited[word.startRow][word.startColumn + j] = true
             }
         }
@@ -355,7 +365,7 @@ open class SolveCrossword : TestBaseClass() {
         }
         //it doesn't work sometimes for R.string.youve_solved_the_puzzle
         //printAllLetter mode
-        if(actionChecking)
+        if (actionChecking)
             onView(withText(R.string.remove)).inRoot(RootMatchers.isDialog())
                 .perform(ViewActions.click())
         else
@@ -380,7 +390,7 @@ abstract class BadCrosswordDataTest : TestBaseClass() {
         onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
         onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
         ToastMatcher.onToast(R.string.damaged_data).check(
-                ViewAssertions.matches(isDisplayed())
+            ViewAssertions.matches(isDisplayed())
         )
     }
 }

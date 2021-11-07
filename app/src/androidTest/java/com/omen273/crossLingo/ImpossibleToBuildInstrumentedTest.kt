@@ -8,10 +8,12 @@ import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.filters.SdkSuppress
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
+@SdkSuppress(maxSdkVersion = 29)
 class ImpossibleToBuildInstrumentedTest : TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 

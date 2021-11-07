@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_alignStart="@+id/move_cursor_to_solved_cell_text"
+            android:layout_alignStart="@+id/move_selection_to_solved_squares_text"
             android:text="@string/level"
             android:textSize="20sp"
             android:id = "@+id/level_text"/>
@@ -26,25 +26,25 @@
             android:id = "@+id/level_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/move_cursor_to_solved_cell_text"
+            android:layout_alignStart="@+id/move_selection_to_solved_squares_text"
             android:entries = "@array/levels"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_below="@+id/level_list"
-            android:text="@string/move_cursor_to_solved_squares_text"
+            android:text="@string/move_selection_to_solved_squares"
             android:layout_centerHorizontal="true"
             android:textSize="20sp"
-            android:id = "@+id/move_cursor_to_solved_cell_text"/>
+            android:id = "@+id/move_selection_to_solved_squares_text"/>
         <CheckBox
             android:layout_marginTop="12dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="-6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/move_cursor_to_solved_cell_text"
-            android:layout_alignStart="@+id/move_cursor_to_solved_cell_text"
-            android:id = "@+id/move_cursor_to_filled_cell"/>
+            android:layout_below="@+id/move_selection_to_solved_squares_text"
+            android:layout_alignStart="@+id/move_selection_to_solved_squares_text"
+            android:id = "@+id/move_selection_to_solved_squares"/>
     </RelativeLayout>
 </LinearLayout>
