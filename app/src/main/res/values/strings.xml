@@ -30,4 +30,7 @@
     <string name ="choose_level_dialog_text">Select your level, please. You can change it later
         in settings.</string>
     <string name ="move_selection_to_solved_squares">move selection to solved squares</string>
+    <string name ="change_print_mode_to_move_to_solved">
+        We noticed that you probably print to solved squares.
+        Do you want to try another printing mode?</string>
 </resources>

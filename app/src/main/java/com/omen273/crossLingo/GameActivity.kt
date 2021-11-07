@@ -57,6 +57,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private var delete = false
     private var onBackPressedCallBefore = false
 
+    @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
@@ -136,6 +137,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 if (delete) onBackPressed()
                 name = savedInstanceState?.getCharSequence("name") as String
                 delete = savedInstanceState.getBoolean("delete")
+                activateOnMoveCursorToSolvedCellsMode =
+                    savedInstanceState.getBoolean("activateOnMoveCursorToSolvedCellsMode")
+                hits = savedInstanceState.getInt("hits")
                 restoredCrossword
             }
         }
@@ -215,6 +219,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         return res
     }
 
+    @ExperimentalUnsignedTypes
     private fun generateName(title: String): String {
         val last = fileList().filter { it.startsWith(title) }
             .filter { !it.endsWith(STATE_SUFFIX) }
@@ -303,6 +308,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             outState.putParcelable("crossword", crosswordView.crossword)
         outState.putCharSequence("name", name)
         outState.putBoolean("delete", delete)
+        outState.putBoolean("activateOnMoveCursorToSolvedCellsMode",
+            activateOnMoveCursorToSolvedCellsMode)
+        outState.putInt("hits", hits)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -376,8 +384,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                                   ch: Char,
                                                   position: Int)
     {
-        Log.d("TRT1", "position: $position")
-        Log.d("TRT1", "letter: ${ch.uppercaseChar()}")
         val startRow = selection?.word?.startRow
         val startColumn = selection?.word?.startColumn
         val row = selection?.row
@@ -399,9 +405,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
 
         if (selection != null) {
-            Log.d("TRT1", "targetChar: ${selection.word.cells[position - solved].chars[0]}")
-        }
-        if (selection != null) {
             if(solved > 0 && ch.uppercaseChar() ==
                 selection.word.cells[position - solved].chars[0] &&
                 ch.uppercaseChar() != selection.word.cells[position].chars[0]
@@ -409,12 +412,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 ++hits
         }
 
-        Log.d("TRT1", "hits: $hits")
         val MAX_HITS_NUMBER = 3
-        if(hits >= MAX_HITS_NUMBER && !activateOnMoveCursorToSolvedCellsMode)
+        if(hits >= MAX_HITS_NUMBER && hits < MAX_HITS_NUMBER + 1 &&
+            !activateOnMoveCursorToSolvedCellsMode)
         {
-            Log.d("TRT1", "activate")
-            val builder = AlertDialog.Builder(this).setMessage("Do you want to use another mode?")
+            val builder = AlertDialog.Builder(this).
+            setMessage(R.string.change_print_mode_to_move_to_solved)
                 .setPositiveButton(R.string.yes) { _, _ ->
                     SettActivity.writePrintToFilledCellsToConfig(this, true)
                     crosswordView.moveSelectionToSolvedSquares = true}
