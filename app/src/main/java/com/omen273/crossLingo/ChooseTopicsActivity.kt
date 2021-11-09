@@ -25,13 +25,14 @@ class ChooseTopicsActivity : AppCompatActivity() {
         return if (topics != null) data[level] as ArrayList<String> else arrayListOf()
     }
 
-    private fun getWords(topics: HashSet<String>) : HashMap<String, String>{
+    private fun getWords(topics: HashSet<String>) : HashMap<String, Pair<String, String>>{
         val data = intent.extras?.get(MainActivity.CROSSWORD_DATA_NAME_VARIABLE) as HashMap<*, *>
-        val res =  hashMapOf<String, String>()
+        val res =  hashMapOf<String, Pair<String, String>>()
         val level = readLevelFromConfig(filesDir, resources)
         val dataLevel = data[level] as HashMap<*, *>?
         for(topic in topics) {
-            dataLevel?.get(topic)?.let { res.putAll(it as HashMap<String, String>) }
+            dataLevel?.get(topic)?.let { res.putAll((it as HashMap<String, String>).
+            map{Pair(it.key, Pair(it.value, topic))}) }
         }
         return res
     }

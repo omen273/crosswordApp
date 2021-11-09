@@ -19,6 +19,7 @@ package com.omen273.crossLingo
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Bitmap
@@ -47,6 +48,12 @@ import java.io.*
 import java.nio.charset.Charset
 import java.util.*
 import kotlin.collections.ArrayList
+import android.widget.Toast
+
+import android.content.Intent
+import android.graphics.Typeface
+import android.widget.TextView
+import android.widget.EditText
 
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
@@ -77,7 +84,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     @Suppress("UNCHECKED_CAST")
                     val wordsMap =
                         intent.getSerializableExtra(ChooseTopicsActivity.WORDS_VARIABLE)
-                                as HashMap<String, String>
+                                as HashMap<String, Pair<String, String>>
                     when (val crosswordParams = generateCrossword(wordsMap)) {
                         null -> {
                             setResult(MainActivity.ACTIVITY_GAME_FAIL)
@@ -116,8 +123,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                         direction =
                                             if (word.isHorizontal) Crossword.Word.DIR_ACROSS
                                             else Crossword.Word.DIR_DOWN
-                                        hint =
-                                            wordsMap[word.word.lowercase(Locale.ROOT)].toString()
+                                        val item = wordsMap[word.word.lowercase(Locale.ROOT)]
+                                        hint = item?.first
+                                        citation = item?.second
                                         number =
                                             if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
                                             else n++
@@ -196,7 +204,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
-    private fun generateCrossword(inp: HashMap<String, String>): CrosswordParams? {
+    private fun generateCrossword(inp: HashMap<String, Pair<String, String>>): CrosswordParams? {
         var res: CrosswordParams? = null
         val maxAttemptCount = 10
         var i = 0
@@ -337,11 +345,66 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 }
                 return false
             }
+            R.id.menu_report_error -> {
+                val types = resources.getStringArray(R.array.error_reasons)
+                val b = AlertDialog.Builder(this)
+                    .setCustomTitle(createTitle(R.string.error_reasons_string))
+                    .setItems(types) { dialog, selectedItem ->
+                        dialog.dismiss()
+                        val message = EditText(this)
+                        val b1 =
+                            AlertDialog.Builder(this)
+                                .setCustomTitle(createTitle(R.string.error_message))
+                                .setView(message)
+                                .setPositiveButton(R.string.okButton) { _, _ ->
+                                    crosswordView.selectedWord?.let {
+                                        sendMail(
+                                            it,
+                                            types[selectedItem], message.text.toString())
+                                    }
+                                }.create()
+                        b1.show()
+                    }.create()
+                b.show()
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onCellLongPressed(view: CrosswordView, word: Crossword.Word, cell: Int) {}
+    private fun sendMail(word: Crossword.Word, item: String, message: String) {
+        val i = Intent(Intent.ACTION_SEND)
+        i.type = "message/rfc822"
+        i.putExtra(Intent.EXTRA_EMAIL, arrayOf("warpedomen1@gmail.com"))
+        i.putExtra(
+            Intent.EXTRA_SUBJECT, "level: ${
+                ChooseTopicsActivity.readLevelFromConfig(filesDir, resources)
+            }, hint: ${word.hint}, " +
+                    "topic: ${word.citation}, reason: $item"
+        )
+        i.putExtra(Intent.EXTRA_TEXT, message)
+        try {
+            startActivity(Intent.createChooser(i, "Send mail..."))
+        } catch (ex: ActivityNotFoundException) {
+            Toast.makeText(
+                this,
+                "There are no email clients installed.",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
+
+    private fun createTitle(stringID: Int) = with(TextView(this)) {
+        text = getString(stringID)
+        textSize = 18f
+        setPadding(20, 10, 20, 10)
+        setTypeface(null, Typeface.BOLD)
+        setTextColor(Color.BLACK)
+        this
+    }
+
+    override fun onCellLongPressed(view: CrosswordView, word: Crossword.Word, cell: Int) {
+    }
 
     override fun onCrosswordChanged(view: CrosswordView) {}
 

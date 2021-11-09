@@ -1659,12 +1659,12 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         var preferredDir = Crossword.Word.DIR_ACROSS
         if (selection != null) {
             if (offset.row == selection!!.row && offset.column == selection!!.column) {
-                if ((markerDisplayMode and MARKER_SOLVED != 0) &&
+                /*if ((markerDisplayMode and MARKER_SOLVED != 0) &&
                     puzzleCells[offset.row][offset.column]?.isFlagSet(Cell.FLAG_SOLVED) == true
                     && !moveSelectionToSolvedSquares
                 ) {
                     return false
-                }
+                }*/
                 // Same cell tapped - flip direction
                 switchWordDirection()
                 if (_isEditable) {
@@ -1678,12 +1678,12 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         }
 
         val sel = getSelectable(offset, preferredDir)
-        if ((markerDisplayMode and MARKER_SOLVED != 0) &&
+        /*if ((markerDisplayMode and MARKER_SOLVED != 0) &&
             puzzleCells[offset.row][offset.column]?.isFlagSet(Cell.FLAG_SOLVED) == true &&
             !moveSelectionToSolvedSquares
         ) {
             return false
-        }
+        }*/
         if (sel != null) {
             resetSelection(sel)
 
