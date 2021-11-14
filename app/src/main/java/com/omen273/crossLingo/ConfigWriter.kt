@@ -29,4 +29,12 @@ class ConfigWriter {
             endObject()
             close()
         }
+
+    fun writeSolvedCrosswordNumber(outputStream: OutputStream, solvedNumber: Int): Unit =
+        with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
+            beginObject()
+            name("solved_crossword_number").value(solvedNumber)
+            endObject()
+            close()
+        }
 }
