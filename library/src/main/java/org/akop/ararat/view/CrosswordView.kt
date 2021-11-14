@@ -70,6 +70,13 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         )
     }
 
+    interface  OnPrintLetterListener{
+        fun onPrintLetter(selection: Selectable?,
+        puzzleCells: Array<Array<Cell?>>,
+        ch: Char,
+        position: Int)
+    }
+
     private val defaultInputValidator: InputValidator = { ch ->
         val upper = ch.toUpperCase(Locale.ROOT)
         !(0..ch.length).any { !isAcceptableChar(upper[it]) }
@@ -239,6 +246,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var onSelectionChangeListener: OnSelectionChangeListener? = null
     var onStateChangeListener: OnStateChangeListener? = null
     var onLongPressListener: OnLongPressListener? = null
+    var onPrintLetterListener: OnPrintLetterListener? = null
     var inputValidator: InputValidator? = null
     var toolbarHeight: Int = 0
     lateinit var hintView: View
@@ -958,6 +966,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     private fun handleInput(ch: Char) {
         if (!_isEditable) return
+
+        onPrintLetterListener?.onPrintLetter(selection, puzzleCells, ch, selectedCell)
 
         val sch = ch.toString()
         val validator = inputValidator ?: defaultInputValidator
