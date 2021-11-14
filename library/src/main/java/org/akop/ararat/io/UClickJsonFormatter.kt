@@ -46,20 +46,21 @@ class UClickJsonFormatter : CrosswordFormatter {
 
         var layout: Map<Int, Pos>? = null
         var solution: Map<Pos, String>? = null
-        var acrossClues: Map<Int, String>? = null
-        var downClues: Map<Int, String>? = null
+        var acrossClues: Map<Int, Pair<String, String?>>? = null
+        var downClues: Map<Int, Pair<String, String?>>? = null
 
         reader.beginObject()
+        var areTopicsPresent = false
         while (reader.hasNext()) {
-            val name = reader.nextName()
-            when (name) {
+            when (reader.nextName()) {
+                "AreTopicsPresent"-> areTopicsPresent = reader.nextBoolean()
                 "Author" -> builder.author = reader.nextString()
                 "Title" -> builder.title = reader.nextString()
                 "Copyright" -> builder.copyright = reader.nextString()
                 "Layout" -> layout = readLayout(reader)
                 "Solution" -> solution = readSolution(reader)
-                "AcrossClue" -> acrossClues = readClues(reader)
-                "DownClue" -> downClues = readClues(reader)
+                "AcrossClue" -> acrossClues = readClues(reader, areTopicsPresent)
+                "DownClue" -> downClues = readClues(reader, areTopicsPresent)
                 "Width" -> builder.width = reader.nextInt()
                 "Height" -> builder.height = reader.nextInt()
 //                "Date" -> user = readUser(reader)
@@ -83,7 +84,8 @@ class UClickJsonFormatter : CrosswordFormatter {
             builder.words += buildWord {
                 this.number = n
                 this.direction = Crossword.Word.DIR_ACROSS
-                this.hint = hint
+                this.hint = hint.first
+                this.citation = hint.second
                 this.startRow = start.r
                 this.startColumn = start.c
 
@@ -100,7 +102,8 @@ class UClickJsonFormatter : CrosswordFormatter {
             builder.words += buildWord {
                 this.number = n
                 this.direction = Crossword.Word.DIR_DOWN
-                this.hint = hint
+                this.hint = hint.first
+                this.citation = hint.second
                 this.startRow = start.r
                 this.startColumn = start.c
 
@@ -151,11 +154,12 @@ class UClickJsonFormatter : CrosswordFormatter {
         return map
     }
 
-    private fun readClues(reader: JsonReader): Map<Int, String> {
-        val map = HashMap<Int, String>()
+    private fun readClues(reader: JsonReader, areTopicsPresent: Boolean): Map<Int, Pair<String, String?>> {
+        val map = HashMap<Int, Pair<String, String?>>()
         reader.nextString().split("\n".toRegex()).forEach {
-            val pair = it.split("\\|".toRegex(), limit = 2)
-            if (pair.size == 2) map[pair[0].toInt()] = pair[1]
+            val tuple = it.split("\\|".toRegex(), limit = if (areTopicsPresent) 3 else 2)
+            if (tuple.size == 2) map[tuple[0].toInt()] = Pair(tuple[1], null)
+            else if(tuple.size == 3) map[tuple[0].toInt()] = Pair(tuple[1], tuple[2])
         }
 
         return map
@@ -166,6 +170,7 @@ class UClickJsonFormatter : CrosswordFormatter {
         val writer = JsonWriter(outputStream.writer(Charset.forName(encoding)))
 
         writer.beginObject()
+        writer.name("AreTopicsPresent").value(true)
         writer.name("Width").value(crossword.width.toString())
         writer.name("Height").value(crossword.height.toString())
         writer.name("Author").value(crossword.author)
@@ -173,9 +178,9 @@ class UClickJsonFormatter : CrosswordFormatter {
         writer.name("Copyright").value(crossword.copyright)
 
         writer.name("AcrossClue").value(crossword.wordsAcross
-                .joinToString("\n") { "${"%02d".format(it.number)}|${it.hint}" })
+                .joinToString("\n") { "${"%02d".format(it.number)}|${it.hint}|${it.citation}" })
         writer.name("DownClue").value(crossword.wordsDown
-                .joinToString("\n", postfix = "\nend\n") { "${"%02d".format(it.number)}|${it.hint}" })
+                .joinToString("\n", postfix = "\nend\n") { "${"%02d".format(it.number)}|${it.hint}|${it.citation}"})
 
         val layoutMap = Array(crossword.height, { IntArray(crossword.width) })
 

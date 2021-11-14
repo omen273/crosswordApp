@@ -5,6 +5,7 @@
     <string name="okButton">ОК</string>
     <string name="solve_square">решить клетку</string>
     <string name="solve_word">решить слово</string>
+    <string name="menu_report_error">сообщить об ошибке</string>
     <string name="reset">Сбросить</string>
     <string name="another_crossword">Новый кроссворд</string>
     <string name="remove">Удалить</string>
@@ -24,4 +25,12 @@
     <string name ="choose_level_dialog_text">Пожалуйста, выберите ваш уровень.
         Его можно будет изменить в настройках.</string>
     <string name="move_selection_to_solved_squares">печатать в решенные клетки</string>
+    <string name="error_reasons_string">Пожалуйста, выберите тип ошибки</string>
+    <string name="error_message">Пожалуйста, опишите ошибку ниже</string>
+    <string-array name="error_reasons">
+        <item>неподходящий перевод</item>
+        <item>написание вопроса</item>
+        <item>написание ответа</item>
+        <item>неподходящая тема</item>
+    </string-array>
 </resources>

@@ -4,6 +4,7 @@
     <string name="okButton">OK</string>
     <string name="solve_square">Solve square</string>
     <string name="solve_word">Solve word</string>
+    <string name="menu_report_error">Report error</string>
     <string name="tip">%1$d. %2$s</string>
     <string name="youve_solved_the_puzzle">You\'ve solved the puzzle!</string>
     <string name="reset">RESET</string>
@@ -30,4 +31,12 @@
     <string name ="choose_level_dialog_text">Select your level, please. You can change it later
         in settings.</string>
     <string name ="move_selection_to_solved_squares">move selection to solved squares</string>
+    <string name="error_reasons_string">Please, choose a type of problem</string>
+    <string name="error_message">Please, describe a problem below</string>
+    <string-array name="error_reasons">
+        <item>translation meaning</item>
+        <item>clue\'s spelling</item>
+        <item>answer\'s spelling</item>
+        <item>unsuitable topic</item>
+    </string-array>
 </resources>
