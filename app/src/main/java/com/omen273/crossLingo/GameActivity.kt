@@ -374,11 +374,20 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
+    private fun readSolvedCrosswordNumberToFile(path: File) =
+        try {
+            FileInputStream(path).use { ConfigReader().solvedCrosswordNumber(it) }
+        } catch (e:Exception) {
+            Log.e("ERROR", "The bad solved crossword number file")
+            path.delete()
+            0
+        }
+
     override fun onCrosswordSolved(view: CrosswordView) {
         star_number.text = (star_number.text.toString().toInt() + BONUS_ON_SOLVE).toString()
         val path = File(filesDir, "solved_crossword_number.json")
         if (path.exists()) {
-            val number = FileInputStream(path).use { ConfigReader().solvedCrosswordNumber(it) }
+            val number = readSolvedCrosswordNumberToFile(path)
             if (number == 3 || number % 100 == 0) requestReview()
             else showFinishGameDialog()
             FileOutputStream(path).use { ConfigWriter().writeSolvedCrosswordNumber(it, number + 1) }
