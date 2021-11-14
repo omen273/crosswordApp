@@ -64,4 +64,21 @@ class ConfigReader {
             endObject()
             moveCursor
         }
+
+    fun solvedCrosswordNumber(inputStream: InputStream): Int =
+        with(
+            JsonReader(
+                inputStream.bufferedReader
+                    (Charset.forName(MainActivity.DEFAULT_ENCODING))
+            )
+        ) {
+            beginObject()
+            val number = when (val tag = nextName()) {
+                "solved_crossword_number" -> nextInt()
+                else -> throw RuntimeException("The wrong json tag: $tag")
+            }
+            endObject()
+            number
+        }
+
 }
