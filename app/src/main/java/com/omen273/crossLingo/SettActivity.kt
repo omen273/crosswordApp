@@ -1,6 +1,5 @@
 package com.omen273.crossLingo
 
-import android.content.Context
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +9,6 @@ import kotlinx.android.synthetic.main.activity_sett.*
 import kotlinx.android.synthetic.main.toolbar_sett.*
 import java.io.File
 import java.io.FileInputStream
-import java.io.FileOutputStream
 
 class SettActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,12 +66,6 @@ class SettActivity : AppCompatActivity() {
             if (exists()) FileInputStream(this).use { ConfigReader().moveCursorToSolvedSquares(it) }
             else resources.openRawResource(R.raw.move_selection_to_solved_squares)
                 .use { ConfigReader().moveCursorToSolvedSquares(it) }
-        }
-
-        fun writePrintToFilledCellsToConfig(context: Context, flag: Boolean) {
-            context.openFileOutput(MOVE_TO_FILLED_CELLS_FILE, MODE_PRIVATE).use {
-                ConfigWriter().write(it, flag)
-            }
         }
     }
 }
