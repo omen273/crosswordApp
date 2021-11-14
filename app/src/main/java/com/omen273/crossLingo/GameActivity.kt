@@ -125,6 +125,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                             else Crossword.Word.DIR_DOWN
                                         val item = wordsMap[word.word.lowercase(Locale.ROOT)]
                                         hint = item?.first
+                                        //it is a topic in reality
                                         citation = item?.second
                                         number =
                                             if (i != 0 && prev.x == word.x && prev.y == word.y) n - 1
@@ -375,7 +376,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private fun sendMail(word: Crossword.Word, item: String, message: String) {
         val i = Intent(Intent.ACTION_SEND)
         i.type = "message/rfc822"
-        i.putExtra(Intent.EXTRA_EMAIL, arrayOf("warpedomen1@gmail.com"))
+        i.putExtra(Intent.EXTRA_EMAIL, arrayOf(email_for_errors))
         i.putExtra(
             Intent.EXTRA_SUBJECT, "level: ${
                 ChooseTopicsActivity.readLevelFromConfig(filesDir, resources)
@@ -388,7 +389,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         } catch (ex: ActivityNotFoundException) {
             Toast.makeText(
                 this,
-                "There are no email clients installed.",
+                "There are no email clients installed. " +
+                        "Please, write an e-mail with a problem's description " +
+                        "to $email_for_errors by yourself",
                 Toast.LENGTH_SHORT
             ).show()
         }
@@ -457,6 +460,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         const val CONFIG_NAME: String = "star_number.json"
         const val STATE_SUFFIX: String = "Fill.json"
         const val DATA_SUFFIX: String = ".json"
+        private const val email_for_errors = "sokolikkatya@gmail.com"
 
         fun readStarNumberFromConfig(path: File, resources: Resources): Int =
             with(File(path, CONFIG_NAME)) {

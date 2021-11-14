@@ -26,12 +26,11 @@
         Его можно будет изменить в настройках.</string>
     <string name="move_selection_to_solved_squares">печатать в решенные клетки</string>
     <string name="error_reasons_string">Пожалуйста, выберите тип ошибки</string>
-    <string name ="report_error">Хотите сообщить об ошибке?</string>
     <string name="error_message">Пожалуйста, опишите ошибку ниже</string>
     <string-array name="error_reasons">
         <item>неподходящий перевод</item>
-        <item>написание ответа</item>
         <item>написание вопроса</item>
+        <item>написание ответа</item>
         <item>неподходящая тема</item>
     </string-array>
 </resources>
