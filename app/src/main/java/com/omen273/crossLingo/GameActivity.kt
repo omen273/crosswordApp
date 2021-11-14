@@ -34,6 +34,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.scale
+import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.toolbar_game.*
@@ -358,9 +359,43 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         builder.window?.setGravity(Gravity.BOTTOM)
     }
 
+    private fun requestReview() {
+        val manager = ReviewManagerFactory.create(this)
+        val request = manager.requestReviewFlow()
+        request.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val reviewInfo = task.result
+                manager.launchReviewFlow(this, reviewInfo).addOnCompleteListener { _ ->
+                    showFinishGameDialog()
+                }
+            } else {
+                showFinishGameDialog()
+            }
+        }
+    }
+
+    private fun readSolvedCrosswordNumberToFile(path: File) =
+        try {
+            FileInputStream(path).use { ConfigReader().solvedCrosswordNumber(it) }
+        } catch (e:Exception) {
+            Log.e("ERROR", "The bad solved crossword number file")
+            path.delete()
+            0
+        }
+
     override fun onCrosswordSolved(view: CrosswordView) {
         star_number.text = (star_number.text.toString().toInt() + BONUS_ON_SOLVE).toString()
-        showFinishGameDialog()
+        val path = File(filesDir, "solved_crossword_number.json")
+        if (path.exists()) {
+            val number = readSolvedCrosswordNumberToFile(path)
+            if (number == 3 || number % 100 == 0) requestReview()
+            else showFinishGameDialog()
+            FileOutputStream(path).use { ConfigWriter().writeSolvedCrosswordNumber(it, number + 1) }
+        } else {
+            FileOutputStream(path).use { ConfigWriter().writeSolvedCrosswordNumber(it, 1) }
+            showFinishGameDialog()
+        }
+
     }
 
     override fun onCrosswordUnsolved(view: CrosswordView) {}
