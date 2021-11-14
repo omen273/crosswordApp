@@ -1672,12 +1672,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         }
 
         val sel = getSelectable(offset, preferredDir)
-        /*if ((markerDisplayMode and MARKER_SOLVED != 0) &&
-            puzzleCells[offset.row][offset.column]?.isFlagSet(Cell.FLAG_SOLVED) == true &&
-            !moveSelectionToSolvedSquares
-        ) {
-            return false
-        }*/
         if (sel != null) {
             resetSelection(sel)
 
