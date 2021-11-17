@@ -1052,7 +1052,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             }
             nextCell = if (selectFirstUnoccupiedOnNav) {
                 maxOf(firstFreeCell(word, 0), 0)
-            } else 0
+            } else if(moveSelectionToSolvedSquares) 0
+            else maxOf(firstUnsolvedCell(word, 0), 0)
         }
         return Selectable(word!!, if (nextCell != -1) nextCell else 0)
     }
