@@ -1096,7 +1096,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
         val s = Selectable(sel)
 
-        //if (puzzleCells[s.row][s.column]?.isEmpty == true) {
         if (markerDisplayMode and MARKER_SOLVED == 0) {
             if (selectedCell > 0) {
                 // Go back one cell and remove the char
