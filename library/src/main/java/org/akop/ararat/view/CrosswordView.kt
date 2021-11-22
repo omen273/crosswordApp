@@ -1081,43 +1081,47 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
         val s = Selectable(sel)
 
-        if (markerDisplayMode and MARKER_SOLVED == 0) {
-            if (selectedCell > 0) {
-                // Go back one cell and remove the char
-                s.cell = --selectedCell
-            } else {
-                // At the first letter of a word. Select the previous word and do
-                // what we did if (mSelectedCell > 0)
-                selectedWord = crossword.previousWord(selectedWord)
-                selectedCell = (selectedWord ?: return).length - 1
-
-                s.word = selectedWord
-                s.cell = selectedCell
-            }
-        } else {
-            do {
-                var isS = false
-                if (selectedCell > 0) --selectedCell
-                else {
+        val isEmptyCell = puzzleCells[s.row][s.column]?.char == null
+        if(isEmptyCell || (moveSelectionToSolvedSquares &&
+                    puzzleCells[s.row][s.column]?.isFlagSet(Cell.FLAG_SOLVED) == true) ) {
+            if (markerDisplayMode and MARKER_SOLVED == 0) {
+                if (selectedCell > 0) {
+                    // Go back one cell and remove the char
+                    s.cell = --selectedCell
+                } else {
+                    // At the first letter of a word. Select the previous word and do
+                    // what we did if (mSelectedCell > 0)
                     selectedWord = crossword.previousWord(selectedWord)
                     selectedCell = (selectedWord ?: return).length - 1
+
+                    s.word = selectedWord
+                    s.cell = selectedCell
                 }
-                with(Selectable(s)) {
-                    if (selectedWord != null) {
-                        word = selectedWord as Crossword.Word
-                        cell = selectedCell
-                        if (puzzleCells[row][column]?.isFlagSet(Cell.FLAG_SOLVED) ==
-                            false
-                        ) {
-                            s.word = selectedWord as Crossword.Word
-                            s.cell = selectedCell
-                            isS = true
+            } else {
+                do {
+                    var isS = false
+                    if (selectedCell > 0) --selectedCell
+                    else {
+                        selectedWord = crossword.previousWord(selectedWord)
+                        selectedCell = (selectedWord ?: return).length - 1
+                    }
+                    with(Selectable(s)) {
+                        if (selectedWord != null) {
+                            word = selectedWord as Crossword.Word
+                            cell = selectedCell
+                            if (puzzleCells[row][column]?.isFlagSet(Cell.FLAG_SOLVED) ==
+                                false
+                            ) {
+                                s.word = selectedWord as Crossword.Word
+                                s.cell = selectedCell
+                                isS = true
+                            }
                         }
                     }
-                }
-            } while (selectedWord != null && !isS)
-            selectedWord = s.word
-            selectedCell = s.cell
+                } while (selectedWord != null && !isS)
+                selectedWord = s.word
+                selectedCell = s.cell
+            }
         }
 
         val row = s.row
