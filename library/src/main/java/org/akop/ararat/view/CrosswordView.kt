@@ -215,12 +215,11 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     var skipOccupiedOnType: Boolean = false
     var skipCompletedWords: Boolean = false
-    var selectFirstUnoccupiedOnNav: Boolean = true
+    private var selectFirstUnoccupiedOnNav: Boolean = false
     var moveSelectionToSolvedSquares: Boolean = false
         set(flag) {
-            selectFirstUnoccupiedOnNav = !flag
+            selectFirstUnoccupiedOnNav = if(flag) false else selectFirstUnoccupiedOnNav
             field = flag
-
         }
     var undoMode: Int = 0
     var markerDisplayMode: Int = 0
@@ -986,7 +985,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         }
     }
 
-    private fun firstFreeUnsolvedCell(word: Crossword.Word?, start: Int): Int {
+    private fun firstUnsolvedCell(word: Crossword.Word?, start: Int): Int {
         if (word == null) return -1
         var i = start
         while (i < word.length) {
@@ -1014,29 +1013,17 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         return word
     }
 
-    private fun prevUnsolvedWord(word: Crossword.Word?): Crossword.Word? {
-        if (crossword != null) {
-            var w = (crossword ?: return null).previousWord(word)
-            while (!isSolved() && w != null && isWordSolved(w)) {
-                w = (crossword ?: return null).previousWord(w)
-            }
-            return w ?: word
-        }
-        return word
-    }
-
     private fun nextSelectable(selected: Selectable): Selectable {
         val cell = selected.cell
         var word: Crossword.Word? = selected.word
         var nextCell = -1
-
         if (skipOccupiedOnType) {
             nextCell = firstFreeCell(word, cell + 1)
         } else {
             if (cell + 1 < word!!.length) {
                 nextCell =
                     if ((markerDisplayMode and MARKER_SOLVED != 0) && !moveSelectionToSolvedSquares) {
-                        firstFreeUnsolvedCell(word, cell + 1)
+                        firstUnsolvedCell(word, cell + 1)
                     } else cell + 1
             }
         }
@@ -1049,10 +1036,9 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                 else -> crossword!!.nextWord(word)
             }
             nextCell = if (selectFirstUnoccupiedOnNav) {
-                if (markerDisplayMode and MARKER_SOLVED != 0 && !moveSelectionToSolvedSquares) {
-                    maxOf(firstFreeUnsolvedCell(word, 0), 0)
-                } else maxOf(firstFreeCell(word, 0), 0)
-            } else 0
+                maxOf(firstFreeCell(word, 0), 0)
+            } else if(moveSelectionToSolvedSquares) 0
+            else maxOf(firstUnsolvedCell(word, 0), 0)
         }
         return Selectable(word!!, if (nextCell != -1) nextCell else 0)
     }
@@ -1095,57 +1081,59 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
         val s = Selectable(sel)
 
-        if (puzzleCells[s.row][s.column]?.isEmpty == true) {
-            if (markerDisplayMode and MARKER_SOLVED == 0) {
-                if (selectedCell > 0) {
-                    // Go back one cell and remove the char
-                    s.cell = --selectedCell
-                } else {
-                    // At the first letter of a word. Select the previous word and do
-                    // what we did if (mSelectedCell > 0)
+        if (markerDisplayMode and MARKER_SOLVED == 0) {
+            if (selectedCell > 0) {
+                // Go back one cell and remove the char
+                s.cell = --selectedCell
+            } else {
+                // At the first letter of a word. Select the previous word and do
+                // what we did if (mSelectedCell > 0)
+                selectedWord = crossword.previousWord(selectedWord)
+                selectedCell = (selectedWord ?: return).length - 1
+
+                s.word = selectedWord
+                s.cell = selectedCell
+            }
+        } else {
+            do {
+                var isS = false
+                if (selectedCell > 0) --selectedCell
+                else {
                     selectedWord = crossword.previousWord(selectedWord)
                     selectedCell = (selectedWord ?: return).length - 1
-
-                    s.word = selectedWord
-                    s.cell = selectedCell
                 }
-            } else {
-                do {
-                    var isS = false
-                    if (selectedCell > 0) --selectedCell
-                    else {
-                        selectedWord = crossword.previousWord(selectedWord)
-                        selectedCell = (selectedWord ?: return).length - 1
-                    }
-                    with(Selectable(s)) {
-                        if (selectedWord != null) {
-                            word = selectedWord as Crossword.Word
-                            cell = selectedCell
-                            if (puzzleCells[row][column]?.isFlagSet(Cell.FLAG_SOLVED) ==
-                                false
-                            ) {
-                                s.word = selectedWord as Crossword.Word
-                                s.cell = selectedCell
-                                isS = true
-                            }
+                with(Selectable(s)) {
+                    if (selectedWord != null) {
+                        word = selectedWord as Crossword.Word
+                        cell = selectedCell
+                        if (puzzleCells[row][column]?.isFlagSet(Cell.FLAG_SOLVED) ==
+                            false
+                        ) {
+                            s.word = selectedWord as Crossword.Word
+                            s.cell = selectedCell
+                            isS = true
                         }
                     }
-                } while (selectedWord != null && !isS)
-                selectedWord = s.word
-                selectedCell = s.cell
-            }
+                }
+            } while (selectedWord != null && !isS)
+            selectedWord = s.word
+            selectedCell = s.cell
         }
 
         val row = s.row
         val col = s.column
 
-        val changed = (puzzleCells[row][col] ?: return).clearChar()
-        if (markerDisplayMode and MARKER_ERROR != 0) {
-            (puzzleCells[row][col] ?: return).setFlag(Cell.FLAG_ERROR, false)
+        if (puzzleCells[row][col]?.isFlagSet(Cell.FLAG_SOLVED) == false) {
+            val changed = (puzzleCells[row][col] ?: return).clearChar()
+            if (markerDisplayMode and MARKER_ERROR != 0) {
+                (puzzleCells[row][col] ?: return).setFlag(Cell.FLAG_ERROR, false)
+            }
+            selectedWord?.let { resetSelection(Selectable(it, selectedCell)) }
+            if (changed) onBoardChanged()
+        } else {
+            selectedWord?.let { resetSelection(Selectable(it, selectedCell)) }
+            onBoardChanged()
         }
-
-        selectedWord?.let { resetSelection(Selectable(it, selectedCell)) }
-        if (changed) onBoardChanged()
     }
 
     fun switchWordDirection() {
