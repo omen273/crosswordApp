@@ -20,7 +20,6 @@ class SolveCrosswordAfterResetInstrumentedTest : SolveCrossword() {
             .inRoot(RootMatchers.isDialog())
             .perform(ViewActions.click())
         Espresso.pressBack()
-        Espresso.pressBack()
         loadFirstCrossword()
         solve()
     }

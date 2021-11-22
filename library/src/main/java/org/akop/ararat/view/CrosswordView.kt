@@ -242,7 +242,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var inputValidator: InputValidator? = null
     var toolbarHeight: Int = 0
     lateinit var hintView: View
-    lateinit var viewR: View
+    lateinit var keyboard: View
     var keyboardHeight = 0
 
     var selectedWord: Crossword.Word?
@@ -343,39 +343,24 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             initializeCrossword()
             selectNextWord()
             renderScale = 0f
-            var isCrosswordDrawn = false
 
-            viewR.viewTreeObserver.addOnGlobalLayoutListener {
-                val r = Rect()
-                viewR.getWindowVisibleDisplayFrame(r)
-                val heightDiff = viewR.rootView.height - toolbarHeight - r.height()
-                val keyboardMinHeight = 300
-                if (heightDiff > keyboardMinHeight && !isCrosswordDrawn) {
-                    isCrosswordDrawn = true
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
+            keyboard.viewTreeObserver.addOnGlobalLayoutListener ( object :
+                ViewTreeObserver.OnGlobalLayoutListener {
+                override fun onGlobalLayout()
+                {
+                    keyboard.viewTreeObserver.removeOnGlobalLayoutListener(this)
+                    val r = Rect()
+                    getWindowVisibleDisplayFrame(r)
+                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height - keyboard.height
                     resetConstraintsAndRedraw(true)
-                }
-            }
+                }}
+            )
 
             if (_inputMode != INPUT_MODE_NONE) {
                 context.inputMethodManager?.let { imm ->
                     if (!imm.isActive(this)) requestFocus()
                 }
             }
-
-            //force drawing after 1s if crossword drawing has been started it because in this case
-            // probably the soft keyboard is less then 300 dpi and callback for it has not been
-            // called
-            Handler(Looper.getMainLooper()).postDelayed({
-                if (!isCrosswordDrawn) {
-                    isCrosswordDrawn = true
-                    val r = Rect()
-                    getWindowVisibleDisplayFrame(r)
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
-                    resetConstraintsAndRedraw(true)
-                }
-            }, 1000)
-
         }
 
     init {
@@ -1295,15 +1280,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         return true
     }
 
-    private fun showKeyboard() {
-        if (_inputMode != INPUT_MODE_NONE) {
-            context.inputMethodManager?.let { imm ->
-                if (!imm.isActive(this)) requestFocus()
-                imm.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
-            }
-        }
-    }
-
     private fun resetErrorMarkers() {
         val cw = crossword ?: return
 
@@ -1661,9 +1637,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             if (offset.row == selection!!.row && offset.column == selection!!.column) {
                 // Same cell tapped - flip direction
                 switchWordDirection()
-                if (_isEditable) {
-                    showKeyboard()
-                }
                 return true
             }
 
@@ -1680,7 +1653,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             undoBuffer.clear()
         }
 
-        if (_isEditable) showKeyboard()
         return true
     }
 

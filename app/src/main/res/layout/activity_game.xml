@@ -48,4 +48,10 @@
         android:textColor="#fff"
         android:textSize="18sp"
         android:textIsSelectable="true" />
+
+    <com.omen273.crossLingo.KeyboardView
+        android:id="@+id/keyboard_ga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 </LinearLayout>

@@ -11,7 +11,7 @@
         android:requestLegacyExternalStorage="true">
         <activity
             android:name="com.omen273.crossLingo.GameActivity"
-            android:windowSoftInputMode="adjustResize"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.omen273.crossLingo.SettActivity"

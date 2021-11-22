@@ -96,7 +96,6 @@ fun generateCrossword(pressHome: Boolean = true, chooseTopics: List<Int> = listO
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
     if (!pressHome) {
         Espresso.pressBack()
-        Espresso.pressBack()
     } else {
         onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(ViewActions.click())
     }

@@ -26,7 +26,6 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
         onView(anyOf(withText(name), withId(id))).perform(click())
         stars -= price
         pressBack()
-        pressBack()
         loadFirstCrossword()
         waitForCondition("Stars number checking", {stars==readConfig()})
         return stars
