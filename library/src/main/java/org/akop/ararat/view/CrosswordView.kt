@@ -241,7 +241,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var inputValidator: InputValidator? = null
     var toolbarHeight: Int = 0
     lateinit var hintView: View
-    lateinit var viewR: View
+    lateinit var keyboard: View
     var keyboardHeight = 0
 
     var selectedWord: Crossword.Word?
@@ -342,39 +342,24 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             initializeCrossword()
             selectNextWord()
             renderScale = 0f
-            var isCrosswordDrawn = false
 
-            viewR.viewTreeObserver.addOnGlobalLayoutListener {
-                val r = Rect()
-                viewR.getWindowVisibleDisplayFrame(r)
-                val heightDiff = viewR.rootView.height - toolbarHeight - r.height()
-                val keyboardMinHeight = 300
-                if (heightDiff > keyboardMinHeight && !isCrosswordDrawn) {
-                    isCrosswordDrawn = true
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
+            keyboard.viewTreeObserver.addOnGlobalLayoutListener ( object :
+                ViewTreeObserver.OnGlobalLayoutListener {
+                override fun onGlobalLayout()
+                {
+                    keyboard.viewTreeObserver.removeOnGlobalLayoutListener(this)
+                    val r = Rect()
+                    getWindowVisibleDisplayFrame(r)
+                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height - keyboard.height
                     resetConstraintsAndRedraw(true)
-                }
-            }
+                }}
+            )
 
             if (_inputMode != INPUT_MODE_NONE) {
                 context.inputMethodManager?.let { imm ->
                     if (!imm.isActive(this)) requestFocus()
                 }
             }
-
-            //force drawing after 1s if crossword drawing has been started it because in this case
-            // probably the soft keyboard is less then 300 dpi and callback for it has not been
-            // called
-            Handler(Looper.getMainLooper()).postDelayed({
-                if (!isCrosswordDrawn) {
-                    isCrosswordDrawn = true
-                    val r = Rect()
-                    getWindowVisibleDisplayFrame(r)
-                    heightWithoutKeyboard = r.height() - toolbarHeight - hintView.height
-                    resetConstraintsAndRedraw(true)
-                }
-            }, 1000)
-
         }
 
     init {
@@ -1096,43 +1081,46 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
         val s = Selectable(sel)
 
-        if (markerDisplayMode and MARKER_SOLVED == 0) {
-            if (selectedCell > 0) {
-                // Go back one cell and remove the char
-                s.cell = --selectedCell
-            } else {
-                // At the first letter of a word. Select the previous word and do
-                // what we did if (mSelectedCell > 0)
-                selectedWord = crossword.previousWord(selectedWord)
-                selectedCell = (selectedWord ?: return).length - 1
-
-                s.word = selectedWord
-                s.cell = selectedCell
-            }
-        } else {
-            do {
-                var isS = false
-                if (selectedCell > 0) --selectedCell
-                else {
+        val isEmptyCell = puzzleCells[s.row][s.column]?.char == null
+        if(isEmptyCell || (moveSelectionToSolvedSquares &&
+                    puzzleCells[s.row][s.column]?.isFlagSet(Cell.FLAG_SOLVED) == true) ) {
+            if (markerDisplayMode and MARKER_SOLVED == 0) {
+                if (selectedCell > 0) {
+                    s.cell = --selectedCell
+                } else {
+                    // At the first letter of a word. Select the previous word and do
+                    // what we did if (mSelectedCell > 0)
                     selectedWord = crossword.previousWord(selectedWord)
                     selectedCell = (selectedWord ?: return).length - 1
+
+                    s.word = selectedWord
+                    s.cell = selectedCell
                 }
-                with(Selectable(s)) {
-                    if (selectedWord != null) {
-                        word = selectedWord as Crossword.Word
-                        cell = selectedCell
-                        if (puzzleCells[row][column]?.isFlagSet(Cell.FLAG_SOLVED) ==
-                            false
-                        ) {
-                            s.word = selectedWord as Crossword.Word
-                            s.cell = selectedCell
-                            isS = true
+            } else {
+                do {
+                    var isS = false
+                    if (selectedCell > 0) --selectedCell
+                    else {
+                        selectedWord = crossword.previousWord(selectedWord)
+                        selectedCell = (selectedWord ?: return).length - 1
+                    }
+                    with(Selectable(s)) {
+                        if (selectedWord != null) {
+                            word = selectedWord as Crossword.Word
+                            cell = selectedCell
+                            if (puzzleCells[row][column]?.isFlagSet(Cell.FLAG_SOLVED) ==
+                                false
+                            ) {
+                                s.word = selectedWord as Crossword.Word
+                                s.cell = selectedCell
+                                isS = true
+                            }
                         }
                     }
-                }
-            } while (selectedWord != null && !isS)
-            selectedWord = s.word
-            selectedCell = s.cell
+                } while (selectedWord != null && !isS)
+                selectedWord = s.word
+                selectedCell = s.cell
+            }
         }
 
         val row = s.row
@@ -1281,15 +1269,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         postInvalidateOnAnimation()
 
         return true
-    }
-
-    private fun showKeyboard() {
-        if (_inputMode != INPUT_MODE_NONE) {
-            context.inputMethodManager?.let { imm ->
-                if (!imm.isActive(this)) requestFocus()
-                imm.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
-            }
-        }
     }
 
     private fun resetErrorMarkers() {
@@ -1649,9 +1628,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             if (offset.row == selection!!.row && offset.column == selection!!.column) {
                 // Same cell tapped - flip direction
                 switchWordDirection()
-                if (_isEditable) {
-                    showKeyboard()
-                }
                 return true
             }
 
@@ -1668,7 +1644,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
             undoBuffer.clear()
         }
 
-        if (_isEditable) showKeyboard()
         return true
     }
 

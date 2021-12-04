@@ -53,6 +53,7 @@ import android.widget.Toast
 
 import android.content.Intent
 import android.graphics.Typeface
+import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.EditText
 
@@ -159,7 +160,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             }
             cv.toolbarHeight = actionBarHeight
             cv.hintView = hint
-            cv.viewR = window.decorView.rootView
+            cv.keyboard = keyboard_ga
             cv.crossword = crossword
             val fillName = name + STATE_SUFFIX
             cv.moveSelectionToSolvedSquares =
@@ -186,6 +187,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             onSelectionChanged(cv, cv.selectedWord, cv.selectedCell)
         }
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog()
+        keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
