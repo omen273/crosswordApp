@@ -1086,7 +1086,6 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                     puzzleCells[s.row][s.column]?.isFlagSet(Cell.FLAG_SOLVED) == true) ) {
             if (markerDisplayMode and MARKER_SOLVED == 0) {
                 if (selectedCell > 0) {
-                    // Go back one cell and remove the char
                     s.cell = --selectedCell
                 } else {
                     // At the first letter of a word. Select the previous word and do
