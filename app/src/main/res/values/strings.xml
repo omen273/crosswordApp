@@ -39,4 +39,7 @@
         <item>answer\'s spelling</item>
         <item>unsuitable topic</item>
     </string-array>
+    <string name ="change_print_mode_to_move_to_solved">
+        We noticed that you probably print to solved squares.
+        Do you want to try another printing mode?</string>
 </resources>

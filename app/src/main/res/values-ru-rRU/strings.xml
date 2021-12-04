@@ -33,4 +33,6 @@
         <item>написание ответа</item>
         <item>неподходящая тема</item>
     </string-array>
+    <string name ="change_print_mode_to_move_to_solved">Мы заметили, что вы скорее всего печатаете
+    в решенные клетки. Хотит попробовать другой режим ввода?</string>
 </resources>
