@@ -40,6 +40,6 @@
         <item>unsuitable topic</item>
     </string-array>
     <string name ="change_print_mode_to_move_to_solved">
-        We noticed that you probably type to solved squares.
+        We noticed that you probably type into solved squares.
         Do you want to try another typing mode?</string>
 </resources>
