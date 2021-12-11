@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar_main.*
+import org.akop.ararat.view.CrosswordView
 import java.io.File
 
 
@@ -33,6 +34,19 @@ class MainActivity : AppCompatActivity() {
         override fun writeToParcel(p0: Parcel, p1: Int) {
             p0.writeInt(row)
             p0.writeInt(column)
+        }
+
+        constructor(p: MainActivity.Position) : this(p.row, p.column)
+
+        constructor(p: Parcel): this(
+            row = p.readInt(),
+            column = p.readInt()
+        )
+
+        companion object CREATOR : Parcelable.Creator<Position> {
+            override fun createFromParcel(parcel: Parcel): Position =
+                Position(parcel)
+            override fun newArray(size: Int): Array<Position?> = arrayOfNulls(size)
         }
     }
 
