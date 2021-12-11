@@ -190,7 +190,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.inputValidator = { ch -> !ch.first().isISOControl() }
             cv.undoMode = CrosswordView.UNDO_SMART
             cv.markerDisplayMode = CrosswordView.MARKER_CUSTOM or CrosswordView.MARKER_SOLVED
-            onSelectionChanged(cv,  cv.selectedWord, cv.selectedCell)
+            onSelectionChanged(cv, cv.selectedWord, cv.selectedCell)
         }
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog()
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
@@ -516,8 +516,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
 
         val MAX_HITS_NUMBER = 3
-        if(hits >= MAX_HITS_NUMBER && hits < MAX_HITS_NUMBER + 1 &&
-            !activateOnMoveCursorToSolvedCellsMode)
+        if(hits == MAX_HITS_NUMBER)
         {
             val builder = AlertDialog.Builder(this).
             setMessage(R.string.change_print_mode_to_move_to_solved)
@@ -547,7 +546,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                ch: Char,
                                position: Int)
     {
-        detectMoveCursorToSolvedCellsMode(selection, puzzleCells, ch, position)
+        if(!activateOnMoveCursorToSolvedCellsMode)
+            detectMoveCursorToSolvedCellsMode(selection, puzzleCells, ch, position)
     }
 
     override fun onBackPressed() {
