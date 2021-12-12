@@ -107,7 +107,7 @@ fun chooseFirstTopic() {
     onView(nthChildOf(withId(R.id.topicList), 0)).perform(ViewActions.click())
 }
 
-fun getLastCrossword(): Crossword {
+fun getLastCrossword(): Crossword {0
     val imagesPath = File(
         getContext().getExternalFilesDir(null),
         MainActivity.IMAGE_DIRECTORY
@@ -207,7 +207,7 @@ fun waitForView(
 }
 
 fun testCell(word: Crossword.Word, ch: String) {
-    val hint = getContext().getString(R.string.tip, word.number, word.hint)
+    val hint = getContext().getString(R.string.tip, word.number, word.hint, word.citation)
     onView(isRoot()).perform(waitForView(withText(hint)))
     onView(withId(R.id.hint)).check(ViewAssertions.matches(withText(hint)))
     onView(withId(R.id.crossword)).perform(
