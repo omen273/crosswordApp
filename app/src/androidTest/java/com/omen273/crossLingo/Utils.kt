@@ -107,7 +107,7 @@ fun chooseFirstTopic() {
     onView(nthChildOf(withId(R.id.topicList), 0)).perform(ViewActions.click())
 }
 
-fun getLastCrossword(): Crossword {0
+fun getLastCrossword(): Crossword {
     val imagesPath = File(
         getContext().getExternalFilesDir(null),
         MainActivity.IMAGE_DIRECTORY
