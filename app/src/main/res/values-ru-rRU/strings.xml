@@ -17,7 +17,7 @@
     <string name="not_enough_words">Выбранные темы не содержат %1$d слов</string>
     <string name="choose_other_words">Пожалуйста, выберите другие слова, я не могу построить кроссворд</string>
     <string name="damaged_data">Данные кроссворда повреждены</string>
-    <string name="tip">%1$d. %2$s</string>
+    <string name="tip">%1$d. %2$s [%3$s]</string>
     <string name ="number_of_stars">количество звезд</string>
     <string name ="generate_crossword">создать кроссворд</string>
     <string name ="level">твой уровень</string>
