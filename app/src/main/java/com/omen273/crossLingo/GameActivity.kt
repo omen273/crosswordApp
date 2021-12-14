@@ -325,7 +325,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false
                 ) {
-                    if(star_number.text.toString().toInt() >= LETTER_OPEN_PRICE) {
+                    if (star_number.text.toString().toInt() >= LETTER_OPEN_PRICE) {
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
@@ -335,11 +335,14 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                         star_number.text = (star_number.text.toString().toInt() -
                                 LETTER_OPEN_PRICE).toString()
                         return true
-                    }
-                    else{
-                        val dialog = AlertDialog.Builder(this).
-                        setMessage(getString(R.string.not_enough_stars_square, star_number.text.toString()))
-                            .setNeutralButton(R.string.okButton) { _, _ ->}.create()
+                    } else {
+                        val dialog = AlertDialog.Builder(this).setMessage(
+                            getString(
+                                R.string.not_enough_stars_square,
+                                star_number.text.toString()
+                            )
+                        )
+                            .setNeutralButton(R.string.okButton) { _, _ -> }.create()
                         dialog.show()
                     }
                 }
@@ -348,16 +351,19 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             R.id.menu_solve_word -> {
                 if (!crosswordView.isSelectedWordSolved()
                 ) {
-                    if(star_number.text.toString().toInt() >= WORD_OPEN_PRICE) {
+                    if (star_number.text.toString().toInt() >= WORD_OPEN_PRICE) {
                         crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                         star_number.text = (star_number.text.toString().toInt() -
                                 WORD_OPEN_PRICE).toString()
                         return true
-                    }
-                    else {
-                        val dialog = AlertDialog.Builder(this).
-                        setMessage(getString(R.string.not_enough_stars_word, star_number.text.toString()))
-                            .setNeutralButton(R.string.okButton) { _, _ ->}.create()
+                    } else {
+                        val dialog = AlertDialog.Builder(this).setMessage(
+                            getString(
+                                R.string.not_enough_stars_word,
+                                star_number.text.toString()
+                            )
+                        )
+                            .setNeutralButton(R.string.okButton) { _, _ -> }.create()
                         dialog.show()
                     }
                 }
@@ -378,7 +384,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                     crosswordView.selectedWord?.let {
                                         sendMail(
                                             it,
-                                            types[selectedItem], message.text.toString())
+                                            types[selectedItem], message.text.toString()
+                                        )
                                     }
                                 }.create()
                         b1.show()
@@ -436,7 +443,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 delete = true
                 onBackPressed()
             }
-        if(!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
+        if (!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
         val builder = dialog.create()
         builder.setCancelable(false)
         builder.show()
@@ -461,7 +468,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private fun readSolvedCrosswordNumberToFile(path: File) =
         try {
             FileInputStream(path).use { ConfigReader().solvedCrosswordNumber(it) }
-        } catch (e:Exception) {
+        } catch (e: Exception) {
             Log.e("ERROR", "The bad solved crossword number file")
             path.delete()
             0
