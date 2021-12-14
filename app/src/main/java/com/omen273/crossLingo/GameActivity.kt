@@ -186,7 +186,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.markerDisplayMode = CrosswordView.MARKER_CUSTOM or CrosswordView.MARKER_SOLVED
             onSelectionChanged(cv, cv.selectedWord, cv.selectedCell)
         }
-        if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog()
+        if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
     }
 
@@ -323,29 +323,43 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_solve_cell -> {
-                if (crosswordView.isSelectedCellSolved() == false &&
-                    star_number.text.toString().toInt() >= LETTER_OPEN_PRICE
+                if (crosswordView.isSelectedCellSolved() == false
                 ) {
-                    crosswordView.selectedWord?.let {
-                        crosswordView.solveChar(
-                            it,
-                            crosswordView.selectedCell
-                        )
+                    if(star_number.text.toString().toInt() >= LETTER_OPEN_PRICE) {
+                        crosswordView.selectedWord?.let {
+                            crosswordView.solveChar(
+                                it,
+                                crosswordView.selectedCell
+                            )
+                        }
+                        star_number.text = (star_number.text.toString().toInt() -
+                                LETTER_OPEN_PRICE).toString()
+                        return true
                     }
-                    star_number.text = (star_number.text.toString().toInt() -
-                            LETTER_OPEN_PRICE).toString()
-                    return true
+                    else{
+                        val dialog = AlertDialog.Builder(this).
+                        setMessage(getString(R.string.not_enough_stars_square, star_number.text.toString()))
+                            .setNeutralButton(R.string.okButton) { _, _ ->}.create()
+                        dialog.show()
+                    }
                 }
                 return false
             }
             R.id.menu_solve_word -> {
-                if (!crosswordView.isSelectedWordSolved() &&
-                    star_number.text.toString().toInt() >= WORD_OPEN_PRICE
+                if (!crosswordView.isSelectedWordSolved()
                 ) {
-                    crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
-                    star_number.text = (star_number.text.toString().toInt() -
-                            WORD_OPEN_PRICE).toString()
-                    return true
+                    if(star_number.text.toString().toInt() >= WORD_OPEN_PRICE) {
+                        crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
+                        star_number.text = (star_number.text.toString().toInt() -
+                                WORD_OPEN_PRICE).toString()
+                        return true
+                    }
+                    else {
+                        val dialog = AlertDialog.Builder(this).
+                        setMessage(getString(R.string.not_enough_stars_word, star_number.text.toString()))
+                            .setNeutralButton(R.string.okButton) { _, _ ->}.create()
+                        dialog.show()
+                    }
                 }
                 return false
             }
@@ -414,14 +428,16 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordChanged(view: CrosswordView) {}
 
-    private fun showFinishGameDialog() {
-        val builder = AlertDialog.Builder(this).setMessage(R.string.youve_solved_the_puzzle)
+    private fun showFinishGameDialog(shownAgain: Boolean = false) {
+        val dialog = AlertDialog.Builder(this)
             .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
             .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
             .setNeutralButton(R.string.remove) { _, _ ->
                 delete = true
                 onBackPressed()
-            }.create()
+            }
+        if(!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
+        val builder = dialog.create()
         builder.setCancelable(false)
         builder.show()
         builder.window?.setGravity(Gravity.BOTTOM)
