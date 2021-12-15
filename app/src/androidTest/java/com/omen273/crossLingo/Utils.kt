@@ -85,7 +85,9 @@ fun getItemFromCrosswordList(row: Int, column: Int, name: String? = null): Match
     return nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 0)
 }
 
-fun generateCrossword(pressHome: Boolean = true, chooseTopics: List<Int> = listOf(0)): Crossword {
+enum class FinishTypeGenerateCrossword {PRESS_HOME, PRESS_BACK, NOTHING}
+fun generateCrossword(finish: FinishTypeGenerateCrossword  = FinishTypeGenerateCrossword.PRESS_BACK,
+ chooseTopics: List<Int> = listOf(0)): Crossword? {
     chooseGenerateCrossword()
     onView(isRoot()).perform(waitForView(withId(R.id.topicList)))
     for (i in chooseTopics) {
@@ -94,10 +96,11 @@ fun generateCrossword(pressHome: Boolean = true, chooseTopics: List<Int> = listO
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
-    if (!pressHome) {
-        Espresso.pressBack()
-    } else {
+    when(finish) {
+        FinishTypeGenerateCrossword.PRESS_BACK -> Espresso.pressBack()
+        FinishTypeGenerateCrossword.PRESS_HOME ->
         onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(ViewActions.click())
+        FinishTypeGenerateCrossword.NOTHING -> return null
     }
     return getLastCrossword()
 }
@@ -121,14 +124,6 @@ fun getLastCrossword(): Crossword {
     }
 }
 
-fun isKeyboardShown(): Boolean {
-    val inputMethodManager =
-        InstrumentationRegistry.getInstrumentation().targetContext.getSystemService(
-            Context.INPUT_METHOD_SERVICE
-        ) as InputMethodManager
-    return inputMethodManager.isAcceptingText
-}
-
 fun getContext(): Context = InstrumentationRegistry.getInstrumentation().targetContext
 
 fun getTestContext(): Context = InstrumentationRegistry.getInstrumentation().context
@@ -140,12 +135,10 @@ fun chooseGenerateCrossword() {
     onView(getItemFromCrosswordList(0, 0)).perform(ViewActions.click())
 }
 
-
 fun loadFirstCrossword(name: String? = null) {
     onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
     onView(getItemFromCrosswordList(0, 1, name)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
-    waitForCondition("", { isKeyboardShown() })
 }
 
 fun waitForCondition(reason: String, condition: Callable<Boolean>, timeout: Long = 10000) {
@@ -380,7 +373,7 @@ abstract class BadCrosswordDataTest : TestBaseClass() {
     lateinit var crossword: Crossword
 
     fun test() {
-        crossword = generateCrossword()
+        crossword = generateCrossword()!!
         val start = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start > 300 })
         spoil()

@@ -9,7 +9,7 @@ class SolveCrosswordInstrumentedTest : SolveCrossword() {
 
     @Test
     fun solveCrosswordInstrumentedTest() {
-        crossword = generateCrossword(false)
+        crossword = generateCrossword(FinishTypeGenerateCrossword.PRESS_HOME)!!
         loadFirstCrossword()
         solve()
     }
