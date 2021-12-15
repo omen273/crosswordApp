@@ -492,10 +492,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onCrosswordUnsolved(view: CrosswordView) {}
 
     override fun onSelectionChanged(view: CrosswordView, word: Crossword.Word?, position: Int) {
-        hint.text = when (word?.direction) {
-            Crossword.Word.DIR_ACROSS -> getString(R.string.tip, word.number, word.hint)
-            Crossword.Word.DIR_DOWN -> getString(R.string.tip, word.number, word.hint)
-            else -> ""
+        hint.text = when (word) {
+            null -> ""
+            else -> getString(R.string.tip, word.number, word.hint, word.citation)
         }
     }
 

@@ -5,7 +5,7 @@
     <string name="solve_square">Solve square (-1\u2605)</string>
     <string name="solve_word">Solve word (-3\u2605)</string>
     <string name="menu_report_error">Report error</string>
-    <string name="tip">%1$d. %2$s</string>
+    <string name="tip">%1$d. %2$s [%3$s]</string>
     <string name="youve_solved_the_puzzle">You\'ve solved the puzzle! (+5\u2605)</string>
     <string name="reset">RESET</string>
     <string name="another_crossword">ANOTHER CROSSWORD</string>
