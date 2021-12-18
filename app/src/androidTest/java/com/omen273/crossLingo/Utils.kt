@@ -85,9 +85,12 @@ fun getItemFromCrosswordList(row: Int, column: Int, name: String? = null): Match
     return nthChildOf(nthChildOf(nthChildOf(withId(R.id.tableLayout), row), column), 0)
 }
 
-enum class FinishTypeGenerateCrossword {PRESS_HOME, PRESS_BACK, NOTHING}
-fun generateCrossword(finish: FinishTypeGenerateCrossword  = FinishTypeGenerateCrossword.PRESS_BACK,
- chooseTopics: List<Int> = listOf(0)): Crossword? {
+enum class FinishTypeGenerateCrossword { PRESS_HOME, PRESS_BACK, NOTHING }
+
+fun generateCrossword(
+    finish: FinishTypeGenerateCrossword = FinishTypeGenerateCrossword.PRESS_BACK,
+    chooseTopics: List<Int> = listOf(0)
+): Crossword? {
     chooseGenerateCrossword()
     onView(isRoot()).perform(waitForView(withId(R.id.topicList)))
     for (i in chooseTopics) {
@@ -96,10 +99,12 @@ fun generateCrossword(finish: FinishTypeGenerateCrossword  = FinishTypeGenerateC
     onView(isRoot()).perform(waitForView(withId(R.id.ok_play)))
     onView(withId(R.id.ok_play)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
-    when(finish) {
+    when (finish) {
         FinishTypeGenerateCrossword.PRESS_BACK -> Espresso.pressBack()
         FinishTypeGenerateCrossword.PRESS_HOME ->
-        onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(ViewActions.click())
+            onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(
+                ViewActions.click()
+            )
         FinishTypeGenerateCrossword.NOTHING -> return null
     }
     return getLastCrossword()
