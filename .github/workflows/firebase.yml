@@ -65,6 +65,8 @@ jobs:
         # | blueline | Google | Pixel 3    | PHYSICAL | 2160 x 1080 | 28             |
         run: |
           gcloud firebase test android models list
+          ln -s ${ANDROID_HOME}/build-tools/31.0.0/d8 ${ANDROID_HOME}/build-tools/31.0.0/dx
+          ln -s ${ANDROID_HOME}/build-tools/31.0.0/lib/d8.jar ${ANDROID_HOME}/build-tools/31.0.0/lib/dx.jar
           gcloud firebase test android run --type instrumentation --use-orchestrator \
           --environment-variables clearPackageData=true \
           --app app-debug/app-debug.apk --test app-debug-androidTest/app-debug-androidTest.apk \
