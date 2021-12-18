@@ -13,7 +13,7 @@ class SolveCrosswordAfterResetInstrumentedTest : SolveCrossword() {
 
     @Test
     fun solveCrosswordAfterResetInstrumentedTest() {
-        crossword = generateCrossword()
+        crossword = generateCrossword()!!
         loadFirstCrossword()
         solve()
         Espresso.onView(ViewMatchers.withText(R.string.reset))

@@ -12,7 +12,7 @@ class CheckStarCountAfterRemovingInstrumentedTest: SolveCrossword() {
     fun solveCrosswordInstrumentedTest() {
         val START_STAR_NAMBER = 50
         waitForCondition("Stars number checking", {START_STAR_NAMBER  == readConfig()})
-        crossword = generateCrossword()
+        crossword = generateCrossword()!!
         loadFirstCrossword()
         solve()
         Espresso.onView(ViewMatchers.withText(R.string.remove))

@@ -3,15 +3,15 @@
     <string name="hintTopics">выбрать темы</string>
     <string name="sizeName">размер</string>
     <string name="okButton">ОК</string>
-    <string name="solve_square">решить клетку</string>
-    <string name="solve_word">решить слово</string>
+    <string name="solve_square">решить клетку (-1\u2605)</string>
+    <string name="solve_word">решить слово (-3\u2605)</string>
     <string name="menu_report_error">сообщить об ошибке</string>
     <string name="reset">Сбросить</string>
     <string name="another_crossword">Новый кроссворд</string>
     <string name="remove">Удалить</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
-    <string name="youve_solved_the_puzzle">Вы решили кроссворд!</string>
+    <string name="youve_solved_the_puzzle">Вы решили кроссворд! (+5\u2605)</string>
     <string name="delete_crossword_question">Вы хотите удалить %1$s?</string>
     <string name="choose_at_least_one_topic">Пожалуйста, выберите хотя бы одну тему</string>
     <string name="not_enough_words">Выбранные темы не содержат %1$d слов</string>
@@ -27,6 +27,10 @@
     <string name="move_selection_to_solved_squares">печатать в решенные клетки</string>
     <string name="error_reasons_string">Пожалуйста, выберите тип ошибки</string>
     <string name="error_message">Пожалуйста, опишите ошибку ниже</string>
+    <string name="not_enough_stars_word">У вас недостаточно звезд (%1s\u2605) для открытия слова (-3\u2605).
+        Пожалуйста, решите кроссвод, чтобы получить звезды (+5\u2605)</string>
+    <string name="not_enough_stars_square">У вас недостаточно звезд(%1s\u2605) для открытия клетки (-1\u2605)
+        . Пожалуйста, решите кроссвод, чтобы получить звезды (+5\u2605)</string>
     <string-array name="error_reasons">
         <item>неподходящий перевод</item>
         <item>написание вопроса</item>
