@@ -59,13 +59,14 @@ import android.widget.EditText
 
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
-    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
+    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener, CrosswordView.OnPrintLetterListener {
 
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
     private var delete = false
     private var onBackPressedCallBefore = false
 
+    @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
@@ -147,6 +148,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 if (delete) onBackPressed()
                 name = savedInstanceState?.getCharSequence("name") as String
                 delete = savedInstanceState.getBoolean("delete")
+                activateOnMoveCursorToSolvedCellsMode =
+                    savedInstanceState.getBoolean("activateOnMoveCursorToSolvedCellsMode")
+                hits = savedInstanceState.getInt("hits")
                 restoredCrossword
             }
         }
@@ -165,6 +169,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val fillName = name + STATE_SUFFIX
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
+            activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if (state != null)
@@ -181,6 +186,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.onLongPressListener = this
             cv.onStateChangeListener = this
             cv.onSelectionChangeListener = this
+            cv.onPrintLetterListener = this
             cv.inputValidator = { ch -> !ch.first().isISOControl() }
             cv.undoMode = CrosswordView.UNDO_SMART
             cv.markerDisplayMode = CrosswordView.MARKER_CUSTOM or CrosswordView.MARKER_SOLVED
@@ -225,6 +231,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         return res
     }
 
+    @ExperimentalUnsignedTypes
     private fun generateName(title: String): String {
         val last = fileList().filter { it.startsWith(title) }
             .filter { !it.endsWith(STATE_SUFFIX) }
@@ -313,6 +320,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             outState.putParcelable("crossword", crosswordView.crossword)
         outState.putCharSequence("name", name)
         outState.putBoolean("delete", delete)
+        outState.putBoolean("activateOnMoveCursorToSolvedCellsMode",
+            activateOnMoveCursorToSolvedCellsMode)
+        outState.putInt("hits", hits)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -468,11 +478,74 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordUnsolved(view: CrosswordView) {}
 
+    private var hits = 0
+    private var activateOnMoveCursorToSolvedCellsMode = false
+
+    @kotlin.ExperimentalStdlibApi
+    private fun detectMoveCursorToSolvedCellsMode(selection: CrosswordView.Selectable?,
+                                                  puzzleCells: Array<Array<CrosswordView.Cell?>>,
+                                                  ch: Char,
+                                                  position: Int)
+    {
+        val startRow = selection?.word?.startRow
+        val startColumn = selection?.word?.startColumn
+        val row = selection?.row
+        val column = selection?.column
+        var solved = 0
+        if(startRow != null && startColumn != null && row != null && column != null) {
+            when (selection.word.direction) {
+                Crossword.Word.DIR_ACROSS -> {
+                    for( i in column - 1 downTo startColumn)
+                        if ( puzzleCells[row][i]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                            ++solved
+                }
+                Crossword.Word.DIR_DOWN -> {
+                    for( i in row - 1 downTo startRow)
+                        if ( puzzleCells[i][column]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                            ++solved
+                }
+            }
+        }
+
+        if (selection != null) {
+            if(solved > 0 && ch.uppercaseChar() ==
+                selection.word.cells[position - solved].chars[0] &&
+                ch.uppercaseChar() != selection.word.cells[position].chars[0]
+            )
+                ++hits
+        }
+
+        val MAX_HITS_NUMBER = 3
+        if(hits == MAX_HITS_NUMBER)
+        {
+            val builder = AlertDialog.Builder(this).
+            setMessage(R.string.change_print_mode_to_move_to_solved)
+                .setPositiveButton(R.string.yes) { _, _ ->
+                    SettActivity.writePrintToFilledCellsToConfig(this, true)
+                    crosswordView.moveSelectionToSolvedSquares = true}
+                .setNegativeButton(R.string.no) { _, _ ->
+                }.create()
+            builder.setCancelable(false)
+            builder.show()
+            activateOnMoveCursorToSolvedCellsMode = true
+        }
+    }
+
     override fun onSelectionChanged(view: CrosswordView, word: Crossword.Word?, position: Int) {
         hint.text = when (word) {
             null -> ""
             else -> getString(R.string.tip, word.number, word.hint, word.citation)
         }
+    }
+
+    @ExperimentalStdlibApi
+    override fun onPrintLetter(selection: CrosswordView.Selectable?,
+                               puzzleCells: Array<Array<CrosswordView.Cell?>>,
+                               ch: Char,
+                               position: Int)
+    {
+        if(!activateOnMoveCursorToSolvedCellsMode)
+            detectMoveCursorToSolvedCellsMode(selection, puzzleCells, ch, position)
     }
 
     override fun onBackPressed() {
