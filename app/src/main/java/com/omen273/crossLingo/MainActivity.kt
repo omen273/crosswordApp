@@ -8,6 +8,8 @@ import android.graphics.Typeface.BOLD
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Bundle
+import android.os.Parcel
+import android.os.Parcelable
 import android.util.Log
 import android.view.Gravity
 import android.view.View
@@ -20,12 +22,34 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar_main.*
+import org.akop.ararat.view.CrosswordView
 import java.io.File
 
 
 class MainActivity : AppCompatActivity() {
 
-    class Position(val row: Int, val column: Int)
+    class Position(val row: Int, val column: Int): Parcelable {
+        override fun describeContents(): Int = 0
+
+        override fun writeToParcel(p0: Parcel, p1: Int) {
+            p0.writeInt(row)
+            p0.writeInt(column)
+        }
+
+        constructor(p: MainActivity.Position) : this(p.row, p.column)
+
+        constructor(p: Parcel): this(
+            row = p.readInt(),
+            column = p.readInt()
+        )
+
+        companion object CREATOR : Parcelable.Creator<Position> {
+            override fun createFromParcel(parcel: Parcel): Position =
+                Position(parcel)
+            override fun newArray(size: Int): Array<Position?> = arrayOfNulls(size)
+        }
+    }
+
     internal var imageSize: Int = 0
 
     private var currentCrosswordPosition = Position(0,0)
@@ -175,6 +199,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val pos = savedInstanceState?.getParcelable("position") as Position?
+        currentCrosswordPosition = pos?:currentCrosswordPosition
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         val transformer = DataTransformer(resources.openRawResource(R.raw.data).use { WordsReader().read(it,
@@ -380,6 +406,11 @@ class MainActivity : AppCompatActivity() {
         //try to force update of recycleview otherwise the last item is not redrawn sometimes
         tableLayout.adapter = tableLayout.adapter
         super.onResume()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable("position", currentCrosswordPosition)
     }
 
     companion object {
