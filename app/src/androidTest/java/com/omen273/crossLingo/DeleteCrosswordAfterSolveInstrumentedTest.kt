@@ -13,8 +13,8 @@ class DeleteCrosswordAfterSolveInstrumentedTest : SolveCrossword(){
 
     @Test
     fun deleteCrosswordAfterSolveInstrumentedTest() {
-        val crossword1 = generateCrossword()
-        crossword = generateCrossword()
+        val crossword1 = generateCrossword()!!
+        crossword = generateCrossword()!!
         loadFirstCrossword()
         solve()
         Espresso.onView(ViewMatchers.withText(R.string.remove))

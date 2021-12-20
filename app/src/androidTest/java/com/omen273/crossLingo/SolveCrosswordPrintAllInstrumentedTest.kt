@@ -25,7 +25,7 @@ class SolveCrosswordPrintAllInstrumentedTest: SolveCrossword() {
 
     @Test
     fun solveCrosswordInstrumentedTest() {
-        crossword = generateCrossword(false)
+        crossword = generateCrossword(FinishTypeGenerateCrossword.PRESS_HOME)!!
         loadFirstCrossword()
         solve(printAllLetters = true, actionChecking = true)
     }
