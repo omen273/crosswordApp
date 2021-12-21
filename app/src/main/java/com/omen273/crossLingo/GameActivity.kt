@@ -59,13 +59,14 @@ import android.widget.EditText
 
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
-    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener {
+    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener, CrosswordView.OnPrintLetterListener {
 
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
     private var delete = false
     private var onBackPressedCallBefore = false
 
+    @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
@@ -147,6 +148,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 if (delete) onBackPressed()
                 name = savedInstanceState?.getCharSequence("name") as String
                 delete = savedInstanceState.getBoolean("delete")
+                activateOnMoveCursorToSolvedCellsMode =
+                    savedInstanceState.getBoolean("activateOnMoveCursorToSolvedCellsMode")
+                hits = savedInstanceState.getInt("hits")
                 restoredCrossword
             }
         }
@@ -165,6 +169,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             val fillName = name + STATE_SUFFIX
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
+            activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if (state != null)
@@ -181,12 +186,13 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.onLongPressListener = this
             cv.onStateChangeListener = this
             cv.onSelectionChangeListener = this
+            cv.onPrintLetterListener = this
             cv.inputValidator = { ch -> !ch.first().isISOControl() }
             cv.undoMode = CrosswordView.UNDO_SMART
             cv.markerDisplayMode = CrosswordView.MARKER_CUSTOM or CrosswordView.MARKER_SOLVED
             onSelectionChanged(cv, cv.selectedWord, cv.selectedCell)
         }
-        if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog()
+        if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
     }
 
@@ -225,6 +231,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         return res
     }
 
+    @ExperimentalUnsignedTypes
     private fun generateName(title: String): String {
         val last = fileList().filter { it.startsWith(title) }
             .filter { !it.endsWith(STATE_SUFFIX) }
@@ -313,6 +320,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             outState.putParcelable("crossword", crosswordView.crossword)
         outState.putCharSequence("name", name)
         outState.putBoolean("delete", delete)
+        outState.putBoolean("activateOnMoveCursorToSolvedCellsMode",
+            activateOnMoveCursorToSolvedCellsMode)
+        outState.putInt("hits", hits)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -323,29 +333,49 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_solve_cell -> {
-                if (crosswordView.isSelectedCellSolved() == false &&
-                    star_number.text.toString().toInt() >= LETTER_OPEN_PRICE
+                if (crosswordView.isSelectedCellSolved() == false
                 ) {
-                    crosswordView.selectedWord?.let {
-                        crosswordView.solveChar(
-                            it,
-                            crosswordView.selectedCell
+                    if (star_number.text.toString().toInt() >= LETTER_OPEN_PRICE) {
+                        crosswordView.selectedWord?.let {
+                            crosswordView.solveChar(
+                                it,
+                                crosswordView.selectedCell
+                            )
+                        }
+                        star_number.text = (star_number.text.toString().toInt() -
+                                LETTER_OPEN_PRICE).toString()
+                        return true
+                    } else {
+                        val dialog = AlertDialog.Builder(this).setMessage(
+                            getString(
+                                R.string.not_enough_stars_square,
+                                star_number.text.toString()
+                            )
                         )
+                            .setNeutralButton(R.string.okButton) { _, _ -> }.create()
+                        dialog.show()
                     }
-                    star_number.text = (star_number.text.toString().toInt() -
-                            LETTER_OPEN_PRICE).toString()
-                    return true
                 }
                 return false
             }
             R.id.menu_solve_word -> {
-                if (!crosswordView.isSelectedWordSolved() &&
-                    star_number.text.toString().toInt() >= WORD_OPEN_PRICE
+                if (!crosswordView.isSelectedWordSolved()
                 ) {
-                    crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
-                    star_number.text = (star_number.text.toString().toInt() -
-                            WORD_OPEN_PRICE).toString()
-                    return true
+                    if (star_number.text.toString().toInt() >= WORD_OPEN_PRICE) {
+                        crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
+                        star_number.text = (star_number.text.toString().toInt() -
+                                WORD_OPEN_PRICE).toString()
+                        return true
+                    } else {
+                        val dialog = AlertDialog.Builder(this).setMessage(
+                            getString(
+                                R.string.not_enough_stars_word,
+                                star_number.text.toString()
+                            )
+                        )
+                            .setNeutralButton(R.string.okButton) { _, _ -> }.create()
+                        dialog.show()
+                    }
                 }
                 return false
             }
@@ -364,7 +394,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                                     crosswordView.selectedWord?.let {
                                         sendMail(
                                             it,
-                                            types[selectedItem], message.text.toString())
+                                            types[selectedItem], message.text.toString()
+                                        )
                                     }
                                 }.create()
                         b1.show()
@@ -414,14 +445,16 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordChanged(view: CrosswordView) {}
 
-    private fun showFinishGameDialog() {
-        val builder = AlertDialog.Builder(this).setMessage(R.string.youve_solved_the_puzzle)
+    private fun showFinishGameDialog(shownAgain: Boolean = false) {
+        val dialog = AlertDialog.Builder(this)
             .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
             .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
             .setNeutralButton(R.string.remove) { _, _ ->
                 delete = true
                 onBackPressed()
-            }.create()
+            }
+        if (!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
+        val builder = dialog.create()
         builder.setCancelable(false)
         builder.show()
         builder.window?.setGravity(Gravity.BOTTOM)
@@ -445,7 +478,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private fun readSolvedCrosswordNumberToFile(path: File) =
         try {
             FileInputStream(path).use { ConfigReader().solvedCrosswordNumber(it) }
-        } catch (e:Exception) {
+        } catch (e: Exception) {
             Log.e("ERROR", "The bad solved crossword number file")
             path.delete()
             0
@@ -468,11 +501,74 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordUnsolved(view: CrosswordView) {}
 
+    private var hits = 0
+    private var activateOnMoveCursorToSolvedCellsMode = false
+
+    @kotlin.ExperimentalStdlibApi
+    private fun detectMoveCursorToSolvedCellsMode(selection: CrosswordView.Selectable?,
+                                                  puzzleCells: Array<Array<CrosswordView.Cell?>>,
+                                                  ch: Char,
+                                                  position: Int)
+    {
+        val startRow = selection?.word?.startRow
+        val startColumn = selection?.word?.startColumn
+        val row = selection?.row
+        val column = selection?.column
+        var solved = 0
+        if(startRow != null && startColumn != null && row != null && column != null) {
+            when (selection.word.direction) {
+                Crossword.Word.DIR_ACROSS -> {
+                    for( i in column - 1 downTo startColumn)
+                        if ( puzzleCells[row][i]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                            ++solved
+                }
+                Crossword.Word.DIR_DOWN -> {
+                    for( i in row - 1 downTo startRow)
+                        if ( puzzleCells[i][column]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                            ++solved
+                }
+            }
+        }
+
+        if (selection != null) {
+            if(solved > 0 && ch.uppercaseChar() ==
+                selection.word.cells[position - solved].chars[0] &&
+                ch.uppercaseChar() != selection.word.cells[position].chars[0]
+            )
+                ++hits
+        }
+
+        val MAX_HITS_NUMBER = 3
+        if(hits == MAX_HITS_NUMBER)
+        {
+            val builder = AlertDialog.Builder(this).
+            setMessage(R.string.change_print_mode_to_move_to_solved)
+                .setPositiveButton(R.string.yes) { _, _ ->
+                    SettActivity.writePrintToFilledCellsToConfig(this, true)
+                    crosswordView.moveSelectionToSolvedSquares = true}
+                .setNegativeButton(R.string.no) { _, _ ->
+                }.create()
+            builder.setCancelable(false)
+            builder.show()
+            activateOnMoveCursorToSolvedCellsMode = true
+        }
+    }
+
     override fun onSelectionChanged(view: CrosswordView, word: Crossword.Word?, position: Int) {
         hint.text = when (word) {
             null -> ""
             else -> getString(R.string.tip, word.number, word.hint, word.citation)
         }
+    }
+
+    @ExperimentalStdlibApi
+    override fun onPrintLetter(selection: CrosswordView.Selectable?,
+                               puzzleCells: Array<Array<CrosswordView.Cell?>>,
+                               ch: Char,
+                               position: Int)
+    {
+        if(!activateOnMoveCursorToSolvedCellsMode)
+            detectMoveCursorToSolvedCellsMode(selection, puzzleCells, ch, position)
     }
 
     override fun onBackPressed() {

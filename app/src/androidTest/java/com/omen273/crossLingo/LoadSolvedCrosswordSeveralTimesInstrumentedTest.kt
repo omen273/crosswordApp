@@ -10,7 +10,7 @@ class LoadSolvedCrosswordSeveralTimesInstrumentedTest: SolveCrossword() {
 
     @Test
     fun solveCrosswordInstrumentedTest() {
-        crossword = generateCrossword()
+        crossword = generateCrossword()!!
         loadFirstCrossword()
         solve()
         Espresso.onView(ViewMatchers.withText(R.string.another_crossword))

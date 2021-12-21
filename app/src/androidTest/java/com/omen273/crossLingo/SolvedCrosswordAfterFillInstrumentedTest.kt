@@ -12,7 +12,7 @@ class SolvedCrosswordAfterFillInstrumentedTest : SolveCrossword() {
 
     @Test
     fun solvedCrosswordAfterFillInstrumentedTest() {
-        crossword = generateCrossword()
+        crossword = generateCrossword()!!
         loadFirstCrossword()
         val length = crossword.wordsDown.fold(0, { acc, word -> acc + word.cells.size }) +
             crossword.wordsAcross.fold(0, { acc, word -> acc + word.cells.size })

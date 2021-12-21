@@ -33,7 +33,7 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
 
     @Test
     fun solveCrosswordWithTipsInstrumentedTest() {
-        val crossword = generateCrossword()
+        val crossword = generateCrossword()!!
         loadFirstCrossword()
         val visited =
             Array(crossword.height) { Array(crossword.width) { false } }

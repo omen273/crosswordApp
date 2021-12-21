@@ -19,7 +19,7 @@ class DeleteCrosswordInstrumentedTest : SolveCrossword() {
 
     @Test
     fun deleteCrosswordInstrumentedTest() {
-        crossword = generateCrossword()
+        crossword = generateCrossword()!!
         generateCrossword()
         Espresso.onView(ViewMatchers.isRoot())
             .perform(waitForView(ViewMatchers.withId(R.id.tableLayout)))
