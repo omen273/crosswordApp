@@ -18,7 +18,6 @@ import java.io.File
 import java.io.FileOutputStream
 
 @RunWith(AndroidJUnit4::class)
-@SdkSuppress(maxSdkVersion = 29)
 class BadImageReadingInstrumentedTest {
 
     @Rule
