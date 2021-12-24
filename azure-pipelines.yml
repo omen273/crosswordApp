@@ -23,6 +23,8 @@ parameters:
         arch: 'x86'
       - name: '30'
         arch: 'x86'
+      # there is no x86 image for API 31
+      # I leave other API on x86 images because API 29 x86_64 does some shenanigans
       - name: '31'
         arch: 'x86_64'
 
