@@ -5,16 +5,26 @@ parameters:
   - name: AndroidAPIs
     type: object
     default:
-      - 22
-      - 23
-      - 24
-      - 25
-      - 26
-      - 27
-      - 28
-      - 29
-      - 30
-      - 31
+      - name: '22'
+        arch: 'x86'
+      - name: '23'
+        arch: 'x86'
+      - name: '24'
+        arch: 'x86'
+      - name: '25'
+        arch: 'x86'
+      - name: '26'
+        arch: 'x86'
+      - name: '27'
+        arch: 'x86'
+      - name: '28'
+        arch: 'x86'
+      - name: '29'
+        arch: 'x86'
+      - name: '30'
+        arch: 'x86'
+      - name: '31'
+        arch: 'x86_64'
 
 trigger:
 - master
@@ -26,14 +36,14 @@ jobs:
   - ${{ each value in parameters.AndroidAPIs }}:
       - job:
         timeoutInMinutes: 30
-        displayName: API ${{ value }}
+        displayName: API ${{ value.name }}
         steps:
         - bash: |
-            echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value }};google_apis;x86_64'
+            echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-${{ value.name }};google_apis;${{ value.arch }}'
             # -d 17 for Pixel
             # to find out other devices run "avdmanager list device"
             # set sdcard standard size explicitely to avoid empty external storage on API 21-22
-            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value }};google_apis;x86_64' --sdcard 512M -d 17 --force
+            echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-${{ value.name }};google_apis;${{ value.arch }}' --sdcard 512M -d 17 --force
 
             $ANDROID_HOME/emulator/emulator -list-avds
 
@@ -61,7 +71,7 @@ jobs:
         - bash: |
             $ANDROID_HOME/platform-tools/adb uninstall com.example.crosswordToLearn
             $ANDROID_HOME/platform-tools/adb logcat -c
-            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device-${{ value }}.log &
+            $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device-${{ value.name }}.log &
             echo $! > logcat.pid
             echo "Logcat Started with Process ID: $(cat logcat.pid)"
             $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
@@ -70,7 +80,7 @@ jobs:
               do
                 screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
               done
-            ''' > $(Build.ArtifactStagingDirectory)/video-${{ value }}.log &
+            ''' > $(Build.ArtifactStagingDirectory)/video-${{ value.name }}.log &
             echo $! > video.pid
             echo "Video Recorder Started with Process ID: $(cat video.pid)"
           displayName: 'Start Video Record and Logcat'
@@ -87,13 +97,13 @@ jobs:
           inputs:
             testResultsFiles: '**/outputs/androidTest-results/**/TEST*.xml'
             failTaskOnFailedTests: true
-            testRunTitle: 'API ${{ value }}'
+            testRunTitle: 'API ${{ value.name }}'
           condition: succeededOrFailed()
 
         - bash: |
             kill -9 $(cat video.pid) || true
             sleep 5
-            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory)/API_${{ value }} || true
+            $ANDROID_HOME/platform-tools/adb pull $(DEVICE_VIDEO_DIR) $(Build.ArtifactStagingDirectory)/API_${{ value.name }} || true
             kill -9 $(cat logcat.pid) || true
             adb kill-server
           condition: or(succeeded(), failed())
