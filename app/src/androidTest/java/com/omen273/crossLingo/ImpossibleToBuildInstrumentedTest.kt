@@ -13,6 +13,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
+@SdkSuppress(maxSdkVersion = 29)
 class ImpossibleToBuildInstrumentedTest : TestBaseClass() {
     private lateinit var scenario: ActivityScenario<ChooseTopicsActivity>
 
