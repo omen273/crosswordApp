@@ -3,7 +3,10 @@
     <string name="sizeName">size:</string>
     <string name="okButton">OK</string>
     <string name="solve_square">Solve square (-1\u2605)</string>
+    <string name="solve_square_free">Solve square for free</string>
     <string name="solve_word">Solve word (-3\u2605)</string>
+    <string name="solve_word_free">Solve word for free</string>
+    <string name="free">FREE</string>
     <string name="menu_report_error">Report error</string>
     <string name="tip">%1$d. %2$s [%3$s]</string>
     <string name="youve_solved_the_puzzle">You\'ve solved the puzzle! (+5\u2605)</string>

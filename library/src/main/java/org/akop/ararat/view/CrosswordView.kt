@@ -54,6 +54,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         fun onCrosswordChanged(view: CrosswordView)
         fun onCrosswordSolved(view: CrosswordView)
         fun onCrosswordUnsolved(view: CrosswordView)
+        fun onWordSolved()
     }
 
     interface OnSelectionChangeListener {
@@ -75,6 +76,10 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         puzzleCells: Array<Array<Cell?>>,
         ch: Char,
         position: Int)
+    }
+
+    interface OnWordSolved{
+        fun onWordSolved()
     }
 
     private val defaultInputValidator: InputValidator = { ch ->
@@ -246,6 +251,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var onStateChangeListener: OnStateChangeListener? = null
     var onLongPressListener: OnLongPressListener? = null
     var onPrintLetterListener: OnPrintLetterListener? = null
+    var onWordSolved: OnWordSolved? = null
     var inputValidator: InputValidator? = null
     var toolbarHeight: Int = 0
     lateinit var hintView: View
@@ -1615,6 +1621,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     private fun markWordAsSolved(sel: Selectable?) {
         sel?.let {
+            onStateChangeListener?.onWordSolved()
             for (i in 0 until it.word.length) {
                 when (it.word.direction) {
                     Crossword.Word.DIR_ACROSS ->
