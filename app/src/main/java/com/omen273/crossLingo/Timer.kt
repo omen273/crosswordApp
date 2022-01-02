@@ -11,10 +11,6 @@ class Timer(private val duration : Long, private val action1 : () -> Unit, priva
         act()
     }, duration)
 
-    init {
-        start(action1)
-    }
-
     fun stop() = handler.removeCallbacksAndMessages(null)
 
     fun restart() {

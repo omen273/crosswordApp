@@ -7,21 +7,7 @@ import java.nio.charset.Charset
 
 class ConfigReader {
 
-    fun readStarNumber(inputStream: InputStream): Int =
-        with(
-            JsonReader(
-                inputStream.bufferedReader
-                    (Charset.forName(MainActivity.DEFAULT_ENCODING))
-            )
-        ) {
-            beginObject()
-            val starNumber = when (val tag = nextName()) {
-                "star_number" -> nextInt()
-                else -> throw RuntimeException("The wrong json tag: $tag")
-            }
-            endObject()
-            starNumber
-        }
+    fun readStarNumber(inputStream: InputStream): Int = Utils.readInt(inputStream, "star_number")
 
     fun readLevel(inputStream: InputStream, levelValidator : (level: String) -> Unit): String? =
             with(
@@ -66,19 +52,5 @@ class ConfigReader {
         }
 
     fun solvedCrosswordNumber(inputStream: InputStream): Int =
-        with(
-            JsonReader(
-                inputStream.bufferedReader
-                    (Charset.forName(MainActivity.DEFAULT_ENCODING))
-            )
-        ) {
-            beginObject()
-            val number = when (val tag = nextName()) {
-                "solved_crossword_number" -> nextInt()
-                else -> throw RuntimeException("The wrong json tag: $tag")
-            }
-            endObject()
-            number
-        }
-
+        Utils.readInt(inputStream, "solved_crossword_number")
 }

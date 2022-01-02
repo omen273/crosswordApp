@@ -707,7 +707,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         }
 
         val ch = word.cellAt(charIndex).chars()
-        setChars(row, column, arrayOf(arrayOf(ch)), true)
+        setChars(row, column, arrayOf(arrayOf(ch)), setCheatFlag = true, oneCell = true)
         if (selection != null) resetSelection(nextSelectable(selection ?: return))
         onBoardChanged()
     }
@@ -978,15 +978,18 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                 undoBuffer.push(UndoItem(cell.char, row, col, selection))
                 if (!((markerDisplayMode and MARKER_SOLVED != 0) && isSelectedCellSolved() == true))
                     cell.setChar(sch)
-                switchWordDirection()
+                val oldSelection = selection
                 if ((markerDisplayMode and MARKER_SOLVED != 0) && isWordSolved(selection?.word)) {
                     markWordAsSolved(selection)
                 }
                 switchWordDirection()
-                if ((markerDisplayMode and MARKER_SOLVED != 0) &&
-                    isWordSolved(selection?.word)
-                ) {
-                    markWordAsSolved(selection)
+                if(selection != oldSelection) {
+                    switchWordDirection()
+                    if ((markerDisplayMode and MARKER_SOLVED != 0) &&
+                        isWordSolved(selection?.word)
+                    ) {
+                        markWordAsSolved(selection)
+                    }
                 }
             }
 
@@ -1192,7 +1195,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     internal fun setChars(
         startRow: Int, startColumn: Int, charMatrix: Array<Array<String?>>,
-        setCheatFlag: Boolean, bypassUndoBuffer: Boolean = false
+        setCheatFlag: Boolean, bypassUndoBuffer: Boolean = false, oneCell: Boolean = false
     ) {
         // Check startRow/startColumn
         require(startRow >= 0 && startColumn >= 0) { "Invalid startRow/startColumn" }
@@ -1219,6 +1222,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         val map = (crossword ?: return).cellMap
         var i = startRow
         var k = 0
+        var pos  = 0
+        val selec = selection?.cell
         while (i <= endRow) {
             var j = startColumn
             var l = 0
@@ -1236,10 +1241,17 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                     ) {
                         vwCell.setChar(ch)
                         vwCell.setFlag(Cell.FLAG_SOLVED, true)
+                        if(!oneCell) selection?.cell = pos++
+                        val oldSelection = selection
                         if (isWordSolved((selection ?: return).word)) markWordAsSolved(selection)
                         switchWordDirection()
-                        if (isWordSolved((selection ?: return).word)) markWordAsSolved(selection)
-                        switchWordDirection()
+                        if(selection != oldSelection) {
+                            if (isWordSolved(
+                                    (selection ?: return).word
+                                )
+                            ) markWordAsSolved(selection)
+                            switchWordDirection()
+                        }
                     }
 
                     if (ch != vwCell.char && (ch == null || validator.invoke(ch))) {

@@ -57,8 +57,9 @@ import android.widget.EditText
 import androidx.core.graphics.drawable.DrawableCompat
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
-    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener, CrosswordView.OnPrintLetterListener,
-CrosswordView.OnWordSolved{
+    CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener,
+    CrosswordView.OnPrintLetterListener,
+    CrosswordView.OnWordSolved {
 
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
@@ -67,12 +68,12 @@ CrosswordView.OnWordSolved{
     private lateinit var cellMenuItem: MenuItem
     private lateinit var wordMenuItem: MenuItem
     private var freeClue = false
-    private var clueCount = 0
+    private var clueCount = MAX_HINTS_NUMBER
     private var starNumber = 0
     private val freeClueTimer = Timer(15000, { giveFreeClueSquare(this) },
         { giveFreeClueWord(this) }, { changeCondition(this) })
-     private val dimmer = Dimmer(500, { changeMenuButtonColor(this, R.color.colorAccent)},
-            { changeMenuButtonColor(this, R.color.white)}
+    private val dimmer = Dimmer(500, { changeMenuButtonColor(this, R.color.colorDimmer) },
+        { changeMenuButtonColor(this, R.color.white) }
     )
 
     @ExperimentalStdlibApi
@@ -160,6 +161,7 @@ CrosswordView.OnWordSolved{
                 activateOnMoveCursorToSolvedCellsMode =
                     savedInstanceState.getBoolean("activateOnMoveCursorToSolvedCellsMode")
                 hits = savedInstanceState.getInt("hits")
+                clueCount = savedInstanceState.getInt("clueCount")
                 restoredCrossword
             }
         }
@@ -175,7 +177,6 @@ CrosswordView.OnWordSolved{
             cv.hintView = hint
             cv.keyboard = keyboard_ga
             cv.crossword = crossword
-            val fillName = name + STATE_SUFFIX
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
             activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
@@ -185,7 +186,8 @@ CrosswordView.OnWordSolved{
                 crosswordView.restoreState(state)
             else {
                 if (!isGenerated) try {
-                    readState(fillName).also { st -> cv.restoreState(st) }
+                    readCrosswordState(name).also { st -> cv.restoreState(st) }
+                    readClueCount(name)
                 } catch (e: Exception) {
                     Log.e("ERROR", "The bad crossword state")
                     setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
@@ -203,6 +205,7 @@ CrosswordView.OnWordSolved{
         }
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
+        freeClueRestart()
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
@@ -217,11 +220,17 @@ CrosswordView.OnWordSolved{
         }
     }
 
-    private fun readState(fillName: String): CrosswordState = openFileInput(fillName).use {
-        it.bufferedReader(Charset.forName(MainActivity.DEFAULT_ENCODING)).use { br ->
-            Gson().fromJson(br.readLine().toString(), CrosswordState::class.java)
+    private fun readCrosswordState(name: String): CrosswordState =
+        openFileInput(name + STATE_SUFFIX).use {
+            it.bufferedReader(Charset.forName(MainActivity.DEFAULT_ENCODING)).use { br ->
+                Gson().fromJson(br.readLine().toString(), CrosswordState::class.java)
+            }
         }
-    }
+
+    private fun readClueCount(name: String) =
+        openFileInput(name + CLUE_COUNT_NAME + STATE_SUFFIX).use {
+            clueCount = Utils.readInt(it, CLUE_COUNT_NAME)
+        }
 
     private fun generateCrossword(inp: HashMap<String, Pair<String, String>>): CrosswordParams? {
         var res: CrosswordParams? = null
@@ -314,12 +323,19 @@ CrosswordView.OnWordSolved{
 
     private fun writeConfig() = openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {
         val starIndicatorText = star_number.text.toString()
-        ConfigWriter().write(it, if(starIndicatorText.toIntOrNull() != null)
-            starIndicatorText.toInt() else starNumber)
+        ConfigWriter().write(
+            it, if (starIndicatorText.toIntOrNull() != null)
+                starIndicatorText.toInt() else starNumber
+        )
     }
 
-    private fun writeState() = openFileOutput(name + STATE_SUFFIX, MODE_PRIVATE).use {
-        it.write(Gson().toJson(crosswordView.state).toString().toByteArray())
+    private fun writeState() {
+        openFileOutput(name + STATE_SUFFIX, MODE_PRIVATE).use {
+            it.write(Gson().toJson(crosswordView.state).toString().toByteArray())
+        }
+        openFileOutput(name + CLUE_COUNT_NAME + STATE_SUFFIX, MODE_PRIVATE).use {
+            Utils.writeInt(it, clueCount, CLUE_COUNT_NAME)
+        }
     }
 
     private fun writeCrossword() = openFileOutput("$name${DATA_SUFFIX}", MODE_PRIVATE).use {
@@ -333,9 +349,12 @@ CrosswordView.OnWordSolved{
             outState.putParcelable("crossword", crosswordView.crossword)
         outState.putCharSequence("name", name)
         outState.putBoolean("delete", delete)
-        outState.putBoolean("activateOnMoveCursorToSolvedCellsMode",
-            activateOnMoveCursorToSolvedCellsMode)
+        outState.putBoolean(
+            "activateOnMoveCursorToSolvedCellsMode",
+            activateOnMoveCursorToSolvedCellsMode
+        )
         outState.putInt("hits", hits)
+        outState.putInt("clueCount", clueCount)
         dimmer.stop()
         freeClueTimer.stop()
     }
@@ -354,47 +373,45 @@ CrosswordView.OnWordSolved{
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val starNumber = star_number.text.toString()
+        Log.d("ClueCount", "onOptionsItemSelected")
         when (item.itemId) {
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false
                 ) {
-                    val starNumber = star_number.text.toString()
-                    if ( starNumber == getString(R.string.free) || starNumber.toInt() >= LETTER_OPEN_PRICE) {
+                    if (starNumber == getString(R.string.free)) {
+                        cellMenuItem.title = getString(R.string.solve_square)
+                        --clueCount
+                        freeClueRestart()
+                        freeClue = false
+                        star_number.text = this.starNumber.toString()
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
                                 crosswordView.selectedCell
                             )
                         }
-                        if(cellMenuItem.title == getString(R.string.solve_square_free )) {
-                            cellMenuItem.title = getString(R.string.solve_square)
-                            ++clueCount
-                            freeClueTimer.restart()
-                            freeClue = false
-                            star_number.text = readStarNumberFromConfig(filesDir, resources).toString()
-                        }
-                        else {
-                            star_number.text =
-                                (star_number.text.toString().toInt() - LETTER_OPEN_PRICE).toString()
+                        return true
+                    }
+                    if (starNumber.toInt() >= LETTER_OPEN_PRICE) {
+                        star_number.text =
+                            (star_number.text.toString().toInt() - LETTER_OPEN_PRICE).toString()
+                        crosswordView.selectedWord?.let {
+                            crosswordView.solveChar(
+                                it,
+                                crosswordView.selectedCell
+                            )
                         }
                         return true
                     } else {
-                        if(cellMenuItem.title == getString(R.string.solve_square_free )) {
-                            cellMenuItem.title = getString(R.string.solve_square)
-                            ++clueCount
-                            freeClueTimer.restart()
-                            freeClue = false
-                            star_number.text = readStarNumberFromConfig(filesDir, resources).toString()
-                        } else {
-                            val dialog = AlertDialog.Builder(this).setMessage(
-                                getString(
-                                    R.string.not_enough_stars_square,
-                                    star_number.text.toString()
-                                )
+                        val dialog = AlertDialog.Builder(this).setMessage(
+                            getString(
+                                R.string.not_enough_stars_square,
+                                star_number.text.toString()
                             )
-                                .setNeutralButton(R.string.okButton) { _, _ -> }.create()
-                            dialog.show()
-                        }
+                        )
+                            .setNeutralButton(R.string.okButton) { _, _ -> }.create()
+                        dialog.show()
                     }
                 }
                 return false
@@ -402,30 +419,29 @@ CrosswordView.OnWordSolved{
             R.id.menu_solve_word -> {
                 if (!crosswordView.isSelectedWordSolved()
                 ) {
-                    val starNumber = star_number.text.toString()
-                    if (starNumber == getString(R.string.free) || starNumber.toInt() >= WORD_OPEN_PRICE) {
-                        crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
+                    if (starNumber == getString(R.string.free)) {
                         freeClue = false
-                        clueCount = 0
                         wordMenuItem.title = getString(R.string.solve_word)
-                        freeClueTimer.restart()
+                        star_number.text = this.starNumber.toString()
+                        --clueCount
+                        freeClueRestart()
+                        crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                         return true
-                    } else {
-                        if(wordMenuItem.title != getString(R.string.solve_word_free)) {
-                            star_number.text = (star_number.text.toString().toInt() -
-                                    WORD_OPEN_PRICE).toString()
-                        }
-                        else {
-                            val dialog = AlertDialog.Builder(this).setMessage(
-                                getString(
-                                    R.string.not_enough_stars_word,
-                                    star_number.text.toString()
-                                )
-                            )
-                                .setNeutralButton(R.string.okButton) { _, _ -> }.create()
-                            dialog.show()
-                        }
                     }
+                    if (starNumber.toInt() >= WORD_OPEN_PRICE) {
+                        star_number.text = (star_number.text.toString().toInt() -
+                                WORD_OPEN_PRICE).toString()
+                        crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
+                        return true
+                    }
+                    val dialog = AlertDialog.Builder(this).setMessage(
+                        getString(
+                            R.string.not_enough_stars_word,
+                            star_number.text.toString()
+                        )
+                    )
+                        .setNeutralButton(R.string.okButton) { _, _ -> }.create()
+                    dialog.show()
                 }
                 return false
             }
@@ -551,8 +567,12 @@ CrosswordView.OnWordSolved{
 
     override fun onCrosswordUnsolved(view: CrosswordView) {}
 
+    private fun freeClueRestart() {
+        if (clueCount > 0) freeClueTimer.restart()
+    }
+
     override fun onWordSolved() {
-        freeClueTimer.restart()
+        freeClueRestart()
         dimmer.stop()
     }
 
@@ -560,33 +580,34 @@ CrosswordView.OnWordSolved{
     private var activateOnMoveCursorToSolvedCellsMode = false
 
     @kotlin.ExperimentalStdlibApi
-    private fun detectMoveCursorToSolvedCellsMode(selection: CrosswordView.Selectable?,
-                                                  puzzleCells: Array<Array<CrosswordView.Cell?>>,
-                                                  ch: Char,
-                                                  position: Int)
-    {
+    private fun detectMoveCursorToSolvedCellsMode(
+        selection: CrosswordView.Selectable?,
+        puzzleCells: Array<Array<CrosswordView.Cell?>>,
+        ch: Char,
+        position: Int
+    ) {
         val startRow = selection?.word?.startRow
         val startColumn = selection?.word?.startColumn
         val row = selection?.row
         val column = selection?.column
         var solved = 0
-        if(startRow != null && startColumn != null && row != null && column != null) {
+        if (startRow != null && startColumn != null && row != null && column != null) {
             when (selection.word.direction) {
                 Crossword.Word.DIR_ACROSS -> {
-                    for( i in column - 1 downTo startColumn)
-                        if ( puzzleCells[row][i]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                    for (i in column - 1 downTo startColumn)
+                        if (puzzleCells[row][i]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
                             ++solved
                 }
                 Crossword.Word.DIR_DOWN -> {
-                    for( i in row - 1 downTo startRow)
-                        if ( puzzleCells[i][column]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
+                    for (i in row - 1 downTo startRow)
+                        if (puzzleCells[i][column]?.isFlagSet(CrosswordView.Cell.FLAG_SOLVED) == true)
                             ++solved
                 }
             }
         }
 
         if (selection != null) {
-            if(solved > 0 && ch.uppercaseChar() ==
+            if (solved > 0 && ch.uppercaseChar() ==
                 selection.word.cells[position - solved].chars[0] &&
                 ch.uppercaseChar() != selection.word.cells[position].chars[0]
             )
@@ -594,15 +615,15 @@ CrosswordView.OnWordSolved{
         }
 
         val MAX_HITS_NUMBER = 3
-        if(hits == MAX_HITS_NUMBER)
-        {
-            val builder = AlertDialog.Builder(this).
-            setMessage(R.string.change_print_mode_to_move_to_solved)
-                .setPositiveButton(R.string.yes) { _, _ ->
-                    SettActivity.writePrintToFilledCellsToConfig(this, true)
-                    crosswordView.moveSelectionToSolvedSquares = true}
-                .setNegativeButton(R.string.no) { _, _ ->
-                }.create()
+        if (hits == MAX_HITS_NUMBER) {
+            val builder =
+                AlertDialog.Builder(this).setMessage(R.string.change_print_mode_to_move_to_solved)
+                    .setPositiveButton(R.string.yes) { _, _ ->
+                        SettActivity.writePrintToFilledCellsToConfig(this, true)
+                        crosswordView.moveSelectionToSolvedSquares = true
+                    }
+                    .setNegativeButton(R.string.no) { _, _ ->
+                    }.create()
             builder.setCancelable(false)
             builder.show()
             activateOnMoveCursorToSolvedCellsMode = true
@@ -617,12 +638,13 @@ CrosswordView.OnWordSolved{
     }
 
     @ExperimentalStdlibApi
-    override fun onPrintLetter(selection: CrosswordView.Selectable?,
-                               puzzleCells: Array<Array<CrosswordView.Cell?>>,
-                               ch: Char,
-                               position: Int)
-    {
-        if(!activateOnMoveCursorToSolvedCellsMode)
+    override fun onPrintLetter(
+        selection: CrosswordView.Selectable?,
+        puzzleCells: Array<Array<CrosswordView.Cell?>>,
+        ch: Char,
+        position: Int
+    ) {
+        if (!activateOnMoveCursorToSolvedCellsMode)
             detectMoveCursorToSolvedCellsMode(selection, puzzleCells, ch, position)
     }
 
@@ -647,6 +669,7 @@ CrosswordView.OnWordSolved{
         const val CONFIG_NAME: String = "star_number.json"
         const val STATE_SUFFIX: String = "Fill.json"
         const val DATA_SUFFIX: String = ".json"
+        const val CLUE_COUNT_NAME: String = "ClueCount"
         private const val email_for_errors = "sokolikkatya@gmail.com"
 
         fun readStarNumberFromConfig(path: File, resources: Resources): Int =
@@ -659,7 +682,10 @@ CrosswordView.OnWordSolved{
         private fun giveFreeClueSquare(activity: GameActivity) {
             activity.cellMenuItem.title = activity.getString(R.string.solve_square_free)
             activity.freeClue = true
-            activity.starNumber = activity.star_number.text.toString().toInt()
+            val starNumber = activity.star_number.text.toString()
+            if (starNumber.toIntOrNull() != null) {
+                activity.starNumber = starNumber.toInt()
+            }
             activity.star_number.text = activity.getString(R.string.free)
             activity.dimmer.start()
         }
@@ -667,20 +693,25 @@ CrosswordView.OnWordSolved{
         private fun giveFreeClueWord(activity: GameActivity) {
             activity.wordMenuItem.title = activity.getString(R.string.solve_word_free)
             activity.freeClue = true
-            activity.starNumber = activity.star_number.text.toString().toInt()
+            val starNumber = activity.star_number.text.toString()
+            if (starNumber.toIntOrNull() != null) {
+                activity.starNumber = starNumber.toInt()
+            }
             activity.star_number.text = activity.getString(R.string.free)
             activity.dimmer.start()
         }
 
         private fun changeMenuButtonColor(activity: GameActivity, color: Int) {
             var drawable = activity.game_toolbar.overflowIcon
-            if(drawable != null) {
+            if (drawable != null) {
                 drawable = DrawableCompat.wrap(drawable)
                 DrawableCompat.setTint(drawable.mutate(), activity.resources.getColor(color))
                 activity.game_toolbar.overflowIcon = drawable
             }
         }
 
-        private fun changeCondition(activity: GameActivity) = (activity.clueCount + 1) % 3 == 0
+        private fun changeCondition(activity: GameActivity) = (activity.clueCount - 1) % 3 == 0
+
+        private val MAX_HINTS_NUMBER = 9
     }
 }
