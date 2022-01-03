@@ -1,5 +1,6 @@
 package com.omen273.crossLingo
 
+import androidx.appcompat.app.AppCompatActivity
 import androidx.test.espresso.Espresso.*
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -34,6 +35,13 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
     @Test
     fun solveCrosswordWithTipsInstrumentedTest() {
         val crossword = generateCrossword()!!
+        //switch off free clues
+        getContext().openFileOutput(
+            crossword.title + GameActivity.CLUE_COUNT_NAME + GameActivity.STATE_SUFFIX,
+            AppCompatActivity.MODE_PRIVATE
+        ).use {
+            Utils.writeInt(it, 0, GameActivity.CLUE_COUNT_NAME)
+        }
         loadFirstCrossword()
         val visited =
             Array(crossword.height) { Array(crossword.width) { false } }
