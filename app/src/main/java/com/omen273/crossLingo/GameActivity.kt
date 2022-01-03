@@ -70,6 +70,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private var freeClue = false
     private var clueCount = MAX_HINTS_NUMBER
     private var starNumber = 0
+
     private val freeClueTimer = Timer(15000, { giveFreeClueSquare(this) },
         { giveFreeClueWord(this) }, { changeCondition(this) })
     private val dimmer = Dimmer(500, { changeMenuButtonColor(this, R.color.colorDimmer) },
