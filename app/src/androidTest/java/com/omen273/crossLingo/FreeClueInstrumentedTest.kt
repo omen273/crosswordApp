@@ -22,7 +22,7 @@ class FreeClueInstrumentedTest : TestBaseClass() {
     }
 
     @Test
-    fun test() {
+    fun freeClueInstrumentedTest() {
         val crossword = generateCrossword()!!
         getContext().openFileOutput(
             crossword.title + GameActivity.CLUE_COUNT_NAME + GameActivity.STATE_SUFFIX,
