@@ -30,7 +30,6 @@ import android.util.Log
 import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
-import android.view.inputmethod.InputMethodManager
 import android.widget.Scroller
 import org.akop.ararat.BuildConfig
 import org.akop.ararat.R
@@ -54,7 +53,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         fun onCrosswordChanged(view: CrosswordView)
         fun onCrosswordSolved(view: CrosswordView)
         fun onCrosswordUnsolved(view: CrosswordView)
-        fun onWordSolved()
+        fun onWordSolved(word: Crossword.Word)
     }
 
     interface OnSelectionChangeListener {
@@ -79,7 +78,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     }
 
     interface OnWordSolved{
-        fun onWordSolved()
+        fun onWordSolved(word: Crossword.Word)
     }
 
     private val defaultInputValidator: InputValidator = { ch ->
@@ -1633,7 +1632,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     private fun markWordAsSolved(sel: Selectable?) {
         sel?.let {
-            onStateChangeListener?.onWordSolved()
+            onStateChangeListener?.onWordSolved(sel.word)
             for (i in 0 until it.word.length) {
                 when (it.word.direction) {
                     Crossword.Word.DIR_ACROSS ->

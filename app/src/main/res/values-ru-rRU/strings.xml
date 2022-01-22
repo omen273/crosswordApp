@@ -28,6 +28,7 @@
     <string name ="choose_level_dialog_text">Пожалуйста, выберите ваш уровень.
         Его можно будет изменить в настройках.</string>
     <string name="move_selection_to_solved_squares">печатать в решенные клетки</string>
+    <string name ="enable_sound">включить звук</string>
     <string name="error_reasons_string">Пожалуйста, выберите тип ошибки</string>
     <string name="error_message">Пожалуйста, опишите ошибку ниже</string>
     <string name="not_enough_stars_word">У вас недостаточно звезд (%1s\u2605) для открытия слова (-3\u2605).
@@ -42,4 +43,5 @@
     </string-array>
     <string name ="change_print_mode_to_move_to_solved">Мы заметили, что вы, вероятно, печатаете в
         решенные клетки. Хотите попробовать другой режим ввода?</string>
+    <string name ="TTS_unavailable">"Не удалось инициализировать TTS"</string>
 </resources>

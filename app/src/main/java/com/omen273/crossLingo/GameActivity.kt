@@ -50,11 +50,13 @@ import android.widget.Toast
 
 import android.content.Intent
 import android.graphics.Typeface
+import android.speech.tts.TextToSpeech
 import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.EditText
 import androidx.core.graphics.drawable.DrawableCompat
+import java.io.File.separator
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener,
@@ -76,6 +78,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private val dimmer = Dimmer(500, { changeMenuButtonColor(this, R.color.colorDimmer) },
         { changeMenuButtonColor(this, R.color.white) }
     )
+
+    private lateinit var TTS: TextToSpeech
+    private var ttsEnabled = false
 
     @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -181,6 +186,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
             activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
+            //ttsEnabled = SettActivity.readEnableSound(filesDir, resources)
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if (state != null)
@@ -207,6 +213,26 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
         freeClueRestart()
+
+        if (ttsEnabled)
+        {
+            initTTS()
+        }
+    }
+
+    private fun initTTS()
+    {
+        TTS = TextToSpeech(this, TextToSpeech.OnInitListener { initStatus ->
+            if (initStatus == TextToSpeech.SUCCESS) {
+                TTS.language = Locale.US
+                TTS.setPitch(1.3f)
+                TTS.setSpeechRate(0.7f)
+
+            } else if (initStatus == TextToSpeech.ERROR) {
+                Toast.makeText(this, R.string.TTS_unavailable, Toast.LENGTH_LONG).show()
+                ttsEnabled = false
+            }
+        })
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
@@ -572,9 +598,17 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         if (clueCount > 0) freeClueTimer.restart()
     }
 
-    override fun onWordSolved() {
+    override fun onWordSolved(word: Crossword.Word) {
         freeClueRestart()
         dimmer.stop()
+        if (ttsEnabled) {
+            TTS.speak(
+                word.cells.joinToString(separator = "", transform = { it.chars }),
+                TextToSpeech.QUEUE_FLUSH,
+                null,
+                hashCode().toString()
+            )
+        }
     }
 
     private var hits = 0
