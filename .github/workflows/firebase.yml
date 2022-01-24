@@ -20,6 +20,8 @@ jobs:
 
       - name: Build APK for UI test after Unit tests
         run: |
+          ln -s ${ANDROID_HOME}/build-tools/31.0.0/d8 ${ANDROID_HOME}/build-tools/31.0.0/dx
+          ln -s ${ANDROID_HOME}/build-tools/31.0.0/lib/d8.jar ${ANDROID_HOME}/build-tools/31.0.0/lib/dx.jar
           ./gradlew test
           ./gradlew assembleDebug
           ./gradlew assembleDebugAndroidTest
@@ -68,4 +70,4 @@ jobs:
           gcloud firebase test android run --type instrumentation --use-orchestrator \
           --environment-variables clearPackageData=true \
           --app app-debug/app-debug.apk --test app-debug-androidTest/app-debug-androidTest.apk \
-          --device model=blueline,version=28,locale=en,orientation=portrait --num-flaky-test-attempts 3
+          --device model=flame,version=29,locale=en,orientation=portrait --num-flaky-test-attempts 3
