@@ -11,7 +11,7 @@ class CheckStarCountAfterRemovingInstrumentedTest: SolveCrossword() {
     @Test
     fun checkStarCountAfterRemovingInstrumentedTest() {
         val START_STAR_NAMBER = 50
-        waitForCondition("Stars number checking", {START_STAR_NAMBER  == readConfig()})
+        waitForCondition("Stars number checking", {START_STAR_NAMBER  == readStarsFromConfig()})
         crossword = generateCrossword()!!
         loadFirstCrossword()
         solve()
@@ -19,6 +19,6 @@ class CheckStarCountAfterRemovingInstrumentedTest: SolveCrossword() {
             .inRoot(RootMatchers.isDialog())
             .perform(ViewActions.click())
         val number = START_STAR_NAMBER + GameActivity.BONUS_ON_SOLVE
-        waitForCondition("Stars number checking", {number == readConfig()})
+        waitForCondition("Stars number checking", {number == readStarsFromConfig()})
     }
 }

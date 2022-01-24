@@ -48,6 +48,6 @@ class FreeClueInstrumentedTest : TestBaseClass() {
         menuClick(R.string.solve_square, R.id.menu_solve_cell)
         pressBack()
         waitForView(ViewMatchers.withId(R.id.tableLayout))
-        waitForCondition("star checking", { 49 == readConfig() })
+        waitForCondition("star checking", { 49 == readStarsFromConfig() })
     }
 }

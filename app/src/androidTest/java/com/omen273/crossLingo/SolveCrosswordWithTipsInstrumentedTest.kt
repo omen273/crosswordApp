@@ -19,7 +19,7 @@ import org.junit.runner.RunWith
 class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
 
     private fun menuClick(name: Int, id: Int, price: Int): Int {
-        var stars = readConfig()
+        var stars = readStarsFromConfig()
         openActionBarOverflowOrOptionsMenu(
             InstrumentationRegistry.getInstrumentation().targetContext
         )
@@ -28,7 +28,7 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
         stars -= price
         pressBack()
         loadFirstCrossword()
-        waitForCondition("Stars number checking", {stars==readConfig()})
+        waitForCondition("Stars number checking", {stars==readStarsFromConfig()})
         return stars
     }
 
@@ -78,6 +78,6 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
             .check(matches(isDisplayed()))
         onView(withText(R.string.youve_solved_the_puzzle)).inRoot(isDialog())
         onView(withText(R.string.another_crossword)).inRoot(isDialog()).perform(click())
-        assertEquals(stars + GameActivity.BONUS_ON_SOLVE, readConfig())
+        assertEquals(stars + GameActivity.BONUS_ON_SOLVE, readStarsFromConfig())
     }
 }
