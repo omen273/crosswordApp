@@ -186,7 +186,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
             activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
-            //ttsEnabled = SettActivity.readEnableSound(filesDir, resources)
+            ttsEnabled = SettActivity.readEnableSound(filesDir, resources)
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if (state != null)

@@ -47,7 +47,7 @@ class SettActivity : AppCompatActivity() {
 
         sound_enable.setOnCheckedChangeListener { _, p1 ->
             openFileOutput(ENABLE_SOUND_FILE, MODE_PRIVATE).use {
-                ConfigWriter().write(it, p1)
+                ConfigWriter().writeEnableSound(it, p1)
             }
         }
 
@@ -75,8 +75,7 @@ class SettActivity : AppCompatActivity() {
             )
         ) {
             if (exists()) FileInputStream(this).use { ConfigReader().moveCursorToSolvedSquares(it) }
-            else resources.openRawResource(R.raw.move_selection_to_solved_squares)
-                .use { ConfigReader().moveCursorToSolvedSquares(it) }
+            else resources.openRawResource(R.raw.move_selection_to_solved_squares).use { ConfigReader().moveCursorToSolvedSquares(it) }
         }
 
         fun writePrintToFilledCellsToConfig(context: Context, flag: Boolean) {
@@ -95,8 +94,7 @@ class SettActivity : AppCompatActivity() {
             )
         ) {
             if (exists()) FileInputStream(this).use { ConfigReader().enableSound(it) }
-            else resources.openRawResource(R.raw.enable_sound)
-                .use { ConfigReader().enableSound(it) }
+            else resources.openRawResource(R.raw.enable_sound).use { ConfigReader().enableSound(it) }
         }
     }
 }
