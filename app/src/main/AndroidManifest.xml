@@ -12,7 +12,7 @@
         <activity
             android:name="com.omen273.crossLingo.GameActivity"
             android:windowSoftInputMode="stateAlwaysHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.omen273.crossLingo.SettActivity"
             android:screenOrientation="portrait" />
