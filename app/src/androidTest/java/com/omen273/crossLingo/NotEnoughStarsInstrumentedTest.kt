@@ -26,7 +26,7 @@ class NotEnoughStarsInstrumentedTest: TestBaseClass()  {
     }
 
     @Test
-    fun run() {
+    fun notEnoughStarsInstrumentedTest() {
         generateCrossword(finish = FinishTypeGenerateCrossword.NOTHING)
         for(i in 0..12) useClue(R.string.solve_word, R.id.menu_solve_word)
         Espresso.pressBack()

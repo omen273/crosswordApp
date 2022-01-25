@@ -9,7 +9,7 @@ import org.junit.Test
 class CheckStarCountAfterRemovingInstrumentedTest: SolveCrossword() {
 
     @Test
-    fun solveCrosswordInstrumentedTest() {
+    fun checkStarCountAfterRemovingInstrumentedTest() {
         val START_STAR_NAMBER = 50
         waitForCondition("Stars number checking", {START_STAR_NAMBER  == readConfig()})
         crossword = generateCrossword()!!

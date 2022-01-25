@@ -9,7 +9,7 @@ import org.junit.Test
 class LoadSolvedCrosswordSeveralTimesInstrumentedTest: SolveCrossword() {
 
     @Test
-    fun solveCrosswordInstrumentedTest() {
+    fun loadSolvedCrosswordSeveralTimesInstrumentedTest() {
         crossword = generateCrossword()!!
         loadFirstCrossword()
         solve()

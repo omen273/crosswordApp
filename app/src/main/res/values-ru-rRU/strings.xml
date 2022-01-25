@@ -4,7 +4,10 @@
     <string name="sizeName">размер</string>
     <string name="okButton">ОК</string>
     <string name="solve_square">решить клетку (-1\u2605)</string>
+    <string name="solve_square_free">решить клетку бесплатно</string>
+    <string name="free">FREE</string>
     <string name="solve_word">решить слово (-3\u2605)</string>
+    <string name="solve_word_free">решить слово бесплатно</string>
     <string name="menu_report_error">сообщить об ошибке</string>
     <string name="reset">Сбросить</string>
     <string name="another_crossword">Новый кроссворд</string>
