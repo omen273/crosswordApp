@@ -58,6 +58,9 @@ android {
                 debugSymbolLevel 'SYMBOL_TABLE'
             }
         }
+        debug {
+            applicationIdSuffix ".dev"
+        }
     }
 
     externalNativeBuild {
