@@ -18,4 +18,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Unit tests
-        run: ./gradlew test
+        run: |
+          ln -s ${ANDROID_HOME}/build-tools/31.0.0/d8 ${ANDROID_HOME}/build-tools/31.0.0/dx
+          ln -s ${ANDROID_HOME}/build-tools/31.0.0/lib/d8.jar ${ANDROID_HOME}/build-tools/31.0.0/lib/dx.jar
+          ./gradlew test
