@@ -1,5 +1,6 @@
 package com.omen273.crossLingo
 
+import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,8 @@ import kotlin.collections.HashMap
 import kotlin.collections.HashSet
 
 class ChooseTopicsActivity : AppCompatActivity() {
+
+    private var isTraining = false
 
     private fun getTopics(): ArrayList<String> {
         val data = intent.extras?.get(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE) as HashMap<*, *>
@@ -43,6 +46,9 @@ class ChooseTopicsActivity : AppCompatActivity() {
         setSupportActionBar(choose_topics_toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        if (savedInstanceState != null) {
+            isTraining = savedInstanceState.getBoolean("isTraining")
+        }
         choose_topics_toolbar.setNavigationOnClickListener{
             onBackPressed()
         }
@@ -91,6 +97,12 @@ class ChooseTopicsActivity : AppCompatActivity() {
                                         ?: return@setOnClickListener) + ' '
                                 )
                                 putExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, true)
+                                val training = intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false)
+                                if(training || isTraining) {
+                                    putExtra(MainActivity.TRAINING_NAME_VARIABLE, true)
+                                    putExtra(TOPICS_VARIABLE, chosenTopics)
+                                    isTraining = true
+                                }
                                 topicList.removeAllViews()
                                 startActivityForResult(this, MainActivity.ACTIVITY_GAME)
                             }
@@ -137,6 +149,30 @@ class ChooseTopicsActivity : AppCompatActivity() {
                     setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
                     finish()
                 }
+                MainActivity.ACTIVITY_GAME_TRAINING -> {
+                    setResult(MainActivity.ACTIVITY_GAME_TRAINING)
+                    finish()
+                }
+                MainActivity.ACTIVITY_GAME_OTHER_TOPICS -> {
+                    isTraining = true
+                }
+                MainActivity.ACTIVITY_GAME_THE_SAME_TOPICS -> {
+                    isTraining = true
+                    val sharedPref =
+                        getSharedPreferences("1", Context.MODE_PRIVATE) ?: return
+                    val previousTopics = sharedPref.getStringSet(TOPICS_VARIABLE, setOf())
+                    if(previousTopics != null) {
+                        val hashSet = previousTopics.toHashSet()
+                        val chosenWords = getWords(hashSet)
+                        with(Intent(this, GameActivity::class.java)) {
+                            putExtra(WORDS_VARIABLE, chosenWords)
+                            putExtra(TOPICS_VARIABLE, hashSet)
+                            putExtra(MainActivity.CROSSWORD_IS_GENERATED_VARIABLE, true)
+                            putExtra(MainActivity.TRAINING_NAME_VARIABLE, true)
+                            startActivityForResult(this, MainActivity.ACTIVITY_GAME)
+                        }
+                    }
+                }
             }
         }
     }
@@ -151,6 +187,11 @@ class ChooseTopicsActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBoolean("isTraining", isTraining)
     }
 
     @Suppress("unused")
@@ -171,6 +212,7 @@ class ChooseTopicsActivity : AppCompatActivity() {
         const val MAX_SIDE: Int = 15
         const val WORDS_VARIABLE: String = "words"
         const val LEVEL_NAME: String = "level.json"
+        const val TOPICS_VARIABLE: String = "topics"
         private const val NAME_FOR_CROSSWORD_WITH_MULTIPLE_TOPICS = "multiple"
 
         fun readLevelFromConfig(path: File, resources: Resources): String? = with(File(path, LEVEL_NAME)) {

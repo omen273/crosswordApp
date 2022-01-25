@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
     internal var imageSize: Int = 0
 
-    private var currentCrosswordPosition = Position(0,0)
+    private var currentCrosswordPosition = Position(1,0)
 
     lateinit var data: HashMap<String, wordsWithTipsByTopic>
     lateinit var topics: HashMap<String, ArrayList<String>>
@@ -108,6 +108,25 @@ class MainActivity : AppCompatActivity() {
             return item
         }
 
+        private fun createTrainigLayout(context: Context): LinearLayout {
+            val item = LinearLayout(context)
+            item.orientation = LinearLayout.VERTICAL
+            createDefaultImageView(context).also { im ->
+                im.setImageResource(R.drawable.edit)
+                im.setOnClickListener {
+                    val generated = Intent(context, ChooseTopicsActivity::class.java)
+                    generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, activity.data)
+                    generated.putExtra(CROSSWORD_TOPICS_NAME_VARIABLE, activity.topics)
+                    generated.putExtra(TRAINING_NAME_VARIABLE, true)
+                    activity.startActivityForResult(generated, ACTIVITY_CHOOSE)
+                }
+                item.addView(im)
+            }
+            item.addView(createDefaultTextView(context).also{
+                it.text = activity.getString(R.string.training)})
+            return item
+        }
+
         private fun createCrosswordLayout(context: Context): LinearLayout {
             val linearLayout = LinearLayout(context)
             linearLayout.orientation = LinearLayout.VERTICAL
@@ -134,25 +153,25 @@ class MainActivity : AppCompatActivity() {
             when (viewType) {
                 TOP_ROW -> {
                     tableRow.addView(createGeneratingLayout(parent.context))
+                    tableRow.addView(createTrainigLayout(parent.context))
                 }
                 ONLY_CROSSWORDS_ROW ->{
-                    tableRow.addView(createCrosswordLayout(parent.context))
+                    for(i in 0 until ITEMS_IN_ROW ) {
+                        val view = createCrosswordLayout(parent.context)
+                        view.visibility = View.INVISIBLE
+                        tableRow.addView(view)
+                    }
                 }
             }
 
-            for(i in 1 until ITEMS_IN_ROW ) {
-                val view = createCrosswordLayout(parent.context)
-                view.visibility = View.INVISIBLE
-                tableRow.addView(view)
-            }
             return TableHolder(tableRow)
         }
 
         override fun onBindViewHolder(holder: TableHolder, position: Int) {
-            val currentRow = dataset[position]
-            val lastIndex = currentRow.lastIndex
-            for(currentColumn in 0 .. lastIndex) {
-                if (getItemViewType(position) == ONLY_CROSSWORDS_ROW || currentColumn != 0) {
+            if (getItemViewType(position) == ONLY_CROSSWORDS_ROW) {
+                val currentRow = dataset[position]
+                val lastIndex = currentRow.lastIndex
+                for (currentColumn in 0..lastIndex) {
                     val currentLayout = holder.tableRow.getChildAt(currentColumn) as LinearLayout
                     val currentImageView = currentLayout.getChildAt(IMAGE_POSITION) as ImageView
                     currentImageView.setImageDrawable(Drawable.createFromPath(currentRow[currentColumn].path.absolutePath))
@@ -185,15 +204,16 @@ class MainActivity : AppCompatActivity() {
                     }
                     currentLayout.visibility = View.VISIBLE
                 }
-            }
 
-            for(i in currentRow.size until ITEMS_IN_ROW ) {
-                val layout = holder.tableRow.getChildAt(i) as LinearLayout
-                layout.visibility = View.INVISIBLE
+                for (i in currentRow.size until ITEMS_IN_ROW) {
+                    val layout = holder.tableRow.getChildAt(i) as LinearLayout
+                    layout.visibility = View.INVISIBLE
+                }
             }
         }
 
-        override fun getItemViewType(position: Int) = if(position == 0) 0 else 1
+        override fun getItemViewType(position: Int) =
+            if(position == 0) TOP_ROW else ONLY_CROSSWORDS_ROW
         override fun getItemCount(): Int = dataset.size
     }
 
@@ -219,7 +239,9 @@ class MainActivity : AppCompatActivity() {
 
         tableLayout.setHasFixedSize(true)
         //will add path and name for the first item inside recylceview
-        (tableLayout.adapter as TableAdapter).addItemToRecyclerView( File(""), "")
+        for(i in 0..1) {
+            (tableLayout.adapter as TableAdapter).addItemToRecyclerView(File(""), "")
+        }
         addItems()
 
         settingsImage.setOnClickListener {
@@ -340,6 +362,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     try {
                         val adapter = tableLayout.adapter as TableAdapter
+                        Log.d("ERROR", "name: $name")
                         adapter.addItemToRecyclerView(path, name)
                         val lastRowIndex = adapter.dataset.lastIndex
                         val tableRow = adapter.dataset[lastRowIndex]
@@ -376,8 +399,9 @@ class MainActivity : AppCompatActivity() {
     private fun rightShift(row: Int, column: Int) {
         val adapter = tableLayout.adapter as TableAdapter
         val data = adapter.dataset
-        var temp = data[0][1]
-        data[0][1] = data[row][column]
+        val startCrosswordPosition = Position(1, 0)
+        var temp = data[startCrosswordPosition.row][startCrosswordPosition.column]
+        data[startCrosswordPosition.row][startCrosswordPosition.column] = data[row][column]
         for (i in 1..row) {
             for (j in 0 until ITEMS_IN_ROW) {
                 data[i][j] = temp.also{temp = data[i][j]}
@@ -423,11 +447,15 @@ class MainActivity : AppCompatActivity() {
         const val ACTIVITY_GAME_FAIL: Int = 2
         const val ACTIVITY_GAME_REMOVE: Int = 3
         const val ACTIVITY_GAME_BAD_DATA: Int = 4
+        const val ACTIVITY_GAME_TRAINING: Int = 5
+        const val ACTIVITY_GAME_THE_SAME_TOPICS: Int = 6
+        const val ACTIVITY_GAME_OTHER_TOPICS: Int = 7
         const val IMAGE_DIRECTORY: String = "drawable"
         const val CROSSWORD_NAME_VARIABLE: String = "name"
         const val CROSSWORD_IS_GENERATED_VARIABLE: String = "isGenerated"
         const val CROSSWORD_DATA_NAME_VARIABLE: String = "data"
         const val CROSSWORD_TOPICS_NAME_VARIABLE: String = "topics"
+        const val TRAINING_NAME_VARIABLE: String = "training"
         const val DEFAULT_ENCODING: String = "UTF-8"
         fun computeImageSize(resources: Resources): Int =
             resources.displayMetrics.widthPixels / ITEMS_IN_ROW - 2 * MARGIN

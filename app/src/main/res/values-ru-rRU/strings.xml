@@ -4,10 +4,14 @@
     <string name="sizeName">размер</string>
     <string name="okButton">ОК</string>
     <string name="solve_square">решить клетку (-1\u2605)</string>
+    <string name="solve_square_free">решить клетку бесплатно</string>
     <string name="solve_word">решить слово (-3\u2605)</string>
+    <string name="solve_word_free">решить слово бесплатно</string>
     <string name="menu_report_error">сообщить об ошибке</string>
     <string name="reset">Сбросить</string>
     <string name="another_crossword">Новый кроссворд</string>
+    <string name="train_the_same_topic">тренировать ту же тему</string>
+    <string name="train_other_topics">тренировать другие темы</string>
     <string name="remove">Удалить</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
@@ -20,6 +24,7 @@
     <string name="tip">%1$d. %2$s [%3$s]</string>
     <string name ="number_of_stars">количество звезд</string>
     <string name ="generate_crossword">создать кроссворд</string>
+    <string name= "training">тренировка</string>
     <string name ="level">твой уровень</string>
     <string name ="settings">настройки</string>
     <string name ="choose_level_dialog_text">Пожалуйста, выберите ваш уровень.

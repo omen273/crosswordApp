@@ -3,12 +3,16 @@
     <string name="sizeName">size:</string>
     <string name="okButton">OK</string>
     <string name="solve_square">Solve square (-1\u2605)</string>
+    <string name="solve_square_free">Solve square for free</string>
     <string name="solve_word">Solve word (-3\u2605)</string>
+    <string name="solve_word_free">Solve word for free</string>
     <string name="menu_report_error">Report error</string>
     <string name="tip">%1$d. %2$s [%3$s]</string>
     <string name="youve_solved_the_puzzle">You\'ve solved the puzzle! (+5\u2605)</string>
     <string name="reset">RESET</string>
     <string name="another_crossword">ANOTHER CROSSWORD</string>
+    <string name="train_the_same_topic">train the same topic</string>
+    <string name="train_other_topics">train other topics</string>
     <string name="remove">REMOVE</string>
     <string name="choose_at_least_one_topic">Please, select at least one topic</string>
     <string name="not_enough_words">The selected topics doesn\'t consist of %1$d words</string>
@@ -19,6 +23,7 @@
     <string name ="damaged_data">The crossword data is damaged</string>
     <string name ="number_of_stars">number of stars</string>
     <string name ="generate_crossword">generate crossword</string>
+    <string name= "training">training</string>
     <string name ="level">your level</string>
     <string-array name="levels">
         <item>beginner(A1)</item>
