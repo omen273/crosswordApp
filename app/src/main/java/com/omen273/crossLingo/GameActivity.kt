@@ -79,8 +79,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         { changeMenuButtonColor(this, R.color.white) }
     )
 
-    private lateinit var TTS: TextToSpeech
     private var ttsEnabled = false
+    private var TTS: TextToSpeech? = null
 
     @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -186,7 +186,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
             activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
-            ttsEnabled = SettActivity.readEnableSound(filesDir, resources)
             val state = savedInstanceState?.getParcelable("state")
                     as CrosswordState?
             if (state != null)
@@ -214,7 +213,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
         freeClueRestart()
 
-        if (ttsEnabled)
+        if (SettActivity.readEnableSound(filesDir, resources))
         {
             initTTS()
         }
@@ -224,13 +223,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     {
         TTS = TextToSpeech(this, TextToSpeech.OnInitListener { initStatus ->
             if (initStatus == TextToSpeech.SUCCESS) {
-                TTS.language = Locale.US
-                TTS.setPitch(1.3f)
-                TTS.setSpeechRate(0.7f)
-
+                TTS?.language = Locale.US
+                TTS?.setPitch(1.3f)
+                TTS?.setSpeechRate(0.7f)
             } else if (initStatus == TextToSpeech.ERROR) {
                 Toast.makeText(this, R.string.TTS_unavailable, Toast.LENGTH_LONG).show()
-                ttsEnabled = false
+                TTS = null
             }
         })
     }
@@ -601,14 +599,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onWordSolved(word: Crossword.Word) {
         freeClueRestart()
         dimmer.stop()
-        if (ttsEnabled) {
-            TTS.speak(
+        TTS?.speak(
                 word.cells.joinToString(separator = "", transform = { it.chars }),
                 TextToSpeech.QUEUE_FLUSH,
                 null,
                 hashCode().toString()
             )
-        }
     }
 
     private var hits = 0

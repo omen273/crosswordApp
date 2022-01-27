@@ -28,7 +28,7 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
         stars -= price
         pressBack()
         loadFirstCrossword()
-        waitForCondition("Stars number checking", {stars==readStarsFromConfig()})
+        waitForCondition("Stars number checking", {stars == readStarsFromConfig()})
         return stars
     }
 
