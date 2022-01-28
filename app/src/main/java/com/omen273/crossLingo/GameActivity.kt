@@ -693,6 +693,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         super.onBackPressed()
     }
 
+    override fun onStop()
+    {
+        super.onStop()
+        TTS?.shutdown()
+    }
+
     companion object {
         const val LETTER_OPEN_PRICE: Int = 1
         const val WORD_OPEN_PRICE: Int = 3
