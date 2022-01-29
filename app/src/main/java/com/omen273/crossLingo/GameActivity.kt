@@ -417,7 +417,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     }
                     if (starIndicatorText.toIntOrNull() ?: starNumber >= LETTER_OPEN_PRICE) {
                         star_number.text =
-                            (star_number.text.toString().toIntOrNull() ?: starNumber - LETTER_OPEN_PRICE).toString()
+                            ((starIndicatorText.toIntOrNull() ?: starNumber) - LETTER_OPEN_PRICE).toString()
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
@@ -451,7 +451,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                         return true
                     }
                     if (starIndicatorText.toIntOrNull() ?: starNumber >= WORD_OPEN_PRICE) {
-                        star_number.text = (star_number.text.toString().toIntOrNull() ?: starNumber -
+                        star_number.text = ((starIndicatorText.toIntOrNull() ?: starNumber) -
                                 WORD_OPEN_PRICE).toString()
                         crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                         return true
@@ -573,7 +573,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
 
     override fun onCrosswordSolved(view: CrosswordView) {
-        star_number.text = (star_number.text.toString().toIntOrNull() ?: starNumber + BONUS_ON_SOLVE).toString()
+        star_number.text = ((star_number.text.toString().toIntOrNull() ?: starNumber) + BONUS_ON_SOLVE).toString()
 
         val path = File(filesDir, "solved_crossword_number.json")
         if (path.exists()) {
