@@ -51,6 +51,22 @@ class ConfigReader {
             moveCursor
         }
 
+    fun enableSound(inputStream: InputStream): Boolean =
+        with(
+            JsonReader(
+                inputStream.bufferedReader
+                    (Charset.forName(MainActivity.DEFAULT_ENCODING))
+            )
+        ) {
+            beginObject()
+            val moveCursor = when (val tag = nextName()) {
+                "enable_sound" -> nextBoolean()
+                else -> throw RuntimeException("The wrong json tag: $tag")
+            }
+            endObject()
+            moveCursor
+        }
+
     fun solvedCrosswordNumber(inputStream: InputStream): Int =
         Utils.readInt(inputStream, "solved_crossword_number")
 }

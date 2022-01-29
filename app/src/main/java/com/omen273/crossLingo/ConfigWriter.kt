@@ -26,6 +26,14 @@ class ConfigWriter {
             close()
         }
 
+    fun writeEnableSound(outputStream: OutputStream, enableSound: Boolean): Unit =
+        with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
+            beginObject()
+            name("enable_sound").value(enableSound)
+            endObject()
+            close()
+        }
+
     fun writeSolvedCrosswordNumber(outputStream: OutputStream, solvedNumber: Int): Unit =
         Utils.writeInt(outputStream, solvedNumber, "solved_crossword_number")
 }

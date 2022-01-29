@@ -50,11 +50,13 @@ import android.widget.Toast
 
 import android.content.Intent
 import android.graphics.Typeface
+import android.speech.tts.TextToSpeech
 import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.EditText
 import androidx.core.graphics.drawable.DrawableCompat
+import java.io.File.separator
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener,
@@ -76,6 +78,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     private val dimmer = Dimmer(500, { changeMenuButtonColor(this, R.color.colorDimmer) },
         { changeMenuButtonColor(this, R.color.white) }
     )
+
+    private var ttsEnabled = false
+    private var TTS: TextToSpeech? = null
 
     @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -207,6 +212,25 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
         freeClueRestart()
+
+        if (SettActivity.readEnableSound(filesDir, resources))
+        {
+            initTTS()
+        }
+    }
+
+    private fun initTTS()
+    {
+        TTS = TextToSpeech(this, TextToSpeech.OnInitListener { initStatus ->
+            if (initStatus == TextToSpeech.SUCCESS) {
+                TTS?.language = Locale.US
+                TTS?.setPitch(1.3f)
+                TTS?.setSpeechRate(0.7f)
+            } else if (initStatus == TextToSpeech.ERROR) {
+                Toast.makeText(this, R.string.TTS_unavailable, Toast.LENGTH_LONG).show()
+                TTS = null
+            }
+        })
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
@@ -572,9 +596,15 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         if (clueCount > 0) freeClueTimer.restart()
     }
 
-    override fun onWordSolved() {
+    override fun onWordSolved(word: Crossword.Word) {
         freeClueRestart()
         dimmer.stop()
+        TTS?.speak(
+                word.cells.joinToString(separator = "", transform = { it.chars }),
+                TextToSpeech.QUEUE_FLUSH,
+                null,
+                hashCode().toString()
+            )
     }
 
     private var hits = 0
@@ -661,6 +691,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             }
         )
         super.onBackPressed()
+    }
+
+    override fun onStop()
+    {
+        super.onStop()
+        TTS?.shutdown()
     }
 
     companion object {
