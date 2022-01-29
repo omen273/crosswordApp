@@ -28,7 +28,7 @@ class FreeClueInstrumentedTest : TestBaseClass() {
             crossword.title + GameActivity.CLUE_COUNT_NAME + GameActivity.STATE_SUFFIX,
             AppCompatActivity.MODE_PRIVATE
         ).use {
-            Utils.writeInt(it, 3, GameActivity.CLUE_COUNT_NAME)
+            Utils.writeInt(it, 6, GameActivity.CLUE_COUNT_NAME)
         }
         loadFirstCrossword()
         val waitingTime = 15300L
@@ -45,9 +45,9 @@ class FreeClueInstrumentedTest : TestBaseClass() {
         val start1 = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start1 > waitingTime },
             waitingTime + 1)
-        menuClick(R.string.solve_square, R.id.menu_solve_cell)
+        menuClick(R.string.solve_word, R.id.menu_solve_cell)
         pressBack()
         waitForView(ViewMatchers.withId(R.id.tableLayout))
-        waitForCondition("star checking", { 49 == readStarsFromConfig() })
+        waitForCondition("star checking", { 47 == readStarsFromConfig() })
     }
 }

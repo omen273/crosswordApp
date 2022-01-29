@@ -56,7 +56,6 @@ import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.EditText
 import androidx.core.graphics.drawable.DrawableCompat
-import java.io.File.separator
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener,
@@ -79,7 +78,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         { changeMenuButtonColor(this, R.color.white) }
     )
 
-    private var ttsEnabled = false
     private var TTS: TextToSpeech? = null
 
     @ExperimentalStdlibApi
@@ -211,7 +209,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
-        freeClueRestart()
 
         if (SettActivity.readEnableSound(filesDir, resources))
         {
@@ -388,6 +385,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         menuInflater.inflate(R.menu.activity_game, menu)
         cellMenuItem = menu.findItem(R.id.menu_solve_cell)
         wordMenuItem = menu.findItem(R.id.menu_solve_word)
+        freeClueRestart()
         return true
     }
 
@@ -398,18 +396,17 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val starNumber = star_number.text.toString()
-        Log.d("ClueCount", "onOptionsItemSelected")
+        val starIndicatorText = star_number.text.toString()
         when (item.itemId) {
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false
                 ) {
-                    if (starNumber == getString(R.string.free)) {
+                    if (cellMenuItem.title == getString(R.string.solve_square_free)) {
                         cellMenuItem.title = getString(R.string.solve_square)
                         --clueCount
                         freeClueRestart()
                         freeClue = false
-                        star_number.text = this.starNumber.toString()
+                        star_number.text = starNumber.toString()
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
@@ -418,9 +415,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                         }
                         return true
                     }
-                    if (starNumber.toInt() >= LETTER_OPEN_PRICE) {
+                    if (starIndicatorText.toIntOrNull() ?: starNumber >= LETTER_OPEN_PRICE) {
                         star_number.text =
-                            (star_number.text.toString().toInt() - LETTER_OPEN_PRICE).toString()
+                            (star_number.text.toString().toIntOrNull() ?: starNumber - LETTER_OPEN_PRICE).toString()
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
@@ -444,17 +441,17 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             R.id.menu_solve_word -> {
                 if (!crosswordView.isSelectedWordSolved()
                 ) {
-                    if (starNumber == getString(R.string.free)) {
+                    if (wordMenuItem.title == getString(R.string.solve_word_free)) {
                         freeClue = false
                         wordMenuItem.title = getString(R.string.solve_word)
-                        star_number.text = this.starNumber.toString()
+                        star_number.text = starNumber.toString()
                         --clueCount
                         freeClueRestart()
                         crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                         return true
                     }
-                    if (starNumber.toInt() >= WORD_OPEN_PRICE) {
-                        star_number.text = (star_number.text.toString().toInt() -
+                    if (starIndicatorText.toIntOrNull() ?: starNumber >= WORD_OPEN_PRICE) {
+                        star_number.text = (star_number.text.toString().toIntOrNull() ?: starNumber -
                                 WORD_OPEN_PRICE).toString()
                         crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                         return true
@@ -576,7 +573,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
 
     override fun onCrosswordSolved(view: CrosswordView) {
-        star_number.text = (star_number.text.toString().toInt() + BONUS_ON_SOLVE).toString()
+        star_number.text = (star_number.text.toString().toIntOrNull() ?: starNumber + BONUS_ON_SOLVE).toString()
+
         val path = File(filesDir, "solved_crossword_number.json")
         if (path.exists()) {
             val number = readSolvedCrosswordNumberToFile(path)
