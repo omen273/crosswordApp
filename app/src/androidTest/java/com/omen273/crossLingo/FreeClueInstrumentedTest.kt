@@ -8,15 +8,19 @@ import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.RootMatchers
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.platform.app.InstrumentationRegistry
+import junit.framework.TestCase.assertEquals
 import org.hamcrest.core.AnyOf
 import org.junit.Test
 
 class FreeClueInstrumentedTest : TestBaseClass() {
 
-    private fun menuClick(name: Int, id: Int) {
-        Espresso.openActionBarOverflowOrOptionsMenu(
-            InstrumentationRegistry.getInstrumentation().targetContext
-        )
+    private fun menuClick(name: Int, id: Int, isOpen: Boolean = false) {
+        if (!isOpen)
+        {
+            Espresso.openActionBarOverflowOrOptionsMenu(
+                InstrumentationRegistry.getInstrumentation().targetContext
+            )
+        }
         Espresso.onView(ViewMatchers.isRoot())
             .perform(waitForView(AnyOf.anyOf(ViewMatchers.withText(name), ViewMatchers.withId(id))))
         Espresso.onView(AnyOf.anyOf(ViewMatchers.withText(name), ViewMatchers.withId(id)))
@@ -53,7 +57,12 @@ class FreeClueInstrumentedTest : TestBaseClass() {
             val start = System.currentTimeMillis()
             waitForCondition("", { System.currentTimeMillis() - start > waitingTime },
                 waitingTime + 1)
-            menuClick(R.string.solve_word, R.id.menu_solve_word)
+            Espresso.openActionBarOverflowOrOptionsMenu(
+                InstrumentationRegistry.getInstrumentation().targetContext
+            )
+            Espresso.onView(ViewMatchers.isRoot())
+                .perform(waitForView(ViewMatchers.withText(R.string.solve_square_free)))
+            menuClick(R.string.solve_word, R.id.menu_solve_word, true)
             starNumber -= GameActivity.WORD_OPEN_PRICE
         }
 
@@ -71,7 +80,12 @@ class FreeClueInstrumentedTest : TestBaseClass() {
         val start3 = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start3 > waitingTime },
             waitingTime + 1)
-        menuClick(R.string.solve_square, R.id.menu_solve_cell)
+        Espresso.openActionBarOverflowOrOptionsMenu(
+            InstrumentationRegistry.getInstrumentation().targetContext
+        )
+        Espresso.onView(ViewMatchers.isRoot())
+            .perform(waitForView(ViewMatchers.withText(R.string.solve_word_free)))
+        menuClick(R.string.solve_square, R.id.menu_solve_cell, true)
         pressBack()
         waitForView(ViewMatchers.withId(R.id.tableLayout))
         starNumber -= GameActivity.LETTER_OPEN_PRICE
