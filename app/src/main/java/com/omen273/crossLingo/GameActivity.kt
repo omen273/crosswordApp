@@ -418,6 +418,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     if (starIndicatorText.toIntOrNull() ?: starNumber >= LETTER_OPEN_PRICE) {
                         star_number.text =
                             ((starIndicatorText.toIntOrNull() ?: starNumber) - LETTER_OPEN_PRICE).toString()
+                        starNumber = star_number.text.toString().toInt()
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
@@ -453,6 +454,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     if (starIndicatorText.toIntOrNull() ?: starNumber >= WORD_OPEN_PRICE) {
                         star_number.text = ((starIndicatorText.toIntOrNull() ?: starNumber) -
                                 WORD_OPEN_PRICE).toString()
+                        starNumber = star_number.text.toString().toInt()
                         crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
                         return true
                     }
