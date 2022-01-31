@@ -249,10 +249,14 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             }
         }
 
-    private fun readClueCount(name: String) =
-        openFileInput(name + CLUE_COUNT_NAME + STATE_SUFFIX).use {
-            clueCount = Utils.readInt(it, CLUE_COUNT_NAME)
+    private fun readClueCount(name: String) {
+        val f = File(filesDir, name + CLUE_COUNT_NAME + STATE_SUFFIX)
+        if (f.exists()) {
+            openFileInput(f.name).use {
+                clueCount = Utils.readInt(it, CLUE_COUNT_NAME)
+            }
         }
+    }
 
     private fun generateCrossword(inp: HashMap<String, Pair<String, String>>): CrosswordParams? {
         var res: CrosswordParams? = null
