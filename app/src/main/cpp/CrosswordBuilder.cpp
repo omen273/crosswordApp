@@ -56,8 +56,8 @@ namespace
                     };
                     const auto xMetric = computeMetric(x);
                     const auto yMetric = computeMetric(y);
-                    //TODO think about epsilon
-                    return abs(xMetric - yMetric) < std::numeric_limits<float>::epsilon() ?
+                    return abs(xMetric - yMetric) < std::numeric_limits<float>::epsilon() *
+                    std::max(abs(xMetric), abs(yMetric)) ?
                     x.wordParams.start < y.wordParams.start : xMetric > yMetric;
                 });
             return it->wordParams;
