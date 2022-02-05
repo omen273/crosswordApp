@@ -983,12 +983,12 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                 }
                 switchWordDirection()
                 if(selection != oldSelection) {
-                    switchWordDirection()
                     if ((markerDisplayMode and MARKER_SOLVED != 0) &&
                         isWordSolved(selection?.word)
                     ) {
                         markWordAsSolved(selection)
                     }
+                    switchWordDirection()
                 }
             }
 
