@@ -586,7 +586,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         val path = File(filesDir, "solved_crossword_number.json")
         if (path.exists()) {
             val number = readSolvedCrosswordNumberToFile(path)
-            if (number >=0/*== 3 || number % 100 == 0*/) requestReview()
+            if (number == 3 || number % 100 == 0) requestReview()
             else showFinishGameDialog()
             FileOutputStream(path).use { ConfigWriter().writeSolvedCrosswordNumber(it, number + 1) }
         } else {
