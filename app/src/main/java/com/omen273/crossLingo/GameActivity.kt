@@ -540,18 +540,20 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onCrosswordChanged(view: CrosswordView) {}
 
     private fun showFinishGameDialog(shownAgain: Boolean = false) {
-        val dialog = AlertDialog.Builder(this)
-            .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
-            .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
-            .setNeutralButton(R.string.remove) { _, _ ->
-                delete = true
-                onBackPressed()
-            }
-        if (!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
-        val builder = dialog.create()
-        builder.setCancelable(false)
-        builder.show()
-        builder.window?.setGravity(Gravity.BOTTOM)
+        if (!isFinishing) {
+            val dialog = AlertDialog.Builder(this)
+                .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
+                .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
+                .setNeutralButton(R.string.remove) { _, _ ->
+                    delete = true
+                    onBackPressed()
+                }
+            if (!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
+            val builder = dialog.create()
+            builder.setCancelable(false)
+            builder.show()
+            builder.window?.setGravity(Gravity.BOTTOM)
+        }
     }
 
     private fun requestReview() {
@@ -584,7 +586,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         val path = File(filesDir, "solved_crossword_number.json")
         if (path.exists()) {
             val number = readSolvedCrosswordNumberToFile(path)
-            if (number == 3 || number % 100 == 0) requestReview()
+            if (number >=0/*== 3 || number % 100 == 0*/) requestReview()
             else showFinishGameDialog()
             FileOutputStream(path).use { ConfigWriter().writeSolvedCrosswordNumber(it, number + 1) }
         } else {
