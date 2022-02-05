@@ -24,7 +24,7 @@ import android.view.View
 import android.view.inputmethod.BaseInputConnection
 
 
-class CrosswordInputConnection(targetView: View) : BaseInputConnection(targetView, false) {
+class CrosswordInputConnection(private val targetView: View) : BaseInputConnection(targetView, false) {
 
     var onInputEventListener: OnInputEventListener? = null
 
@@ -36,6 +36,7 @@ class CrosswordInputConnection(targetView: View) : BaseInputConnection(targetVie
 
     override fun commitText(text: CharSequence, newCursorPosition: Int): Boolean {
         if (text.isEmpty()) onInputEventListener?.onWordCancelled()
+        if (!targetView.isFocused) targetView.requestFocus()
         return super.commitText(text, newCursorPosition)
     }
 
