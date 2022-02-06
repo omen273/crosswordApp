@@ -6,7 +6,6 @@ import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.Typeface.BOLD
 import android.graphics.drawable.Drawable
-import android.net.Uri
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
@@ -22,7 +21,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar_main.*
-import org.akop.ararat.view.CrosswordView
 import java.io.File
 
 
@@ -94,7 +92,7 @@ class MainActivity : AppCompatActivity() {
             val item = LinearLayout(context)
             item.orientation = LinearLayout.VERTICAL
             createDefaultImageView(context).also { im ->
-                im.setImageResource(R.drawable.edit)
+                im.setImageResource(R.drawable.crossword)
                 im.setOnClickListener {
                     val generated = Intent(context, ChooseTopicsActivity::class.java)
                     generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, activity.data)
@@ -108,11 +106,11 @@ class MainActivity : AppCompatActivity() {
             return item
         }
 
-        private fun createTrainigLayout(context: Context): LinearLayout {
+        private fun createTrainingLayout(context: Context): LinearLayout {
             val item = LinearLayout(context)
             item.orientation = LinearLayout.VERTICAL
             createDefaultImageView(context).also { im ->
-                im.setImageResource(R.drawable.edit)
+                im.setImageResource(R.drawable.diploma)
                 im.setOnClickListener {
                     val generated = Intent(context, ChooseTopicsActivity::class.java)
                     generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, activity.data)
@@ -153,7 +151,7 @@ class MainActivity : AppCompatActivity() {
             when (viewType) {
                 TOP_ROW -> {
                     tableRow.addView(createGeneratingLayout(parent.context))
-                    tableRow.addView(createTrainigLayout(parent.context))
+                    tableRow.addView(createTrainingLayout(parent.context))
                 }
                 ONLY_CROSSWORDS_ROW ->{
                     for(i in 0 until ITEMS_IN_ROW ) {
