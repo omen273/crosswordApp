@@ -142,7 +142,7 @@ fun chooseGenerateCrossword() {
 
 fun loadFirstCrossword(name: String? = null) {
     onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
-    onView(getItemFromCrosswordList(0, 1, name)).perform(ViewActions.click())
+    onView(getItemFromCrosswordList(1, 0, name)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
 }
 
@@ -385,7 +385,7 @@ abstract class BadCrosswordDataTest : TestBaseClass() {
         val start1 = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start1 > 300 })
         onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
-        onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
+        onView(getItemFromCrosswordList(1, 0)).perform(ViewActions.click())
         ToastMatcher.onToast(R.string.damaged_data).check(
             ViewAssertions.matches(isDisplayed())
         )

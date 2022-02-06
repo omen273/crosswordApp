@@ -19,7 +19,7 @@ class LoadSolvedCrosswordSeveralTimesInstrumentedTest: SolveCrossword() {
         for(i in 0 .. 2) {
             Espresso.onView(ViewMatchers.isRoot())
                 .perform(waitForView(ViewMatchers.withId(R.id.tableLayout)))
-            Espresso.onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
+            Espresso.onView(getItemFromCrosswordList(1, 0)).perform(ViewActions.click())
             Espresso.onView(ViewMatchers.withText(R.string.another_crossword))
                 .inRoot(RootMatchers.isDialog())
                 .perform(ViewActions.click())

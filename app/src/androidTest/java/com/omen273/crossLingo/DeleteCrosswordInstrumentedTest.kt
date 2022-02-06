@@ -23,7 +23,7 @@ class DeleteCrosswordInstrumentedTest : SolveCrossword() {
         generateCrossword()
         Espresso.onView(ViewMatchers.isRoot())
             .perform(waitForView(ViewMatchers.withId(R.id.tableLayout)))
-        Espresso.onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.longClick())
+        Espresso.onView(getItemFromCrosswordList(1, 0)).perform(ViewActions.longClick())
         Espresso.onView(ViewMatchers.withText(R.string.yes))
             .inRoot(RootMatchers.isDialog())
             .perform(ViewActions.click())

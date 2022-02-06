@@ -402,6 +402,7 @@ class MainActivity : AppCompatActivity() {
         data[startCrosswordPosition.row][startCrosswordPosition.column] = data[row][column]
         for (i in 1..row) {
             for (j in 0 until ITEMS_IN_ROW) {
+                if (i == 1 && j == 0) continue
                 data[i][j] = temp.also{temp = data[i][j]}
                 if (i == row && j == column) return
             }
