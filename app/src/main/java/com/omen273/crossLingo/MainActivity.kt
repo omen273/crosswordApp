@@ -395,6 +395,7 @@ class MainActivity : AppCompatActivity() {
     private fun pathToImage(name: String) = File(pathToDrawable(), "$name${IMAGE_FORMAT}")
 
     private fun rightShift(row: Int, column: Int) {
+        Log.d("trpr", "Row: $row, column: $column")
         val adapter = tableLayout.adapter as TableAdapter
         val data = adapter.dataset
         val startCrosswordPosition = Position(1, 0)
@@ -402,8 +403,10 @@ class MainActivity : AppCompatActivity() {
         data[startCrosswordPosition.row][startCrosswordPosition.column] = data[row][column]
         for (i in 1..row) {
             for (j in 0 until ITEMS_IN_ROW) {
-                if (i == 1 && j == 0) continue
-                data[i][j] = temp.also{temp = data[i][j]}
+                if (i != 1 || j != 0)
+                {
+                    data[i][j] = temp.also{temp = data[i][j]}
+                }
                 if (i == row && j == column) return
             }
         }

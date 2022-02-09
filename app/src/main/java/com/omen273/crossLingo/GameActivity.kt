@@ -470,10 +470,10 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     private fun showFinishGameDialog(shownAgain: Boolean = false) {
         val dialog = AlertDialog.Builder(this)
-        if (!shownAgain) {
+
             if (!intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false)) {
-                dialog.setMessage(R.string.youve_solved_the_puzzle)
-                    .setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
+                if (!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
+                dialog.setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
                 .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
                 .setNeutralButton(R.string.remove) { _, _ ->
                     delete = true
@@ -481,7 +481,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 }
             }
             else {
-                dialog.setNeutralButton(R.string.train_the_same_topic) { _, _ ->
+                dialog.setNeutralButton(R.string.train_the_same_topics) { _, _ ->
                     val topics =
                         intent.getSerializableExtra(ChooseTopicsActivity.TOPICS_VARIABLE)
                                 as HashSet<String>
@@ -503,7 +503,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     }
 
             }
-        }
 
         val builder = dialog.create()
         builder.setCancelable(false)
