@@ -26,7 +26,7 @@ class ValidateAllTopicsInListInstrumentedTest {
     }
 
     //@Test
-    fun validate() {
+    fun validateAllTopicsInListInstrumentedTest() {
         while(level.hasNext()){
             var topicPosition = 0
             chooseGenerateCrossword()

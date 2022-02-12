@@ -7,12 +7,8 @@ import java.nio.charset.Charset
 class ConfigWriter {
 
     fun write(outputStream: OutputStream, starNumber: Int): Unit =
-        with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
-            beginObject()
-            name("star_number").value(starNumber)
-            endObject()
-            close()
-        }
+        Utils.writeInt(outputStream, starNumber, "star_number")
+
 
     fun write(outputStream: OutputStream, level: String): Unit =
         with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
@@ -30,11 +26,15 @@ class ConfigWriter {
             close()
         }
 
-    fun writeSolvedCrosswordNumber(outputStream: OutputStream, solvedNumber: Int): Unit =
+    fun writeEnableSound(outputStream: OutputStream, enableSound: Boolean): Unit =
         with(JsonWriter(outputStream.writer(Charset.forName(MainActivity.DEFAULT_ENCODING)))) {
             beginObject()
-            name("solved_crossword_number").value(solvedNumber)
+            name("enable_sound").value(enableSound)
             endObject()
             close()
         }
+
+    fun writeSolvedCrosswordNumber(outputStream: OutputStream, solvedNumber: Int): Unit =
+        Utils.writeInt(outputStream, solvedNumber, "solved_crossword_number")
 }
+

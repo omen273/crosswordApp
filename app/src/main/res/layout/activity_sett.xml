@@ -32,6 +32,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_below="@+id/move_selection_to_solved_squares"
+            android:text="@string/enable_sound"
+            android:layout_alignStart="@id/move_selection_to_solved_squares_text"
+            android:textSize="20sp"
+            android:id = "@+id/sound_enable_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_below="@+id/level_list"
             android:text="@string/move_selection_to_solved_squares"
             android:layout_centerHorizontal="true"
@@ -46,5 +55,14 @@
             android:layout_below="@+id/move_selection_to_solved_squares_text"
             android:layout_alignStart="@+id/move_selection_to_solved_squares_text"
             android:id = "@+id/move_selection_to_solved_squares"/>
+        <CheckBox
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sound_enable_text"
+            android:layout_alignStart="@+id/sound_enable_text"
+            android:id = "@+id/sound_enable"/>
     </RelativeLayout>
 </LinearLayout>

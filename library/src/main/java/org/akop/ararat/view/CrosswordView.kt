@@ -30,7 +30,6 @@ import android.util.Log
 import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
-import android.view.inputmethod.InputMethodManager
 import android.widget.Scroller
 import org.akop.ararat.BuildConfig
 import org.akop.ararat.R
@@ -54,6 +53,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         fun onCrosswordChanged(view: CrosswordView)
         fun onCrosswordSolved(view: CrosswordView)
         fun onCrosswordUnsolved(view: CrosswordView)
+        fun onWordSolved(word: Crossword.Word)
     }
 
     interface OnSelectionChangeListener {
@@ -75,6 +75,10 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         puzzleCells: Array<Array<Cell?>>,
         ch: Char,
         position: Int)
+    }
+
+    interface OnWordSolved{
+        fun onWordSolved(word: Crossword.Word)
     }
 
     private val defaultInputValidator: InputValidator = { ch ->
@@ -246,6 +250,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
     var onStateChangeListener: OnStateChangeListener? = null
     var onLongPressListener: OnLongPressListener? = null
     var onPrintLetterListener: OnPrintLetterListener? = null
+    var onWordSolved: OnWordSolved? = null
     var inputValidator: InputValidator? = null
     var toolbarHeight: Int = 0
     lateinit var hintView: View
@@ -701,7 +706,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         }
 
         val ch = word.cellAt(charIndex).chars()
-        setChars(row, column, arrayOf(arrayOf(ch)), true)
+        setChars(row, column, arrayOf(arrayOf(ch)), setCheatFlag = true, oneCell = true)
         if (selection != null) resetSelection(nextSelectable(selection ?: return))
         onBoardChanged()
     }
@@ -972,15 +977,18 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                 undoBuffer.push(UndoItem(cell.char, row, col, selection))
                 if (!((markerDisplayMode and MARKER_SOLVED != 0) && isSelectedCellSolved() == true))
                     cell.setChar(sch)
-                switchWordDirection()
+                val oldSelection = selection
                 if ((markerDisplayMode and MARKER_SOLVED != 0) && isWordSolved(selection?.word)) {
                     markWordAsSolved(selection)
                 }
                 switchWordDirection()
-                if ((markerDisplayMode and MARKER_SOLVED != 0) &&
-                    isWordSolved(selection?.word)
-                ) {
-                    markWordAsSolved(selection)
+                if(selection != oldSelection) {
+                    if ((markerDisplayMode and MARKER_SOLVED != 0) &&
+                        isWordSolved(selection?.word)
+                    ) {
+                        markWordAsSolved(selection)
+                    }
+                    switchWordDirection()
                 }
             }
 
@@ -1186,7 +1194,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     internal fun setChars(
         startRow: Int, startColumn: Int, charMatrix: Array<Array<String?>>,
-        setCheatFlag: Boolean, bypassUndoBuffer: Boolean = false
+        setCheatFlag: Boolean, bypassUndoBuffer: Boolean = false, oneCell: Boolean = false
     ) {
         // Check startRow/startColumn
         require(startRow >= 0 && startColumn >= 0) { "Invalid startRow/startColumn" }
@@ -1213,6 +1221,8 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
         val map = (crossword ?: return).cellMap
         var i = startRow
         var k = 0
+        var pos  = 0
+        val selec = selection?.cell
         while (i <= endRow) {
             var j = startColumn
             var l = 0
@@ -1230,10 +1240,17 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
                     ) {
                         vwCell.setChar(ch)
                         vwCell.setFlag(Cell.FLAG_SOLVED, true)
+                        if(!oneCell) selection?.cell = pos++
+                        val oldSelection = selection
                         if (isWordSolved((selection ?: return).word)) markWordAsSolved(selection)
                         switchWordDirection()
-                        if (isWordSolved((selection ?: return).word)) markWordAsSolved(selection)
-                        switchWordDirection()
+                        if(selection != oldSelection) {
+                            if (isWordSolved(
+                                    (selection ?: return).word
+                                )
+                            ) markWordAsSolved(selection)
+                            switchWordDirection()
+                        }
                     }
 
                     if (ch != vwCell.char && (ch == null || validator.invoke(ch))) {
@@ -1615,6 +1632,7 @@ class CrosswordView(context: Context, attrs: AttributeSet?) :
 
     private fun markWordAsSolved(sel: Selectable?) {
         sel?.let {
+            onStateChangeListener?.onWordSolved(sel.word)
             for (i in 0 until it.word.length) {
                 when (it.word.direction) {
                     Crossword.Word.DIR_ACROSS ->

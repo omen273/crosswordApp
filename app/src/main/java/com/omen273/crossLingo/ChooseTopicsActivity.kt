@@ -22,10 +22,10 @@ class ChooseTopicsActivity : AppCompatActivity() {
 
     private var isTraining = false
 
-    private fun getTopics(): ArrayList<String> {
+    private fun getTopics(): ArrayList<String>? {
         val data = intent.extras?.get(MainActivity.CROSSWORD_TOPICS_NAME_VARIABLE) as HashMap<*, *>
-        val level = readLevelFromConfig(filesDir, resources)
-        return if (topics != null) data[level] as ArrayList<String> else arrayListOf()
+        val level = readLevelFromConfig(filesDir, resources) ?: return arrayListOf()
+        return data[level] as ArrayList<String>?
     }
 
     private fun getWords(topics: HashSet<String>) : HashMap<String, Pair<String, String>>{
@@ -64,11 +64,13 @@ class ChooseTopicsActivity : AppCompatActivity() {
                         topicList.addView(this)
                     }
                 }
-                for (topic in topicNames) {
-                    if (!wordsInList.contains(topic) && topic.startsWith(p0.toString())) {
-                        with(CheckBox(this@ChooseTopicsActivity)) {
-                            text = topic
-                            topicList.addView(this)
+                if(topicNames != null) {
+                    for (topic in topicNames) {
+                        if (!wordsInList.contains(topic) && topic.startsWith(p0.toString())) {
+                            with(CheckBox(this@ChooseTopicsActivity)) {
+                                text = topic
+                                topicList.addView(this)
+                            }
                         }
                     }
                 }
@@ -180,10 +182,13 @@ class ChooseTopicsActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         if (topicList.childCount == 0) {
-            for (topic in getTopics()) {
-                with(CheckBox(this@ChooseTopicsActivity)) {
-                    text = topic
-                    topicList.addView(this)
+            val topics = getTopics()
+            if(topics != null) {
+                for (topic in topics) {
+                    with(CheckBox(this@ChooseTopicsActivity)) {
+                        text = topic
+                        topicList.addView(this)
+                    }
                 }
             }
         }

@@ -65,7 +65,7 @@ class TrainingTest: TestBaseClass() {
     @Test
     fun solveTrainingTest() {
         loadTraining(listOf(2,4))
-        var stars = readConfig()
+        var stars = readStarsFromConfig()
         for (i in 0..13) {
             menuClick(R.string.solve_square_free, id.menu_solve_cell)
             menuClick(R.string.solve_word_free, id.menu_solve_word)
@@ -78,6 +78,6 @@ class TrainingTest: TestBaseClass() {
             menuClick(R.string.solve_word_free, id.menu_solve_word)
         }
 
-        assertEquals(stars, readConfig())
+        assertEquals(stars, readStarsFromConfig())
     }
 }

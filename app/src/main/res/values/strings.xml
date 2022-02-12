@@ -6,6 +6,7 @@
     <string name="solve_square_free">Solve square for free</string>
     <string name="solve_word">Solve word (-3\u2605)</string>
     <string name="solve_word_free">Solve word for free</string>
+    <string name="free">FREE</string>
     <string name="menu_report_error">Report error</string>
     <string name="tip">%1$d. %2$s [%3$s]</string>
     <string name="youve_solved_the_puzzle">You\'ve solved the puzzle! (+5\u2605)</string>
@@ -37,6 +38,7 @@
     <string name ="choose_level_dialog_text">Select your level, please. You can change it later
         in settings.</string>
     <string name ="move_selection_to_solved_squares">move selection to solved squares</string>
+    <string name ="enable_sound">enable sound</string>
     <string name="error_reasons_string">Please, choose a type of problem</string>
     <string name="error_message">Please, describe a problem below</string>
     <string name="not_enough_stars_word">You don\'t have enough stars (%1s\u2605) to open a word (-3\u2605).
@@ -52,4 +54,5 @@
     <string name ="change_print_mode_to_move_to_solved">
         We noticed that you probably type into solved squares.
         Do you want to try another typing mode?</string>
+    <string name="TTS_unavailable">TTS is unavailable</string>
 </resources>

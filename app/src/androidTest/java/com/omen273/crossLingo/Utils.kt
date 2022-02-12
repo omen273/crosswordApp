@@ -133,8 +133,14 @@ fun getContext(): Context = InstrumentationRegistry.getInstrumentation().targetC
 
 fun getTestContext(): Context = InstrumentationRegistry.getInstrumentation().context
 
-fun readConfig(): Int =
+fun readStarsFromConfig(): Int =
     GameActivity.readStarNumberFromConfig(getContext().filesDir, getContext().resources)
+
+fun readSoundFromConfig(): Boolean =
+    SettActivity.readEnableSound(getContext().filesDir, getContext().resources)
+
+fun readCellFillingFromConfig(): Boolean =
+    SettActivity.readMoveSelectionToSolvedSquares(getContext().filesDir, getContext().resources)
 
 fun chooseGenerateCrossword() {
     onView(getItemFromCrosswordList(0, 0)).perform(ViewActions.click())

@@ -7,7 +7,7 @@ import kotlin.collections.HashMap
 typealias wordsWithTips = HashMap<String, String>
 typealias wordsWithTipsByTopic = HashMap<String, wordsWithTips>
 
-class DataTransformer (data: ArrayList<ArrayList<LanguageItem>>){
+class DataTransformer(data: ArrayList<ArrayList<LanguageItem>>) {
 
     var dataByLevelsByTopics = hashMapOf<String, wordsWithTipsByTopic>()
         private set
@@ -29,9 +29,9 @@ class DataTransformer (data: ArrayList<ArrayList<LanguageItem>>){
                     if (dataByLevelsByTopics[wordItemTr.level] == null) {
                         dataByLevelsByTopics[wordItemTr.level] = hashMapOf()
                     }
-                    for (topic in wordItemTr.topics){
+                    for (topic in wordItemTr.topics) {
                         if (dataByLevelsByTopics[wordItemTr.level]!![topic] == null) {
-                            dataByLevelsByTopics[wordItemTr.level]!![topic]  = hashMapOf()
+                            dataByLevelsByTopics[wordItemTr.level]!![topic] = hashMapOf()
                         }
                         dataByLevelsByTopics[wordItemTr.level]!![topic]!![wordItemTr.word] =
                             clueItemTr.word
@@ -40,14 +40,15 @@ class DataTransformer (data: ArrayList<ArrayList<LanguageItem>>){
             }
         }
 
-        for(level in dataByLevelsByTopics){
-                dataByLevelsByTopics[level.key] = dataByLevelsByTopics[level.key]!!
-                    .filterValues { it.size >= ChooseTopicsActivity.CROSSWORD_SIZE }
-                        as wordsWithTipsByTopic
+        for (level in dataByLevelsByTopics) {
+            dataByLevelsByTopics[level.key] = dataByLevelsByTopics[level.key]!!
+                .filterValues { it.size >= ChooseTopicsActivity.CROSSWORD_SIZE }
+                    as wordsWithTipsByTopic
         }
 
-        for(level in dataByLevelsByTopics) {
-            sortedTopicsByLevel[level.key] = ArrayList(dataByLevelsByTopics[level.key]!!.keys.sorted())
+        for (level in dataByLevelsByTopics) {
+            sortedTopicsByLevel[level.key] =
+                ArrayList(dataByLevelsByTopics[level.key]!!.keys.sorted())
         }
     }
 

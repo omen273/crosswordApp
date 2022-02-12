@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId "com.omen273.crossLingo"
-        minSdkVersion 21
+        minSdkVersion 22
         targetSdkVersion 30
-        versionCode 23
-        versionName "1.22"
+        versionCode 26
+        versionName "1.25"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
@@ -57,6 +57,9 @@ android {
             ndk {
                 debugSymbolLevel 'SYMBOL_TABLE'
             }
+        }
+        debug {
+            applicationIdSuffix ".dev"
         }
     }
 

@@ -1,5 +1,6 @@
 package com.omen273.crossLingo
 
+import androidx.appcompat.app.AppCompatActivity
 import androidx.test.espresso.Espresso.*
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -18,7 +19,7 @@ import org.junit.runner.RunWith
 class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
 
     private fun menuClick(name: Int, id: Int, price: Int): Int {
-        var stars = readConfig()
+        var stars = readStarsFromConfig()
         openActionBarOverflowOrOptionsMenu(
             InstrumentationRegistry.getInstrumentation().targetContext
         )
@@ -27,13 +28,20 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
         stars -= price
         pressBack()
         loadFirstCrossword()
-        waitForCondition("Stars number checking", {stars==readConfig()})
+        waitForCondition("Stars number checking", {stars == readStarsFromConfig()})
         return stars
     }
 
     @Test
     fun solveCrosswordWithTipsInstrumentedTest() {
         val crossword = generateCrossword()!!
+        //switch off free clues
+        getContext().openFileOutput(
+            crossword.title + GameActivity.CLUE_COUNT_NAME + GameActivity.STATE_SUFFIX,
+            AppCompatActivity.MODE_PRIVATE
+        ).use {
+            Utils.writeInt(it, 0, GameActivity.CLUE_COUNT_NAME)
+        }
         loadFirstCrossword()
         val visited =
             Array(crossword.height) { Array(crossword.width) { false } }
@@ -70,6 +78,6 @@ class SolveCrosswordWithTipsInstrumentedTest: TestBaseClass() {
             .check(matches(isDisplayed()))
         onView(withText(R.string.youve_solved_the_puzzle)).inRoot(isDialog())
         onView(withText(R.string.another_crossword)).inRoot(isDialog()).perform(click())
-        assertEquals(stars + GameActivity.BONUS_ON_SOLVE, readConfig())
+        assertEquals(stars + GameActivity.BONUS_ON_SOLVE, readStarsFromConfig())
     }
 }

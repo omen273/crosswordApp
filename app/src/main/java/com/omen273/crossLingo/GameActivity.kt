@@ -29,9 +29,6 @@ import android.os.Bundle
 import android.os.Environment
 import android.util.Log
 import android.util.TypedValue
-import android.view.Gravity
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.scale
@@ -53,20 +50,35 @@ import android.widget.Toast
 
 import android.content.Intent
 import android.graphics.Typeface
-import android.view.View
+import android.speech.tts.TextToSpeech
+import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.EditText
-
+import androidx.core.graphics.drawable.DrawableCompat
 
 class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     CrosswordView.OnStateChangeListener, CrosswordView.OnSelectionChangeListener,
-    CrosswordView.OnPrintLetterListener {
+    CrosswordView.OnPrintLetterListener,
+    CrosswordView.OnWordSolved {
 
     private lateinit var crosswordView: CrosswordView
     internal var name = ""
     private var delete = false
     private var onBackPressedCallBefore = false
+    private lateinit var cellMenuItem: MenuItem
+    private lateinit var wordMenuItem: MenuItem
+    private var freeClue = false
+    private var clueCount = MAX_HINTS_NUMBER
+    private var starNumber = 0
+
+    private val freeClueTimer = Timer(15000, { giveFreeClueSquare(this) },
+        { giveFreeClueWord(this) }, { changeCondition(this) })
+    private val dimmer = Dimmer(500, { changeMenuButtonColor(this, R.color.colorDimmer) },
+        { changeMenuButtonColor(this, R.color.white) }
+    )
+
+    private var TTS: TextToSpeech? = null
 
     @ExperimentalStdlibApi
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -159,6 +171,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 activateOnMoveCursorToSolvedCellsMode =
                     savedInstanceState.getBoolean("activateOnMoveCursorToSolvedCellsMode")
                 hits = savedInstanceState.getInt("hits")
+                clueCount = savedInstanceState.getInt("clueCount")
                 restoredCrossword
             }
         }
@@ -174,7 +187,6 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             cv.hintView = hint
             cv.keyboard = keyboard_ga
             cv.crossword = crossword
-            val fillName = name + STATE_SUFFIX
             cv.moveSelectionToSolvedSquares =
                 SettActivity.readMoveSelectionToSolvedSquares(filesDir, resources)
             activateOnMoveCursorToSolvedCellsMode = cv.moveSelectionToSolvedSquares
@@ -184,7 +196,8 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 crosswordView.restoreState(state)
             else {
                 if (!isGenerated) try {
-                    readState(fillName).also { st -> cv.restoreState(st) }
+                    readCrosswordState(name).also { st -> cv.restoreState(st) }
+                    readClueCount(name)
                 } catch (e: Exception) {
                     Log.e("ERROR", "The bad crossword state")
                     setResult(MainActivity.ACTIVITY_GAME_BAD_DATA)
@@ -202,6 +215,25 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
         if (crosswordView.state?.isCompleted ?: return) showFinishGameDialog(true)
         keyboard_ga.inputConnection = crosswordView.onCreateInputConnection(EditorInfo())
+
+        if (SettActivity.readEnableSound(filesDir, resources))
+        {
+            initTTS()
+        }
+    }
+
+    private fun initTTS()
+    {
+        TTS = TextToSpeech(this, TextToSpeech.OnInitListener { initStatus ->
+            if (initStatus == TextToSpeech.SUCCESS) {
+                TTS?.language = Locale.US
+                TTS?.setPitch(1.3f)
+                TTS?.setSpeechRate(0.7f)
+            } else if (initStatus == TextToSpeech.ERROR) {
+                Toast.makeText(this, R.string.TTS_unavailable, Toast.LENGTH_LONG).show()
+                TTS = null
+            }
+        })
     }
 
     private fun readCrossword(): Crossword = openFileInput("$name${DATA_SUFFIX}").use {
@@ -216,9 +248,19 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         }
     }
 
-    private fun readState(fillName: String): CrosswordState = openFileInput(fillName).use {
-        it.bufferedReader(Charset.forName(MainActivity.DEFAULT_ENCODING)).use { br ->
-            Gson().fromJson(br.readLine().toString(), CrosswordState::class.java)
+    private fun readCrosswordState(name: String): CrosswordState =
+        openFileInput(name + STATE_SUFFIX).use {
+            it.bufferedReader(Charset.forName(MainActivity.DEFAULT_ENCODING)).use { br ->
+                Gson().fromJson(br.readLine().toString(), CrosswordState::class.java)
+            }
+        }
+
+    private fun readClueCount(name: String) {
+        val f = File(filesDir, name + CLUE_COUNT_NAME + STATE_SUFFIX)
+        if (f.exists()) {
+            openFileInput(f.name).use {
+                clueCount = Utils.readInt(it, CLUE_COUNT_NAME)
+            }
         }
     }
 
@@ -275,6 +317,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         writeConfig()
         if (!onBackPressedCallBefore) saveData()
         else onBackPressedCallBefore = false
+        if (!intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false))
+        {
+            dimmer.stop()
+            freeClueTimer.stop()
+        }
         super.onPause()
     }
 
@@ -311,16 +358,25 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     private fun writeConfig() {
-        val starNumber = star_number.text.toString()
-        if (starNumber.toIntOrNull() != null) {
+        if (!intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false))
+        {
+            val starIndicatorText = star_number.text.toString()
             openFileOutput(CONFIG_NAME, MODE_PRIVATE).use {
-                ConfigWriter().write(it, starNumber.toInt())
+                ConfigWriter().write(
+                    it, if (starIndicatorText.toIntOrNull() != null)
+                        starIndicatorText.toInt() else starNumber
+                )
             }
         }
     }
 
-    private fun writeState() = openFileOutput(name + STATE_SUFFIX, MODE_PRIVATE).use {
-        it.write(Gson().toJson(crosswordView.state).toString().toByteArray())
+    private fun writeState() {
+        openFileOutput(name + STATE_SUFFIX, MODE_PRIVATE).use {
+            it.write(Gson().toJson(crosswordView.state).toString().toByteArray())
+        }
+        openFileOutput(name + CLUE_COUNT_NAME + STATE_SUFFIX, MODE_PRIVATE).use {
+            Utils.writeInt(it, clueCount, CLUE_COUNT_NAME)
+        }
     }
 
     private fun writeCrossword() = openFileOutput("$name${DATA_SUFFIX}", MODE_PRIVATE).use {
@@ -339,33 +395,65 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             activateOnMoveCursorToSolvedCellsMode
         )
         outState.putInt("hits", hits)
+        outState.putInt("clueCount", clueCount)
+        dimmer.stop()
+        freeClueTimer.stop()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.activity_game, menu)
-        if(intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false)) {
-            menu.findItem(R.id.menu_solve_cell).title = getString(R.string.solve_square_free)
-            menu.findItem(R.id.menu_solve_word).title = getString(R.string.solve_word_free)
+        cellMenuItem = menu.findItem(R.id.menu_solve_cell)
+        wordMenuItem = menu.findItem(R.id.menu_solve_word)
+        if(intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false))
+        {
+            cellMenuItem.title = getString(R.string.solve_square_free)
+            wordMenuItem.title = getString(R.string.solve_word_free)
+        } else {
+            freeClueRestart()
         }
         return true
     }
 
+    override fun onMenuOpened(featureId: Int, menu: Menu): Boolean {
+        dimmer.stop()
+        changeMenuButtonColor(this, R.color.white)
+        return super.onMenuOpened(featureId, menu)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val training = intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false)
+        val starIndicatorText = star_number.text.toString()
         when (item.itemId) {
             R.id.menu_solve_cell -> {
                 if (crosswordView.isSelectedCellSolved() == false
                 ) {
-                    if (training || star_number.text.toString().toInt() >= LETTER_OPEN_PRICE) {
+                    if (cellMenuItem.title == getString(R.string.solve_square_free)) {
+                        if (!training)
+                        {
+                            cellMenuItem.title = getString(R.string.solve_square)
+                            --clueCount
+                            freeClueRestart()
+                            freeClue = false
+                            star_number.text = starNumber.toString()
+                        }
                         crosswordView.selectedWord?.let {
                             crosswordView.solveChar(
                                 it,
                                 crosswordView.selectedCell
                             )
                         }
-                        if (!training)
-                            star_number.text = (star_number.text.toString().toInt() -
-                                    LETTER_OPEN_PRICE).toString()
+                        return true
+                    }
+                    if (starIndicatorText.toIntOrNull() ?: starNumber >= LETTER_OPEN_PRICE) {
+                        star_number.text =
+                            ((starIndicatorText.toIntOrNull() ?: starNumber) - LETTER_OPEN_PRICE).toString()
+                        starNumber = star_number.text.toString().toInt()
+                        crosswordView.selectedWord?.let {
+                            crosswordView.solveChar(
+                                it,
+                                crosswordView.selectedCell
+                            )
+                        }
                         return true
                     } else {
                         val dialog = AlertDialog.Builder(this).setMessage(
@@ -383,12 +471,24 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
             R.id.menu_solve_word -> {
                 if (!crosswordView.isSelectedWordSolved()
                 ) {
-                    if (training || star_number.text.toString().toInt() >= WORD_OPEN_PRICE) {
+                    if (wordMenuItem.title == getString(R.string.solve_word_free)) {
+                        if (!training) {
+                            freeClue = false
+                            wordMenuItem.title = getString(R.string.solve_word)
+                            star_number.text = starNumber.toString()
+                            --clueCount
+                            freeClueRestart()
+                        }
+
                         crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
-                        if (!training)
-                            star_number.text = (star_number.text.toString().toInt() -
-                                    WORD_OPEN_PRICE).toString()
                         return true
+                    }
+                    if (starIndicatorText.toIntOrNull() ?: starNumber >= WORD_OPEN_PRICE) {
+                            star_number.text = ((starIndicatorText.toIntOrNull() ?: starNumber) -
+                                    WORD_OPEN_PRICE).toString()
+                            starNumber = star_number.text.toString().toInt()
+                            crosswordView.selectedWord?.let { crosswordView.solveWord(it) }
+                            return true
                     } else {
                         val dialog = AlertDialog.Builder(this).setMessage(
                             getString(
@@ -469,18 +569,18 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     override fun onCrosswordChanged(view: CrosswordView) {}
 
     private fun showFinishGameDialog(shownAgain: Boolean = false) {
-        val dialog = AlertDialog.Builder(this)
+        if (!isFinishing) {
+            val dialog = AlertDialog.Builder(this)
 
             if (!intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false)) {
                 if (!shownAgain) dialog.setMessage(R.string.youve_solved_the_puzzle)
                 dialog.setNegativeButton(R.string.another_crossword) { _, _ -> onBackPressed() }
-                .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
-                .setNeutralButton(R.string.remove) { _, _ ->
-                    delete = true
-                    onBackPressed()
-                }
-            }
-            else {
+                    .setPositiveButton(R.string.reset) { _, _ -> crosswordView.reset() }
+                    .setNeutralButton(R.string.remove) { _, _ ->
+                        delete = true
+                        onBackPressed()
+                    }
+            } else {
                 dialog.setNeutralButton(R.string.train_the_same_topics) { _, _ ->
                     val topics =
                         intent.getSerializableExtra(ChooseTopicsActivity.TOPICS_VARIABLE)
@@ -494,20 +594,21 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     setResult(MainActivity.ACTIVITY_GAME_THE_SAME_TOPICS)
                     onBackPressed()
                 }
-                .setPositiveButton(R.string.train_other_topics) { _, _  ->
-                    setResult(MainActivity.ACTIVITY_GAME_OTHER_TOPICS)
-                    onBackPressed()
-                }.setNegativeButton(R.string.another_crossword) {  _, _  ->
+                    .setPositiveButton(R.string.train_other_topics) { _, _ ->
+                        setResult(MainActivity.ACTIVITY_GAME_OTHER_TOPICS)
+                        onBackPressed()
+                    }.setNegativeButton(R.string.go_to_challenge) { _, _ ->
                         setResult(MainActivity.ACTIVITY_GAME_TRAINING)
                         onBackPressed()
                     }
 
             }
 
-        val builder = dialog.create()
-        builder.setCancelable(false)
-        builder.show()
-        builder.window?.setGravity(Gravity.BOTTOM)
+            val builder = dialog.create()
+            builder.setCancelable(false)
+            builder.show()
+            builder.window?.setGravity(Gravity.BOTTOM)
+        }
     }
 
     private fun requestReview() {
@@ -516,7 +617,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         request.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val reviewInfo = task.result
-                manager.launchReviewFlow(this, reviewInfo).addOnCompleteListener { _ ->
+                manager.launchReviewFlow(this, reviewInfo).addOnCompleteListener {
                     showFinishGameDialog()
                 }
             } else {
@@ -536,7 +637,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
 
     override fun onCrosswordSolved(view: CrosswordView) {
         if(!intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false)) {
-            star_number.text = (star_number.text.toString().toInt() + BONUS_ON_SOLVE).toString()
+            star_number.text = ((star_number.text.toString().toIntOrNull() ?: starNumber) + BONUS_ON_SOLVE).toString()
         }
         val path = File(filesDir, "solved_crossword_number.json")
         if (path.exists()) {
@@ -552,6 +653,21 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onCrosswordUnsolved(view: CrosswordView) {}
+
+    private fun freeClueRestart() {
+        if (clueCount > 0) freeClueTimer.restart()
+    }
+
+    override fun onWordSolved(word: Crossword.Word) {
+        freeClueRestart()
+        dimmer.stop()
+        TTS?.speak(
+                word.cells.joinToString(separator = "", transform = { it.chars }),
+                TextToSpeech.QUEUE_FLUSH,
+                null,
+                hashCode().toString()
+            )
+    }
 
     private var hits = 0
     private var activateOnMoveCursorToSolvedCellsMode = false
@@ -644,6 +760,12 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         super.onBackPressed()
     }
 
+    override fun onStop()
+    {
+        super.onStop()
+        TTS?.shutdown()
+    }
+
     companion object {
         const val LETTER_OPEN_PRICE: Int = 1
         const val WORD_OPEN_PRICE: Int = 3
@@ -651,6 +773,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
         const val CONFIG_NAME: String = "star_number.json"
         const val STATE_SUFFIX: String = "Fill.json"
         const val DATA_SUFFIX: String = ".json"
+        const val CLUE_COUNT_NAME: String = "ClueCount"
         private const val email_for_errors = "sokolikkatya@gmail.com"
 
         fun readStarNumberFromConfig(path: File, resources: Resources): Int =
@@ -659,5 +782,40 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                 else resources.openRawResource(R.raw.star_number)
                     .use { ConfigReader().readStarNumber(it) }
             }
+
+        private fun giveFreeClueSquare(activity: GameActivity) {
+            activity.cellMenuItem.title = activity.getString(R.string.solve_square_free)
+            activity.freeClue = true
+            val starNumber = activity.star_number.text.toString()
+            if (starNumber.toIntOrNull() != null) {
+                activity.starNumber = starNumber.toInt()
+            }
+            activity.star_number.text = activity.getString(R.string.free)
+            activity.dimmer.start()
+        }
+
+        private fun giveFreeClueWord(activity: GameActivity) {
+            activity.wordMenuItem.title = activity.getString(R.string.solve_word_free)
+            activity.freeClue = true
+            val starNumber = activity.star_number.text.toString()
+            if (starNumber.toIntOrNull() != null) {
+                activity.starNumber = starNumber.toInt()
+            }
+            activity.star_number.text = activity.getString(R.string.free)
+            activity.dimmer.start()
+        }
+
+        private fun changeMenuButtonColor(activity: GameActivity, color: Int) {
+            var drawable = activity.game_toolbar.overflowIcon
+            if (drawable != null) {
+                drawable = DrawableCompat.wrap(drawable)
+                DrawableCompat.setTint(drawable.mutate(), activity.resources.getColor(color))
+                activity.game_toolbar.overflowIcon = drawable
+            }
+        }
+
+        private fun changeCondition(activity: GameActivity) = (activity.clueCount - 1) % 3 == 0
+
+        private val MAX_HINTS_NUMBER = 9
     }
 }
