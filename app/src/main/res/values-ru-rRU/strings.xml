@@ -11,7 +11,7 @@
     <string name="menu_report_error">сообщить об ошибке</string>
     <string name="reset">Сбросить</string>
     <string name="another_crossword">Новый кроссворд</string>
-    <string name="go_to_challenge">выйти из тренировки</string>
+    <string name="leave_the_training">выйти из тренировки</string>
     <string name="train_the_same_topics">тренировать те же темы</string>
     <string name="train_other_topics">тренировать другие темы</string>
     <string name="remove">Удалить</string>

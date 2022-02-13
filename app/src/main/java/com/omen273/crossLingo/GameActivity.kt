@@ -597,7 +597,7 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                     .setPositiveButton(R.string.train_other_topics) { _, _ ->
                         setResult(MainActivity.ACTIVITY_GAME_OTHER_TOPICS)
                         onBackPressed()
-                    }.setNegativeButton(R.string.go_to_challenge) { _, _ ->
+                    }.setNegativeButton(R.string.leave_the_training) { _, _ ->
                         setResult(MainActivity.ACTIVITY_GAME_REMOVE)
                         onBackPressed()
                     }
