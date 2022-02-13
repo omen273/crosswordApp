@@ -2,10 +2,12 @@ package com.omen273.crossLingo
 
 import android.view.View
 import android.widget.TextView
+import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.*
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.matcher.RootMatchers.isDialog
+import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.omen273.crossLingo.R.id
@@ -57,6 +59,8 @@ class TrainingInstrumentedTest: TestBaseClass() {
             menuClick(R.string.solve_word_free, id.menu_solve_word)
         }
 
+        onView(isRoot())
+            .perform(waitForView(withText(R.string.train_the_same_topics)))
         onView(withText(R.string.train_the_same_topics)).inRoot(isDialog()).perform(click())
 
         for (i in 0..13) {
