@@ -138,7 +138,7 @@ class MainActivity : AppCompatActivity() {
 
         companion object ViewHolderType{
             val TOP_ROW = 0
-            val ONLY_CROSSWORDS_ROW = 1
+            val CROSSWORDS_ROW = 1
             val IMAGE_POSITION = 0
             val TEXT_POSITION = 1
         }
@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
                     tableRow.addView(createGeneratingLayout(parent.context))
                     tableRow.addView(createTrainingLayout(parent.context))
                 }
-                ONLY_CROSSWORDS_ROW ->{
+                CROSSWORDS_ROW ->{
                     for(i in 0 until ITEMS_IN_ROW ) {
                         val view = createCrosswordLayout(parent.context)
                         view.visibility = View.INVISIBLE
@@ -166,7 +166,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: TableHolder, position: Int) {
-            if (getItemViewType(position) == ONLY_CROSSWORDS_ROW) {
+            if (getItemViewType(position) == CROSSWORDS_ROW) {
                 val currentRow = dataset[position]
                 val lastIndex = currentRow.lastIndex
                 for (currentColumn in 0..lastIndex) {
@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getItemViewType(position: Int) =
-            if(position == 0) TOP_ROW else ONLY_CROSSWORDS_ROW
+            if(position == 0) TOP_ROW else CROSSWORDS_ROW
         override fun getItemCount(): Int = dataset.size
     }
 
@@ -236,7 +236,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         tableLayout.setHasFixedSize(true)
-        //will add path and name for the first item inside recylceview
+        //will add path and name for the first and the second items inside recylceview
         for(i in 0..1) {
             (tableLayout.adapter as TableAdapter).addItemToRecyclerView(File(""), "")
         }
@@ -360,7 +360,6 @@ class MainActivity : AppCompatActivity() {
                     }
                     try {
                         val adapter = tableLayout.adapter as TableAdapter
-                        Log.d("ERROR", "name: $name")
                         adapter.addItemToRecyclerView(path, name)
                         val lastRowIndex = adapter.dataset.lastIndex
                         val tableRow = adapter.dataset[lastRowIndex]
@@ -395,7 +394,6 @@ class MainActivity : AppCompatActivity() {
     private fun pathToImage(name: String) = File(pathToDrawable(), "$name${IMAGE_FORMAT}")
 
     private fun rightShift(row: Int, column: Int) {
-        Log.d("trpr", "Row: $row, column: $column")
         val adapter = tableLayout.adapter as TableAdapter
         val data = adapter.dataset
         val startCrosswordPosition = Position(1, 0)

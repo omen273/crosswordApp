@@ -598,10 +598,9 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
                         setResult(MainActivity.ACTIVITY_GAME_OTHER_TOPICS)
                         onBackPressed()
                     }.setNegativeButton(R.string.go_to_challenge) { _, _ ->
-                        setResult(MainActivity.ACTIVITY_GAME_TRAINING)
+                        setResult(MainActivity.ACTIVITY_GAME_REMOVE)
                         onBackPressed()
                     }
-
             }
 
             val builder = dialog.create()
@@ -659,8 +658,11 @@ class GameActivity : AppCompatActivity(), CrosswordView.OnLongPressListener,
     }
 
     override fun onWordSolved(word: Crossword.Word) {
-        freeClueRestart()
-        dimmer.stop()
+        if (!intent.getBooleanExtra(MainActivity.TRAINING_NAME_VARIABLE, false))
+        {
+            freeClueRestart()
+            dimmer.stop()
+        }
         TTS?.speak(
                 word.cells.joinToString(separator = "", transform = { it.chars }),
                 TextToSpeech.QUEUE_FLUSH,
