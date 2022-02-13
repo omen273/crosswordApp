@@ -8,24 +8,9 @@ import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.RootMatchers
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.platform.app.InstrumentationRegistry
-import junit.framework.TestCase.assertEquals
-import org.hamcrest.core.AnyOf
 import org.junit.Test
 
 class FreeClueInstrumentedTest : TestBaseClass() {
-
-    private fun menuClick(name: Int, id: Int, isOpen: Boolean = false) {
-        if (!isOpen)
-        {
-            Espresso.openActionBarOverflowOrOptionsMenu(
-                InstrumentationRegistry.getInstrumentation().targetContext
-            )
-        }
-        Espresso.onView(ViewMatchers.isRoot())
-            .perform(waitForView(AnyOf.anyOf(ViewMatchers.withText(name), ViewMatchers.withId(id))))
-        Espresso.onView(AnyOf.anyOf(ViewMatchers.withText(name), ViewMatchers.withId(id)))
-            .perform(ViewActions.click())
-    }
 
     @Test
     fun freeClueInstrumentedTest() {

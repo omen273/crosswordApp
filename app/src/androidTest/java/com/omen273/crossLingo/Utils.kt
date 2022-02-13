@@ -6,7 +6,6 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.view.inputmethod.InputMethodManager
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.*
@@ -24,13 +23,16 @@ import org.akop.ararat.core.Crossword
 import org.akop.ararat.core.buildCrossword
 import org.akop.ararat.io.UClickJsonFormatter
 import org.hamcrest.*
+import org.hamcrest.core.AnyOf
 import org.junit.Before
 import org.junit.Rule
 import org.junit.rules.TestRule
 import org.junit.runners.model.Statement
 import java.io.File
-import java.util.concurrent.Callable
 import java.util.concurrent.TimeoutException
+import java.util.concurrent.Callable
+import android.view.inputmethod.InputMethodManager
+
 
 fun nthChildOf(parentMatcher: Matcher<View?>, childPosition: Int): Matcher<View?> {
     return object : TypeSafeMatcher<View?>() {
@@ -148,7 +150,7 @@ fun chooseGenerateCrossword() {
 
 fun loadFirstCrossword(name: String? = null) {
     onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
-    onView(getItemFromCrosswordList(0, 1, name)).perform(ViewActions.click())
+    onView(getItemFromCrosswordList(1, 0, name)).perform(ViewActions.click())
     onView(isRoot()).perform(waitForView(withId(R.id.crossword)))
 }
 
@@ -328,6 +330,19 @@ fun setLevelImpl(level: String = "advanced(C1)") {
     }
 }
 
+fun menuClick(name: Int, id: Int, isOpen: Boolean = false) {
+    if (!isOpen)
+    {
+        Espresso.openActionBarOverflowOrOptionsMenu(
+            InstrumentationRegistry.getInstrumentation().targetContext
+        )
+    }
+    Espresso.onView(ViewMatchers.isRoot())
+        .perform(waitForView(AnyOf.anyOf(ViewMatchers.withText(name), ViewMatchers.withId(id))))
+    Espresso.onView(AnyOf.anyOf(ViewMatchers.withText(name), ViewMatchers.withId(id)))
+        .perform(ViewActions.click())
+}
+
 open class TestBaseClass {
 
     @get:Rule
@@ -391,7 +406,7 @@ abstract class BadCrosswordDataTest : TestBaseClass() {
         val start1 = System.currentTimeMillis()
         waitForCondition("", { System.currentTimeMillis() - start1 > 300 })
         onView(isRoot()).perform(waitForView(withId(R.id.tableLayout)))
-        onView(getItemFromCrosswordList(0, 1)).perform(ViewActions.click())
+        onView(getItemFromCrosswordList(1, 0)).perform(ViewActions.click())
         ToastMatcher.onToast(R.string.damaged_data).check(
             ViewAssertions.matches(isDisplayed())
         )

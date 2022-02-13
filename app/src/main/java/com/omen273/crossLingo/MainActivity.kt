@@ -6,7 +6,6 @@ import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.Typeface.BOLD
 import android.graphics.drawable.Drawable
-import android.net.Uri
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
@@ -22,7 +21,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar_main.*
-import org.akop.ararat.view.CrosswordView
 import java.io.File
 
 
@@ -52,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
     internal var imageSize: Int = 0
 
-    private var currentCrosswordPosition = Position(0,0)
+    private var currentCrosswordPosition = Position(1,0)
 
     lateinit var data: HashMap<String, wordsWithTipsByTopic>
     lateinit var topics: HashMap<String, ArrayList<String>>
@@ -94,7 +92,7 @@ class MainActivity : AppCompatActivity() {
             val item = LinearLayout(context)
             item.orientation = LinearLayout.VERTICAL
             createDefaultImageView(context).also { im ->
-                im.setImageResource(R.drawable.edit)
+                im.setImageResource(R.drawable.crossword)
                 im.setOnClickListener {
                     val generated = Intent(context, ChooseTopicsActivity::class.java)
                     generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, activity.data)
@@ -105,6 +103,25 @@ class MainActivity : AppCompatActivity() {
             }
             item.addView(createDefaultTextView(context).also{
                 it.text = activity.getString(R.string.generate_crossword)})
+            return item
+        }
+
+        private fun createTrainingLayout(context: Context): LinearLayout {
+            val item = LinearLayout(context)
+            item.orientation = LinearLayout.VERTICAL
+            createDefaultImageView(context).also { im ->
+                im.setImageResource(R.drawable.diploma)
+                im.setOnClickListener {
+                    val generated = Intent(context, ChooseTopicsActivity::class.java)
+                    generated.putExtra(CROSSWORD_DATA_NAME_VARIABLE, activity.data)
+                    generated.putExtra(CROSSWORD_TOPICS_NAME_VARIABLE, activity.topics)
+                    generated.putExtra(TRAINING_NAME_VARIABLE, true)
+                    activity.startActivityForResult(generated, ACTIVITY_CHOOSE)
+                }
+                item.addView(im)
+            }
+            item.addView(createDefaultTextView(context).also{
+                it.text = activity.getString(R.string.training)})
             return item
         }
 
@@ -121,7 +138,7 @@ class MainActivity : AppCompatActivity() {
 
         companion object ViewHolderType{
             val TOP_ROW = 0
-            val ONLY_CROSSWORDS_ROW = 1
+            val CROSSWORDS_ROW = 1
             val IMAGE_POSITION = 0
             val TEXT_POSITION = 1
         }
@@ -134,25 +151,25 @@ class MainActivity : AppCompatActivity() {
             when (viewType) {
                 TOP_ROW -> {
                     tableRow.addView(createGeneratingLayout(parent.context))
+                    tableRow.addView(createTrainingLayout(parent.context))
                 }
-                ONLY_CROSSWORDS_ROW ->{
-                    tableRow.addView(createCrosswordLayout(parent.context))
+                CROSSWORDS_ROW ->{
+                    for(i in 0 until ITEMS_IN_ROW ) {
+                        val view = createCrosswordLayout(parent.context)
+                        view.visibility = View.INVISIBLE
+                        tableRow.addView(view)
+                    }
                 }
             }
 
-            for(i in 1 until ITEMS_IN_ROW ) {
-                val view = createCrosswordLayout(parent.context)
-                view.visibility = View.INVISIBLE
-                tableRow.addView(view)
-            }
             return TableHolder(tableRow)
         }
 
         override fun onBindViewHolder(holder: TableHolder, position: Int) {
-            val currentRow = dataset[position]
-            val lastIndex = currentRow.lastIndex
-            for(currentColumn in 0 .. lastIndex) {
-                if (getItemViewType(position) == ONLY_CROSSWORDS_ROW || currentColumn != 0) {
+            if (getItemViewType(position) == CROSSWORDS_ROW) {
+                val currentRow = dataset[position]
+                val lastIndex = currentRow.lastIndex
+                for (currentColumn in 0..lastIndex) {
                     val currentLayout = holder.tableRow.getChildAt(currentColumn) as LinearLayout
                     val currentImageView = currentLayout.getChildAt(IMAGE_POSITION) as ImageView
                     currentImageView.setImageDrawable(Drawable.createFromPath(currentRow[currentColumn].path.absolutePath))
@@ -185,15 +202,16 @@ class MainActivity : AppCompatActivity() {
                     }
                     currentLayout.visibility = View.VISIBLE
                 }
-            }
 
-            for(i in currentRow.size until ITEMS_IN_ROW ) {
-                val layout = holder.tableRow.getChildAt(i) as LinearLayout
-                layout.visibility = View.INVISIBLE
+                for (i in currentRow.size until ITEMS_IN_ROW) {
+                    val layout = holder.tableRow.getChildAt(i) as LinearLayout
+                    layout.visibility = View.INVISIBLE
+                }
             }
         }
 
-        override fun getItemViewType(position: Int) = if(position == 0) 0 else 1
+        override fun getItemViewType(position: Int) =
+            if(position == 0) TOP_ROW else CROSSWORDS_ROW
         override fun getItemCount(): Int = dataset.size
     }
 
@@ -218,8 +236,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         tableLayout.setHasFixedSize(true)
-        //will add path and name for the first item inside recylceview
-        (tableLayout.adapter as TableAdapter).addItemToRecyclerView( File(""), "")
+        //will add path and name for the first and the second items inside recylceview
+        for(i in 0..1) {
+            (tableLayout.adapter as TableAdapter).addItemToRecyclerView(File(""), "")
+        }
         addItems()
 
         settingsImage.setOnClickListener {
@@ -376,11 +396,15 @@ class MainActivity : AppCompatActivity() {
     private fun rightShift(row: Int, column: Int) {
         val adapter = tableLayout.adapter as TableAdapter
         val data = adapter.dataset
-        var temp = data[0][1]
-        data[0][1] = data[row][column]
+        val startCrosswordPosition = Position(1, 0)
+        var temp = data[startCrosswordPosition.row][startCrosswordPosition.column]
+        data[startCrosswordPosition.row][startCrosswordPosition.column] = data[row][column]
         for (i in 1..row) {
             for (j in 0 until ITEMS_IN_ROW) {
-                data[i][j] = temp.also{temp = data[i][j]}
+                if (i != 1 || j != 0)
+                {
+                    data[i][j] = temp.also{temp = data[i][j]}
+                }
                 if (i == row && j == column) return
             }
         }
@@ -423,11 +447,15 @@ class MainActivity : AppCompatActivity() {
         const val ACTIVITY_GAME_FAIL: Int = 2
         const val ACTIVITY_GAME_REMOVE: Int = 3
         const val ACTIVITY_GAME_BAD_DATA: Int = 4
+        const val ACTIVITY_GAME_TRAINING: Int = 5
+        const val ACTIVITY_GAME_THE_SAME_TOPICS: Int = 6
+        const val ACTIVITY_GAME_OTHER_TOPICS: Int = 7
         const val IMAGE_DIRECTORY: String = "drawable"
         const val CROSSWORD_NAME_VARIABLE: String = "name"
         const val CROSSWORD_IS_GENERATED_VARIABLE: String = "isGenerated"
         const val CROSSWORD_DATA_NAME_VARIABLE: String = "data"
         const val CROSSWORD_TOPICS_NAME_VARIABLE: String = "topics"
+        const val TRAINING_NAME_VARIABLE: String = "training"
         const val DEFAULT_ENCODING: String = "UTF-8"
         fun computeImageSize(resources: Resources): Int =
             resources.displayMetrics.widthPixels / ITEMS_IN_ROW - 2 * MARGIN
