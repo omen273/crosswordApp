@@ -1,5 +1,6 @@
 variables:
-  DEVICE_VIDEO_DIR: /mnt/sdcard/DCIM
+  # accessible directory for any API including 30
+  DEVICE_VIDEO_DIR: /data/local/tmp/
 
 parameters:
   - name: AndroidAPIs
@@ -50,15 +51,16 @@ jobs:
             $ANDROID_HOME/emulator/emulator -list-avds
 
             echo "Starting emulator"
-            # increase memory size to 2048M to avoid error "System UI is not responding"
-            # in the regex \1 means "hw.ramSize=", so we replace number that is placed after "hw.ramSize=" to 2048M.
-            # More details https://stackoverflow.com/a/4609965/3914914
-            sed -i 's/^\(hw.ramSize=\).*$/\12048/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
+            # in the regex \1 means "hw.mainKeys=", so we replace number that is placed after "hw.mainKeys=" to yes.
             # solution from https://stackoverflow.com/a/16402304 to fix error "System UI is not responding"
             sed -i 's/^\(hw.mainKeys=\).*$/\1yes/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
             # solution from https://stackoverflow.com/questions/9322540/how-to-change-the-android-emulator-ram-size-from-the-command-line
             sed -i 's/^\(vm.heapSize=\).*$/\1256/' ~/.android/avd/xamarin_android_emulator.avd/config.ini
-            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -gpu swiftshader_indirect -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel auto -qemu > /dev/null 2>&1 &
+
+            # -accel on to use harware acceleration whenever it's possible
+            # -wipe-data to clear apps' data before launch
+            # -memory sets up RAM size to avoid error "System UI is not responding"
+            nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -memory 3072 -wipe-data -no-window -skin 1080x1920 -no-snapshot -no-audio -no-boot-anim -accel on > /dev/null 2>&1 &
             $ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
 
             $ANDROID_HOME/platform-tools/adb devices
@@ -76,11 +78,10 @@ jobs:
             $ANDROID_HOME/platform-tools/adb logcat > $(Build.ArtifactStagingDirectory)/device-${{ value.name }}.log &
             echo $! > logcat.pid
             echo "Logcat Started with Process ID: $(cat logcat.pid)"
-            $ANDROID_HOME/platform-tools/adb shell "mkdir -p $(DEVICE_VIDEO_DIR)"
             $ANDROID_HOME/platform-tools/adb shell '''
               for i in $(seq 1 1 20)
               do
-                screenrecord --bugreport --verbose --time-limit=180 /mnt/sdcard/DCIM/test"${i}".mp4
+                screenrecord --bugreport --verbose --time-limit=180 $(DEVICE_VIDEO_DIR)/test"${i}".mp4
               done
             ''' > $(Build.ArtifactStagingDirectory)/video-${{ value.name }}.log &
             echo $! > video.pid
